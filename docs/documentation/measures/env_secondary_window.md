@@ -6,7 +6,7 @@ grand_parent: Documentation
 nav_order: 6
 ---
 
-**Executive Summary**
+## <a name="_toc131687442"></a><a name="_toc131909737"></a><a name="_toc131922506"></a><a name="_toc131925442"></a><a name="_toc131925488"></a><a name="_toc224638697"></a><a name="_toc224638774"></a><a name="_toc225321100"></a><a name="_toc225321603"></a><a name="_toc225577220"></a><a name="_toc225583133"></a>**Executive Summary**
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy’s ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions. 
 
 The goal of this work is to develop energy efficiency, electrification, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. “Measures” refers to energy efficiency variables that can be applied to buildings during modeling. 
@@ -21,11 +21,8 @@ This documentation focuses on a single end-use savings shape measure—secondary
 ## **Acknowledgments**
 ## The authors would like to acknowledge the valuable guidance and input provided by the Lawrence Berkeley National Laboratory WINDOW software team.**
 ## <a name="_toc131925443"></a><a name="_toc131925489"></a><a name="_toc225583134"></a>**
-<a name="_toc291051272"></a><a name="_toc291052384"></a><a name="_toc314819176"></a><a name="_toc314823678"></a><a name="_toc352071746"></a>**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
+<a name="_toc291051272"></a><a name="_toc291052384"></a><a name="_toc314819176"></a><a name="_toc314823678"></a><a name="_toc352071746"></a>10
 
-10
-
-![](env_secondary_window.001.png)
 1. ## **Introduction**
 This documentation covers secondary window systems upgrade methodology and briefly discusses key results.  Results can be accessed on the ComStock data lake “[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)” or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov). 
 
@@ -49,11 +46,10 @@ These configurations are illustrated in Figure 1. One important note about this 
 
 ![Diagram
 
-Description automatically generated](env_secondary_window.002.png)
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.001.png)
 
 <a name="_ref131618570"></a><a name="_toc131666879"></a>**Figure 1. Secondary window system types**
 1. ### <a name="_toc131687447"></a>**Lab Testing and Field Studies**
-Did they change the name from "Green Proving Ground" to just "Proving Ground Program" ?
 At least three independent field studies of this technology from three different manufacturers have been performed in a frame-within-reveal or frame-within-frame configuration. A 2013 General Services Administration (GSA) Green Proving Ground study installed the technology in a small office building in Provo, UT [2], a 2013 DOE-funded project installed the technology in part of a multi-story office building in Philadelphia, PA [3], and a 2021 GSA Green Proving Ground study installed the technology in an office subsection of a larger mixed-used office building in Denver, CO [4]. None of the field studies included whole-building, full-year measurement. In all three studies the technology generally performed as intended, lowering heating and cooling losses and increasing thermal comfort near the windows.
 1. ### <a name="_toc131687448"></a>**Performance Characteristics**
 Secondary windows are available from multiple manufacturers, many of whom can produce single- or double-pane products with different gas fills and optical coatings. In the two GSA field studies, modeling of the combined primary window plus the added secondary window assembly was performed using Lawrence Berkeley National Laboratory’s (LBNL’s) WINDOW and THERM software. Both studies showed good agreement between the modeled window performance and the data measured using a combination of infrared thermography and thermocouples. Table 1 summarizes the performance levels modeled in these studies. Note that because both studies used the frame-within-reveal configuration, the thermal bridging through the existing framing was less significant than it would be in frame-within-frame applications.
@@ -74,11 +70,11 @@ Data from the National Fenestration Rating Council (NFRC) Commercial Fenestratio
 
 ![Calendar
 
-Description automatically generated](env_secondary_window.003.png)
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.002.png)
 
 ![A picture containing table
 
-Description automatically generated](env_secondary_window.004.png)
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.003.png)
 
 <a name="_ref131682650"></a><a name="_ref131603574"></a><a name="_toc131666881"></a>**Figure 2. Window characteristics**
 
@@ -126,7 +122,7 @@ Each combination of climate zone and energy code included 2–12 window configur
 
 ![Table
 
-Description automatically generated](env_secondary_window.005.png)
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.004.png)
 
 As can be seen in Table 4, for DOE Ref Pre-1980, the only windows that met code and are realistic are single-pane or double-pane windows with no low-E coating. For DOE Ref 1980–2004, the maximum U-value dropped significantly, such that single-pane aluminum windows no longer met code. However, double-pane low-E windows became available on the market at that time. For 90.1-2004 through 90.1-2010, code required a U-value equivalent to double-pane low-E or better, and in 90.1-2013, the code improved again, meaning that double-pane low-E with a thermal break or better was required. This type of logic was applied to all combinations of climate zone and energy code. Then, we converted the data into the distributions used in sampling.
 
@@ -138,7 +134,7 @@ Once the 12 new window constructions were determined, a team from LBNL’s Windo
 
 ![Table
 
-Description automatically generated](env_secondary_window.006.png)
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.005.png)
 
 The U-factors originally ranged from U-1.18 Btu/h-ft2-F for the worst-performing single-pane window to U-0.30 Btu/h-ft2-F for the best-performing triple-pane window. As mentioned earlier in this section, the maximum U-factor that EnergyPlus can model with a simple glazing object is U-1.02 Btu/h-ft2-F, which is governed by the limitations of a 2D heat transfer model when interior and exterior air films are included. Therefore, we adjusted the U-factor for the first two single-pane windows to be U-1.02 Btu/h-ft2-F rather than U-1.18 Btu/h-ft2-F. This allowed these windows to be modeled in ComStock. This results in a slight overestimate of the thermal performance of single-pane windows.
 
@@ -162,20 +158,19 @@ To understand the expected performance of the total assembly, a range of combina
 
 ![Chart
 
-Description automatically generated with low confidence](env_secondary_window.007.png)
+Description automatically generated with low confidence](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.006.png)
 
 <a name="_ref131618916"></a><a name="_toc131666882"></a>**Figure 3. Modeling simplification for frame-within-frame secondary window systems**
 
 Adding double-pane secondary windows to existing single-pane windows achieved a significant improvement in thermal and optical performance. Adding double-pane secondary windows to existing double-pane windows had diminishing returns over adding single-pane secondary windows because the achievable assembly performance was limited by the thermal bridging in the window frames. Ultimately, the combinations of existing windows and secondary windows shown in Table 7 is proposed. As expected, a comparison of the achieved performance values to the AEDG recommendations (see Table 8) shows that the overall thermal performance levels are still below the recommended values, largely driven by the limited performance of the existing window frame.
 ##
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-![](env_secondary_window.008.png)
-
 <a name="_ref103837408"></a><a name="_toc131666893"></a>**Table 7. Proposed Combinations for Performance of Existing Window Plus Secondary Window Combinations by Climate Zone**
 
 ![Table
 
-Description automatically generated with medium confidence](env_secondary_window.009.png)
+Description automatically generated with medium confidence](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.007.png)
+
+<a name="_ref103837413"></a><a name="_toc131666894"></a>
 
 **Table 8. Comparison of Existing Window Plus Secondary Window Combinations to ASHRAE *Small and Medium Office Zero Energy AEDG* Performance Targets by Climate Zone**
 
@@ -255,3 +250,6 @@ Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885
 |[3] |Home Innovation Research Labs, "Performance Comparison of a Low-e Retrofit Window in a Philadelphia Office Building," 2013.|
 |[4] |K. Kiatreungwattana and L. Simpson, "Demonstration and Evaluation of Lightweight High Performance Secondary Windows," NREL, 2021.|
 |[5] |ASHRAE, " Achieving Zero Energy - Advanced Energy Design Guide for Small to Medium Office Buildings," ASHRAE, 2019.|
+
+
+
