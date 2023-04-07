@@ -177,6 +177,81 @@ Adding double-pane secondary windows to existing single-pane windows achieved a 
 
 Description automatically generated with medium confidence](env_secondary_window.009.png)
 
-**This document was truncated here because it was created in the Evaluation Mode.**
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
+**Table 8. Comparison of Existing Window Plus Secondary Window Combinations to ASHRAE *Small and Medium Office Zero Energy AEDG* Performance Targets by Climate Zone**
 
+![Table
+
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.008.png)
+
+1. ## <a name="_toc131687302"></a><a name="_toc131687376"></a><a name="_toc131687403"></a><a name="_toc131687453"></a><a name="_toc131687454"></a>**Applicability**
+The current stock has 12 different window configurations. Figure 4 shows the breakdown of windows by total floor area. In total, single-pane windows represent about 53% of the floor area, double-pane 47%, and triple pane <1%. 
+
+![Timeline
+
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.009.png)
+
+<a name="_ref131605002"></a><a name="_toc131666883"></a>**Figure 4. Percent stock floor area by window type**
+
+The secondary window measure is applicable to all buildings that currently have single- or double-pane windows, which is nearly 100% of the stock. The very small fraction of buildings that already have triple-pane windows will not receive this upgrade.
+1. ## <a name="_toc131687455"></a>**Output Variables**
+<a name="_ref127883994"></a>Table 9 includes the output variable that is calculated in ComStock. This variable is important in terms of understanding the differences between buildings with and without the secondary window system measure applied. Additionally, this output variable can be used for understanding the economics (e.g., return of investment) of the upgrade if cost information (i.e., material, labor, and maintenance cost for technology implementation) is available. 
+
+<a name="_ref131663482"></a><a name="_toc131666895"></a>**Table 9. Output Variables Calculated From the Measure Application**
+
+|**Variable Name**|**Description**|
+| :- | :- |
+|Area of secondary windows added|Area of windows in the model to which secondary windows were added (ft2)|
+1. ## <a name="_toc131687456"></a>**Results**
+   1. ### <a name="_toc131687457"></a>**Single Building Example**
+The percent changes in U-value, SHGC, and VLT were determined from the WINDOW model and assigned to each building in ComStock based on the existing window construction and the climate zone. Table 10 shows the U-value and SHGCs for each window configuration before and after the secondary window upgrade was applied. As expected, the U-value and SHGC percent decreases align with the performance changes in Table 7. VLT is not currently an output variable, but we assume that the VLT decrease was also applied properly because it was applied in the exact same manner as the U-value and SHGC performance changes. 
+
+<a name="_ref131709428"></a><a name="_toc131666896"></a>**Table 10. U-Value and SHGC Comparison Before and After the Measure Was Applied**
+
+![Timeline
+
+Description automatically generated with medium confidence](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.010.png)
+1. ### <a name="_toc131687458"></a>**Non-Energy Impacts**
+In the case studies, the evaluators found that the installation of secondary windows increased thermal and visual comfort for occupants near the windows. While these benefits likely have financial value, these impacts are not being quantified in the modeling of this technology.
+1. ### <a name="_toc131687459"></a>**Stock Energy Impacts**
+Installing secondary windows demonstrates 1% (60 TBtu) annual stock energy savings for commercial buildings (Figure 5). This includes 3% electricity heating savings (8 TBtu), 3% natural gas heating savings (12 TBtu), 3% electricity cooling savings (19 TBtu), and 1% fan energy savings. Heating, cooling, and fan energy savings can be partially attributed to the decreased thermal conductance (U-value) of the secondary windows, which generally reduces heating and cooling loads. This reduces the energy requirement of the heating and cooling system, but can also decrease the number of times heating, ventilating, and air conditioning (HVAC) fans need to cycle on (for systems that include cycling operation), which explains the energy savings in that category. Minimal differences in energy consumption between the baseline and upgrade scenario are observed for non-HVAC end uses, which is expected.
+
+![A picture containing chart
+
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.011.jpeg)
+
+<a name="_ref131619010"></a><a name="_toc131666884"></a>**Figure 5. Comparison of annual site energy consumption between the ComStock baseline and the window replacement scenario. Energy consumption is categorized by both fuel type and end use.**
+1. ### <a name="_toc130817710"></a><a name="_toc131687460"></a>**Stock Greenhouse Gas Emissions Impact**
+Annual greenhouse gas emissions savings are realized at the stock level for all three electricity grid scenarios and all on-site fossil fuel combustion types (Figure 6). When combined with the fossil fuel emissions, all three grid scenarios show stock emissions savings of approximately 1.2%. Grid scenarios show similar total percent emissions savings due to electricity consumption (1.0% to 1.1%), but the scenarios with higher emissions in the ComStock baseline show higher total emissions savings because there are more emissions associated with each electricity kWh (3 MMT to 4 MMT).
+
+![](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.012.png)
+
+<a name="_ref131606312"></a><a name="_toc131666885"></a>**Figure 6. Comparison of greenhouse gas emissions for the ComStock baseline and the secondary window scenario. Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.**
+1. ### <a name="_toc130551711"></a><a name="_toc130817711"></a><a name="_toc131687461"></a>**Energy Savings Distributions**
+Figure 7 shows the distribution of annual energy percent savings for the ComStock baseline compared to the window replacement scenario. The majority of the distributions show site energy savings between roughly 2% and 5% for the 25th and 75th percentiles (as indicated by the boxplots), respectively. The distributions extend fairly wide, but much of this range is covered by outliers outside of the standard 1.5 times the interquartile range calculation. Outliers are indicated by dots above the distribution, and they represent a relatively small portion of models. Some models in the distributions show negative energy savings for a given fuel type. This is expected to some degree with this type of window strategy, as reducing the SHGC can increase heating load.
+
+![Chart
+
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.013.jpeg)
+
+<a name="_ref129763933"></a><a name="_toc130817720"></a><a name="_toc131666886"></a>**Figure 7. Percent savings distribution of ComStock models by fuel type**
+
+Figure 8 shows the percent savings distribution for each end use and fuel type combination between the baseline ComStock model and the corresponding upgrade model. Models are included in these distributions only if they experienced savings (or a penalty) for the specific distribution. The model count for the distributions is indicated in each distribution title. Many end uses demonstrated a wide range of savings. 
+
+The heating end use (for the various fuel types) generally shows energy savings above the 25th percentile of the distribution. Heating savings are expected when decreasing the window U-value due to the increased insulative properties. However, some models experienced heating penalties. This is often due to the increased SHGC of the replacement windows, which is intended to decrease cooling energy consumption. However, this can also block some beneficial solar heat gain, which can cause an increased heating load. Whether or not annual heating savings are realized depends on a combination of factors, including the <a name="_hlk130549128"></a>window to wall area, window orientation, thermostat set points, HVAC system, outdoor air temperatures, and amount of solar radiation affecting the window surface. Heating-only HVAC system types can be especially prone to energy penalties from lower SHGC because there is no cooling system to save energy from the decreased solar gains, although this does not reflect other potential benefits such as thermal comfort or glare control. Also, in some cases, HVAC systems that use multiple fuel types may experience heating savings for one of the fuel types and a heating penalty for the other due to nuanced load changes that shift load within the system. 
+
+![Diagram
+
+Description automatically generated](Aspose.Words.1620454b-7aff-462c-97e6-c98885bdeac2.014.jpeg)
+
+<a name="_ref129772790"></a><a name="_toc130817721"></a><a name="_toc131666887"></a>**Figure 8*.* Percent savings distribution of ComStock models by end use and fuel type**
+**
+
+## <a name="_toc131687462"></a>**References**
+
+
+|[1] |I. Bensch, R. Donaldson and L. Shimazu, "Commercial Window Attachments: Secondary Window Market Characterization," NEEA, 2020.|
+| :- | :- |
+|[2] |C. Curcija, H. Goudey, R. Mitchell and E. Dickerhoff, "Highly Insulating Window Panel Attachment Retrofit," GSA, 2013.|
+|[3] |Home Innovation Research Labs, "Performance Comparison of a Low-e Retrofit Window in a Philadelphia Office Building," 2013.|
+|[4] |K. Kiatreungwattana and L. Simpson, "Demonstration and Evaluation of Lightweight High Performance Secondary Windows," NREL, 2021.|
+|[5] |ASHRAE, " Achieving Zero Energy - Advanced Energy Design Guide for Small to Medium Office Buildings," ASHRAE, 2019.|
