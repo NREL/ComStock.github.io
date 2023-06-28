@@ -8,4 +8,4 @@ has_children: true
 # Resources
 {: .fw-500 }
 
-Test text
+This section provides tutorials, how-to guides and reference material designed to aid users in answering questions using the ComStock dataset.

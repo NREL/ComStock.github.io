@@ -5,6 +5,7 @@ parent: Data
 ---
 
 # Published Datasets
+{: .fw-500 }
 These datasets describes the timeseries energy consumption of the U.S. commercial building stock at the end-use level. For details on how it was created and validated, please see the project’s [final report](https://www.nrel.gov/buildings/end-use-load-profiles.html). Visit the [Accessing Data]({{site.baseurl}}{% link docs/data/accessing_data.md %}) page for more details about the data.
 
 ComStock dataset releases are summarized in the following table with links for accessing the aggregate results.
@@ -17,6 +18,3 @@ ComStock dataset releases are summarized in the following table with links for a
 |	**Building Stock<br>Represented**	|	U.S. commercial sector circa 2018	|	U.S. commercial sector circa 2018	|	U.S. commercial sector circa 2018	|
 |	**Upgrades Available**	|	Air-Source Heat Pump Boiler,<br>DOAS with Mini Split Heat Pumps,<br>Exterior Wall Insulation,<br>Heat Pump RTU,<br>LED Lighting,<br>Roof Insulation,<br>Secondary Window System,<br>Window Film,<br>Window Replacement	|	None	|	None	|
 |	**Weather Year**	|   [amy2018](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2Fcomstock_amy2018_release_1%2Fweather%2F){: .table_link_text }	|	[amy2018](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fcomstock_amy2018_release_1%2Fweather%2F){: .table_link_text }	|	[tmy3](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fcomstock_tmy3_release_1%2Fweather%2F){: .table_link_text }	|
-
-
-

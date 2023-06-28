@@ -5,7 +5,7 @@ parent: Data
 ---
 
 # Accessing Data
-
+{: .fw-500 }
 At the most fundamental level, the ComStock dataset is a collection of end-use load profiles of approximately 350,000 building energy models. The output of each building energy model is 1 year of energy consumption in 15-minute intervals, separated into end-use categories.
 
 Accessing national ComStock building load profiles in the full dataset requires big-data skills that make the full dataset inaccessible for most users. To support many use cases, aggregate load profiles for the following geographic resolutions are published for ComStock releases:
