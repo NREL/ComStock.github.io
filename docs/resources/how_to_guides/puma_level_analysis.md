@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PUMA-level Analysis
+title: City-level Analysis
 parent: How-to Guides
 grand_parent: Resources
 nav_order: 2
@@ -9,7 +9,7 @@ nav_order: 2
 
 June 27, 2023
 
-This guide will walk you through how to prepare PUMA-level ComStock data for analysis using the following example statement:
+This guide will walk you through how to prepare city-level ComStock data for analysis using the following example statement:
 
 **I want to understand the annual energy use by building type for the city of Richmond, CA.**
 
@@ -17,7 +17,11 @@ ComStock has multiple fields that indicate where models are located
 across the country. When conducting analysis for a city using the
 publicly available ComStock dataset, Public Use Microdata Area
 (PUMA)-level data is the appropriate geographic area to use for
-filtering the data to a city. This document will walk through the steps
+filtering the data to a city. PUMAs are non-overlapping, statistical
+geographic areas that partition each state or equivalent entity into
+geographic areas containing no fewer than 100,000 people each used by
+the Census Bureau and State Data Centers (SDCs).
+This document will walk through the steps
 required to download and prepare ComStock data using Microsoft Excel for
 conducting analysis using the city of Richmond, CA as an example. By the
 end of these steps, the data can be put directly into the "Basic
