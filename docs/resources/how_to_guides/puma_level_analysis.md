@@ -78,7 +78,7 @@ text specifies an excel function.
             Name: Contra Costa County (Far Southwest)\--Richmond
             (Southwest) & San Pablo Cities PUMA
 
-            ![geojson_example](/assets/images/Richmond_geojson.png)
+            ![](../../../assets/images/Richmond_geojson.png)
 
             Figure 1. Example of searching Census Region 4's geojson file for
             'Richmond, California'. Note the GISJOIN field, which is used in Step 2.
@@ -113,7 +113,7 @@ there...
 
     2.  For Richmond, CA, the count for each ComStock building type
         group is as follows:\
-        ![](/assets/images/Richmond_btype_count.png)
+        ![](../../../assets/images/Richmond_btype_count.png)
 
     3.  First, note which groups have less than 5 samples. These have
         the potential to lead to inaccurate results when they are
@@ -123,7 +123,7 @@ there...
         1.  Add **weight** to the "Values" section in the right sidebar.
             This will show the approximate total building count for each
             building type group.\
-            ![](/assets/images/Richmond_btype_area.png)
+            ![](../../../assets/images/Richmond_btype_area.png)
 
         2. Take note of the **Sum of weight** value for the building
             type groups with less than 5 samples ("Education" and "Food
@@ -139,11 +139,11 @@ there...
              the most part accurately representing the Food Service
              Buildings. Takeaway: Education buildings are a gap.
 
-             ![](/assets/images/Richmond_education.png)
+             ![](../../../assets/images/Richmond_education.png)
 
              Figure 2. Education buildings in Richmond, CA
 
-             ![](/assets/images/Richmond_food_service.png)
+             ![](../../../assets/images/Richmond_food_service.png)
 
              Figure 3. Food service buildings in Richmond, CA
 
@@ -168,7 +168,7 @@ there...
             lodging facilities in Richmond, CA are shown the screenshot in
             Figure 4. There are certainly hotels and motels in this area.
 
-            ![](/assets/images/Richmond_lodging.png)
+            ![](../../../assets/images/Richmond_lodging.png)
 
             Figure 4. Lodging buildings in Richmond, CA
 
