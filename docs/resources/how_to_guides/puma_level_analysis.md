@@ -3,7 +3,7 @@ layout: default
 title: City-level Analysis
 parent: How-to Guides
 grand_parent: Resources
-nav_order: 2
+nav_order: 1
 ---
 # How-to: Understand the annual energy use by building type for a city.
 
@@ -78,7 +78,7 @@ text specifies an excel function.
             Name: Contra Costa County (Far Southwest)\--Richmond
             (Southwest) & San Pablo Cities PUMA
 
-            ![](/assets/images/Richmond_geojson.png)
+            ![geojson_example](/assets/images/Richmond_geojson.png)
 
             Figure 1. Example of searching Census Region 4's geojson file for
             'Richmond, California'. Note the GISJOIN field, which is used in Step 2.
