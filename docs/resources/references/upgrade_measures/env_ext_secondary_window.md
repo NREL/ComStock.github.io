@@ -7,6 +7,9 @@ great_grand_parent: Resources
 nav_order: 7
 ---
 
+# Secondary Window System
+{: .fw-500 }
+Authors: Andrew Parker and Amy LeBar
 
 # Executive Summary
 
