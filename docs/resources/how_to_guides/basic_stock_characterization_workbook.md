@@ -1,0 +1,25 @@
+---
+layout: default
+title: Basic Stock Characterization Workbook
+parent: How-to Guides
+grand_parent: Resources
+nav_order: 3
+---
+
+# How-to: Perform a basic commercial building stock segmentation analysis in Excel.
+
+This guide will introduce a basic stock segmentation workbook using the following example statement:
+
+**I want to understand what buildings of what sort exist in Colorado and how they use energy.**
+
+Building stock characterization analysis refers to the process of assessing and analyzing the collective characteristics and attributes of a particular set of buildings within a defined region or area. It involves analyzing data about various aspects of the buildings, such as their physical attributes, energy performance, occupancy patterns, construction types, and other relevant factors. 
+
+The purpose of building stock characterization analysis is to gain a comprehensive understanding of the existing building stock in order to inform decision-making processes related to energy efficiency, sustainability, urban planning, and policy development. By studying the characteristics of buildings within a specific area, stakeholders can identify opportunities for energy savings, retrofitting projects, or improvements in overall building performance. 
+
+The analysis typically involves collecting data from multiple sources, including public records, surveys, energy audits, and other relevant databases. (When using ComStock data, this step can initially be skipped because the ComStock tool aggregates multiple sources of data and models energy consumption for geographies across the United States. The ComStock team recommends confirming key insights prior to acting on them when possible, however. No model is as good as reality!) This data is then organized and analyzed to identify trends, patterns, and key characteristics of the building stock. The analysis can provide insights into the age distribution of buildings, their energy consumption patterns, the prevalence of different construction materials, the presence of energy-efficient technologies, and other relevant information. 
+
+Based on the findings of the analysis, policymakers, urban planners, and building owners can develop targeted strategies and interventions to address energy efficiency, sustainability, and other goals. For example, the analysis might reveal a high percentage of older buildings with highly inefficient windows, which could indicate the need for retrofitting programs or incentives to improve energy performance. 
+
+Building stock characterization analysis is a valuable tool for understanding the current state of the building stock, identifying areas for improvement, and guiding decision-making processes to promote energy efficiency and sustainability in the built environment. To enable stakeholders to use ComStock for this task we have developed a basic [Excel workbook, which can be accessed here.][1] The first tab in the workbook contains all the instructions necessary to begin using it to perform a basic stock segmentation.
+
+[1]:{{ site.url }}/files/basic_building_stock_characteristic_analysis_template_1_0.xlsx
