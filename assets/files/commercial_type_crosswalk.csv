@@ -1,0 +1,42 @@
+﻿CoStar Building Type,HIFLD Table,DOE Prototype and ComStock Building Type,CBECS Principle Building Activity Plus 
+Retail:   Bar,Not applicable,Full service restaurant,Restaurant/cafeteria
+Retail: Restaurant,Not applicable,Full service restaurant,Bar/pub/lounge
+Not applicable,Healthcare: Hospitals,Hospital,Hospital/inpatient health
+Hospitality: Hotel,Not applicable,Large hotel,Hotel
+Hospitality: Hotel casino,Not applicable,Large hotel,Hotel
+Office: Industrial live/work   unit,Not applicable,Office,Administrative/professional office
+Office: Office live/work unit,Not applicable,Office,Bank/other financial
+Office: Office/residential,Not applicable,Office,Government office
+Retail: Bank,Not applicable,Office,Medical office (non-diagnostic)
+Flex,Not applicable,Office,Other office
+Office: Service,Not applicable,Office,Other office
+Health care: Rehabilitation   center,Not applicable,Outpatient,Medical office (diagnostic)
+Health care: Skilled nursing   facility,Not applicable,Outpatient,Medical office (diagnostic)
+Office: Medical,Not applicable,Outpatient,Clinic/other outpatient health
+Health care,Not applicable,Outpatient,Clinic/other outpatient health
+Not applicable,Education: Public schools,Primary/secondary school,Elementary/middle school
+Not applicable,Education: Private schools,Primary/secondary school,High school
+Retail: Fast food,Not applicable,Quick service restaurant,Fast food
+General retail: Fast rood,Not applicable,Quick service restaurant,Fast food
+Retail: Department store,Not applicable,Retail,Retail store
+Retail: Freestanding,Not applicable,Retail,Retail store
+Retail: Garden center,Not applicable,Retail,Other retail
+General retail: Freestanding,Not applicable,Retail,Other retail
+Hospitality: Motel,Not applicable,Small hotel,Motel or inn
+Hospitality,Not applicable,Small hotel,Motel or inn
+Flex: Showroom,Not applicable,Strip mall,Strip shopping mall
+Retail: Storefront,Not applicable,Strip mall,Strip shopping mall
+Retail: Storefront   retail/office,Not applicable,Strip mall,Strip shopping mall
+Retail: Storefront   retail/residential,Not applicable,Strip mall,Strip shopping mall
+Specialty: Post office,Not applicable,Strip mall,Strip shopping mall
+Retail,Not applicable,Strip mall,Strip shopping mall
+General retail,Not applicable,Strip mall,Strip shopping mall
+Flex: Light distribution,Not applicable,Warehouse,Distribution/shipping center
+Flex: Light manufacturing,Not applicable,Warehouse,Distribution/shipping center
+Industrial: Distribution,Not applicable,Warehouse,Distribution/shipping center
+Industrial: Service,Not applicable,Warehouse,Nonrefrigerated warehouse
+Industrial: Showroom,Not applicable,Warehouse,Nonrefrigerated warehouse
+Industrial: Truck terminal,Not applicable,Warehouse,Nonrefrigerated warehouse
+Industrial: Warehouse,Not applicable,Warehouse,Self-storage
+Specialty: Airplane hangar,Not applicable,Warehouse,Self-storage
+Specialty: Self-storage,Not applicable,Warehouse,Self-storage

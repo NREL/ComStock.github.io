@@ -9,6 +9,16 @@ nav_order: 7
 ## NREL Reports, Papers, and Presentations
 
 > {: .publication }
+>> **Impact Analysis of Transitioning to Heat Pump Rooftop Units for the U.S. Commercial Building Stock (2023)**
+>>
+>> Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
+>
+><span class="fs-2">
+>[Link](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .btn}
+></span>
+
+
+> {: .publication }
 >> **ComStock Documentation (2023)**
 >>
 >> Methodology and assumptions behind ComStock.
