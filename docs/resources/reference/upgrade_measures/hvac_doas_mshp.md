@@ -7,6 +7,10 @@ great_grand_parent: Resources
 nav_order: 2
 ---
 
+# DOAS with Mini Split Heat Pumps
+{: .fw-500 }
+Authors: Chris CaraDonna and Andrew Parker
+
 # Executive Summary
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.

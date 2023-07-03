@@ -7,6 +7,9 @@ great_grand_parent: Resources
 nav_order: 3
 ---
 
+# Exterior Wall Insulation
+{: .fw-500 }
+Authors: Andrew Parker and Amy LeBar
 
 #  Executive Summary
 

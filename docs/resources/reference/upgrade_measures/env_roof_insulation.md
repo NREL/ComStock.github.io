@@ -7,6 +7,10 @@ great_grand_parent: Resources
 nav_order: 6
 ---
 
+# Roof Insulation
+{: .fw-500 }
+Authors: Lauren Adams and Chris CaraDonna
+
 # Executive Summary
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy’s ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
