@@ -2,7 +2,7 @@
 layout: default
 title: Window Film
 parent: Upgrade Measures
-grand_parent: Reference
+grand_parent: References
 great_grand_parent: Resources
 nav_order: 8
 ---

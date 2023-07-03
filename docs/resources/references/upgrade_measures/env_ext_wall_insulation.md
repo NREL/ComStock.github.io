@@ -2,7 +2,7 @@
 layout: default
 title: Exterior Wall Insulation
 parent: Upgrade Measures
-grand_parent: Reference
+grand_parent: References
 great_grand_parent: Resources
 nav_order: 3
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Upgrade Measures
-parent: Reference
+parent: References
 grand_parent: Resources
 nav_order: 5
 has_children: true
