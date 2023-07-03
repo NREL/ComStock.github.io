@@ -2,7 +2,7 @@
 layout: default
 title: ComStock
 nav_order: 1
-parent: Reference
+parent: References
 grand_parent: Resources
 ---
 

@@ -5,9 +5,8 @@ parent: Tutorials
 grand_parent: Resources
 nav_order: 1
 ---
-# Tutorial: Joining Data from an External Dataset to ComStock using Geospatial Fields
 
-June 14, 2023
+# Tutorial: Joining Data from an External Dataset to ComStock using Geospatial Fields
 
 ## Introduction
 
