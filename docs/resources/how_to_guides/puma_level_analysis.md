@@ -5,9 +5,8 @@ parent: How-to Guides
 grand_parent: Resources
 nav_order: 1
 ---
-# How-to: Understand the annual energy use by building type for a city.
 
-June 27, 2023
+# How-to: Understand the annual energy use by building type for a city.
 
 This guide will walk you through how to prepare city-level ComStock data for analysis using the following example statement:
 
