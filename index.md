@@ -15,7 +15,7 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 For an in depth overview of ComStock please review our [annotated introductory slide deck available here.][1]
 
-[1]:{{ site.url }}/assets/files/comstock_introduction_with_notes.pdf
+[1]:../../../assets/files/comstock_introduction_with_notes.pdf
 
 ## What Does ComStock Do?
 
