@@ -14,7 +14,7 @@ Several tutorials and how to guides discuss matching the building type of an ext
 
 There is no clean, precise answer to this question, but we believe the following will be a useful set of resources for consideration. First of all, it is very useful to read section **3.1.2 Building Type Assignments** in our [reference technical report](https://www.nrel.gov/docs/fy23osti/83819.pdf), particularly the descriptions of each ComStock building type. Second, we highly recommend using google maps, and particularly google street view. Making a practice out of double checking and developing an intuitive understanding of how different external data source think about building types is incredibly helpful. Whenever integrating a new data source we do this ourselves, extensively. Finally, we have provided below the crosswalk used to map building types between different data sources in the current release of ComStock. Ideally this table will serve as a starting point for developing a (hopefully simpler) mapping between your external data source and our building types. This table is also available in a [CSV format here.][1]
 
-[1]:{{ site.url }}/files/commercial_type_crosswalk.csv
+[1]:{{ site.url }}/assets/files/commercial_type_crosswalk.csv
 
 | **CoStar Building Type**                | **HIFLD Table**            | **DOE Prototype and ComStock Building Type** | **CBECS Principle Building Activity Plus** |
 |-----------------------------------------|----------------------------|----------------------------------------------|--------------------------------------------|
