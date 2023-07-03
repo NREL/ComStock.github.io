@@ -9,7 +9,7 @@ nav_order: 8
 
 # Window Film
 {: .fw-500 }
-Authors: Janghyun Kim, Chris CaraDonna, and Andrew Parker
+Authors: Janghyun Kim, Chris CaraDonna and Andrew Parker
 
 # Executive Summary
 

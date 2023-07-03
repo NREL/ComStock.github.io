@@ -9,7 +9,7 @@ nav_order: 1
 
 # Air-Source Heat Pump Boiler
 {: .fw-500 }
-Authors: Korbaga Woldekidan
+Author: Korbaga Woldekidan
 
 # Executive Summary
 
