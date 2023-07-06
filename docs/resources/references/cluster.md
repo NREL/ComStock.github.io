@@ -13,3 +13,6 @@ This document provides reference documentation for the clustering methodology de
 
 ## [Building Stock Segmentation Cluster Development](https://www.nrel.gov/docs/fy23osti/84648.pdf)
 **June 2023**
+
+## [Building Stock Segmentation Cluster Definitions](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/geographic_information/stock_cluster_definition_2023.06.27.csv)
+**July 2023**
