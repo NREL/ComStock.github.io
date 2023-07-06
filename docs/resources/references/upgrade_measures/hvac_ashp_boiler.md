@@ -85,7 +85,7 @@ Table 3. Measure Input Summary
 
 ## 4.1.  Applicability
 
-Figure 2 shows the heating type distribution among the ComStock buildings. This measure is applicable for boiler heating type, which accounts for \~8.3% of the ComStock baseline total floor area.
+Figure 2 shows the heating type distribution among the ComStock buildings. This measure is applicable for buildings that use gas boiler as a heating source, which accounts for \~8.3% of the ComStock baseline total floor area.
 
 {:refdef: style="text-align: center;"}
 ![](media/c49007f091a23010bb06f21009551120.png)
@@ -95,7 +95,22 @@ Figure 2 shows the heating type distribution among the ComStock buildings. This 
 Figure 2. Heating type distribution
 {:refdef}
 
-This measure is applicable to the ComStock OpenStudio® models with the following heating, ventilating, and air conditioning (HVAC) system types: dedicated outdoor air system (DOAS) with fan coil air-cooled chiller with boiler, DOAS with fan coil chiller with boiler, DOAS with fan coil district chilled water with boiler, DOAS with water-source heat pump cooling tower with boiler, packaged single zone air conditioner (PSZ-AC) with gas boiler, packaged variable air volume (PVAV) with gas boiler, PVAV with gas heat with electric reheat, variable air volume (VAV) air-cooled chiller with gas boiler reheat, VAV chiller with gas boiler reheat, and VAV district chilled water with gas boiler reheat.
+This measure is applicable to the ComStock OpenStudio® models with heating, ventilating, and air conditioning (HVAC) system types indicated in Table 4.
+
+Table 4. Applicable HVAC System Types
+
+|           | ** Applicable HVAC System **                                                     |
+|-----------|----------------------------------------------------------------------------------|
+| 1         |Dedicated outdoor air system (DOAS) with fan coil air-cooled chiller with boiler  |
+| 2         |DOAS with fan coil chiller with boiler                                            |
+| 3         |DOAS with fan coil district chilled water with boiler                             |
+| 4         |DOAS with water-source heat pump cooling tower with boiler                        |
+| 5         |Packaged single zone air conditioner (PSZ-AC) with gas boiler                     |
+| 6         |Packaged variable air volume (PVAV) with gas boiler                               |
+| 7         |PVAV with gas heat with electric reheat                                           |
+| 8         |Variable air volume air-cooled chiller with gas boiler reheat                     |
+| 9         |Variable air volume chiller with gas boiler reheat                                |
+| 10        |Variable air volume district chilled water with gas boiler reheat                 |
 
 ## 4.2.  ASHP Sizing
 
@@ -120,9 +135,9 @@ The design heating load (DHL) in a building can be estimated using energy audit 
 
 For the purpose of sizing, the heating load is assumed to linearly change from zero (at the heating-enable outdoor air temperature) to the design heating load (at the heating design temperature)[6], as shown in Figure 3. In most applications, heating is enabled at an outdoor air temperature of 60°F. The line connecting the zero-heating load and the design heating load is referred to as the heating load line.
 
-The outdoor temperature for the design heating load depends on the climate condition. Table 4 summarizes the winter design day condition corresponding to the design heating load for the representative cities in each ASHRAE climate zone [7] .
+The outdoor temperature for the design heating load depends on the climate condition. Table 5 summarizes the winter design day condition corresponding to the design heating load for the representative cities in each ASHRAE climate zone [7] .
 
-Table 4. Winter Design Day Temperature per ASHRAE Climate Zone
+Table 5. Winter Design Day Temperature per ASHRAE Climate Zone
 
 | **Climate Zone** | **City**          | **Winter Heating Design Day Temperature (°F)** |
 |------------------|-------------------|------------------------------------------------|
@@ -166,7 +181,7 @@ Figure from [6]
 
 Two options are provided for heat pump sizing in the measure, one based on percentage of the peak load and the other based on outdoor air temperature, with a gas or electric backup boiler system to address the remaining loads.
 
-### 4.2.3  Sizing Based on Peak Load Percentage
+### 4.2.2.1  Sizing Based on Peak Load Percentage
 
 In this approach, the target capacity is estimated as a percentage of the DHL. The corresponding outdoor air temperature (target OAT) that results in a heating demand equal to the target capacity is determined using the heating load line, as shown in Figure 4.
 
@@ -190,7 +205,7 @@ If the target OAT is lower than the cutoff temperature, the target capacity shou
 Figure 4. Heat pump sizing approach
 {:refdef}
 
-### 4.2.4  Sizing Based on a Target Outdoor Air Temperature
+### 4.2.2.2  Sizing Based on a Target Outdoor Air Temperature
 
 In this approach, the heat pump is sized using the target capacity on the heat load line corresponding to the target outdoor air temperature provided by the user. The target capacity is calculated as:
 
@@ -200,11 +215,11 @@ In this approach, the heat pump is sized using the target capacity on the heat l
 
 In both methods, if either the HDT or the cutoff temperature is greater than the target OAT, the sizing should be done according to the maximum of the two instead of the target OAT. For example, if the cutoff temperature of the heat pump is 0°F and the user picks a target OAT of 17°F, it doesn’t make sense to size the heat pump corresponding to 17°F, as the heat pump won’t be operating below 0°F.
 
-### 4.2.5  Defrosting Consideration
+### 4.2.3  Defrosting Consideration
 
-ASHP boilers require occasional defrosting when operating at an outdoor air temperature below 47°F. Commercial ASHP boilers with multiple compressors reduce the impact of defrosting by limiting the defrosting to only one circuit at a time. The frequency of defrosting depends on the operating conditions. Table 5 summarizes the suggested capacity derate factors for sizing application [2].
+ASHP boilers require occasional defrosting when operating at an outdoor air temperature below 47°F. Commercial ASHP boilers with multiple compressors reduce the impact of defrosting by limiting the defrosting to only one circuit at a time. The frequency of defrosting depends on the operating conditions. Table 6 summarizes the suggested capacity derate factors for sizing application [2].
 
-Table 5. Heat Pump Defrost Capacity Derate Factors
+Table 6. Heat Pump Defrost Capacity Derate Factors
 
 | **Outdoor Air Temperature, °F** | **Capacity Derate Factor** |
 |---------------------------------|----------------------------|
@@ -220,7 +235,7 @@ The target capacity estimated in Section 4.2.2 is updated using the “Capacity 
 ![](media/ashp_boiler_eq3.png){:width="350"}
 {:refdef}
 
-### 4.2.6  Estimation of Rated Heat Pump Capacity
+### 4.2.4  Estimation of Rated Heat Pump Capacity
 
 Most heat pump manufacturers provide the heat pump rated capacity at a specific condition, usually at an outdoor air temperature of 47°F. The updated target capacity estimated in Section 4.2.3 needs to be converted to the required capacity at the design condition. To estimate the required rated capacity of the heat pump at the design outdoor air temperature, we used a performance curve called [9] that captures the variation of a heat pump’s capacity with outdoor air temperature and hot water set point. Heat pump performance curves are discussed in depth in Section 4.3 and Appendix A. The target capacity at the design outdoor air temperature (Target Capacity @ Design OAT) is estimated as:
 
@@ -230,7 +245,7 @@ Most heat pump manufacturers provide the heat pump rated capacity at a specific 
 
 where a, b, c, d, e, and f are *CapFT* performance curve coefficients and Tcondout is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
 
-### 4.2.7  Use of Multiple Heat Pumps
+### 4.2.5  Use of Multiple Heat Pumps
 
 In practice, it is more common to have multiple heat pumps of medium size than to have one big heat pump in a building. It creates redundancy and increases the energy efficiency of the system by providing the flexibility to run a few heat pumps at a higher part load ratio and with less cycling than running a big chiller. This measure allows users to provide the rated capacity of the heat pump they would like to use. The default heating capacity per unit used in the measure is 40 kW (136.5 MBH) and is based on Mitsubishi’s Ecodan ASHP [10]. The measure adds multiple heat pumps in parallel when the estimated rated capacity is greater than the assumed rated capacity per unit. The number of ASHPs is estimated as:
 
@@ -242,7 +257,7 @@ where “Roundup” is used to convert a fraction to the closest higher integer 
 
 If the estimated rated capacity is lower than the assumed rated capacity per unit, only one heat pump with the estimated rated capacity will be used in the model.
 
-### 4.2.8  Heat Pump Set Point
+### 4.2.6  Heat Pump Set Point
 
 Heat pumps have a lower hot water temperature output than boilers. There are some CO2 refrigerant heat pump water heaters that supply hot water up to 180°F [11], but most of the commercially available heat pumps have a hot water supply temperature capped at around 140°F. The hot water supply temperature they generate also depends on the outdoor air temperature. Figure 5 and Figure 6 show operation maps of heat pumps by Trane and Mitsubishi. For the Trane unit, the hot water leaving temperature drops from 140°F at an outdoor air temperature of 70°F to 100°F at an outdoor air temperature of 0°F. The Mitsubishi unit maintains a hot water set point even at colder temperatures; it supplies 158°F hot water at an outdoor air temperature as low as −4°F and drops to 150°F at −13°F.
 
@@ -284,14 +299,14 @@ Figure 7. American National Standards Institute (ANSI)/ASHRAE/Illuminating Engin
 
 We have provided two options in the measure for assigning a hot water set point: keeping the original set point or assigning a new set point.
 
--   Keeping the original set point: The existing hot water loop set point will be used as a set point for the heat pump and the hot water loop.
--   Assigning a new set point: The user-assigned value will be used as a set point for the heat pump and hot water loop.
+-   Original set point: The existing hot water loop set point will be used as a set point for the heat pump and the hot water loop.
+-   New set point: The user-assigned value will be used as a set point for the heat pump and hot water loop.
 
 When the set point is changed, it will have an impact on the downstream coils connected to the heat pump. More flow needs to be supplied by the pump to handle the same heating load with a lower set point. To accommodate this change, the measure provides an option to auto-size the heating coil. If users choose to auto-size, the measure will auto-size the overall heat transfer coefficient and maximum water flow rate of the values of the coil.
 
 ## 4.3.  Modeling ASHP Boilers in OpenStudio
 
-During the measure development, we considered two heat pump models in OpenStudio. The first was a pumped condenser heat pump. This heat pump model is a combination of multiple objects, including a fan, a water tank, and an air-to-water heat pump coil object that is composed of a heat pump and a water circulation pump between the heat pump and the water tank [9]. This model doesn’t allow a cutoff temperature below 23°F. Commercial heat pumps for space heating applications have cutoff temperatures as low as −25°F, especially the CO2-based heat pumps [1]. Because of this limitation, we were forced to drop it, but it could be considered in the future once the cutoff temperature limit is relaxed to a lower value.
+During the measure development, we considered two heat pump models in OpenStudio. The first was a pumped condenser heat pump. This heat pump model is a combination of multiple objects, including a fan, a water tank, and an air-to-water heat pump coil object that is composed of a heat pump and a water circulation pump between the heat pump and the water tank [9]. This model doesn’t allow a cutoff temperature below 23°F. Commercial heat pumps for space heating applications have cutoff temperatures as low as −25°F, especially the CO2-based heat pumps [1]. Because of this limitation, it is not used in this measure but could be considered in the future once the cutoff temperature limit is relaxed to a lower value.
 
 The second option considered—and the model selected for this measure—is a plant loop heat pump energy efficiency ratio (EIR) heating model. The plant loop EIR heating heat pump object is a recently added object for modeling a heat pump. Unlike the pumped condenser heat pump, this object doesn’t have a water tank that helps differentiate the heat pump from the main hot water loop. In addition, the current version is a constant flow model that requests full design flow from the plant [9]. Because of this limitation, this object could not be directly added to a hot water loop with a variable speed pump. To circumvent this, and to provide the necessary separation between the hot water loop and the heat pump, we added a heat pump loop (as shown in Figure 8) to the existing building model. The heat pump loop has a heat pump on the supply side and a fluid-to-fluid heat exchanger on the demand side. The same heat exchanger is connected in series to the existing boiler. As indicated in Figure 9, the heat exchanger is added before the boiler so that it will be the primary heating source while the boiler handles the rest. For multiple heat pumps in the heat pump loop, we used a “sequentialLoad” control scheme, in which heat pumps are fired sequentially until the heating load is met. To avoid system inefficiency due to the addition of a heat exchanger, we used an “ideal” heat exchanger (i.e., the effectiveness of the heat exchanger was assumed to be 1). We also used an “UncontrolledOn” control scheme for the heat exchanger, which allows the heat exchanger to run whenever there is a nonzero flow in the main hot water loop.
 
@@ -363,13 +378,13 @@ The measure provides two options for a backup: keep the existing boiler or use a
 
 As indicated in Section 3, some of the boilers in the baseline ComStock models don’t have minimum load turndown control. This allows small flow with insignificant heating in the hot water loop. This had a negative impact during the application of this measure, as the measure introduces a heat pump loop that is triggered by a nonzero flow in the hot water loop. The small flow in the hot water loop forces the heat pump to cycle frequently and eventually affects the expected savings from the application of this measure. This issue should be addressed in the next version of the ComStock models.
 
-Another limitation is the current version of the heat pump object used in this measure, the plant loop EIR heating heat pump. This object is a constant flow model that requests full design flow from the plant. This limits the ability to model variable speed heat pumps and also forces the heat pump to cycle more. This measure should be updated in the future once the updated version of the heat pump object with a variable speed option is available.
+The heat pump object used in this measure, the plant loop EIR heating heat pump, is a constant flow model that requires full design flow from the plant. This limits the ability to model variable speed heat pumps and also forces the heat pump to cycle on and off. This measure should be updated in the future once the updated version of the heat pump object with a variable speed option is available.
 
 # 5. Output Variables
 
-Table 6 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the replace_boiler_by_heatpump measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available.
+Table 7 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the replace_boiler_by_heatpump measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available.
 
-Table 6. Output Variables Calculated From the Measure Application
+Table 7. Output Variables Calculated From the Measure Application
 
 | **Variable Name**                      | **Description**                                             |
 |----------------------------------------|-------------------------------------------------------------|
@@ -391,9 +406,9 @@ Table 6. Output Variables Calculated From the Measure Application
 # 6. Results
 ## 6.1.  Single Building Example
 
-Table 7 shows an end-use energy consumption comparison for a 75,000-square-foot hospital building model before and after application of the measure. The two categories that are significantly affected by this measure are the heating and pump energy end uses. The electricity consumption for heating is reduced by 2.3 times compared to the natural gas consumption in the baseline. This is equivalent to an overall COP of 2.3 by the heat pump because the boiler in the baseline model has an efficiency of 100%. The rated COP of the heat pump used is 2.85, and the observed reduction in the overall COP is due to a lower operating outdoor air temperature than the rated outdoor air temperature of 47°F. The increment in the pump energy consumption is due to the addition of a constant speed circulation pump in the heat pump loop.
+Table 8 shows an end-use energy consumption comparison for a 75,000-square-foot hospital building model in Gellatin Field, MT, before and after application of the measure. The two categories that are significantly affected by this measure are the heating and pump energy end uses. The electricity consumption for heating is reduced by 2.3 times compared to the natural gas consumption in the baseline. This is equivalent to an overall COP of 2.3 by the heat pump because the boiler in the baseline model has an efficiency of 100%. The rated COP of the heat pump used is 2.85, and the observed reduction in the overall COP is due to a lower operating outdoor air temperature than the rated outdoor air temperature of 47°F. The increment in the pump energy consumption is due to the addition of a constant speed circulation pump in the heat pump loop.
 
-Table 7. End-Use Energy Consumption Comparison
+Table 8. End-Use Energy Consumption Comparison
 
 |                    | **Baseline**          | **Baseline**         | **Updated**          | **Updated**          |
 |--------------------|-----------------------|----------------------|----------------------|----------------------|
@@ -427,7 +442,7 @@ Figure 12. Sequencing between ASHP and boiler
 ## 6.2.  ComStock Full Run
 ### 6.2.1.  Measure Impact on Commercial Building Energy Consumption
 
-This measure is applicable for boiler heating type, which accounts for \~8.3% of the ComStock total floor area (Figure 2). Application of the measure resulted in total site energy savings of 2.9%, as shown in Figure 13. Please note that site energy savings do not necessarily translate proportionally to source energy savings, energy cost savings, or greenhouse gas emissions savings. The conversions depend on grid resources to generate the electricity and utility rate structures.
+This measure is applicable for natural gas boiler heating type, which accounts for \~8.3% of the ComStock total floor area (Figure 2). Application of the measure resulted in total site energy savings of 2.9%, as shown in Figure 13. Please note that site energy savings do not necessarily translate proportionally to source energy savings, energy cost savings, or greenhouse gas emissions savings. The conversions depend on grid resources to generate the electricity and utility rate structures.
 
 {:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media/39fc819dea6ad2694e4cc3f11b000400.png){:width="500"}
@@ -515,14 +530,14 @@ Figure 20. Site energy savings by building type
 
 ### 6.2.5.  Measure Impact by State
 
-Figure 21 and Figure 22 show a state-by-state percentage natural gas and electricity savings contribution distributions. As expected, cold regions exhibited higher savings in natural gas consumption and a higher increase in electricity energy use. Besides the need for more electricity by the heat pump boilers in the colder regions, the high electricity demand is also in part due to the lower efficiency of the heat pump boilers in these regions. Figure 23 shows the COP variations across the states. In general, heat pump boilers operate at a higher efficiency in hot climates compared to cold ones.
+Figure 21 and Figure 22 show a state-by-state percentage natural gas and electricity savings contribution distributions. As expected, cold regions exhibited higher savings in natural gas consumption and a higher increase in electricity energy use. State level savings are also influenced by buildings type distribution and total floor area across the states. For example, New York exhibited more natural gas savings compared to other states in the east due to the presence bigger buildings with higher heating demand. Besides the need for more electricity by the heat pump boilers in the colder regions, the high electricity demand is also in part due to the lower efficiency of the heat pump boilers in these regions. Figure 23 shows the COP variations across the states. In general, heat pump boilers operate at a higher efficiency in hot climates compared to cold ones.
 
 {:refdef: style="text-align: center;"}
 ![](media/fc679ee287bb1d5e7aad5b063e9c27c4.png)
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 21. percentage natural gas savings distribution
+Figure 21. percentage savings in natural gas
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -530,7 +545,7 @@ Figure 21. percentage natural gas savings distribution
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 22. Percentage electricity consumptions increase distribution
+Figure 22. Percentage increase in electricity consumptions
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -590,6 +605,8 @@ As discussed in Section 4.3, the heat pump object used in this measure has three
 {:refdef: style="text-align: center;"}
 ![](media/ashp_boiler_eq9.png){:width="600"}
 {:refdef}
+
+Where QReference is the design heating capacity of the heat pump, PReference is the design power demand of the heat pump, QAvailable is the adjusted heating capacity, P is the adjusted power demand, Tcond,out is the condenser outlet water temperature,  Tair,in is the ambient air temperature, PLR is heat pump part load ratio,   a1,b1, c1,d1,e1 … c3 are performance curve coeffients that need to be extracted from operational data.
 
 Performance data provided by Colmac is used to generate the two temperature-dependent performance curves, CAPFT and EIRFT. The EIRPLR coefficients are taken from previously used models in OpenStudio standard for electric chillers. The performance data from Colmac is compared against data from Trane and Mitsubishi. No detailed data was available for the two units, but the capacity drop with outdoor air temperature looks consistent with the Colmac unit. The comparison results are summarized in Table A-1 and Table A-2. The Trane and Colmac data show capacity reductions of 44% and 50%, respectively, as the temperature drops from 47°F to 0°F. On the other hand, the Mitsubishi data shows a 31% capacity reduction as the outdoor air temperature drops from 45°F to 20°F, and the Colmac unit shows a 25% reduction for the same range.
 
