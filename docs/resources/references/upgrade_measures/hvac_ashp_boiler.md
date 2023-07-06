@@ -33,8 +33,8 @@ This documentation covers the â€œReplace Boiler by Air-Source Heat Pump Boilerâ€
 
 | **Measure Title**  | Replace Boiler by Air-Source Heat Pump Boiler (replace_boiler_by_heatpump)                               |
 | **Measure Definition** | This measure replaces a natural gas boiler by an air-source heat pump for space heating.                     |
-| **Applicability**      | Buildings with a natural gas boiler for space heating.                                                       |
-| **Not Applicable**     | Buildings not using natural gas boiler for space heating such as those with furnace or district heat source. |
+| **Applicability**      | Buildings that use natural gas boiler for space heating.                                                       |
+| **Not Applicable**     | Buildings that do not use natural gas boiler for space heating such as those with furnace, electric heaters, or district heat source. Boilers used for domestic hot water heating will not be changed in this measure. |
 | **Release**            | EUSS 2023 Release 1                                                                                               |
 
 # 2.  Technology Summary
