@@ -1,13 +1,13 @@
 ---
 layout: default
-title: ASHP Boiler and Natural Gas Boiler Backup
+title: Air-Source Heat Pump Boiler and Natural Gas Boiler Backup
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
 nav_order: 9
 ---
 
-# Boiler Replacement with Air-Source Heat Pump Boiler and Natural Gas Boiler Backup
+# Air-Source Heat Pump Boiler and Natural Gas Boiler Backup
 {: .fw-500 }
 Author: Korbaga Woldekidan
 
@@ -49,7 +49,7 @@ This documentation covers the "Replace Boiler with Air-Source Heat Pump Boiler" 
 Air-source heat pump (ASHP) boilers are one of several candidate technologies for boiler electrification. This technology uses electricity to move heat from the surrounding air and transfer it at a higher temperature for space-heating applications. As indicated in Figure 1, ASHP boilers work as "refrigeration in reverse" and are usually two to three times more efficient than electric resistance boilers. Because the surrounding air serves as a heat source, the performance of ASHPs depends on the heat content (temperature) of the outdoor air. With current technology, heat pump capacity and performance generally decrease at lower outdoor air temperature. Heat pump equipment is often controlled to disable operation below a specified outdoor air temperature, often called the cutoff temperature or compressor lockout temperature. The specific value can vary by equipment type and manufacturer, and sometimes user is able to specify a value between a range limit. For operation below the cutoff temperature, backup boilers are used. Similar to heat pump performance and capacity retention, the compressor lockout temperature can improve with technology development.
 
 {:refdef: style="text-align: center;"}
-![Diagram Description automatically generated](media/image1.png){:width="700"}
+![Diagram Description automatically generated](media/image1.png){:width="600"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -106,7 +106,7 @@ Table 3. Measure Input Summary
 Figure 3 shows the heating type distribution among the ComStock buildings. shows the heating type distribution among the ComStock buildings. This measure is applicable for buildings that use gas boiler as a heating source, which accounts for 33 % of the ComStock baseline total floor area. The orange bar in the figure indicates portions for the applicable buildings. Out of the buildings with boiler, this measure is applicable for 94% of them , the rest being boilers used for supplemental heating for heat pump applications.
 
 {:refdef: style="text-align: center;"}
-![Chart, bar chart Description automatically generated](media/image5.png){:width="700"}
+![Chart, bar chart Description automatically generated](media/image5.png){:width="600"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -161,13 +161,13 @@ The second method involves sizing based on a specified outdoor air temperature. 
 Figure 4. Heat pump sizing approach
 {:refdef}
 
-Note that with current technology, heat pump capacity changes with outdoor air temperature, and most heat pump manufacturers provide the heat pump rated capacity at a specific condition, usually at an outdoor air temperature of 47^o^F. Thus, the target capacity estimated using either of the two methods needs to be converted to the required capacity at the design condition. To estimate the required rated capacity of the heat pump at the design outdoor air temperature, we used a performance curve called $CapFT$ \[9\] that captures the variation of a heat pump's capacity with outdoor air temperature and hot water set point. The target capacity at the design outdoor air temperature (Target Capacity @ Design OAT) is estimated as:
+Note that with current technology, heat pump capacity changes with outdoor air temperature, and most heat pump manufacturers provide the heat pump rated capacity at a specific condition, usually at an outdoor air temperature of 47°F. Thus, the target capacity estimated using either of the two methods needs to be converted to the required capacity at the design condition. To estimate the required rated capacity of the heat pump at the design outdoor air temperature, we used a performance curve called CapFT \[9\] that captures the variation of a heat pump's capacity with outdoor air temperature and hot water set point. The target capacity at the design outdoor air temperature (Target Capacity @ Design OAT) is estimated as:
 
 {:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media/hvac_ashp_boiler_gas_backup_eq1.png){:width="700"}
 {:refdef}
 
-where a, b, c, d, e, and f are *CapFT* performance curve coefficients, and Tcond<sub>out</sub> is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
+where a, b, c, d, e, and f are CapFT performance curve coefficients, and Tcond<sub>out</sub> is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
 
 For more detail information on sizing, readers are encouraged to refer the measure documentation for [boiler replacement with air source heat pump boiler and electric boiler backup](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/hvac_ashp_boiler.html) from Commercial EUSS 2023 Release 1.
 
@@ -180,7 +180,7 @@ To handle multiple heat pumps in the heat pump loop, we implemented a \"sequenti
 Furthermore, it is worth noting that this heat pump model lacks a cutoff temperature. To address this, we incorporated an \"AvailabilityManagerLowTemperatureTurnOff\" in the heat pump loop. This feature disables the loop when the outdoor air temperature falls below the specified cutoff temperature.
 
 {:refdef: style="text-align: center;"}
-![](media/image6.png){:width="700"}
+![](media/image6.png){:width="600"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -206,7 +206,7 @@ We used data provided by Colmac \[13\] to generate the CapFTemp and EIRFTemp per
 Figure 7 and Figure 8 show how the CAPFT and EIRFT curve output values change with outdoor air temperature and hot water leaving temperature. As shown in Figure 7, the CAPFT value increases as the outdoor air temperature and condenser leaving water temperature increase. The EIRFT curve shown in Figure 8 shows a decrease in EIR (improvement in COP) as the outdoor temperature increases and the condenser leaving water temperature decreases.
 
 {:refdef: style="text-align: center;"}
-![Chart, bar chart, histogram Description automatically generated](media/image8.png){:width="700"}
+![Chart, bar chart, histogram Description automatically generated](media/image8.png){:width="500"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -214,7 +214,7 @@ Figure 7. CAPFT performance curve output
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-![Chart, histogram Description automatically generated](media/image9.png){:width="700"}
+![Chart, histogram Description automatically generated](media/image9.png){:width="500"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -502,7 +502,7 @@ Figure 22. Annual net greenhouse gas (GHG) emission saving comparison between ga
 
 # Appendix A 
 
-1.  Appendix ASHP Boiler Performance Curve Generation
+## 1. Appendix ASHP Boiler Performance Curve Generation
 
 As discussed in Section 4.3, the heat pump model used in this measure has three performance curves for capturing the dependency of the heat pump performance on the operating conditions. Two of the curves, capacity as a function of temperature (CapFTemp) and energy input ratio (EIR) as a function of temperature (EIRFTemp), capture the dependency of heat pump capacity and efficiency on outdoor air temperature and hot water supply temperature. EIR as a function of part load ratio (EIRPLR) captures the dependency of the heat pump efficiency on heat pump loading and cycling.
 
@@ -554,7 +554,7 @@ Table A-3. Performance Curve Coefficients
 | f     | −2.04E−05  | 0.0001082  | -     |
 
 {:refdef: style="text-align: center;"}
-![Chart, bar chart, histogram Description automatically generated](media/image8.png){:width="700"}
+![Chart, bar chart, histogram Description automatically generated](media/image8.png){:width="500"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -562,7 +562,7 @@ Figure A-*1. CAPFT performance curve output*
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-![Chart, histogram Description automatically generated](media/image9.png){:width="700"}
+![Chart, histogram Description automatically generated](media/image9.png){:width="500"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
