@@ -113,7 +113,7 @@ Figure 3 shows the heating type distribution among the ComStock buildings. shows
 Figure 3. Measure applicability
 {:refdef}
 
-This measure is applicable to the ComStock OpenStudio^®^ models with the following heating, ventilating, and air conditioning (HVAC) system types (Table 4):
+This measure is applicable to the ComStock OpenStudio® models with the following heating, ventilating, and air conditioning (HVAC) system types (Table 4):
 
 Table 4. Applicable HVAC System Types
 
@@ -163,11 +163,11 @@ Figure 4. Heat pump sizing approach
 
 Note that with current technology, heat pump capacity changes with outdoor air temperature, and most heat pump manufacturers provide the heat pump rated capacity at a specific condition, usually at an outdoor air temperature of 47^o^F. Thus, the target capacity estimated using either of the two methods needs to be converted to the required capacity at the design condition. To estimate the required rated capacity of the heat pump at the design outdoor air temperature, we used a performance curve called $CapFT$ \[9\] that captures the variation of a heat pump's capacity with outdoor air temperature and hot water set point. The target capacity at the design outdoor air temperature (Target Capacity @ Design OAT) is estimated as:
 
-$$Target\ Capacity\ @\ Design\ OAT = \ \frac{\ Target\ Capcity}{CapFT\ @\ Target\ OAT}$$
+{:refdef: style="text-align: center;"}
+![Chart, bar chart Description automatically generated](media/hvac_ashp_boiler_gas_backup_eq1.png){:width="700"}
+{:refdef}
 
-$CapFT@Target\ OAT = \ \ a + b\ *\ T_{cond_{out}} + c\ *T_{cond_{out}}^{2} + d*\ Tareget\ OAT + \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ e*\ {Target\ OAT}^{2}\  + \ f*\ {\ T}_{cond_{out}}*\ Target\ OAT$
-
-where a, b, c, d, e, and f are *CapFT* performance curve coefficients, and Tcond~out~ is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
+where a, b, c, d, e, and f are *CapFT* performance curve coefficients, and Tcond<sub>out</sub> is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
 
 For more detail information on sizing, readers are encouraged to refer the measure documentation for [boiler replacement with air source heat pump boiler and electric boiler backup](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/hvac_ashp_boiler.html) from Commercial EUSS 2023 Release 1.
 
@@ -191,15 +191,15 @@ The plant loop heat pump EIR heating model uses three performance curves---CapFT
 
 CapFTemp modifies the capacity of the heat pump based on the outdoor air and heat pump condenser outlet temperatures:
 
-CapFTemp = a~1~ + b~1~ (T~cond,out~) + c~1~ (T~cond,out~)^2^ + d~1~ (T~air,in~) + e~1~ (T~air,in~)^2^ + f~1~ (T~air,in~) (T~cond,out~)
+CapFTemp = a<sub>1</sub> + b<sub>1</sub> (T<sub>cond,out</sub>) + c<sub>1</sub> (T<sub>cond,out</sub>)<sup>2</sup> + d<sub>1</sub> (T<sub>air,in</sub>) + e<sub>1</sub> (T<sub>air,in</sub>)<sup>2</sup> + f<sub>1</sub> (T<sub>air,in</sub>) (T<sub>cond,out</sub>)
 
 EIRFTemp modifies the EIR, which is the inverse of the coefficient of performance (COP), of the heat pump based on outdoor and heat pump condenser outlet temperatures:
 
-EIRFTemp = a~2~ + b~2~ (T~cond,out~) + c~2~ (T~cond,out~)^2^ + d~2~ (T~air,in~) + e~2~(T~air,in~)^2^ + f~2~ (T~air,in~) (T~cond,out~)
+EIRFTemp = a<sub>2</sub> + b<sub>2</sub> (T<sub>cond,out</sub>) + c<sub>2</sub> (T<sub>cond,out</sub>)<sup>2</sup> + d<sub>2</sub> (T<sub>air,in</sub>) + e<sub>2</sub>(T<sub>air,in</sub>)<sup>2</sup> + f<sub>2</sub> (T<sub>air,in</sub>) (T<sub>cond,out</sub>)
 
 EIRPLR modifies the EIR of the heat pump based on the part load ratio (PLR) and captures efficiency loss from compressor cycling:
 
-EIRPLR = a~3~ + b~3~ PLR + c~3~ PLR^2^
+EIRPLR = a<sub>3</sub> + b<sub>3</sub> PLR + c<sub>3</sub> PLR<sup>2</sup>
 
 We used data provided by Colmac \[13\] to generate the CapFTemp and EIRFTemp performance curves. During the measure development, we were not able to find performance data for EIRPLR. Thus, we assumed a linear variation between EIR and PLR that resulted in a 0% reduction in EIR at 1 PLR and a 25% reduction in EIR for a PLR close to zero. More details about the performance curves are given in Appendix A.
 
@@ -306,12 +306,24 @@ As noted previously, this measure is applicable for buildings that use natural g
 
 As indicated in Figure 10, this measure has negligible impacts in most of the end-use categories, except heating electricity, heating natural gas, and pump electricity. The remaining gas heating in applicable buildings comes from backup heating, and a small subset of non-applicable systems (e.g., boilers that serve condenser water loops).
 
-|![](media/image11.png){:width="700"} | ![Chart, bar chart Description automatically generated](media/image12.png){:width="700"} |
-|                                                                                               |                                                                                                                                                 |
-| \(a\)                                                                                         | \(b\)                                                                                                                                           |
+{:refdef: style="text-align: center;"}
+![](media/image11.png){:width="700"} 
+{:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 10. End-use energy consum*ption comparison for (*a) ComStock Buildings and (b) applicable buildings
+(a)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
+![Chart, bar chart Description automatically generated](media/image12.png){:width="700"}
+{:refdef}
+
+{:refdef: style="text-align: center;"}
+(b)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
+Figure 10. End-use energy consumption comparison for (a) ComStock Buildings and (b) applicable buildings
 {:refdef}
 
 ## 6.3. Stock Peak Impacts
@@ -423,11 +435,19 @@ Figure 20 presents a comparison of end-use energy consumption after implementing
 {:refdef}  
 
 {:refdef: style="text-align: center;"}
+(a)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 ![](media/image22.png){:width="700"}
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 20. End-use annual energy consumption *comparison for gas and electric backup options*
+(b)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
+Figure 20. End-use annual energy consumption comparison for (a) gas and (b) electric backup options
 {:refdef}
 
 As illustrated in Figure 21, no significant difference was observed between the gas and electric backup options in terms of their impact on peak demand. However, it is observed that there is a considerable increase in peak demands compared to the baseline scenarios in subarctic and very cold regions. This is expected because these regions have a higher need for heating, and electrifying the boiler using a heat pump boiler would significantly increase the electricity demand.
@@ -486,15 +506,15 @@ Figure 22. Annual net greenhouse gas (GHG) emission saving comparison between ga
 
 As discussed in Section 4.3, the heat pump model used in this measure has three performance curves for capturing the dependency of the heat pump performance on the operating conditions. Two of the curves, capacity as a function of temperature (CapFTemp) and energy input ratio (EIR) as a function of temperature (EIRFTemp), capture the dependency of heat pump capacity and efficiency on outdoor air temperature and hot water supply temperature. EIR as a function of part load ratio (EIRPLR) captures the dependency of the heat pump efficiency on heat pump loading and cycling.
 
-Q~Available~ = Q~Reference~ x CapFTemp
+Q<sub>Available</sub> = Q<sub>Reference</sub> x CapFTemp
 
-P = P~Reference~ \* EIRFTemp \* EIRPLR
+P = P<sub>Reference</sub> \* EIRFTemp \* EIRPLR
 
-CapFTemp = a1 + b1 (Tcond,out) + c1 (Tcond,out)2 + d1 (Tair,in) + e1 (Tair,in)2 +f1 (Tair,in) (Tcond,out)
+CapFTemp = a<sub>1</sub> + b<sub>1</sub> (T<sub>cond,out</sub>) + c<sub>1</sub>(T<sub>cond,out</sub>)<sup>2</sup> + d<sub>1</sub>(T<sub>air,in</sub>) + e<sub>1</sub>(T<sub>air,in</sub>)<sup>2</sup> +f<sub>1</sub>(T<sub>air,in</sub>)(T<sub>cond,out</sub>)
 
-EIRFTemp = a2 + b2 (Tcond,out) + c2(Tcond,out)2 + d2 (Tair, in) + e2(Tair,in)2 + f2 (Tair,in) (Tcond,out)
+EIRFTemp = a<sub>2</sub> + b<sub>2</sub> (T<sub>cond,out</sub>) + c<sub>2</sub>(T<sub>cond,out</sub>)<sup>2</sup> + d<sub>2</sub>(T<sub>air,in</sub>) + e<sub>2</sub>(T<sub>air,in</sub>)<sup>2</sup> +f<sub>2</sub>(T<sub>air,in</sub>)(T<sub>cond,out</sub>)
 
-EIRPLR = a3 + b3 PLR + C3 PLR^2^
+EIRPLR = a<sub>3</sub> + b<sub>3</sub>PLR + c<sub>3</sub>PLR<sup>2</sup>
 
 Where Q~Reference~ is the design heating capacity of the heat pump, P~Reference~ is the design power demand of the heat pump, Q~Available~ is the adjusted heating capacity, P is the adjusted power demand, Tcond,out is the condenser outlet water temperature, Tair,in is the ambient air temperature, PLR is heat pump part load ratio, and a1, b1, c1, d1, e1 ... c3 are performance curve coefficients that need to be extracted from operational data.
 
