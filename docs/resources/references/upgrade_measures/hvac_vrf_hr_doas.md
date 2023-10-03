@@ -110,7 +110,9 @@ Energy/heat recovery is often rated by the effectiveness of the heat exchange be
 Figure 3. Product data from Ventacity Energy/Heat Recovery System
 {:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure from \[9\]. Note that NREL does not endorse any commercial system or product; this is shown as an instructional example only.
+{:refdef}
 
 A DOAS most often will require additional heating/cooling capacity beyond the capability of the energy/heat recovery system. Especially cold conditions may require a heating coil to ensure the discharge air temperature is hot enough, while especially warm or humid conditions may require a cooling coil to ensure the discharge air temperature is cold/dry enough. The ASHRAE DOAS Design Guide recommends a linear outdoor air float scheme controlled to discharge 52°F when outdoor temperatures are above 52°F, and 67°F when temperatures are below 45°F, floating linearly in between (illustrated in Figure 4) \[8\]. Note that energy/heat recovery systems can include bypass systems to ensure the air is not overheated prior to being supplied to the zone.
 
