@@ -45,7 +45,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction 
 
-This documentation covers the "VRF (HR) with DOAS" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov.](https://comstock.nrel.gov/)
+This documentation covers the "VRF (HR) with DOAS" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
 
 | **Measure Title**      | VRF(HR)+DOAS|
 | **Measure Definition** | Replace VAV or RTU systems with VRF(HR) and E/HRV.        |
@@ -54,7 +54,7 @@ This documentation covers the "VRF (HR) with DOAS" upgrade methodology and brief
 | **Release**            | 2023 Release 2: 2023/comstock_amy2018_release_2/  |
 
 
-## 2. Technology Summary 
+# 2. Technology Summary 
 
 ## 2.1. VRF Technology Details 
 
@@ -214,7 +214,7 @@ Figure 7. VRF DOAS configuration represented in this upgrade
 
 ### 5.2.1. VRF System Model 
 
-##### Clear Definitions of COP Metrics 
+##### 5.2.1.1. Clear Definitions of COP Metrics 
 
 COP is a well-known metric within the HVAC industry; however, it can often have different definitions, and calculation methods can be different. We use and differentiate between three COP metrics to clearly convey the right definitions beyond this section. The three COP metrics shown below are used throughout this document:
 
@@ -224,7 +224,7 @@ COP is a well-known metric within the HVAC industry; however, it can often have 
 
 -   **COP<sub>system,operating</sub>** is the overall system COP including not only compressor and outdoor unit fan powers but also electricity used for backup/supplemental heating when VRF heating capacity cannot meet the heating demand. Compressor power in this metric also includes electricity used for reverse cycling for defrosting operation, and miscellaneous power such as crankcase and basin heater powers are also included in this metric. The fan power used in indoor unit fans are not included in this metric, and operating conditions (indoor/outdoor temperature, part-load ratio, etc.) for calculating this COP reflect actual/varying operating conditions.
 
-##### Reviewing Existing Performance Maps (Directly Compatible with EnergyPlus®) for Outdoor Units 
+##### 5.2.1.2. Reviewing Existing Performance Maps (Directly Compatible with EnergyPlus®) for Outdoor Units 
 
 There are two approaches of modeling VRF in EnergyPlus; using the "older" (system curve based) EnergyPlus object \[18\], or using the "newer" (physics based) EnergyPlus object \[19\]. These two approaches differ significantly in terms of input requirements for modeling, and one of the major inputs to both approaches is the performance maps (designed differently between the two approaches) that determine the operating behavior (e.g., available heating/cooling capacity, COP) of VRF under various operating conditions (e.g., outdoor air temperature, operating mode, combination ratio). We have investigated both options during this exercise with many performance maps to understand performance variations especially under colder outdoor air conditions.
 
@@ -254,7 +254,7 @@ Lawrence Berkeley National Laboratory (LBNL) has developed newer VRF objects in 
 
 One goal for this analysis is to explore and capture VRF performance in colder climates. For that reason, we would like to capture 2023 cold climate technology (i.e., top of the line products) available in the market. Based on the goal and concerns described previously, it is difficult to implement 2023 technology with publicly available EnergyPlus VRF performance maps. Thus, we have made the determination to use the older VRF EnergyPlus object, create new performance maps for capacity/EIR modifiers (for both heating and cooling), and reuse existing performance data for the other remaining performance curves.
 
-##### Creating New Performance Maps for Outdoor Units 
+##### 5.2.1.3. Creating New Performance Maps for Outdoor Units 
 
 Figure 9 and Figure 10 show heating and cooling performance, respectively, for two VRF manufacturers' outdoor units in terms of available capacity and COP<sub>comp&fan,design</sub> \[26\], \[27\]. In these figures, capacity "modifier" represents a ratio that is multiplied to the rated capacity defined in the model under varying conditions (e.g., indoor dry-bulb and outdoor wet-bulb temperatures), and COP<sub>comp&fan,design</sub> calculation is based on accounting compressor and outdoor unit fan powers at design conditions. These products represent 2023 technology in the market including application in cold climates where the heat pump can operate down to -22°F (-30°C) outdoor air temperature (wet-bulb). To note, these performances represent standard conditions such as 100% combination ratio (i.e., outdoor unit capacity matches with the sum of indoor unit capacity) and without degradation due to longer piping length and height. As shown in Figure 9, these products maintain constant heating capacity down to a low outdoor air temperature and still achieve a COP<sub>comp&fan,design</sub> higher than one---i.e., higher efficiency than 100% efficient electric resistance heating---in the lower temperature region.
 
@@ -298,11 +298,11 @@ Table 3. Configuration of All Curves Used in VRF Object
 ![](media/hvac_vrf_hr_doas_image14.png){:width="700"}
 {:refdef}
 
-##### Indoor Unit Performance 
+##### 5.2.1.4. Indoor Unit Performance 
 
 The VRF objects in EnergyPlus also requires specification of indoor/terminal units which is basically configuring a heat exchanger: rated capacity, rated sensible heat ratio, rated air flow rate, and capacity modifier performance curves. All specifications for indoor units follow the workflow defined in Openstudio Standards \[30\] where capacity of the indoor unit is based on zone sizing calculation and the other configurations (including performance curves) are following the EnergyPlus default parameters and, when applicable, overridden by energy code as describe in the ComStock documentation \[17\].
 
-##### Sizing 
+##### 5.2.1.5. Sizing 
 
 VRF systems have similar sizing considerations to other heat pump systems. Because the heating and cooling system share the same hardware, the building designer must choose how to size the system (indoor and outdoor units for VRF) to satisfy both needs. Supplemental heating is a common addition to heat pump systems, but supplemental cooling is not. Therefore, the system must be sized to at least meet the cooling requirements at design conditions. The designer could choose to size the system just based on the cooling load and use supplemental heating to address any additional loads. Many forms of supplemental heating can be used, including electric resistance coils in the ducts or electric baseboards, noting that VRF terminal units do not necessarily come with integrated supplemental heat.
 
@@ -310,7 +310,7 @@ If a designer wants to reduce or eliminate the need for supplemental heating, th
 
 This measure currently uses the least-aggressive sizing approach by sizing the system to the design cooling load and using supplemental heating to address any additional loads. Future iterations of this measure may look to sizing up to 125% of the design cooling load as needed to reduce the need for supplemental heating. Additionally, future work could explore the impact of using the DOAS for supplemental heating.
 
-##### Other Configurations 
+##### 5.2.1.6. Other Configurations 
 
 Rated COPs for heating and cooling are specified based on linear regressions of actual products' specifications \[31\] as shown in Figure 12. When capacity determined by the sizing algorithm passes beyond the capacity range shown in the figure, minimum or maximum COP datapoints shown in the figure are used. Pipe configurations such as piping length are also necessary as inputs to the VRF object.
 
@@ -330,11 +330,11 @@ The waste heat recovery is enabled in EnergyPlus to simulate VRF with simultaneo
 
 Outdoor ventilation air is supplied through a DOAS. A single DOAS is added per floor. The DOAS is modeled with heat or energy recovery based on climate zone. The details of the DOAS modeling are described further in this section.
 
-##### Exhaust Air Recovery Type 
+##### 5.2.2.1. Exhaust Air Recovery Type 
 
 The measure applies HRVs in drier/milder climate zones (ASHRAE climate zones 3B, 3C, 4B, 4C, 5B, 5C, and 6B) where addressing latent energy loads is of lesser concern. The HRVs are modeled as aluminum counterflow plate heat exchangers and include a bypass for temperature control and economizer lockout where applicable. The measure applies ERVs to applicable air-handling units in humid climate zones, where addressing latent loads with the ERV would be beneficial. The ERVs are modeled as membrane counterflow heat exchangers and also include a bypass for temperature control and economizer lockout where applicable.
 
-##### ERV/HRV Effectiveness 
+##### 5.2.2.2. ERV/HRV Effectiveness 
 
 Both the ERV and HRV systems are modeled using the effectiveness performance of the Ventacity systems (that comply NEEA's very high efficiency DOAS) shown in Figure 3 \[9\]. EnergyPlus allows the specification of latent and sensible effectiveness at 100% and 75% airflow for both heating and cooling, which can be determined from Ventacity performance curves. Because the HRV system is only suitable for sensible energy recovery, the latent effectiveness is modeled as 0% for all cases. The modeled inputs for effectiveness are shown in Table 4.
 
@@ -348,7 +348,7 @@ Table 4. Modeled Effectiveness Inputs for ERV and HRV Based on Ventacity Systems
 | Latent 100% Airflow   | 61%     | 55%     | 0%      | 0%      |
 | Latent 75% Airflow    | 68%     | 60%     | 0%      | 0%      |
 
-##### DOAS Fan Power 
+##### 5.2.2.3. DOAS Fan Power 
 
 The DOAS requires a fan system to provide outdoor ventilation air to the building, including overcoming the heat/energy recovery heat exchanger. The pressure drop is modeled as 3.6 inches of total static pressure for the supply and exhaust fan together. This is an assumption to meet the "very high efficiency" DOAS requirement for units having a fan of 60% efficiency and 92% motor efficiency \[33\]. The formula for calculating fan power is shown below.
 
@@ -360,11 +360,11 @@ Fan Power [watts] = (746 \* total static pressure \* airflow cfm) / (6345 \* fan
 
 The static pressure values for the fan objects in EnergyPlus are not informed by the bypass status of heat exchanger objects. This ignores the reduced static pressure that occurs when bypassing the heat exchanger. To account for this, the additional fan power is added directly to the heat exchanger objects in the form of motor energy for the enthalpy wheel. This is preferred since the power for the wheel object does modulate based on heat exchanger bypass status, so the additional static pressure due to the heat exchanger will be removed when the system is bypassing the heat exchanger. Note that additional fan power will therefore be reflected in the "energy recovery" end use rather than the "fans" end use because of this workaround.
 
-##### ERV/HRV Frost Prevention 
+##### 5.2.2.4. ERV/HRV Frost Prevention 
 
 Frost prevention is modeled using an electric resistance heating element preheater on the inlet of outdoor air intake of the air-handling unit before the ERV/HRV heat exchanger. Electric preheaters are included in Ventacity ERV/HRV systems for frost prevention \[9\]. The heating element is controlled to ensure the exhaust air from the outlet of the heat exchanger is above 35°F.
 
-##### DOAS Temperature Control 
+##### 5.2.2.5. DOAS Temperature Control 
 
 The DOAS units will be controlled using a linear outdoor air reset scheme. ERV DOAS, which are modeled in climate zones with higher humidity concerns, will be controlled to discharge 55°F when outdoor temperatures are above 55°F, and 67°F when temperatures are below 45°F, floating linearly in between. This is like what is recommended in the ASHRAE DOAS Design Guide (illustrated in Figure 10), apart from the lower temperature being set to 55°F as opposed to 52°F. This is to provide a fair comparison, because RTUs in the ComStock baseline are set to discharge 55°F. HRV DOAS in drier climates are modeled the same, except for the lower discharge air temperature being set to 60°F. This may not always be required, as described in \[6\], but it is being modeled for all HRVs in this study to ensure reasonable discharge air conditions across the wide variety of models in the ComStock baseline.
 
@@ -621,7 +621,9 @@ ComStock simulation results show greenhouse gas emissions avoided across all ele
 Figure 15. Greenhouse gas emissions comparison of the ComStock baseline and the upgrade scenario
 {:refdef}
 
+{:refdef: style="text-align: center;"}
 Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid. MMT stands for million metric tons.
+{:refdef}
 
 ## 7.4. Site Energy Savings Distributions 
 
@@ -745,6 +747,7 @@ Figure 23. Distribution of unmet hours to heating and cooling setpoints
 
 Figure 24 shows the distribution and variations of piping configurations (averaged per building) for buildings that received the VRF DOAS upgrade. Maximum vertical piping height is the farthest vertical distance between the outdoor unit and corresponding indoor unit, and negative value represents when the outdoor unit is located in a higher position (i.e., roof) compared to the indoor unit. To note, all the VRF systems' outdoor units are located on the roof in our analysis as shown in Figure 24. Maximum equivalent piping length is the farthest piping distance between the outdoor unit and the indoor unit. The maximum piping length and height can be limitations on VRF system implementation, where maximum equivalent piping length can have a limit of 500 feet (152 meters) and maximum vertial piping height can have a limit of 130 feet (40 meters) to 160 feet (49 meters) \[13\]. While our modeling has applicability criteria regarding building size and total number of indoor units (described in Section 4.1) for determining if the upgrade is eligible and feasible, the piping length and height limits are not applied in the applicability criteria resulting in buildings with piping lengths and heights above those limits as shown in Figure 24. However, most of the building stock within the interquartile range shown in Figure 24 falls within the limits.
 
+{:refdef: style="text-align: center;"}
 ![Chart, scatter chart Description automatically generated](media/hvac_vrf_hr_doas_image27.png){:width="700"}
 {:refdef}
 
@@ -840,7 +843,7 @@ Figure 25. Distribution of VRF indoor and outdoor unit counts
 
 \[38\] Midwest Energy Efficiency Alliance (MEEA), *Cold Climate VRF: Best Practices*. Accessed: Sep. 14, 2023. \[Online Video\]. Available: https://us06web.zoom.us/rec/share/EgTFo5Wfjn08BX0hm9smP1rdxpICpRElujN91AWsLRvA5o5fvUGoUKNcwcGCIyaa.zTDa1uvt9NFwNuWd?startTime=1694615955000
 
-# Appendix A  
+# Appendix A.
 
 {:refdef: style="text-align: center;"}
 ![](media/hvac_vrf_hr_doas_image29.jpg){:width="700"}
