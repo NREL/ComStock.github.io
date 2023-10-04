@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Package 2
+title: Package 2 - LED Lighting, HP-RTU and ASHP-Boiler
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
-nav_order: 16
+nav_order: 15
 ---
 
 # LED Lighting + HP-RTU + ASHP-Boiler
@@ -42,7 +42,7 @@ The Interior Lighting and Heat Pump package demonstrates between -1.9 and 10.7 m
 
 # Acknowledgments
 
-The authors would like to acknowledge the authors of the original measures in the Interior Lighting and Heat Pump package, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you to the reviewers of this package, Matt Dahlhausen and Shanti Pless. 
+The authors would like to acknowledge the authors of the original measures in the Interior Lighting and Heat Pump package, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you to the reviewers of this package, Matt Dahlhausen and Shanti Pless (National Renewable Energy Laboratory). 
 
 # 1. Introduction
 
@@ -408,27 +408,27 @@ Figure 10. Annual stock natural gas energy consumption by building type before a
 {:refdef}
 
 # References
-\[1\] \"2018 COMMERICAL BUILDINGS ENERGY CONSUMPTION SURVEY (CBECS),\" \[Online\]. Available: https://www.eia.gov/consumption/commercial. \[Accessed 14 November 2022\].
+\[1\] \"2018 COMMERICAL BUILDINGS ENERGY CONSUMPTION SURVEY (CBECS),\" \[Online\]. Available: [https://www.eia.gov/consumption/commercial](https://www.eia.gov/consumption/commercial). \[Accessed 14 November 2022\].
 
 \[2\] A. Parker, H. Horsey, M. Dahlhausen, M. Praprost, C. CaraDonna, A. LeBar and L. Klun, \"ComStock Reference Documentation: Version 1,\" National Renewable Energy Laboratory, Golden, CO, 2022.
 
-\[3\] \"EnergyPlus Version 22.1.0 Documentation Engineering Reference,\" 2022. \[Online\]. Available: https://energyplus.net/documentation.
+\[3\] \"EnergyPlus Version 22.1.0 Documentation Engineering Reference,\" 2022. \[Online\]. Available: [https://energyplus.net/documentation](https://energyplus.net/documentation).
 
-\[4\] \"EnergyPlus Version 22.1.0 Documentation Input Output Reference,\" 2022. \[Online\]. Available: https://energyplus.net/documentation.
+\[4\] \"EnergyPlus Version 22.1.0 Documentation Input Output Reference,\" 2022. \[Online\]. Available: [https://energyplus.net/documentation](https://energyplus.net/documentation).
 
 \[5\] ASHRAE, 2015 ASHRAE Handbook HVAC Applications, 2015.
 
-\[6\] Natural Resources Canada, \"AIR-SOURCE HEAT PUMP SIZING AND SELECTION GUIDE,\" 2020. \[Online\]. Available: https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf.
+\[6\] Natural Resources Canada, \"AIR-SOURCE HEAT PUMP SIZING AND SELECTION GUIDE,\" 2020. \[Online\]. Available: [https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf](https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf).
 
-\[7\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: https://www.nrel.gov/analysis/cambium.html. \[Accessed 02 September 2022\].
+\[7\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed 02 September 2022\].
 
-\[8\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed 02 September 2022\].
+\[8\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed 02 September 2022\].
 
 \[9\] E. Present, P. Gagnon, E. J. H. Wilson, N. Merket, P. R. White and S. Horowitz, \"Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,\" in *2022 ACEEE Summer Study on Energy Efficiency in Buildings*, Pacific Grove, CA, 2022.
 
 \[10\] G. Vijayakumar, *ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index,* Oceanside, CA, 2022.
 
-\[11\] \"Commerical Buildings Energy Consumption Survey (CBECS),\" 2012. \[Online\]. Available: https://www.eia.gov/consumption/commercial/data/2012. \[Accessed 15 November 2022\].
+\[11\] \"Commerical Buildings Energy Consumption Survey (CBECS),\" 2012. \[Online\]. Available: [https://www.eia.gov/consumption/commercial/data/2012](https://www.eia.gov/consumption/commercial/data/2012). \[Accessed 15 November 2022\].
 
 # Appendix A.  
 {:refdef: style="text-align: center;"}

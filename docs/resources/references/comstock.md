@@ -15,7 +15,7 @@ This document serves as a guide to and resource for the methodology and assumpti
 
 Corresponding ComStock releases:
 - 2023/comstock_amy2018_release_1
-- 2023/comstock_tmy3_release_1
+- 2023/comstock_amy2018_release_2
 
 #### Suggested Citation
 Parker, Andrew, Henry Horsey, Matthew Dahlhausen, Marlena Praprost, Christopher

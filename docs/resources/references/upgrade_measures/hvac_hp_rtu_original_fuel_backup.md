@@ -4,7 +4,7 @@ title: Heat Pump RTU with Original Fuel Backup
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
-nav_order: 10
+nav_order: 12
 ---
 
 # Heat Pump RTU With Original Fuel Backup
@@ -39,7 +39,7 @@ The HP-RTU measure demonstrates between 3.5 and 14.3 million metric tons (MMT) C
 
 # Acknowledgments 
 
-The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, and Shanti Pless (National Renewable Energy Laboratory), as well as Long Engineering. 
+The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, and Shanti Pless (National Renewable Energy Laboratory), as well as LONG Building Technologies. 
 
 # 1. Introduction 
 
@@ -338,41 +338,41 @@ Figure 9*.* Comparison of the median noncoincident peak demand for models with g
 
 # References  
 
-\[1\] Leung, Jessica. 2018. "Decarbonizing U.S. Buildings." Arlington, VA: Center for Climate and Energy Solutions. https://www.c2es.org/document/decarbonizing-u-s-buildings/.
+\[1\] Leung, Jessica. 2018. "Decarbonizing U.S. Buildings." Arlington, VA: Center for Climate and Energy Solutions. [https://www.c2es.org/document/decarbonizing-u-s-buildings/](https://www.c2es.org/document/decarbonizing-u-s-buildings/).
 
-\[2\] EIA. 2020. *2018 Commercial Buildings Energy Consumption Survey (CBECS)*. Washington, D.C.: U.S. Energy Information Administration (EIA). https://www.eia.gov/consumption/commercial/.
+\[2\] EIA. 2020. *2018 Commercial Buildings Energy Consumption Survey (CBECS)*. Washington, D.C.: U.S. Energy Information Administration (EIA). [https://www.eia.gov/consumption/commercial/](https://www.eia.gov/consumption/commercial/).
 
-\[3\] Parker, A. et al. 2023. *ComStock Reference Documentation: Version 1*. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819. https://www.nrel.gov/docs/fy23osti/83819.pdf.
+\[3\] Parker, A. et al. 2023. *ComStock Reference Documentation: Version 1*. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819. [https://www.nrel.gov/docs/fy23osti/83819.pdf](https://www.nrel.gov/docs/fy23osti/83819.pdf).
 
-\[4\] EnergyPlus. 2022. "EnergyPlus™ Version 22.1.0 Documentation Engineering Reference." https://energyplus.net/documentation.
+\[4\] EnergyPlus. 2022. "EnergyPlus™ Version 22.1.0 Documentation Engineering Reference." [https://energyplus.net/documentation](https://energyplus.net/documentation).
 
-\[5\] EnergyPlus. 2022. "EnergyPlus™ Version 22.1.0 Documentation Input Output Reference." https://energyplus.net/documentation.
+\[5\] EnergyPlus. 2022. "EnergyPlus™ Version 22.1.0 Documentation Input Output Reference." [https://energyplus.net/documentation](https://energyplus.net/documentation).
 
-\[6\] TRANE. 2013. "Understanding Single-Zone VAV Systems." pp. 1--10. https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf.
+\[6\] TRANE. 2013. "Understanding Single-Zone VAV Systems." pp. 1--10. [https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf](https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf).
 
 \[7\] Daikin. 2014. "Installation and Maintenance Manual OM 1141-3 MicroTech ® III Unit Controller for Rebel ® Commercial Packaged Rooftop Systems." no. October, 2014.
 
 \[8\] ANSI/ASHRAE. 2019. "ANSI/ASHRAE Standard 62.1-2019: Ventilation for Acceptable Indoor Air Quality."
 
-\[9\] Wang. W. and S. Katipamula. 2013. *Part-Load Performance Characterization and Energy Savings Potential of the RTU Challenge Unit : Daikin Rebel*. Richland, WA: Pacific Northwest National Laboratory. PNNL-22720. https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf.
+\[9\] Wang. W. and S. Katipamula. 2013. *Part-Load Performance Characterization and Energy Savings Potential of the RTU Challenge Unit : Daikin Rebel*. Richland, WA: Pacific Northwest National Laboratory. PNNL-22720. [https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf).
 
-\[10\] Rheem. n.d. "Commercial 7.5-10 Ton Renaissance ™ Line Package Heat Pump RHPDZT Commercial Prestige ® Series RHPDZS Commercial Classic Plus ® Series Compliant Models Air Package Heat Pump RHPD Series." https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf.
+\[10\] Rheem. n.d. "Commercial 7.5-10 Ton Renaissance ™ Line Package Heat Pump RHPDZT Commercial Prestige ® Series RHPDZS Commercial Classic Plus ® Series Compliant Models Air Package Heat Pump RHPD Series." [https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf](https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf).
 
-\[11\] Cogswell, Frederick and D. A. Mahmoud. 2020. *High-Performance Air-Source Cold Climate Heat Pump ( CCHP )*. Department of Defense Environmental Security Technology Certification Program. https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf.
+\[11\] Cogswell, Frederick and D. A. Mahmoud. 2020. *High-Performance Air-Source Cold Climate Heat Pump ( CCHP )*. Department of Defense Environmental Security Technology Certification Program. [https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf](https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf).
 
 \[12\] ASHRAE. 2015. *2015 Ashrae Handbook HVAC applications*.
 
-\[13\] Natural Resources Canada. 2020. *Air-Source Heat Pump Sizing and Selection Guide*. Ottawa, ON: Natural Resources Canada. https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf.
+\[13\] Natural Resources Canada. 2020. *Air-Source Heat Pump Sizing and Selection Guide*. Ottawa, ON: Natural Resources Canada. [https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf](https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf).
 
-\[14\] NREL. n.d. "Cambium \| Energy Analysis \| NREL." \[Online\]. Available: https://www.nrel.gov/analysis/cambium.html. \[Accessed: 02-Sep-2022\].
+\[14\] NREL. n.d. "Cambium \| Energy Analysis \| NREL." \[Online\]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed: 02-Sep-2022\].
 
-\[15\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID) \| US EPA." \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed: 02-Sep-2022\].
+\[15\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID) \| US EPA." \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed: 02-Sep-2022\].
 
-\[16\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection." NREL/CP-5500-82241. https://www.osti.gov/biblio/1891472.
+\[16\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection." NREL/CP-5500-82241. [https://www.osti.gov/biblio/1891472](https://www.osti.gov/biblio/1891472).
 
 \[17\] Vijayakumar, G. et al. 2022. "ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index." Oceanside, CA.
 
-\[18\] EIA. 2016. *2012 Commercial Buildings Energy Consumption Survey (CBECS)*. Washington, D.C.: U.S. Energy Information Administration (EIA). https://www.eia.gov/consumption/commercial/data/2012/.
+\[18\] EIA. 2016. *2012 Commercial Buildings Energy Consumption Survey (CBECS)*. Washington, D.C.: U.S. Energy Information Administration (EIA). [https://www.eia.gov/consumption/commercial/data/2012/](https://www.eia.gov/consumption/commercial/data/2012/).
 
 # Appendix A.  
 

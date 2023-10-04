@@ -407,13 +407,13 @@ Figure 14. Annual median cooling energy savings intensity (kWh/sf/yr). Plot only
 
 \[16\] Rigotti, J. and N. Bulger. 2023. "Energy Modeling Guide for Very High Efficiency DOAS Final Report."
 
-\[17\] Parker, A. et al. 2023. *ComStock Reference Documentation: Version 1*. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819. https://www.nrel.gov/docs/fy23osti/83819.pdf.
+\[17\] Parker, A. et al. 2023. *ComStock Reference Documentation: Version 1*. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819. [https://www.nrel.gov/docs/fy23osti/83819.pdf.](https://www.nrel.gov/docs/fy23osti/83819.pdf.)
 
-\[18\] EIA. 2022. *2018 Commercial Buildings Energy Consumption Survey (CBECS) Data*. Washington, D.C.: U.S. Energy Information Administration (EIA). https://www.eia.gov/consumption/commercial/data/2018/index.php?view=consumption#e1-e11.
+\[18\] EIA. 2022. *2018 Commercial Buildings Energy Consumption Survey (CBECS) Data*. Washington, D.C.: U.S. Energy Information Administration (EIA). [https://www.eia.gov/consumption/commercial/data/2018/index.php?view=consumption#e1-e11.](https://www.eia.gov/consumption/commercial/data/2018/index.php?view=consumption#e1-e11.)
 
-\[19\] NREL. n.d. "Cambium \| Energy Analysis \| NREL." \[Online\]. Available: https://www.nrel.gov/analysis/cambium.html. \[Accessed: 02-Sep-2022\].
+\[19\] NREL. n.d. "Cambium \| Energy Analysis \| NREL." \[Online\]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed: 02-Sep-2022\].
 
-\[20\] U.S. EPA. n.d. "Emissions & Generation Resource Integrated Database (eGRID) \| US EPA." \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed: 02-Sep-2022\].
+\[20\] U.S. EPA. n.d. "Emissions & Generation Resource Integrated Database (eGRID) \| US EPA." \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed: 02-Sep-2022\].
 
 \[21\] Present, E., Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection."
 

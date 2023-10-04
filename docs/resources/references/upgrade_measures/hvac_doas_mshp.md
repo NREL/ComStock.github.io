@@ -423,7 +423,7 @@ Figure 13. Percent site energy savings distribution for ComStock models with the
 
 \[1\] R. C. Analytics, "Energy Efficiency Analysis of DX-DOAS in the Pacific Northwest," 2021.
 
-\[2\] Northeast Energy Efficiency Program (NEEP), "ASHP." \[Online\]. Available: https://ashp.neep.org/#!/product/25333/7/25000///0.
+\[2\] Northeast Energy Efficiency Program (NEEP), "ASHP." \[Online\]. Available: [https://ashp.neep.org/#!/product/25333/7/25000///0](https://ashp.neep.org/#!/product/25333/7/25000///0).
 \[Accessed: 19-Mar-2023\].
 
 \[3\] "ANSI/ASHRAE. 2019. ANSI/ASHRAE Standard 62.1-2019: Ventilation for Acceptable Indoor Air Quality."
@@ -437,7 +437,7 @@ Figure 13. Percent site energy savings distribution for ComStock models with the
 \[7\] ASHRAE, *2015 Ashrae Handbook HVAC applications*. 2015.
 
 \[8\] Northeast Energy Efficiency Partners (NEEP), "NEEP Cold Climate Air Source Heat Pump List." \[Online\]. Available:
-https://ashp.neep.org/#!/. \[Accessed: 21-Mar-2023\].
+[https://ashp.neep.org/#!/](https://ashp.neep.org/#!/). \[Accessed: 21-Mar-2023\].
 
 \[9\] J. Pratt, M. Murphy, and N. O'Neil, "DO AS We Say (and As We Do):
 Maximizing HVAC Efficiency, Flexibility, and Resiliency with High Efficiency Dedicated Outdoor Air Systems," in *Summer Study on Energy Efficiency in Buildings*, 2022.
@@ -446,10 +446,10 @@ Maximizing HVAC Efficiency, Flexibility, and Resiliency with High Efficiency Ded
 2022.
 
 \[11\] "Cambium \| Energy Analysis \| NREL." \[Online\]. Available:
-https://www.nrel.gov/analysis/cambium.html. \[Accessed: 02-Sep-2022\].
+[https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed: 02-Sep-2022\].
 
 \[12\] "Emissions & Generation Resource Integrated Database (eGRID) \|
-US EPA." \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed:
+US EPA." \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed:
 02-Sep-2022\].
 
 \[13\] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection," 2022.

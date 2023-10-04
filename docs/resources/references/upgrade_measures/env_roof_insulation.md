@@ -288,9 +288,9 @@ The dots appearing above some distributions indicate the location of data points
 
 [3] ASHRAE, *Advanced Energy Design Guide for Small to Medium Office Buildings 50%*. 2014.
 
-[4] “Cambium \| Energy Analysis \| NREL.” [Online]. Available: https://www.nrel.gov/analysis/cambium.html. [Accessed: 02-Sep-2022].
+[4] “Cambium \| Energy Analysis \| NREL.” [Online]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). [Accessed: 02-Sep-2022].
 
-[5] “Emissions & Generation Resource Integrated Database (eGRID) \| US EPA.” [Online]. Available: https://www.epa.gov/egrid. [Accessed: 02-Sep-2022].
+[5] “Emissions & Generation Resource Integrated Database (eGRID) \| US EPA.” [Online]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). [Accessed: 02-Sep-2022].
 
 [6] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022.
 
