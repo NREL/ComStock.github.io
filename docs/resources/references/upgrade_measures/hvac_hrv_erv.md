@@ -43,7 +43,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction 
 
-This documentation covers the "Add Exhaust Air Energy/Heat Recovery" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
+This documentation covers the "Add Exhaust Air Energy/Heat Recovery" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
 
 | **Measure Title**      | Add Exhaust Air Energy/Heat Recovery                                                                                                                                                                                                                                                                          |
 | **Measure Definition** | Adds airside energy recovery (humid climates) or heat recovery (other climates) to air handling units that do not already include either of these features. Fan power is increased to overcome the additional static pressure from the recovery systems. Assumes 90% of return air is available for recovery. |
@@ -323,7 +323,9 @@ Figure 10 compares the distribution of energy savings by fuel type for baseline 
 Figure 10. Percent site energy savings distribution for ComStock models with the applied energy/heat recovery measure by fuel type. Savings for each data point are relative to the corresponding ComStock baseline model.
 {:refdef}
 
+{:refdef: style="text-align: center;"}
 The dots appearing above some distributions indicate the location of data points considered to be outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
+{:refdef}
 
 Figure 10 shows the distribution of energy savings by end use and fuel type, comparing baseline models representing the building stock of today to the same models with the energy recovery measure applied. The median building exhibits heating savings of approximately 15%--25%, depending on the heating fuel type, due to the preconditioning of ventilation loads by the recovery systems. The median building shows cooling of around 10%, similarly caused by reduced outdoor air ventilation loads.
 
@@ -337,7 +339,9 @@ The negative percent savings distribution in the heat recovery end use is primar
 Figure 11. Percent site energy savings distribution for ComStock models with the applied energy/heat recovery measure by end use and fuel type. Savings for each data point are relative to the corresponding ComStock baseline model.
 {:refdef}
 
+{:refdef: style="text-align: center;"}
 The dots appearing above some distributions indicate the location of data points considered to be outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
+{:refdef}
 
 ## 6.5. Other Observations 
 
