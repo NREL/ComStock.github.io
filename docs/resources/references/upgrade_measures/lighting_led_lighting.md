@@ -218,6 +218,6 @@ Figure 10. Natural gas and electricity heating consumption savings for a model w
 
 # References
 
-[1] N. Buccitelli, C. Elliott, S. Schober, and M. Yamada. 2017. *2015 U.S. Lighting Market Characterization.* U.S. Department of Energy. doi: https://doi.org/10.2172/1413883.
+[1] N. Buccitelli, C. Elliott, S. Schober, and M. Yamada. 2017. *2015 U.S. Lighting Market Characterization.* U.S. Department of Energy. doi: [https://doi.org/10.2172/1413883](https://doi.org/10.2172/1413883).
 
-[2] M. Yamada, J. Penning, S. Schober, K. Lee, and C. Elliott. 2019. *Energy Savings Forecast of Solid-State Lighting in General Illumination Applications.* Navigant Consulting for the U.S. Department of Energy. doi: https://doi.org/10.2172/1607661.
+[2] M. Yamada, J. Penning, S. Schober, K. Lee, and C. Elliott. 2019. *Energy Savings Forecast of Solid-State Lighting in General Illumination Applications.* Navigant Consulting for the U.S. Department of Energy. doi: [https://doi.org/10.2172/1607661](https://doi.org/10.2172/1607661).

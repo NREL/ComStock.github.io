@@ -4,7 +4,7 @@ title: Window Replacement
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
-nav_order: 9
+nav_order: 8
 ---
 
 # Window Replacement
@@ -217,9 +217,9 @@ Figure 5*.* Percent savings distribution of ComStock models by end use and fuel 
 
 \[2\] ASHRAE. 2014. *Advanced Energy Design Guide for Small to Medium Office Buildings 50%*.
 
-\[3\] NREL. "Cambium." Accessed September 2, 2022. https://www.nrel.gov/analysis/cambium.html.
+\[3\] NREL. "Cambium." Accessed September 2, 2022. <https://www.nrel.gov/analysis/cambium.html>.
 
-\[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. https://www.epa.gov/egrid.
+\[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. <https://www.epa.gov/egrid>.
 
 \[5\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection.". <https://aceee2022.conferencespot.org/event-data/pdf/catalyst_activity_32485/catalyst_activity_paper_20220810190542996_ca9a88a9_04f7_48dc_88c1_2ba530e44474>
 

@@ -4,7 +4,7 @@ title: Demand Control Ventilation
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
-nav_order: 14
+nav_order: 10
 ---
 
 # Demand Control Ventilation
@@ -365,9 +365,9 @@ Figure 15. Percent savings distributions for site energy consumption by building
 
 \[1\] A. Parker, H. Horsey, M. Dahlhausen, M. Praprost, C. CaraDonna, A. LeBar and L. Klun, \"ComStock Reference Documentation: Version 1,\" National Renewable Energy Laboratory, Golden, CO, 2022.
 
-\[2\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: https://www.nrel.gov/analysis/cambium.html. \[Accessed 02 September 2022\].
+\[2\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed 02 September 2022\].
 
-\[3\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed 02 September 2022\].
+\[3\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed 02 September 2022\].
 
 \[4\] E. Present, P. Gagnon, E. J. H. Wilson, N. Merket, P. R. White and S. Horowitz, \"Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,\" in *2022 ACEEE Summer Study on Energy Efficiency in Buildings*, Pacific Grove, CA, 2022.
 

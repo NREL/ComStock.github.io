@@ -337,13 +337,13 @@ Figure 20. ComStock full national results: aggregated GHG emissions
 
 [1] J. Pereira, H. Teixeira, M. da G. Gomes, and A. Moret Rodrigues, “Performance of Solar Control Films on Building Glazing: A Literature Review,” *Applied Sciences*, vol. 12, no. 12, Art. no. 12, Jan. 2022, doi: 10.3390/app12125923.
 
-[2] “Green Proving Ground Program Selects Innovative Technologies that Enable Transition to Net-Zero Carbon.” https://www.gsa.gov/about-us/newsroom/news-releases/green-proving-ground-program-selects-innovative-technologies-that-enable-transition-to-netzero-carbon-05162022 (accessed Feb. 16, 2023).
+[2] “Green Proving Ground Program Selects Innovative Technologies that Enable Transition to Net-Zero Carbon.” [https://www.gsa.gov/about-us/newsroom/news-releases/green-proving-ground-program-selects-innovative-technologies-that-enable-transition-to-netzero-carbon-05162022](https://www.gsa.gov/about-us/newsroom/news-releases/green-proving-ground-program-selects-innovative-technologies-that-enable-transition-to-netzero-carbon-05162022) (accessed Feb. 16, 2023).
 
-[3] “Advanced Energy Design Guides (AEDG).” https://www.ashrae.org/technical-resources/aedgs (accessed Jan. 22, 2019).
+[3] “Advanced Energy Design Guides (AEDG).” [https://www.ashrae.org/technical-resources/aedgs](https://www.ashrae.org/technical-resources/aedgs) (accessed Jan. 22, 2019).
 
-[4] “Cambium.” https://www.nrel.gov/analysis/cambium.html (accessed Mar. 17, 2023).
+[4] “Cambium.” [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html) (accessed Mar. 17, 2023).
 
-[5] O. US EPA, “Emissions & Generation Resource Integrated Database (eGRID),” Jul. 27, 2020. https://www.epa.gov/egrid (accessed Mar. 17, 2023).
+[5] O. US EPA, “Emissions & Generation Resource Integrated Database (eGRID),” Jul. 27, 2020. [https://www.epa.gov/egrid](https://www.epa.gov/egrid) (accessed Mar. 17, 2023).
 
 [6] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022.
 

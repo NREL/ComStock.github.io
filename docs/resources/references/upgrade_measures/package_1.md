@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Package 1
+title: Package 1 - Wall and Roof Insulation, and New Windows
 parent: Upgrade Measures
 grand_parent: References
 great_grand_parent: Resources
-nav_order: 15
+nav_order: 14
 ---
 
 # Window Replacement + Exterior Wall Insulation + Roof Insulation
@@ -39,7 +39,7 @@ The High-Efficiency Envelope upgrade package is applicable to 100% of the total 
 The High-Efficiency Envelope package demonstrates between 7.9 and 16.9 million metric tons (CO<sub>2</sub>e) of greenhouse gas emissions avoided for the three grid electricity scenarios presented, as well as 9.8 million metric tons of greenhouse gas emissions avoided for on-site natural gas consumption.
 
 # Acknowledgments
-The authors would like to acknowledge the authors of the original measures in the Interior High-Efficiency Envelope package: Lauren Adams, Chris CaraDonna, Amy LeBar, and Andrew Parker. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless.
+The authors would like to acknowledge the authors of the original measures in the Interior High-Efficiency Envelope package: Lauren Adams, Chris CaraDonna, Amy LeBar, and Andrew Parker. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless (National Renewable Energy Laboratory).
 
 # 1. Introduction
 
@@ -344,15 +344,15 @@ Figure 7. Maximum daily peak timing by season between the baseline and High-Effi
 {:refdef}
 
 # References
-\[1\] U.S. Department of Energy, \"Building Envelope \| Better Buildings Initiative,\" \[Online\]. Available: https://betterbuildingssolutioncenter.energy.gov/alliance/technology-solution/building-envelope. \[Accessed 5 April 2023\].
+\[1\] U.S. Department of Energy, \"Building Envelope \| Better Buildings Initiative,\" \[Online\]. Available: [https://betterbuildingssolutioncenter.energy.gov/alliance/technology-solution/building-envelope](https://betterbuildingssolutioncenter.energy.gov/alliance/technology-solution/building-envelope). \[Accessed 5 April 2023\].
 
 \[2\] A. Parker, H. Horsey, M. Dahlhausen, M. Praprost, C. CaraDonna, A. LeBar and L. Klun, \"ComStock Reference Documentation: Version 1,\" National Renewable Energy Laboratory, Golden, CO, 2022.
 
 \[3\] ASHRAE, \"Achieving Zero Energy - Advanced Energy Design Guide for Small to Medium Office Buildings,\" 2019.
 
-\[4\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: https://www.nrel.gov/analysis/cambium.html. \[Accessed 02 September 2022\].
+\[4\] \"Cambium \| Energy Analysis \| NREL,\" \[Online\]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed 02 September 2022\].
 
-\[5\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: https://www.epa.gov/egrid. \[Accessed 02 September 2022\].
+\[5\] \"Emissions & Generation Resource Integrated Database (eGRID) \| US EPA,\" \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed 02 September 2022\].
 
 \[6\] E. Present, P. Gagnon, E. J. H. Wilson, N. Merket, P. R. White and S. Horowitz, \"Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,\" in *2022 ACEEE Summer Study on Energy Efficiency in Buildings*, Pacific Grove, CA, 2022.
 

@@ -34,7 +34,7 @@ The HP-RTU measure demonstrates 10.3% total site energy savings (449 trillion Br
 The HP-RTU measure demonstrates between 19 and 28 million metric tons (MMT) of greenhouse gas emissions avoided for the three grid electricity scenarios presented, as well as 13 MMT of greenhouse gas emissions avoided for on-site natural gas consumption.
 
 # Acknowledgments
-The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, Shanti Pless, and Long Engineering.
+The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, Shanti Pless, and LONG Building Technologies.
 
 # 1. Introduction
 This documentation covers “Heat Pump Rooftop Unit” upgrade methodology and briefly discusses key results.  Results can be accessed on the ComStock™ data lake at “[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)” or via the Data Viewer at [comstock.nrel.gov.](https://comstock.nrel.gov)
@@ -392,42 +392,43 @@ Figure 16. Stock annual average percent heating electricity input used for suppl
 {:refdef}
 
 # References
-[1]	“Decarbonizing U.S. Buildings.” [Online]. Available: https://www.c2es.org/document/decarbonizing-u-s-buildings/. [Accessed: 15-Nov-2022].
+[1]	“Decarbonizing U.S. Buildings.” [Online]. Available: [https://www.c2es.org/document/decarbonizing-u-s-buildings/](https://www.c2es.org/document/decarbonizing-u-s-buildings/). [Accessed: 15-Nov-2022].
 
-[2]	“2018 COMMERCIAL BUILDINGS ENERGY CONSUMPTION SURVEY (CBECS).” [Online]. Available: https://www.eia.gov/consumption/commercial/. [Accessed: 14-Nov-2022].
+[2]	“2018 COMMERCIAL BUILDINGS ENERGY CONSUMPTION SURVEY (CBECS).” [Online]. Available: [https://www.eia.gov/consumption/commercial/](https://www.eia.gov/consumption/commercial/). [Accessed: 14-Nov-2022].
 
-[3]	A. Parker *et al.*, “ComStock Reference Documentation: Version 1,” Golden, CO, 2023. https://www.nrel.gov/docs/fy23osti/83819.pdf
+[3]	A. Parker *et al.*, “ComStock Reference Documentation: Version 1,” Golden, CO, 2023. [https://www.nrel.gov/docs/fy23osti/83819.pdf](https://www.nrel.gov/docs/fy23osti/83819.pdf)
 
-[4]	“EnergyPlusTM Version 22.1.0 Documentation Engineering Reference,” 2022. https://energyplus.net/documentation
+[4]	“EnergyPlusTM Version 22.1.0 Documentation Engineering Reference,” 2022. [https://energyplus.net/documentation](https://energyplus.net/documentation)
 
-[5]	“EnergyPlusTM Version 22.1.0 Documentation Input Output Reference,” 2022. https://energyplus.net/documentation
+[5]	“EnergyPlusTM Version 22.1.0 Documentation Input Output Reference,” 2022. [https://energyplus.net/documentation](https://energyplus.net/documentation)
 
-[6]	TRANE, “Understanding Single-Zone VAV Systems pp. 1–10, 2013. https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf
+[6]	TRANE, “Understanding Single-Zone VAV Systems pp. 1–10, 2013. [https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf](https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/education-training/engineers-newsletters/airside-design/admapn047en_0413.pdf)
 
 [7]	Daikin, “Installation and Maintenance Manual OM 1141-3 MicroTech ® III Unit Controller for Rebel ® Commercial Packaged Rooftop Systems,” no. October, 2014.
 
 [8]	“ANSI/ASHRAE. 2019. ANSI/ASHRAE Standard 62.1-2019: Ventilation for Acceptable Indoor Air Quality.”
 
-[9]	W. Wang, “Part-Load Performance Characterization and Energy Savings Potential of the RTU Challenge Unit : Daikin Rebel,” no. September, 2013. https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf
+[9]	W. Wang, “Part-Load Performance Characterization and Energy Savings Potential of the RTU Challenge Unit : Daikin Rebel,” no. September, 2013. [https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf](https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-22720.pdf)
 
-[10]	Rheem, “Commercial 7.5-10 Ton Renaissance TM Line Package Heat Pump RHPDZT Commercial Prestige ® Series RHPDZS Commercial Classic Plus ® Series Compliant Models Air Package Heat Pump RHPD Series". https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf
+[10]	Rheem, “Commercial 7.5-10 Ton Renaissance TM Line Package Heat Pump RHPDZT Commercial Prestige ® Series RHPDZS Commercial Classic Plus ® Series Compliant Models Air Package Heat Pump RHPD Series". [https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf](https://s3.amazonaws.com/WebPartners/ProductGroupDocuments/dfc6d652-743e-4ac1-ad80-e9b640935b9c.pdf)
 
-[11]	Frederick Cogswell and D. A. Mahmoud, “High-Performance Air-Source Cold Climate Heat Pump ( CCHP ),” no. October, 2020. https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf
+[11]	Frederick Cogswell and D. A. Mahmoud, “High-Performance Air-Source Cold Climate Heat Pump ( CCHP ),” no. October, 2020. [https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf](https://apps.dtic.mil/sti/trecms/pdf/AD1154507.pdf)
 
 [12]	ASHRAE, *2015 Ashrae Handbook HVAC applications*. 2015.
 
-[13]	N. Resources Canada, “AIR-SOURCE HEAT PUMP SIZING AND SELECTION GUIDE.” 2020. https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf
+[13]	N. Resources Canada, “AIR-SOURCE HEAT PUMP SIZING AND SELECTION GUIDE.” 2020. [https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf](https://natural-resources.canada.ca/sites/nrcan/files/canmetenergy/pdf/ASHP%20Sizing%20and%20Selection%20Guide%20(EN).pdf)
 
-[14]	“Cambium \| Energy Analysis \| NREL.” [Online]. Available: https://www.nrel.gov/analysis/cambium.html. [Accessed: 02-Sep-2022].
+[14]	“Cambium \| Energy Analysis \| NREL.” [Online]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). [Accessed: 02-Sep-2022].
 
-[15]	“Emissions & Generation Resource Integrated Database (eGRID) \| US EPA.” [Online]. Available: https://www.epa.gov/egrid. [Accessed: 02-Sep-2022].
+[15]	“Emissions & Generation Resource Integrated Database (eGRID) \| US EPA.” [Online]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). [Accessed: 02-Sep-2022].
 
-[16]	E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022. https://www.osti.gov/biblio/1891472
+[16]	E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022. [https://www.osti.gov/biblio/1891472](https://www.osti.gov/biblio/1891472)
 
 [17]	G. Vijayakumar *et al.*, “ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index,” Oceanside, CA, 2022.
 
-[18]	“Commercial Buildings Energy Consumption Survey (CBECS),” 2012. https://www.eia.gov/consumption/commercial/data/2012/
+[18]	“Commercial Buildings Energy Consumption Survey (CBECS),” 2012. [https://www.eia.gov/consumption/commercial/data/2012/](https://www.eia.gov/consumption/commercial/data/2012/)
 
+# Appendix A.
 {:refdef: style="text-align: center;"}
 ![](media/Aspose.Words.bcc483bf-9568-416e-9cbf-5c8d288d1914.017.jpeg)
 {:refdef}
