@@ -43,7 +43,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction 
 
-This documentation covers the "Heat Pump Rooftop Unit With Original Fuel Backup" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
+This documentation covers the "Heat Pump Rooftop Unit With Original Fuel Backup" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
 
 | **Measure Title**      | Heat Pump Rooftop Units|
 | **Measure Definition** | This measure replaces gas-fired and electric resistance rooftop units (RTUs) with high-efficiency heat pump rooftop units (HP-RTUs). The HP-RTUs are assumed to be top-of-the-line with variable-speed compressors and fans allowing for high-performance part load operation. The heat pump is sized to the design cooling load and uses a compressor lockout temperature of 0°F. Supplemental heating coils are used to address any additional load. Supplemental heating is electric resistance if the original system type used electric heating or gas if the original system used gas heating. All energy efficiency features in the existing RTUs (energy recovery, demand control ventilation, etc.) and the operating schedule are transferred to the new HP-RTU system for consistency. |
@@ -110,7 +110,7 @@ Key assumption include:
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the HP-RTU scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kilowatt-hour. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the third uses the Emissions & Generation Resource Integrated Database (eGRID) data set \[14\], \[15\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emissions scenario, but other analysis suggests that the choice of grid emissions scenario can impact results \[16\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 1, which are from Table 7.1.2(1) of draft American National Standards Institute/Residential Energy Services Network/International Code Council 301 \[17\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
- Table . On-Site Fossil Fuel Emissions Factors 
+ Table 1. On-Site Fossil Fuel Emissions Factors 
 
 | **Natural gas** | 147.3 lb/MMBtu (228.0 kg/MWh)<sup>a</sup>  |
 | **Propane**     | 177.8 lb/MMBtu (182.3 kg/MWh)   |
@@ -130,7 +130,7 @@ There is a known EnergyPlus bug regarding cycling operation for multispeed coil 
 
 Table 2 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the "HP-RTU with original fuel supplemental heating" measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available.
 
-Table . Output Variables Calculated From the Measure Application
+Table 2. Output Variables Calculated From the Measure Application
 
 | Variable Name                                               | Description                                                                                                    |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -191,16 +191,16 @@ Table 3 compares energy by end use for the HP-RTU measure applied with electric 
 
 In conclusion, the electric backup option shows high electricity usage and demand, whereas the gas backup option shows higher total consumption of site energy and combustion fuels. Energy cost and greenhouse gas emissions are also considerations that were not discussed in this example. Therefore, deciding on the best-performing system would likely come down to balancing these factors, and others, with the priorities of the use case.
 
-Table . End Use Comparison of the HP-RTU Measure Applied With Electric vs. Gas Backup Heating for an Example Small Office in Gunnison, Colorado
+Table 3. End Use Comparison of the HP-RTU Measure Applied With Electric vs. Gas Backup Heating for an Example Small Office in Gunnison, Colorado
 
 || Electric Backup [GJ] | Gas Backup [GJ] |
 |----------------------|-----------------|
-| Gas Heat             | 0               | 34  |
-| Electric Heat        | 72              | 45  |
-| Cooling              | 3               | 3   |
-| Fans                 | 20              | 20  |
-| All Other            | 77              | 77  |
-| Total                | 172             | 179 |
+| **Gas Heat**             | 0               | 34  |
+| **Electric Heat**        | 72              | 45  |
+| **Cooling**              | 3               | 3   |
+| **Fans**                 | 20              | 20  |
+| **All Other**            | 77              | 77  |
+| **Total**                | 172             | 179 |
 
 
 ## 6.2. Stock Site Energy Impacts 
@@ -374,7 +374,7 @@ Figure 9*.* Comparison of the median noncoincident peak demand for models with g
 
 \[18\] EIA. 2016. *2012 Commercial Buildings Energy Consumption Survey (CBECS)*. Washington, D.C.: U.S. Energy Information Administration (EIA). https://www.eia.gov/consumption/commercial/data/2012/.
 
-# Appendix A  
+# Appendix A.  
 
 {:refdef: style="text-align: center;"}
 ![](media/hvac_hp_rtu_original_fuel_backup_image10.jpeg){:width="700"}
