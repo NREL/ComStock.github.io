@@ -36,7 +36,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction
 
-This documentation covers the "Replace Boiler with Air-Source Heat Pump Boiler" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
+This documentation covers the "Replace Boiler with Air-Source Heat Pump Boiler" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
 
 |**Measure Title**  |  Replace Boiler with Air-Source Heat Pump Boiler (replace_boiler_with_heatpump)|
 |**Measure Definition** |  This measure replaces natural gas boilers used for space heating with an air-source heat pump. The air-source heat pump will be the primary source of heat, and the natural gas boiler will be used as a backup.|
