@@ -6,41 +6,58 @@ nav_order: 7
 
 # Publications
 
-## NREL Reports, Papers, and Presentations
+<details markdown="block"><summary style="font-size:20px">NREL Reports, Papers, Presentations, and Webinar Recordings</summary>
 
-### 2023
+   <details markdown="block"><summary>Reports and Papers</summary>
 
-[Impact Analysis of Transitioning to Heat Pump Rooftop Units for the U.S. Commercial Building Stock](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .pub-link}. Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
+   [Impact Analysis of Transitioning to Heat Pump Rooftop Units for the U.S. Commercial Building Stock (2023)](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .pub-link}. Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
 
-[Introduction to ComStock](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
+   [ComStock Documentation (2023)](https://www.nrel.gov/docs/fy23osti/83819.pdf){: .pub-link}. Methodology and assumptions behind ComStock.
 
-[ComStock Documentation](https://www.nrel.gov/docs/fy23osti/83819.pdf){: .pub-link}. Methodology and assumptions behind ComStock.
-
-[Building Stock Cluster Methodology Documentation](https://www.nrel.gov/docs/fy23osti/84648.pdf){: .pub-link}. 
+   [Building Stock Cluster Methodology Documentation (2023)](https://www.nrel.gov/docs/fy23osti/84648.pdf){: .pub-link}. 
 Clustering of counties together represents a similarity of building characteristics and climate zone.
 
-[End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
-
-[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Webinar](https://www.youtube.com/watch?v=7BHQfk6kvso){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (March 2023)
-
-[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Presentation](https://www.nrel.gov/docs/fy23osti/85853.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.
-
-### 2022
-
-[U.S. Building Stock Characterization Study](https://www.nrel.gov/docs/fy22osti/83063.pdf){: .pub-link}. 
+   [U.S. Building Stock Characterization Study (2022)](https://www.nrel.gov/docs/fy22osti/83063.pdf){: .pub-link}. 
 A National Typology for Decarbonizing U.S.
 
-[End-Use Load Profiles Executive Summary](https://www.nrel.gov/docs/fy22osti/82689.pdf){: .pub-link}. 
+   [End-Use Load Profiles Executive Summary (2022)](https://www.nrel.gov/docs/fy22osti/82689.pdf){: .pub-link}. 
 Executive summary of the End Use Load Profile Technical Report.
 
-[End-Use Load Profiles Technical Report](https://www.nrel.gov/docs/fy22osti/80889.pdf){: .pub-link}. 
+   [End-Use Load Profiles Technical Report (2022)](https://www.nrel.gov/docs/fy22osti/80889.pdf){: .pub-link}. 
 Documents the EULP dataset, including detailed description of model improvements made for calibration, along with an explanation of validation and uncertainty of results.
 
-### 2021
-[LA100 Executive Summary](https://www.nrel.gov/docs/fy21osti/79444-ES.pdf){: .pub-link}. 
+   [LA100 Executive Summary (2021)](https://www.nrel.gov/docs/fy21osti/79444-ES.pdf){: .pub-link}. 
 The Los Angeles 100% Renewable Energy Study.
 
-## Related Work
+   </details>
+
+<details markdown="block">
+  <summary>
+    Presentations
+  </summary>
+
+[Introduction to ComStock (2023)](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
+
+[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Presentation (2023)](https://www.nrel.gov/docs/fy23osti/85853.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.
+
+</details>
+
+<details markdown="block">
+  <summary>
+    Webinar Recordings
+  </summary>
+
+[End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
+
+[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=7BHQfk6kvso){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (March 2023)
+
+</details>
+</details>
+
+<details markdown="block">
+  <summary style="font-size:20px">
+    Related Work
+  </summary>
 
 [ISO New England 2023 Heating Electrification Study](https://www.iso-ne.com/static-assets/documents/2023/04/heatfx2023_final.pdf){: .pub-link}. Presentation about an electrification forecasting tool developed using ComStock and ResStock datasets.
 
@@ -55,6 +72,13 @@ Publications to date using the ResStock analysis.
 
 [Time-Sensitive Value (TSV) Calculator - Berkeley National Lab](https://emp.lbl.gov/publications/time-sensitive-value-calculator){: .pub-link}. Excel-based tool from Lawrence Berkeley National Lab that estimates the value of energy efficiency and other distributed energy resource (DER) measures using hourly estimates of electricity system costs.
 
-## Other Media
+</details>
+
+<details markdown="block">
+  <summary style="font-size:20px">
+    Other Media
+  </summary>
 
 [NREL Building Stock Dashboards on Tableau Public](https://public.tableau.com/app/profile/nrel.buildingstock){: .pub-link}. Project dashboards using ComStock and ResStock data.
+
+</details>
