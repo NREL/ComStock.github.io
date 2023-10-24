@@ -12,10 +12,18 @@ nav_order: 7
 
 [Impact Analysis of Transitioning to Heat Pump Rooftop Units for the U.S. Commercial Building Stock](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .pub-link}. Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
 
+[Introduction to ComStock](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
+
 [ComStock Documentation](https://www.nrel.gov/docs/fy23osti/83819.pdf){: .pub-link}. Methodology and assumptions behind ComStock.
 
 [Building Stock Cluster Methodology Documentation](https://www.nrel.gov/docs/fy23osti/84648.pdf){: .pub-link}. 
 Clustering of counties together represents a similarity of building characteristics and climate zone.
+
+[End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
+
+[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Webinar](https://www.youtube.com/watch?v=7BHQfk6kvso){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (March 2023)
+
+[End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Presentation](https://www.nrel.gov/docs/fy23osti/85853.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.
 
 ### 2022
 
@@ -33,6 +41,10 @@ Documents the EULP dataset, including detailed description of model improvements
 The Los Angeles 100% Renewable Energy Study.
 
 ## Related Work
+
+[ISO New England 2023 Heating Electrification Study](https://www.iso-ne.com/static-assets/documents/2023/04/heatfx2023_final.pdf){: .pub-link}. Presentation about an electrification forecasting tool developed using ComStock and ResStock datasets.
+
+[Development of Prototypical District-Scale Models: Preprint](https://www.nrel.gov/docs/fy23osti/86589.pdf){: .pub-link}. Report detailing prototype district models.
 
 [ResStock Publication Page](https://resstock.nrel.gov/page/publications){: .pub-link}.
 Publications to date using the ResStock analysis.
