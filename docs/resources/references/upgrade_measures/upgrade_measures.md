@@ -19,5 +19,6 @@ The webinar presentation introduces the dataset 2023 Release 1 and provides high
 
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/EUSS_commerical_release1_webinar_033023.pdf)
+- [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 
-Release 2 webinar recording and slides will be posted as soon as they are available.
+Release 2 webinar slides will be posted as soon as they are available.
