@@ -3,7 +3,7 @@ layout: default
 title: Building Type Crosswalks
 parent: Explanations
 grand_parent: Resources
-nav_order: 2
+nav_order: 1
 ---
 
 # Building Type Crosswalks
