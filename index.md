@@ -13,9 +13,7 @@ The commercial building sector stock model, or ComStock™, is a highly granular
 
 ComStock asks and answers two questions: **(1) How is energy used in the U.S. building stock?** and **(2) What are the impact of energy saving technologies?** 
 
-For an in depth overview of ComStock please review our [annotated introductory slide deck available here.][1]
-
-[1]:assets/files/comstock_introduction_with_notes.pdf
+For an in depth overview of ComStock please review our [annotated introductory slide deck available here.](https://www.nrel.gov/docs/fy23osti/86634.pdf)
 
 ## What Does ComStock Do?
 
