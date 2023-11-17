@@ -17,13 +17,13 @@ The assumptions used for the measures represent one of multiple possible approac
 
 New measures are released every 6 months. Each release includes a webinar presentation introducing the new dataset. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset.
 
-2023 Release 1: The webinar recording and slides are available online:
+2023 Release 1 (March 2023): The webinar recording and slides are available online:
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/EUSS_commerical_release1_webinar_033023.pdf)
 
 
-2023 Release 2: The webinar recording is available online:
+2023 Release 2 (September 2023): The webinar recording is available online:
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
-- The webinar slides will be added once published.
+- Webinar slides to be added once published.
 
 2024 Release 1: Expected in March 2024. Join our mailing list to recieve notifications on the release date and for an invitation to the live webinar presenation.
