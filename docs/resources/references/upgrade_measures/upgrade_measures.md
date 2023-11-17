@@ -13,9 +13,9 @@ All measures detailed below have been developed through the End Use Savings Shap
 
 The measure documentation describes the modeling methodology, assumptions, relevant ComStock baseline features, and observations from results.
 
-The assumptions used for the measures represent one of multiple possible approaches for a technology. They are intended to be reasonable but not necessarily optimal. Assumptions can be modified as our understanding of the technologies improves. The ComStock model is continuously updated with new information, methods, and improved quality assurance/quality control procedures. Datasets are released in 6-month increments.
+The assumptions used for the measures represent one of multiple possible approaches for a technology. They are intended to be reasonable but not necessarily optimal. Assumptions can be modified as our understanding of the technologies improves. The ComStock model is continuously updated with new information, methods, and improved quality assurance/quality control procedures.
 
-New measures are released every 6 months. Each release includes a webinar presentation introducing the new dataset. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset.
+New measures are released in 6-month increments. Each release has a webinar presentation introducing the new dataset. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset.
 
 2023 Release 1 (March 2023): The webinar recording and slides are available online:
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
@@ -26,4 +26,4 @@ New measures are released every 6 months. Each release includes a webinar presen
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 - Webinar slides to be added once published.
 
-2024 Release 1: Expected in March 2024. Join our mailing list to recieve notifications on the release date and for an invitation to the live webinar presenation.
+2024 Release 1: Expected in March 2024. Join our [mailing list](https://www.nrel.gov/buildings/end-use-load-profiles.html) (subscribe at bottom of page) to recieve notifications on the release date and for an invitation to the live webinar presenation.
