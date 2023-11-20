@@ -27,3 +27,24 @@ New datasets are are released in 6-month increments and include new upgrade meas
 - Webinar slides to be added once published.
 
 2024 Release 1: Expected in March 2024. Join our [mailing list](https://www.nrel.gov/buildings/end-use-load-profiles.html) (subscribe at bottom of page) to recieve notifications on the release date and for an invitation to the live webinar presenation.
+
+2024 Release 1 Measure Documents:
+- [Heat Pump RTU]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu.md %})
+- [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_doas_mshp.md %})
+- [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler.md %})
+- [LED Lighting]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/lighting_led_lighting.md %})
+- [Exterior Wall Insulation]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_wall_insulation.md %})
+- [Secondary Window System]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_secondary_window.md %})
+- [Window Replacement]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_window_replacement.md %})
+- [Window Film]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_window_film.md %})
+- [Roof Insulation]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_roof_insulation.md %})
+
+2024 Release 2 Measure Documents:
+- [Heat Pump RTU with Original Fuel Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu_original_fuel_backup.md %})
+- [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
+- [VRF Heat Recovery with DOAS]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_vrf_hr_doas.md %})
+- [Demand Control Ventilation]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_dcv.md %})
+- [Exhaust Air Heat/Energy Recovery]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hrv_erv.md %})
+- [Package 1 - Wall and Roof Insulation, and New Windows]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_1.md %})
+- [Package 2 - LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_2.md %})
+- [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_3.md %})
