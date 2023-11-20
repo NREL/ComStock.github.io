@@ -47,5 +47,5 @@ New datasets are are released in 6-month increments and include new upgrade meas
 - [Package 2 - LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_2.md %})
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_3.md %})
 
-## 2023 Release 2 (September 2023): 
-Expected in March 2024. Join our mailing list (subscribe at bottom of [this](https://www.nrel.gov/buildings/end-use-load-profiles.html) page) to recieve notifications on the release date and for an invitation to the live webinar presenation.
+## 2024 Release 1 (Expected in March 2024): 
+Join our mailing list (subscribe at bottom of [this](https://www.nrel.gov/buildings/end-use-load-profiles.html) page) to recieve notifications on the release date and for an invitation to the live webinar presenation.
