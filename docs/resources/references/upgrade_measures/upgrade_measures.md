@@ -18,8 +18,8 @@ The assumptions used for the measures represent one of multiple possible approac
 New datasets are are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset.
 
 2023 Release 1 (March 2023): The webinar recording, slides, and documentation for each measure are linked below:
-- [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
-- [2023 Release 1 Webinar Slides](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/EUSS_commerical_release1_webinar_033023.pdf)
+[2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
+[2023 Release 1 Webinar Slides](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/EUSS_commerical_release1_webinar_033023.pdf)
 - [Heat Pump RTU]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu.md %})
 - [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_doas_mshp.md %})
 - [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler.md %})
@@ -32,8 +32,8 @@ New datasets are are released in 6-month increments and include new upgrade meas
 
 
 2023 Release 2 (September 2023): The webinar recording, slides, and documentation for each measure are linked below:
-- [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
-- Webinar slides to be added once published.
+[2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
+Webinar slides to be added once published.
 - [Heat Pump RTU with Original Fuel Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu_original_fuel_backup.md %})
 - [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
 - [VRF Heat Recovery with DOAS]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_vrf_hr_doas.md %})
