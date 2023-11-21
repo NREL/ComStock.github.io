@@ -16,7 +16,7 @@ The measure documentation describes the modeling methodology, assumptions, relev
 
 The assumptions used for the measures represent one of multiple possible approaches for a technology. They are intended to be reasonable but not necessarily optimal. Assumptions can be modified as our understanding of the technologies improves. The ComStock model is continuously updated with new information, methods, and improved quality assurance/quality control procedures.
 
-New datasets are are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
+New datasets are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
 
 ## 2023 Release 1 (March 2023): 
 ### Webinar Recording and Slides
