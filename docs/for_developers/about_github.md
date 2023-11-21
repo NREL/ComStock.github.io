@@ -2,6 +2,7 @@
 layout: default
 title: Public GitHub Repository
 parent: For Developers
+published: false
 ---
 
 # Public ComStock GitHub Repository

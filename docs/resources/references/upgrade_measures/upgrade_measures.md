@@ -5,6 +5,7 @@ parent: References
 grand_parent: Resources
 nav_order: 5
 has_children: true
+has_toc: false
 ---
 
 # Energy Efficiency and Electrification Measure Documentation
@@ -21,6 +22,7 @@ New datasets are are released in 6-month increments and include new upgrade meas
 ### Webinar Recording and Slides
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/EUSS_commerical_release1_webinar_033023.pdf)
+
 ### Measure Documentation
 - [Heat Pump RTU]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu.md %})
 - [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_doas_mshp.md %})
@@ -37,15 +39,16 @@ New datasets are are released in 6-month increments and include new upgrade meas
 ### Webinar Recording and Slides
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 - Webinar slides to be added once published.
+
 ### Measure Documentation
 - [Heat Pump RTU with Original Fuel Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu_original_fuel_backup.md %})
 - [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
 - [VRF Heat Recovery with DOAS]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_vrf_hr_doas.md %})
 - [Demand Control Ventilation]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_dcv.md %})
 - [Exhaust Air Heat/Energy Recovery]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hrv_erv.md %})
-- [Package 1 - Wall and Roof Insulation, and New Windows]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_1.md %})
+- [Package 1 - Wall and Roof Insulation and New Windows]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_1.md %})
 - [Package 2 - LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_2.md %})
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/package_3.md %})
 
 ## 2024 Release 1 (Expected in March 2024): 
-Join our mailing list (subscribe at bottom of [this](https://www.nrel.gov/buildings/end-use-load-profiles.html) page) to recieve notifications on the release date and for an invitation to the live webinar presenation.
+Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to recieve notifications on the release date and for an invitation to the live webinar presenation.
