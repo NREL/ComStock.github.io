@@ -3,7 +3,7 @@ layout: default
 title: Basic Stock Characterization Workbook
 parent: How-to Guides
 grand_parent: Resources
-nav_order: 3
+nav_order: 2
 ---
 
 # How-to: Perform a basic commercial building stock segmentation analysis in Excel.
