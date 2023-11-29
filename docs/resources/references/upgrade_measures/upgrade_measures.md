@@ -22,6 +22,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 ### Webinar Recording and Slides
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
+
 ### Measure Documentation
 - [Heat Pump RTU]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu.md %})
 - [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_doas_mshp.md %})
@@ -38,6 +39,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 ### Webinar Recording and Slides
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 - [2023 Release 2 Webinar Slides](https://www.nrel.gov/docs/fy24osti/87746.pdf)
+
 ### Measure Documentation
 - [Heat Pump RTU with Original Fuel Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu_original_fuel_backup.md %})
 - [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
