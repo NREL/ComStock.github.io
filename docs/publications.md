@@ -5,6 +5,7 @@ nav_order: 7
 ---
 
 # Publications
+{: .fw-500 }
 
 <details markdown="block" class="level1-collapse-section">
   <summary class="pub-header">NREL Reports, Papers, Presentations, and Webinar Recordings</summary>
