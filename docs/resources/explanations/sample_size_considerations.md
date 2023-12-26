@@ -3,7 +3,7 @@ layout: default
 title: Sample Size Considerations
 parent: Explanations
 grand_parent: Resources
-nav_order: 6
+nav_order: 7
 ---
 
 # ComStock Limitation: Sample Size Considerations
