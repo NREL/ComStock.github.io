@@ -3,7 +3,7 @@ layout: default
 title: Geographic Fields and Codes
 parent: Explanations
 grand_parent: Resources
-nav_order: 5
+nav_order: 6
 ---
 
 # Geographic Fields and Codes 
