@@ -27,7 +27,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 - [Heat Pump RTU]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_hp_rtu.md %})
 - [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_doas_mshp.md %})
 - [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/hvac_ashp_boiler.md %})
-- [LED Lighting]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/lighting_led_lighting.md %})
+- [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)
 - [Exterior Wall Insulation]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_wall_insulation.md %})
 - [Secondary Window System]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_secondary_window.md %})
 - [Window Replacement]({{site.baseurl}}{% link docs/resources/references/upgrade_measures/env_ext_window_replacement.md %})
