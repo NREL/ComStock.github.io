@@ -111,7 +111,7 @@ In the table below, the most significant HVAC variables are highlighted.
 
 
 ### 3. Lighting - Caveats and Considerations
-Similar to HVAC, ComStock provides estimates of capacity, in this case lighting power density, with high confidence, but the number of individual lighting fixtures is not provided in the output. Lighting costing methodologies could focus on backing out the number of fixtures desired for the upgrade based on the lighting power density and the building floor area, which is also output with high confidence from ComStock.
+Similar to HVAC, ComStock provides estimates of capacity, in this case interior lighting power density, with high confidence, but the number of individual lighting fixtures is not provided in the output. Interior lighting costing methodologies could focus on backing out the number of fixtures desired for the upgrade based on the lighting power density and the building floor area, which is also output with high confidence from ComStock. ComStock also provides the peak power used in exterior lighting with moderate confidence. This is not a typical variable used in costing, but could perhaps be coupled with other information from ComStock such as building size and/or type to provide an approximation of the cost of upgrading these fixtures. 
 
 |                                                    | **Variable Name**                            | **Units**        | **Confidence Level** |
 | -------------------------------------------------- | -------------------------------------------- | ---------------- | -------------------- |
