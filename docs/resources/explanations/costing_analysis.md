@@ -3,7 +3,7 @@ layout: default
 title: Cost Analysis
 parent: Explanations
 grand_parent: Resources
-nav_order: 4
+nav_order: 5
 ---
 
 # Using ComStock to Analyze Cost

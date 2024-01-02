@@ -3,7 +3,7 @@ layout: default
 title: Gas Consumption Underrepresented
 parent: Explanations
 grand_parent: Resources
-nav_order: 5
+nav_order: 6
 ---
 
 # ComStock Limitation: Gas Consumption Underrepresented
