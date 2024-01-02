@@ -29,9 +29,11 @@ nav_order: 7
 
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Presentations</summary>
 
-  [Introduction to ComStock (2023)](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
+  [End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Presentation (2023)](https://www.nrel.gov/docs/fy24osti/87746.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 2 webinar slide deck.
 
   [End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Presentation (2023)](https://www.nrel.gov/docs/fy23osti/85853.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.
+
+  [Introduction to ComStock (2023)](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
   </details>
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Webinar Recordings</summary>
 
