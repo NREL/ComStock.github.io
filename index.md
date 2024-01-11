@@ -16,7 +16,7 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 For an in depth overview of ComStock please review our [annotated introductory slide deck available here.](https://www.nrel.gov/docs/fy23osti/86634.pdf)
 
 {:refdef: style="text-align: center;"}
-[<img src="/assets/images/dataset_access_button.png" width="250" class="center" >]({{site.baseurl}}{% link docs/data/data.md %})
+[<img src="/assets/images/dataset_access_button.png" width="250" class="center" >]({{site.baseurl}}{% link docs/data.md %})
 {:refdef}
 
 ## What Does ComStock Do?
