@@ -2,7 +2,7 @@
 layout: default
 title: City-level Analysis
 parent: How-to Guides
-grand_parent: Resources
+parent: Resources
 nav_order: 1
 ---
 

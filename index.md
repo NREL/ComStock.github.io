@@ -15,6 +15,17 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 For an in depth overview of ComStock please review our [annotated introductory slide deck available here.](https://www.nrel.gov/docs/fy23osti/86634.pdf)
 
+## Quick Links
+[Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
+
+[Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages developed as part of the End Use Savings Shapes project, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
+
+[Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
+
+<!-- {:refdef: style="text-align: center;"}
+[<img src="/assets/images/dataset_access_button.png" width="250" class="center" >]({{site.baseurl}}{% link docs/data.md %})
+{:refdef} -->
+
 ## What Does ComStock Do?
 
 The ComStock data sets identify where energy is being consumed geographically, in what building types and end uses, and at what times of day. Simultaneously, it identifies the impact of efficiency measures: how much energy do efficiency measures save; where, or in what use cases do measures save energy; when, or at what time of day do savings occur; and which building stock segments have the biggest savings potential.
@@ -28,7 +39,7 @@ ComStock's most notable capability is being able to tailor the results to the qu
 
 ## How Do I Use ComStock?
 
-ComStock provides access to results through a web data viewer. Additionally, the raw results data sets (estimated at ~10 TB) are available for download. ComStock underwent extensive validation and calibration to both timeseries whole-building and end-use data through the [End-Use Load Profiles project](https://www.nrel.gov/buildings/end-use-load-profiles.html) and was widely released in October 2021. Finally, [How-To]({{  site.baseurl  }}{% link docs/resources/how_to_guides/how_to_guides.md %}) and [Tutorial]({{  site.baseurl  }}{% link docs/resources/tutorials/tutorials.md %}) guides are posted in the Resources section of this website to assist using the data for common use cases.
+ComStock provides access to results through a web data viewer. Additionally, the raw results data sets (estimated at ~10 TB) are available for download. ComStock underwent extensive validation and calibration to both timeseries whole-building and end-use data through the [End-Use Load Profiles project](https://www.nrel.gov/buildings/end-use-load-profiles.html) and was widely released in October 2021. Finally, How-To and Tutorial guides are posted in the [Resources]({{  site.baseurl  }}{% link docs/resources/resources.md %}) section of this website to assist using the data for common use cases.
 
 ComStock leverages and is deeply indebted to DOE's open-source building energy modeling ecosystem of [OpenStudio®](https://openstudio.net/) and [EnergyPlus®](https://energyplus.net/).
 

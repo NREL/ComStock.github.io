@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Combining Measure Results
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 4
 ---
 

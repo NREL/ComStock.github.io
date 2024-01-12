@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Building Types Not Included in ComStock
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 2
 ---
 

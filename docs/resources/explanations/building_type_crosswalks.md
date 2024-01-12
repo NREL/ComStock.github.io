@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Building Type Crosswalks
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 1
 ---
 

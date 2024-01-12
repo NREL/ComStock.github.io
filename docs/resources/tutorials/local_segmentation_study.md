@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Using Local Data in a ComStock Analysis
-parent: Tutorials
-grand_parent: Resources
+parent: Resources
 nav_order: 1
 ---
 

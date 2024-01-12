@@ -2,8 +2,6 @@
 layout: default
 title: Package 1 - Wall and Roof Insulation, and New Windows
 parent: Upgrade Measures
-grand_parent: References
-great_grand_parent: Resources
 nav_order: 14
 ---
 

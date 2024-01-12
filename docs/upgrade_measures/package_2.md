@@ -2,8 +2,6 @@
 layout: default
 title: Package 2 - LED Lighting, HP-RTU and ASHP-Boiler
 parent: Upgrade Measures
-grand_parent: References
-great_grand_parent: Resources
 nav_order: 15
 ---
 
