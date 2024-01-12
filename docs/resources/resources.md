@@ -2,10 +2,86 @@
 layout: default
 title: Resources
 nav_order: 3
-has_children: true
+has_children: false
+has_toc: false
 ---
 
 # Resources
 {: .fw-500 }
 
-This section provides tutorials, how-to guides and reference material designed to aid users in answering questions using the ComStock dataset.
+This section provides tutorials, how-to guides explanations and reference material designed to aid users in answering questions about the ComStock dataset.
+
+## Tutorials
+This section provides lessons for understanding certain capabilities and functions of ComStock, as well as for learning a specific analysis skill.
+
+- [Joining Data from an External Dataset to ComStock using Geospatial Fields]({{  site.baseurl  }}{% link docs/resources/tutorials/join_geospatial_data.md %})
+- [Perform an analysis by blending ComStock and local data]({{  site.baseurl  }}{% link docs/resources/tutorials/local_segmentation_study.md %})
+
+## How-to Guides
+This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
+
+- [Understand the annual energy use by building type for a city]({{  site.baseurl  }}{% link docs/resources/how_to_guides/puma_level_analysis.md %})
+- [Access the ComStock datasets programmatically - Example scripts]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})
+- [Perform a basic commercial building stock segmentation analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/basic_stock_characterization_workbook.md %})
+
+## Explanations
+These documents provide explanations focusing on the *how* and *why* of various parts of the ComStock data sets. While this section does not provide explicit advice on how to achieve a specific outcome, the documentation here will help users understand specific and important aspects the data sets. If while using ComStock there are aspects of the data sets that seem counterintuitive and / or confusing, please [email us](mailto:ComStock@nrel.gov) to recommend an additional piece of explanation documentation.
+
+- [Building Type Crosswalks]({{  site.baseurl  }}{% link docs/resources/explanations/building_type_crosswalks.md %})
+- [Considerations for ComStock Calibration, Validation, and Uncertainty]({{  site.baseurl  }}{% link docs/resources/explanations/comstock_calibration.md %})
+- [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
+- [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
+- [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
+
+### ComStock Limitations
+- [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})
+- [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
+- [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})
+
+
+## References
+These documents describe various aspects of ComStock, including the baseline and upgrade model documentation, as well as geographic clustering methodology.
+
+<details markdown="block" class="level1-collapse-section">
+<summary><b>ComStock Reference Documentation</b></summary>
+This document serves as a guide to and resource for the methodology and assumptions behind ComStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
+
+[**ComStock Reference Documentation: Version 1**](https://www.nrel.gov/docs/fy23osti/83819.pdf)
+
+**March 2023**
+
+Corresponding ComStock releases:
+- 2023/comstock_amy2018_release_1
+- 2023/comstock_amy2018_release_2
+
+<!-- ##### Suggested Citation
+Parker, Andrew, Henry Horsey, Matthew Dahlhausen, Marlena Praprost, Christopher
+CaraDonna, Amy LeBar, and Lauren Klun. 2023. ComStock Reference Documentation:
+Version 1. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819.
+[https://www.nrel.gov/docs/fy23osti/83819.pdf](https://www.nrel.gov/docs/fy23osti/83819.pdf). -->
+
+</details>
+
+
+<details markdown="block" class="level1-collapse-section">
+<summary><b>Upgrade Measures</b></summary>
+The measure documentation describes the modeling methodology, assumptions, relevant ComStock baseline features, and observations from results.
+
+[**Upgrade Measures**]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %})
+
+</details>
+
+
+<details markdown="block" class="level1-collapse-section">
+<summary><b>Geographic Clustering Reference Documentation</b></summary>
+These documents provide reference documentation for the clustering methodology developed by ComStock. The clustering algorithm described in this technical report resulted in 88 clusters across the United States. The clusters are used as the geographic basis for the “U.S. Building Stock Segmentation Series” published by DOE’s Building Technologies Office. This series will provide geographically relevant insight into building stock characteristics, energy and emissions performance, and, eventually, common end use technologies. The cluster definitions file maps counties to building stock segmentation clusters.
+
+[**Building Stock Segmentation Cluster Development**](https://www.nrel.gov/docs/fy23osti/84648.pdf)
+
+**June 2023**
+
+[**Building Stock Segmentation Cluster Definitions**](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2023/comstock_amy2018_release_1/geographic_information/stock_cluster_definition_2023.11.29.csv)
+
+**July 2023**
+
+</details>

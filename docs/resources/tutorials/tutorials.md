@@ -2,7 +2,7 @@
 layout: default
 title: Tutorials
 nav_order: 1
-published: true
+published: false
 parent: Resources
 has_children: true
 ---

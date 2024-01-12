@@ -32,7 +32,7 @@ ComStock's most notable capability is being able to tailor the results to the qu
 
 ## How Do I Use ComStock?
 
-ComStock provides access to results through a web data viewer. Additionally, the raw results data sets (estimated at ~10 TB) are available for download. ComStock underwent extensive validation and calibration to both timeseries whole-building and end-use data through the [End-Use Load Profiles project](https://www.nrel.gov/buildings/end-use-load-profiles.html) and was widely released in October 2021. Finally, [How-To]({{  site.baseurl  }}{% link docs/resources/how_to_guides/how_to_guides.md %}) and [Tutorial]({{  site.baseurl  }}{% link docs/resources/tutorials/tutorials.md %}) guides are posted in the Resources section of this website to assist using the data for common use cases.
+ComStock provides access to results through a web data viewer. Additionally, the raw results data sets (estimated at ~10 TB) are available for download. ComStock underwent extensive validation and calibration to both timeseries whole-building and end-use data through the [End-Use Load Profiles project](https://www.nrel.gov/buildings/end-use-load-profiles.html) and was widely released in October 2021. Finally, How-To and Tutorial guides are posted in the [Resources]({{  site.baseurl  }}{% link docs/resources/resources.md %}) section of this website to assist using the data for common use cases.
 
 ComStock leverages and is deeply indebted to DOE's open-source building energy modeling ecosystem of [OpenStudio®](https://openstudio.net/) and [EnergyPlus®](https://energyplus.net/).
 
