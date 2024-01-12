@@ -2,7 +2,7 @@
 layout: default
 title: Example Scripts
 parent: How-to Guides
-grand_parent: Resources
+parent: Resources
 nav_order: 3
 ---
 

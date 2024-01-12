@@ -2,7 +2,7 @@
 layout: default
 title: Basic Stock Characterization Workbook
 parent: How-to Guides
-grand_parent: Resources
+parent: Resources
 nav_order: 2
 ---
 

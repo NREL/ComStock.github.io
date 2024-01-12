@@ -1,12 +1,11 @@
 ---
 layout: default
 title: ComStock Calibration, Validation, and Uncertainty
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 3
 ---
 
-# ComStock Limitation: Considerations for ComStock Calibration, Validation, and Uncertainty
+# Considerations for ComStock Calibration, Validation, and Uncertainty
 
 A common question is whether ComStock™ is appropriately calibrated for a specific use case. The answer is highly interpretive based on many factors, including the robustness of relevant model inputs, the type of data needed (15-minute time series, annual averages, etc.), the stock segment of interest (e.g., building type, location), and the user’s tolerance for uncertainty. This document discusses the resources available to approach this question for a specific use case with examples.
 

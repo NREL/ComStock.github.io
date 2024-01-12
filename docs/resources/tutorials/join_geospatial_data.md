@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Joining External Geospatial Data
-parent: Tutorials
-grand_parent: Resources
+parent: Resources
 nav_order: 1
 ---
 

@@ -15,9 +15,16 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 For an in depth overview of ComStock please review our [annotated introductory slide deck available here.](https://www.nrel.gov/docs/fy23osti/86634.pdf)
 
-{:refdef: style="text-align: center;"}
+## Quick Links
+[Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
+
+[Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages developed as part of the End Use Savings Shapes project, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
+
+[Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
+
+<!-- {:refdef: style="text-align: center;"}
 [<img src="/assets/images/dataset_access_button.png" width="250" class="center" >]({{site.baseurl}}{% link docs/data.md %})
-{:refdef}
+{:refdef} -->
 
 ## What Does ComStock Do?
 

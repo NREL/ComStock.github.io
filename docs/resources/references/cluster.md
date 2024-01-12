@@ -2,8 +2,7 @@
 layout: default
 title: Geographic Clusters
 nav_order: 2
-parent: References
-grand_parent: Resources
+parent: Resources
 published: false
 ---
 

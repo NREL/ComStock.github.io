@@ -2,8 +2,6 @@
 layout: default
 title: Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler
 parent: Upgrade Measures
-grand_parent: References
-great_grand_parent: Resources
 nav_order: 16
 ---
 

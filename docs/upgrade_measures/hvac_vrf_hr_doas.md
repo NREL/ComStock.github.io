@@ -2,8 +2,6 @@
 layout: default
 title: VRF Heat Recovery with DOAS
 parent: Upgrade Measures
-grand_parent: References
-great_grand_parent: Resources
 nav_order: 13
 ---
 

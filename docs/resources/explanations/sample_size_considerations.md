@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Sample Size Considerations
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 8
 ---
 

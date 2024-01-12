@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Geographic Fields and Codes
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 7
 ---
 

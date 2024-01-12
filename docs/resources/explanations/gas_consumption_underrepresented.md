@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Gas Consumption Underrepresented
-parent: Explanations
-grand_parent: Resources
+parent: Resources
 nav_order: 6
 ---
 

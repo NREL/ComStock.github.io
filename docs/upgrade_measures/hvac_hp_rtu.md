@@ -2,8 +2,6 @@
 layout: default
 title: Heat Pump RTU
 parent: Upgrade Measures
-grand_parent: References
-great_grand_parent: Resources
 nav_order: 4
 ---
 
