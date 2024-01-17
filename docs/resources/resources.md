@@ -27,13 +27,14 @@ This section provides a collection of step-by-step guides for using the ComStock
 ## Explanations
 These documents provide explanations focusing on the *how* and *why* of various parts of the ComStock data sets. While this section does not provide explicit advice on how to achieve a specific outcome, the documentation here will help users understand specific and important aspects the data sets. If while using ComStock there are aspects of the data sets that seem counterintuitive and / or confusing, please [email us](mailto:ComStock@nrel.gov) to recommend an additional piece of explanation documentation.
 
+### General
 - [Building Type Crosswalks]({{  site.baseurl  }}{% link docs/resources/explanations/building_type_crosswalks.md %})
 - [Considerations for ComStock Calibration, Validation, and Uncertainty]({{  site.baseurl  }}{% link docs/resources/explanations/comstock_calibration.md %})
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
 - [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
 
-### ComStock Limitations
+### ComStock Limitations and Known Issues
 - [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})
 - [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
 - [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})

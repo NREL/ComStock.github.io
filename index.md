@@ -20,6 +20,8 @@ For an in depth overview of ComStock please review our [annotated introductory s
 
 [Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages developed as part of the End Use Savings Shapes project, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
 
+[Reference Documentation]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
+
 [Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
 
 <!-- {:refdef: style="text-align: center;"}
