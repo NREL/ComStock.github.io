@@ -49,11 +49,11 @@ The dataset has been formatted to be accessible in four main ways to meet the ne
 <!-- MAKE THESE ICONS, TIE THESE TO THE TABLE -->
 1. **Metadata**: Files of individual model characteristics together with annual results, commonly referred to as the “metadata” file
 
-2. Load Profiles: Timeseries load profiles (individual building and pre-aggregated) in downloadable spreadsheets
+2. **Load Profiles**: Timeseries load profiles (individual building and pre-aggregated) in downloadable spreadsheets
 
-3. Data Viewer: A web-based data viewer, customizable time scales and aggregations
+3. **Data Viewer**: A web-based data viewer, customizable time scales and aggregations
 
-4. Full Database: A detailed format that can be queried with big data tools
+4. **Full Database**: A detailed format that can be queried with big data tools
 
 Aggregate ComStock datasets can be accessed via the [Open Energy Initiative (OpenEI) Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F) and the [ComStock data viewer](https://comstock.nrel.gov/). There are two versions of the datasets published with each release: one with actual weather data (AMY), and another with typical weather data (TMY3). Note: The TMY3 15-minute energy data should not be used for larger geographies because weather events are not regionally aligned.
 
