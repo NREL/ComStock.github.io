@@ -14,7 +14,7 @@ The measure documentation describes the modeling methodology, assumptions, relev
 
 The assumptions used for the measures represent one of multiple possible approaches for a technology. They are intended to be reasonable but not necessarily optimal. Assumptions can be modified as our understanding of the technologies improves. The ComStock model is continuously updated with new information, methods, and improved quality assurance/quality control procedures.
 
-New datasets are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock prcoess, high level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
+New datasets are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
 
 ## 2023 Release 1 (March 2023): 
 ### Webinar Recording and Slides
@@ -49,4 +49,4 @@ New datasets are released in 6-month increments and include new upgrade measures
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_3.md %})
 
 ## 2024 Release 1 (Expected in March 2024): 
-Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to recieve notifications on the release date and for an invitation to the live webinar presenation.
+Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to receive notifications on the release date and for an invitation to the live webinar presentation.

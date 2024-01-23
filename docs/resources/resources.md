@@ -43,7 +43,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 ## References
 These documents describe various aspects of ComStock, including the baseline and upgrade model documentation, as well as geographic clustering methodology.
 
-<details markdown="block" class="level1-collapse-section">
+<details markdown="block" class="level1-collapse-section" open>
 <summary><b>ComStock Reference Documentation</b></summary>
 This document serves as a guide to and resource for the methodology and assumptions behind ComStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
 
@@ -54,12 +54,6 @@ This document serves as a guide to and resource for the methodology and assumpti
 Corresponding ComStock releases:
 - 2023/comstock_amy2018_release_1
 - 2023/comstock_amy2018_release_2
-
-<!-- ##### Suggested Citation
-Parker, Andrew, Henry Horsey, Matthew Dahlhausen, Marlena Praprost, Christopher
-CaraDonna, Amy LeBar, and Lauren Klun. 2023. ComStock Reference Documentation:
-Version 1. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819.
-[https://www.nrel.gov/docs/fy23osti/83819.pdf](https://www.nrel.gov/docs/fy23osti/83819.pdf). -->
 
 </details>
 
