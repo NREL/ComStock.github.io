@@ -5,7 +5,7 @@ parent: Resources
 nav_order: 6
 ---
 
-# ComStock Limitation: Gas Consumption Underrepresented
+# Gas Consumption Underrepresented
 
 ### ComStock’s annual gas consumption results are about 30% lower nationally as compared to the Commercial Building Energy Consumption Survey. 
 

@@ -5,7 +5,7 @@ parent: Resources
 nav_order: 2
 ---
 
-# ComStock Limitation: Building Types Not Included in ComStock
+# Building Types Not Included in ComStock
 
 Compared to the Commercial Building Energy Consumption Survey (CBECS) estimation, the ComStock™ data set accounts for 64% of the energy use and 62% of the floor area of commercial buildings in the United States. The remaining 36% of energy use not represented is due to several CBECS building types that are not yet included in ComStock, such as grocery stores and religious worship.
 

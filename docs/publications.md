@@ -7,11 +7,13 @@ nav_order: 7
 # Publications
 {: .fw-500 }
 
-<details markdown="block" class="level1-collapse-section">
+<details markdown="block" class="level1-collapse-section" open>
   <summary class="pub-header">NREL Reports, Papers, Presentations, and Webinar Recordings</summary>
 
-  <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Reports and Papers</summary>
+  <details markdown="block" class="level2-collapse-section" open><summary class="pub-header">Reports and Papers</summary>
     
+  [Understanding Commercial Buildings Segmentation Analysis (2023)](https://www.energycodes.gov/segmentation){: .pub-link}. This is a series of reports that provide commercial and multifamily building characteristic and energy data for 88 local geographies. For details about the geography selection methodology, see the [Building Stock Cluster Methodology Documentation](https://www.nrel.gov/docs/fy23osti/84648.pdf).
+
   [Impact Analysis of Transitioning to Heat Pump Rooftop Units for the U.S. Commercial Building Stock (2023)](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .pub-link}. Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
 
   [ComStock Documentation (2023)](https://www.nrel.gov/docs/fy23osti/83819.pdf){: .pub-link}. Methodology and assumptions behind ComStock.
@@ -37,9 +39,9 @@ nav_order: 7
   </details>
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Webinar Recordings</summary>
 
-  [End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
+  [End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris CaraDonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
 
-  [End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=7BHQfk6kvso){: .pub-link}. Presented by Chris Caradonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (March 2023)
+  [End-Use Savings Shapes: Commercial 2023 Release 1 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=7BHQfk6kvso){: .pub-link}. Presented by Chris CaraDonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (March 2023)
   </details>
 </details>
 

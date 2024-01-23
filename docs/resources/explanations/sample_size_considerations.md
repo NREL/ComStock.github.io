@@ -5,7 +5,7 @@ parent: Resources
 nav_order: 8
 ---
 
-# ComStock Limitation: Sample Size Considerations
+# Sample Size Considerations
 
 ## The ComStock team recommends a minimum of 350 building ID samples and at least 1 building from all 14 building types when filtering or down-selecting the data set.
 
