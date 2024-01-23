@@ -48,17 +48,17 @@ Accessing national ComStock building load profiles in the full dataset requires 
 
 ### Data Access Platforms
 The following table summarizes the various ways to access and use ComStock data.
-![](../../assets/images/data_access_summary.PNG)
+![](../assets/images/data_access_summary.PNG)
 
 The dataset has been formatted to be accessible in four main ways to meet the needs of many different users and use cases.
 
-<img src="..\..\assets\images\metadata_icon.png" style="height:25px;"/>  **Metadata**: Files of individual model characteristics together with annual results, commonly referred to as the “metadata” file
+<img src="..\assets\images\metadata_icon.png" style="height:25px;"/>  **Metadata**: Files of individual model characteristics together with annual results, commonly referred to as the “metadata” file
 
-<img src="..\..\assets\images\load_profile_icon.png" style="height:25px;"/>  **Load Profiles**: Timeseries load profiles (individual building and pre-aggregated) in downloadable spreadsheets
+<img src="..\assets\images\load_profile_icon.png" style="height:25px;"/>  **Load Profiles**: Timeseries load profiles (individual building and pre-aggregated) in downloadable spreadsheets
 
-<img src="..\..\assets\images\web_data_viewer_icon.png" style="height:25px;"/>   **Data Viewer**: A web-based data viewer, customizable time scales and aggregations
+<img src="..\assets\images\web_data_viewer_icon.png" style="height:25px;"/>   **Data Viewer**: A web-based data viewer, customizable time scales and aggregations
 
-<img src="..\..\assets\images\database_icon.png" style="height:25px;"/>  **Full Database**: A detailed format that can be queried with big data tools
+<img src="..\assets\images\database_icon.png" style="height:25px;"/>  **Full Database**: A detailed format that can be queried with big data tools
 
 Aggregate ComStock datasets can be accessed via the [Open Energy Initiative (OpenEI) Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F) and the [ComStock data viewer](https://comstock.nrel.gov/). There are two versions of the datasets published with each release: one with actual weather data (AMY), and another with typical weather data (TMY3). Note: The TMY3 15-minute energy data should not be used for larger geographies because weather events are not regionally aligned.
 
@@ -74,7 +74,7 @@ The ComStock release directory structure of the data lake is summarized in the t
 ### ComStock Data Viewer
 The ComStock data viewer exists to quickly filter, slice, combine, visualize, and download the results in custom ways. This platform is available at [comstock.nrel.gov](https://comstock.nrel.gov). Multiple geographic views of the datasets on the data viewer have been created: by state, and by Census region by PUMA.
 
-![](../../assets/images/data_viewer_screenshot.PNG)
+![](../assets/images/data_viewer_screenshot.PNG)
 
 ### OEDI Directory Structure and Contents
 
@@ -124,4 +124,4 @@ The third level of “out.” is where you’ll find the end uses.
 
 Finally, units are denoted by a “..” with the unit following.
 
-![](../../assets/images/field_naming_convention.png)
+![](../assets/images/field_naming_convention.png)
