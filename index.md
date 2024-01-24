@@ -11,9 +11,7 @@ nav_order: 1
 
 The commercial building sector stock model, or ComStock™, is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations to estimate the annual subhourly energy consumption of the commercial building stock across the United States.
 
-ComStock asks and answers two questions: **(1) How is energy used in the U.S. building stock?** and **(2) What are the impact of energy saving technologies?** 
-
-For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf). For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
+ComStock asks and answers two questions: **(1) How is energy used in the U.S. building stock?** and **(2) What are the impacts of energy saving technologies?** 
 
 ## Quick Links
 [Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
@@ -23,6 +21,10 @@ For an in-depth overview of ComStock, please review our [annotated introductory 
 [Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages developed as part of the End Use Savings Shapes project, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
 
 [Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
+
+For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf).
+
+For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
 
 ## What Does ComStock Do?
 
