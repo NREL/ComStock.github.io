@@ -43,7 +43,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 - [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
 - [VRF Heat Recovery with DOAS](https://www.nrel.gov/docs/fy24osti/86103.pdf)
 - [Demand Control Ventilation](https://www.nrel.gov/docs/fy24osti/86897.pdf)
-- [Exhaust Air Heat/Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hrv_erv.md %})
+- [Exhaust Air Heat/Energy Recovery](https://www.nrel.gov/docs/fy24osti/87542.pdf)
 - [Package 1 - Wall and Roof Insulation and New Windows]({{site.baseurl}}{% link docs/upgrade_measures/package_1.md %})
 - [Package 2 - LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_2.md %})
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_3.md %})
