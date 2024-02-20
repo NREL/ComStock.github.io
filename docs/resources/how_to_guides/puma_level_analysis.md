@@ -84,11 +84,10 @@ text specifies an excel function.
 
 ### Step 2: Identify gaps in the PUMA-level ComStock models.
 
-As the ComStock dataset includes models representing real buildings and
-is sampled at the national level, there could be segments of PUMA-level
-building stock that are underrepresented by the Comstock dataset. It is
-critical to identify and fill these gaps to perform meaningful analysis.
-there...
+The ComStock dataset includes architypical models that represent collections of real buildings and
+is sampled at the national level. At a finer geographic resolution, for example at a PUMA-level,
+there are going to be segments of the building stock that are underrepresented by the Comstock dataset. It is
+critical to identify and fill these gaps to perform meaningful analysis. To do this follow the instructions below:
 
 1.  Download the ComStock metadata CSV file from
     [OEDI](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock).
