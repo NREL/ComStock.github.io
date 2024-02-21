@@ -22,7 +22,7 @@ ComStock is a highly granular, bottom-up model that uses multiple data sources, 
 
 An upgrade package applies one or more End-Use Savings Shapes upgrades to a single building model simulation. Because ComStock is a bottom-up physics-based model, an upgrade package will go beyond aggregating or summing the individual upgrade results and produce novel results by simulating interactions between the upgrades. For example, pairing an envelope upgrade with an electrification upgrade would likely result in higher savings results than the sum of these upgrades individually, and the size of the heating, ventilating, and air conditioning (HVAC) equipment may be reduced if the envelope upgrade reduces the loads significantly.
 
-This documentation focuses on an upgrade package of three end-use savings shapes upgrades---[Window Replacement](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_window_replacement.html), [Exterior Wall Insulation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_wall_insulation.html), and [Roof Insulation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_roof_insulation.html), which we will refer to collectively as the "High-Efficiency Envelope" package. Depending on applicability criteria, this package will upgrade window, wall, and roof thermal properties to align with those specified in ASHRAE's *Advanced Energy Design Guide* (AEDG), respective of the model's particular climate zone. More details on the individual upgrades can be found on the [ComStock Measures Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/upgrade_measures.html) page.
+This documentation focuses on an upgrade package of three end-use savings shapes upgrades---[Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %}), [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %}), and [Roof Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_roof_insulation.md %}), which we will refer to collectively as the "High-Efficiency Envelope" package. Depending on applicability criteria, this package will upgrade window, wall, and roof thermal properties to align with those specified in ASHRAE's *Advanced Energy Design Guide* (AEDG), respective of the model's particular climate zone. More details on the individual upgrades can be found on the [ComStock Measures Documentation]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}) page.
 
 The High-Efficiency Envelope upgrade package is applicable to 100% of the total stock floor area, meaning one or more of the measures are applicable to all buildings in the stock. The package demonstrates 7.2% total site energy savings (332 trillion British thermal units \[TBtu\]) for the U.S. commercial building stock modeled in ComStock (Figure 2). The savings are primarily attributed to natural gas heating and electricity cooling due to wall and roof insulation improvements and reduced heat gain through windows:
 
@@ -41,7 +41,7 @@ The authors would like to acknowledge the authors of the original measures in th
 
 # 1. Introduction
 
-This documentation covers the High-Efficiency Envelope upgrade package methodology and briefly discusses key results. Results can be accessed via the ComStock [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
+This documentation covers the High-Efficiency Envelope upgrade package methodology and briefly discusses key results. Results can be accessed via the ComStock [Published Datasets]({{site.baseurl}}{% link docs/data.md %}) page.
 
 | **Package Title**      | High-Efficiency Envelope                                                                                                                                   |
 | **Package Definition** | This package upgrades windows, walls, and roofs in applicable models. It is a combination of three measures released in 2023 Release 1: Window Replacement, Exterior Wall Insulation, and Roof Insulation.        |
@@ -55,7 +55,7 @@ The building envelope refers to the physical barrier between the external enviro
 
 This upgrade package focuses on three elements of the building envelope: windows, walls, and roofs. The upgrade package applies the Window Replacement, Exterior Wall Insulation, and/or Roof Insulation measures based on the applicability criteria of each individual measure. A model will have all, some, or none of the upgrades applied, depending on how the model's characteristics align with each measure's applicability criteria.
 
-For details about each of the three technologies, reference their individual measure documentation: [Window Replacement](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_window_replacement.html), [Exterior Wall Insulation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_wall_insulation.html), and [Roof Insulation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_roof_insulation.html).
+For details about each of the three technologies, reference their individual measure documentation: [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %}), [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %}), and [Roof Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_roof_insulation.md %}).
 
 # 3. ComStock Baseline Approach
 
@@ -123,7 +123,7 @@ The following sections summarize the modeling approach and applicability for the
 
 ## 4.1. Window Replacement
 
-The [Window Replacement upgrade](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_window_replacement.html) replaces the windows of a model with new windows with thermal and tinting properties that align with the properties specified in the *Zero Energy Small/Medium Office* AEDG (Table 4). The upgrade will first identify the existing window properties for each ComStock baseline model. In cases where the U-value (thermal transmittance) and SHGC underperform those specified in the AEDG, the windows will be replaced with AEDG-compliant windows.
+The [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %}) replaces the windows of a model with new windows with thermal and tinting properties that align with the properties specified in the *Zero Energy Small/Medium Office* AEDG (Table 4). The upgrade will first identify the existing window properties for each ComStock baseline model. In cases where the U-value (thermal transmittance) and SHGC underperform those specified in the AEDG, the windows will be replaced with AEDG-compliant windows.
 
 Table 4. AEDG Target Properties for Window Replacements \[3\]
 
@@ -140,7 +140,7 @@ This upgrade is applicable to models of all building types with existing windows
 
 ## 4.2. Exterior Wall Insulation
 
-The [Exterior Wall Insulation upgrade](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_ext_wall_insulation.html) applies extruded polystyrene (XPS) insulation to applicable building models. First, it determines the thickness of XPS required to meet the specified R-value, determined from the Zero Energy Small/Medium Office AEDG target assembly performance for each climate zone (Table 5). Second, it finds all the constructions used by exterior walls in the model, clones them, adds a layer of insulation to the cloned constructions, and then assigns the construction back to the wall. Based on the baseline, the updated wall properties may be close to the target values, but exact target values may not be achieved.
+The [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %}) applies extruded polystyrene (XPS) insulation to applicable building models. First, it determines the thickness of XPS required to meet the specified R-value, determined from the Zero Energy Small/Medium Office AEDG target assembly performance for each climate zone (Table 5). Second, it finds all the constructions used by exterior walls in the model, clones them, adds a layer of insulation to the cloned constructions, and then assigns the construction back to the wall. Based on the baseline, the updated wall properties may be close to the target values, but exact target values may not be achieved.
 
 Table 5. AEDG Overall Wall Assembly Performance Characteristics by Climate Zone \[3\]
 
@@ -158,7 +158,7 @@ This upgrade is applicable to 98.4% of the ComStock floor area.
 
 ## 4.3. Roof Insulation
 
-The [Roof Insulation upgrade](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/env_roof_insulation.html) increases the insulation value of roof surfaces in the models such that the final applied insulation value meets the specified R-value, determined from the Zero Energy Small/Medium Office AEDG target assembly performance for each climate zone (Table 6), skipping roof surfaces that already meet or exceed these values. To better align with how insulation is often sold, the applied thickness of additional insulation is rounded up to the nearest inch, which may cause some buildings to slightly exceed the AEDG values. The upgrade assumes XPS insulation with a thermal resistance of R-5/inch.
+The [Roof Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_roof_insulation.md %}) increases the insulation value of roof surfaces in the models such that the final applied insulation value meets the specified R-value, determined from the Zero Energy Small/Medium Office AEDG target assembly performance for each climate zone (Table 6), skipping roof surfaces that already meet or exceed these values. To better align with how insulation is often sold, the applied thickness of additional insulation is rounded up to the nearest inch, which may cause some buildings to slightly exceed the AEDG values. The upgrade assumes XPS insulation with a thermal resistance of R-5/inch.
 
 Table 6. AEDG Overall Target Roof Assembly Performance Characteristics by Climate Zone \[3\]
 

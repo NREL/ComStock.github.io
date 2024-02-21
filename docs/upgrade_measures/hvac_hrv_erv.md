@@ -41,7 +41,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction 
 
-This documentation covers the "Add Exhaust Air Energy/Heat Recovery" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
+This documentation covers the "Add Exhaust Air Energy/Heat Recovery" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets]({{site.baseurl}}{% link docs/data.md %}) page.
 
 | **Measure Title**      | Add Exhaust Air Energy/Heat Recovery                                                                                                                                                                                                                                                                          |
 | **Measure Definition** | Adds airside energy recovery (humid climates) or heat recovery (other climates) to air handling units that do not already include either of these features. Fan power is increased to overcome the additional static pressure from the recovery systems. Assumes 90% of return air is available for recovery. |

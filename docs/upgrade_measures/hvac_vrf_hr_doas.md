@@ -43,7 +43,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction 
 
-This documentation covers the "VRF (HR) with DOAS" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
+This documentation covers the "VRF (HR) with DOAS" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets]({{site.baseurl}}{% link docs/data.md %}) page.
 
 | **Measure Title**      | VRF(HR)+DOAS|
 | **Measure Definition** | Replace VAV or RTU systems with VRF(HR) and E/HRV.        |
@@ -403,7 +403,7 @@ There are several limitations that are not captured in this analysis, and which 
 
 # 6. Output Variables 
 
-Table 6 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the VRF DOAS measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available. Output variables specific to DOAS are included in the [heat recovery measure documentation](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/hvac_hrv_erv.html).
+Table 6 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the VRF DOAS measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available. Output variables specific to DOAS are included in the [heat recovery measure documentation]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hrv_erv.md %}).
 
 Table 6. Output Variables Calculated from the Measure Application
 

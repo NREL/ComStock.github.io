@@ -34,7 +34,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction
 
-This documentation covers the "Replace Boiler with Air-Source Heat Pump Boiler" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html) page.
+This documentation covers the "Replace Boiler with Air-Source Heat Pump Boiler" upgrade methodology and briefly discusses key results. Results can be accessed via the ComStock™ [Published Datasets]({{site.baseurl}}{% link docs/data.md %}) page.
 
 |**Measure Title**  |  Replace Boiler with Air-Source Heat Pump Boiler (replace_boiler_with_heatpump)|
 |**Measure Definition** |  This measure replaces natural gas boilers used for space heating with an air-source heat pump. The air-source heat pump will be the primary source of heat, and the natural gas boiler will be used as a backup.|
@@ -167,7 +167,7 @@ Note that with current technology, heat pump capacity changes with outdoor air t
 
 where a, b, c, d, e, and f are CapFT performance curve coefficients, and Tcond<sub>out</sub> is the hot water temperature at the condenser outlet of the heat pump (which is equivalent to the hot water heating set point).
 
-For more detail information on sizing, readers are encouraged to refer the measure documentation for [boiler replacement with air source heat pump boiler and electric boiler backup](https://nrel.github.io/ComStock.github.io/docs/resources/references/upgrade_measures/hvac_ashp_boiler.html) from Commercial EUSS 2023 Release 1.
+For more detail information on sizing, readers are encouraged to refer the measure documentation for [boiler replacement with air source heat pump boiler and electric boiler backup]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler.md %}) from Commercial EUSS 2023 Release 1.
 
 ## 4.3. Modeling ASHP Boilers in OpenStudio
 
