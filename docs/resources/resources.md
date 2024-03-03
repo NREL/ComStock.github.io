@@ -31,6 +31,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Building Type Crosswalks]({{  site.baseurl  }}{% link docs/resources/explanations/building_type_crosswalks.md %})
 - [Considerations for ComStock Calibration, Validation, and Uncertainty]({{  site.baseurl  }}{% link docs/resources/explanations/comstock_calibration.md %})
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
+- [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
 - [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
 
