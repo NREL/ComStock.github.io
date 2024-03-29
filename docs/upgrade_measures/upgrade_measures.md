@@ -16,22 +16,29 @@ The assumptions used for the measures represent one of multiple possible approac
 
 New datasets are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
 
-## 2023 Release 1 (March 2023): 
-### Webinar Recording and Slides
-- [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
-- [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
+Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to receive notifications on upcoming releases and for invitations to the live webinar presentations.
+
+## 2024 Release 1 (March 2024):
+The 2024 Release 1 webinar is scheduled for April 25. For an invitation, join our mailing list [here](https://www.nrel.gov/buildings/end-use-load-profiles.html).
 
 ### Measure Documentation
-- [Heat Pump RTU]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hp_rtu.md %})
-- [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/upgrade_measures/hvac_doas_mshp.md %})
-- [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler.md %})
-- [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)
-- [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %})
-- [Secondary Window System]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_secondary_window.md %})
-- [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %})
-- [Window Film]({{site.baseurl}}{% link docs/upgrade_measures/env_window_film.md %})
-- [Roof Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_roof_insulation.md %})
+- Economizers **
+- Variable Refrigerant Flow with 25% Upsizing Allowance for Heating **
+- Heat Pump Rooftop Units with Standard Performance **
+- Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods **
+- Heat Pump RTU with Exhaust Air Energy Recovery **
+- Advanced Rooftop Unit Control **
+- Central Ground-Source Water-to-Water Heat Pump **
+- Packaged Water-to-Air Geothermal Heat Pump **
+- Ground-Coupled Console Water-to-Air Heat Pump **
+- [Electric Kitchen Equipment]({{site.baseurl}}{% link docs/upgrade_measures/ppl_electric_kitchen_equipment.md %})
+- Thermostat Control for Load Shedding **
+- Thermostat Control for Load Shifting **
+- Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
+- Package 3 – LED Lighting + Standard Performance HP RTU or HP Boilers **
+- [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
 
+** *Measure documentation coming soon...*
 
 ## 2023 Release 2 (September 2023): 
 ### Webinar Recording and Slides
@@ -48,5 +55,19 @@ New datasets are released in 6-month increments and include new upgrade measures
 - [Package 2 - LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_2.md %})
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_3.md %})
 
-## 2024 Release 1 (Expected in March 2024): 
-Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to receive notifications on the release date and for an invitation to the live webinar presentation.
+
+## 2023 Release 1 (March 2023): 
+### Webinar Recording and Slides
+- [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
+- [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
+
+### Measure Documentation
+- [Heat Pump RTU]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hp_rtu.md %})
+- [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/upgrade_measures/hvac_doas_mshp.md %})
+- [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler.md %})
+- [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)
+- [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %})
+- [Secondary Window System]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_secondary_window.md %})
+- [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %})
+- [Window Film]({{site.baseurl}}{% link docs/upgrade_measures/env_window_film.md %})
+- [Roof Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_roof_insulation.md %})
