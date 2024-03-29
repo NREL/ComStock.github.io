@@ -5,7 +5,7 @@ parent: Upgrade Measures
 nav_order: 16
 ---
 
-# Upgrade Package Documentation: Window Replacement + Exterior Wall Insulation + Roof Insulation + LED Lighting + HP-RTU + HP-Boiler
+# Window Replacement + Exterior Wall Insulation + Roof Insulation + LED Lighting + HP-RTU + HP-Boiler
 {: .fw-500 }
 Author: Amy LeBar
 
