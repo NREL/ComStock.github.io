@@ -8,7 +8,7 @@ has_toc: false
 
 # Energy Efficiency and Electrification Measure Documentation
 {: .fw-500 }
-All measures detailed below have been developed through the End Use Savings Shape project, specifically the 2023 Release 1 and 2 efforts.
+All measures detailed below have been developed through the End Use Savings Shapes project.
 
 The measure documentation describes the modeling methodology, assumptions, relevant ComStock baseline features, and observations from results.
 
