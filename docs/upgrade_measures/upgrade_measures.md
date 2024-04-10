@@ -19,7 +19,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to receive notifications on upcoming releases and for invitations to the live webinar presentations.
 
 ## 2024 Release 1 (March 2024):
-The 2024 Release 1 webinar is scheduled for April 25. For an invitation, join our mailing list [here](https://www.nrel.gov/buildings/end-use-load-profiles.html).
+The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.zoomgov.com/webinar/register/WN_d7imyRpGR7C-n7x_Iz5kyA?utm_source=NREL+End-Use+Load+Profiles+for+the+U.S.+Building+Stock#/registration) to register.
 
 ### Measure Documentation
 - Economizers **
