@@ -26,7 +26,7 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - Variable Refrigerant Flow with 25% Upsizing Allowance for Heating **
 - Heat Pump Rooftop Units with Standard Performance **
 - Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods **
-- Heat Pump RTU with Exhaust Air Energy Recovery **
+- [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
 - Advanced Rooftop Unit Control **
 - Central Ground-Source Water-to-Water Heat Pump **
 - Packaged Water-to-Air Geothermal Heat Pump **
