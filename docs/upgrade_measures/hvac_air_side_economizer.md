@@ -40,24 +40,23 @@ The economizer measure applies to buildings that cover 66% of the total building
 
 The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless, Eric Bonnema, Eric Ringold, and Marcus Bianchi at the National Renewable Energy Laboratory.
 
-  {#section-1 .NREL_Head_01}
-
 ## 1. Introduction
 
 This documentation covers the economizer upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov.](https://comstock.nrel.gov/datasets)
 
-  **Measure Title**    **Economizer**
-  -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Measure Definition   Adding economizer to air systems (e.g., VAVs and RTUs) where economizers are not utilized in the existing building stock. Economizer configuration is based on ASHRAE 90.1. A common economizer fault (outdoor air damper fully closed fault) is also applied with certain prevalence: less than 35% of random buildings with economizers get faulted and the fault remains for a month randomly chosen.
-  Applicability        Buildings including air systems with ventilation that do not have economizers. Applicable buildings cover 66% of total building stock floor area.
-  Not Applicable       Buildings that do have economizers or without ventilation systems.
-  Release              2024 Release 1: 2024/comstock_amy2018_release_1/ 
+| **Measure Title**  | **Economizer**                 |
+| Measure Definition | Adding economizer to air systems (e.g., VAVs and RTUs) where economizers are not utilized in the existing building stock. Economizer configuration is based on ASHRAE 90.1. A common economizer fault (outdoor air damper fully closed fault) is also applied with certain prevalence: less than 35% of random buildings with economizers get faulted and the fault remains for a month randomly chosen. |
+| Applicability      | Buildings including air systems with ventilation that do not have economizers. Applicable buildings cover 66% of total building stock floor area. |
+| Not Applicable     | Buildings that do have economizers or without ventilation systems. |
+| Release            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |           
 
 ## 2. Technology Summary
 
 An air-side economizer (hereafter economizer) has the capability of introducing and controlling favorable (i.e., relatively cold and dry) outdoor air into the air-conditioning system to reduce the mechanical cooling energy used by the HVAC system when spaces require cooling. Figure 1 shows the components of an economizer. Typical controllers shown in the figure can implement one of multiple control schemes by leveraging different inputs with different types of sensors.
 
-![Diagram Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image1.png){width="6.5in" height="3.0770833333333334in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image1.png){width="6.5in" height="3.0770833333333334in"}
+{:refdef}
 
 Figure 1. Economizer components
 
@@ -75,13 +74,17 @@ ComStock baseline building models include HVAC systems with or without economize
 
 Figure 2 shows the prevalence of economizers (in terms of floor area coverage and contribution to cooling energy) for different subcategories (building type and ventilation system type) of the existing building stock. To note, the percentage of floor area shown as True for the "economizer availability" represents the total building area if there is at least one economizer available in the building, thus it does not mean the actual floor area coverage by the economizers. While there are buildings that already include economizers in variable air volume (VAV) systems and rooftop units (RTU) covering 40% of the total floor area and 28% of total electricity used for cooling, the remaining portion of buildings for those system types does not leverage economizers at all in the baseline models. HVAC system types such as packaged terminal units and residential systems without ventilation and dedicated outdoor air systems (DOAS) are not the target of this upgrade. More detailed information on the upgrade applicability is described in Section 4.1.
 
-![Chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image2.png){width="6.5in" height="3.6618055555555555in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image2.png){width="6.5in" height="3.6618055555555555in"}
+{:refdef}
 
 Figure 2. Contribution of ventilation system types on energy
 
 Figure 3 shows the comparison of economizer coverage with respect to building floor area between ComStock and estimation from the Commercial Buildings Energy Consumption Survey (CBECS, 2018). Again, because of how data is structured in CBECS, the floor area coverage shown in these figures is representing the entire floor area of the building if any economizer is present in any of the HVAC systems in the building rather than actual floor area coverage by HVAC systems with economizers. Because CBECS data only shows total building area instead of total area covered by economizers, this comparison is mostly to understand the ballpark estimation of economizer coverage.
 
-![Chart, bar chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image3.png){width="6.5in" height="3.3243055555555556in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image3.png){width="6.5in" height="3.3243055555555556in"}
+{:refdef}
 
 Figure 3. Economizer floor area coverage between ComStock and CBECS (2018)
 
@@ -91,7 +94,9 @@ Figure 3. Economizer floor area coverage between ComStock and CBECS (2018)
 
 The applicability criterion of the economizer upgrade is simple; economizers will be installed in buildings including air systems with ventilation (i.e., AHUs and RTUs) that do not have economizers. Figure 4 shows the coverage of baseline buildings in terms of economizer availability and control type and how they contribute toward total building stock floor area and electricity usage for cooling. The applicable buildings for the economizer upgrade cover 66% of the total building stock floor area; however, this floor area also includes a building's total floor area when there are multiple air systems and if any of those air systems does not include an economizer. Thus, the actual impact of the economizer upgrade on the floor area will be less than 66%. Also, the amount of savings will be determined by the weather, a building's outdoor air requirement, heat gain level in the return air stream, and configuration of the economizer.
 
-![Text Description automatically generated with low confidence](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image4.png){width="6.5in" height="3.3979166666666667in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image4.png){width="6.5in" height="3.3979166666666667in"}
+{:refdef}
 
 Figure 4. Upgrade applicability on building stock floor area and electricity usage for cooling
 
@@ -99,7 +104,9 @@ Figure 4. Upgrade applicability on building stock floor area and electricity usa
 
 Specifics of a newly added economizer through an upgrade are applied in the same way as in models that already have economizers. In other words, configurations (e.g., control type and limit setting) are guided by the requirements of the energy code that was in force when the HVAC system was last updated. Each version of energy code (i.e., ASHRAE 90.1 or Title 24) includes best practices for leveraging economizers (depending on HVAC system size) as well as configuring economizers (depending on the climate zone). For example, ASHRAE 90.1-2010 includes information on preferrable control types, prohibited control types, and high limits for fixed control types, as shown in Figure 5. While some details vary between versions, these suggestions largely reflect physical reasonings such as considering temperature as well as humidity (i.e., prohibiting dry-bulb controls) measurements when the building is in humid regions (e.g., 1a, 2a, 3a, or 4a). More details on ComStock's economizer implementations are described in the ComStock Reference Documentation \[3\].
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image5.png){width="6.5in" height="5.925694444444445in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image5.png){width="6.5in" height="5.925694444444445in"}
+{:refdef}
 
 Figure 5. Economizer configuration suggestions in ASHRAE 90.1-2010
 
@@ -109,7 +116,9 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 
  Table 1. On-Site Fossil Fuel Emissions Factors 
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image6.png){width="6.5in" height="1.3395833333333333in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image6.png){width="6.5in" height="1.3395833333333333in"}
+{:refdef}
 
 ### 4.4 Limitations and Concerns
 
@@ -125,19 +134,25 @@ As not all buildings are configured in the same way and in the optimal way, our 
 
 In short, one of the requirements of economizing controllers in the real world is the call (or electric/current signal) for cooling, but the EnergyPlus economizer economizes only based on favorable outdoor air condition and if the fan is running. Thus, during late night, if temperature drops and minimum ventilation is required, as in option (a) above, then the economizer will open the damper (even when there is no cooling need) to meet the supply air temperature set point, which can increase heating loads. This is depicted on the left side of Figure 6. While the economizer upgrade measure made a fix to this issue, our baseline models' economizers do not yet reflect this change. Thus, as shown on the right side of Figure 6, our new economizer measure "can" correct this issue in the upgraded simulations. However, to quantify the impact of a proper economizer more fairly, we decided not to change/correct the economizers with the issue during the upgrade implementation and only apply (the good) economizers based on the applicability criteria shown in Section 4.1. This baseline issue has an implication of overcooled spaces for (1) buildings with economizers and (2) buildings where nighttime ventilation is always on. Because this issue is not considered a common practice in the field, an [EnergyPlus issue](https://github.com/NREL/EnergyPlus/issues/10285) has been created.
 
-![Chart, line chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image7.png){width="6.5in" height="4.981944444444444in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image7.png){width="6.5in" height="4.981944444444444in"}
+{:refdef}
 
 Figure 6. Issue in EnergyPlus economizer operation along with nighttime variability implementation in ComStock
 
 Within our stock models, we have buildings where relatively large amounts of fresh air (i.e., ventilation) are necessary for certain building operation types. For example, outpatient buildings that include medical examining areas can have dedicated zone-level exhaust fans to push out existing air and draw in new fresh air through the air handling unit. The left side of Figure 7 shows an example of an outpatient building where the introduction of outdoor air cycles overnight based on the air exhaust needs required in anesthesia room, MRI room, and soil work area. On the right side of the same figure, the same variables are plotted when an economizer is added to the same air handling unit. Adding an economizer completely disables the nighttime ventilation because (1) this specific model is representing a building without nighttime ventilation and (2) there is no cooling need during those times. For this specific example, we want to represent an outpatient building that strictly follows the operation hours (in this case, 5 a.m. to 6 p.m.), thus not using any of the examining spaces outside of (i.e., during nighttime) the operation hours. Because the behavior shown in the baseline model in Figure 7 is not aligning with that expectation, this issue will be explored and corrected in future analyses. The implication of having this behavior in the baseline runs mostly results in positive (during winter) heating savings with economizer upgrade because the economizer removes the need for heating that was caused by the introduction of colder air into the space, as shown.
 
-![Graphical user interface, diagram, application Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image8.png){width="6.5in" height="4.997916666666667in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image8.png){width="6.5in" height="4.997916666666667in"}
+{:refdef}
 
 Figure 7. Issue in zone exhaust fan operation in an outpatient building, along with economizers in ComStock
 
 Figure 8 shows another example of a restaurant in a strip mall that has another issue related to the zone-level exhaust fan operation. Kitchen spaces use exhaust fans to ventilate particles that are created during cooking and, in this example model, the kitchen exhaust fan operates from 5 a.m. to midnight. Because the air is flowing out from an indoor space to the ambient, the air handling unit introduces make-up (outdoor) air to the kitchen in the baseline simulation. However, in the economizer upgrade scenario in the figures on the right side, the outdoor air varies in two levels throughout the simulation period (i.e., airflow rate changing between 0.115 kg/s and 0.13 kg/s). This is currently a limitation of the economizer upgrade modeling not properly accounting for buildings where there is zone mixing. For example, restaurants with open kitchens can have a wide opening between the kitchen and dining area, and the air from the dining area can be drawn into the kitchen (i.e., zone air mixing) when the kitchen exhaust fan operates. This kind of zone air mixing creates a relatively more complicated air balance between the exhaust fan and air handling unit in the simulation, resulting in different levels of outdoor airflow rate. The outdoor airflow rate of 0.115 kg/s shown in both the baseline and upgrade simulations represents the rebalanced outdoor airflow rate accounting for the zone mixing, while the 0.13 kg/s represents the original outdoor airflow rate without considering the zone mixing. This issue has an implication of drawing more outdoor air regardless of the condition (i.e., favorable or unfavorable in terms of energy) and will be analyzed and corrected in future analysis.
 
-![Graphical user interface, chart, application Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image9.png){width="6.5in" height="4.996527777777778in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image9.png){width="6.5in" height="4.996527777777778in"}
+{:refdef}
 
 Figure 8. Issue in zone exhaust fan operation in a strip mall with restaurant, along with economizers in ComStock
 
@@ -147,7 +162,9 @@ Table 2 includes a list of output variables that are calculated in ComStock. The
 
 Table 2. Output Variables Calculated from the Measure Application
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image10.png){width="6.5in" height="2.5868055555555554in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image10.png){width="6.5in" height="2.5868055555555554in"}
+{:refdef}
 
 ## 6. Results
 
@@ -159,7 +176,9 @@ Total site energy savings are also presented in this section. Total site energy 
 
 Figure 9 shows a simulation example of an economizer installed in a building that previously did not have an economizer. In this example, outdoor air temperature varies between 32°F/0°C and 95°F/35°C throughout the year. Annual mechanical cooling energy savings were 2.6% for this example model (Figure 9 (a)) by leveraging free cooling during the times when outdoor air temperatures were below 50°F/10°C, as shown in Figure 9 (b) and (c). To note, savings potential of the economizer implementation heavily depends on the local climate, cooling needs, building's outdoor air requirement, heat gain level in the return air stream, and configuration of the economizer. From Figure 9 (c), it is easy to notice the relatively small-time window within three days where savings occur. These small-time windows disappear even more when weather is not favorable, the building does not need cooling, or the building already requires a high ventilation rate.
 
-![Graphical user interface, chart, scatter chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image11.png){width="6.5in" height="3.442361111111111in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image11.png){width="6.5in" height="3.442361111111111in"}
+{:refdef}
 
 Figure 9. Simulation example of economizer implementation
 
@@ -179,11 +198,15 @@ Figure 10 and Figure 11 show the comparison of annual site energy consumption be
 
 -   **−0.1%** stock **heating gas** savings (−0.7 TBtu).
 
-![Chart, bar chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image12.png){width="6.5in" height="5.154861111111111in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image12.png){width="6.5in" height="5.154861111111111in"}
+{:refdef}
 
 Figure 10. Comparison of annual site energy consumption between the ComStock baseline and the upgrade scenario for the entire building stock
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image13.png){width="6.5in" height="5.121527777777778in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image13.png){width="6.5in" height="5.121527777777778in"}
+{:refdef}
 
 Figure 11. Comparison of annual site energy consumption between the ComStock baseline and the upgrade scenario for only applicable buildings to the upgrade
 
@@ -193,7 +216,9 @@ Electricity savings for cooling comes from leveraging colder outdoor air when sp
 
 ComStock simulation results show greenhouse gas emissions avoided across all electricity grid scenarios and on-site combustion fuel types (Figure 11). Greenhouse gas emissions avoided from the electricity grid with the economizer upgrade are 0.2%--0.4% depending on three grid scenarios.
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image14.jpeg){width="6.499397419072616in" height="4.404860017497813in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image14.jpeg){width="6.499397419072616in" height="4.404860017497813in"}
+{:refdef}
 
 Figure 12. Greenhouse gas emissions comparison of the ComStock baseline and the upgrade scenario. Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid. MMT stands for million metric tons.
 
@@ -203,15 +228,21 @@ This section discusses site energy consumption for quality assurance and quality
 
 Figure 12 through Figure 15 show the percent savings or site energy use intensity (EUI) savings distributions of the baseline ComStock models versus the upgrade scenario for applicable models with different classifications (e.g., end use, climate zone, building type). Percent savings provide the relative impact of the measure at the individual building level while site EUI savings provide the absolute (or aggregated) scale of impact. Also, the data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for *n* indicates the number of ComStock models that were applicable for energy savings. Below are contexts to highlights that are reflected in these figures:
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image15.jpeg){width="6.5in" height="4.0625in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image15.jpeg){width="6.5in" height="4.0625in"}
+{:refdef}
 
 Figure 13. Percent site energy savings distribution for ComStock models with the upgrade measure applied by end use and fuel type
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image16.jpeg){width="6.5in" height="4.0625in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image16.jpeg){width="6.5in" height="4.0625in"}
+{:refdef}
 
 Figure 14. Site EUI savings distribution for ComStock models with the upgrade measure applied by end use and fuel type
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image17.jpeg){width="6.5in" height="4.0625in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image17.jpeg){width="6.5in" height="4.0625in"}
+{:refdef}
 
 Figure 15. Percent site energy savings distribution for ComStock models with the upgrade measure applied by climate zone
 
@@ -239,17 +270,23 @@ Figure 15 shows the impact of economizers on floor area, electricity used for co
 
 -   If a building includes many economizers (in many air handling units), only one representative economizer control type is reported per building based on the floor area coverage. There are many buildings with fixed dry-bulb control as the representative control type in the baseline model. Additionally, if the economizer upgrade installed many more economizers with differential enthalpy control within the same building, the representative economizer control type can change from fixed dry-bulb control (in the baseline model) to differential enthalpy control (in the upgrade model), as shown in the figure.
 
-![Chart, bar chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image18.png){width="6.5in" height="2.9993055555555554in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image18.png){width="6.5in" height="2.9993055555555554in"}
+{:refdef}
 
 > Figure 16. Economizer impact on floor area, electricity used for cooling, and total site energy
 
 Figure 16 presents the coverage of buildings with faulted economizers in terms of stock floor area. In both baseline and upgrade scenarios, two economizer faults are added to buildings based on random building selection with certain prevalences; 30% prevalence is used for the economizer high-limit/changeover temperature fault (for fixed dry-bulb control economizers) and 35% prevalence is used for the damper fully closed fault. In Figure 16, portion labeled as "with economizer fault(s)" represents building stock area covered by the faulted economizer(s) where the fault status is either high-limit temperature fault only, damper fully closed fault only, or both faults present. And the slight increase of faulted economizers in the upgrade scenario is due to the new economizer with the upgrade being faulted with the damper fully closed fault. As mentioned previously, the prevalence of actual faulted economizers shown in the figure (13% in baseline scenario and 15% in upgrade scenario) is less than the original prevalence (30%‒35%). More details on the fault implementation in the baseline simulation can be found from the ComStock Reference Documentation \[3\].
 
-![Graphical user interface, application, table, Excel Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image19.png){width="6.5in" height="4.784027777777778in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image19.png){width="6.5in" height="4.784027777777778in"}
+{:refdef}
 
 Figure 17. Total stock floor area of buildings with economizer faults
 
-![Map Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image20.png){width="6.5in" height="5.2in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image20.png){width="6.5in" height="5.2in"}
+{:refdef}
 
 Figure 18. Median electricity savings for cooling across contiguous U.S. states
 
@@ -261,18 +298,26 @@ As shown in previous results, the stock-level savings potential of the economize
 
 A.  Additional Figures
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image21.jpg){width="6.465664916885389in" height="3.3222331583552056in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image21.jpg){width="6.465664916885389in" height="3.3222331583552056in"}
+{:refdef}
 
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image22.jpg){width="6.485555555555556in" height="3.511804461942257in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image22.jpg){width="6.485555555555556in" height="3.511804461942257in"}
+{:refdef}
 
 Figure A-2. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image23.jpg){width="6.450003280839895in" height="3.302678258967629in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image23.jpg){width="6.450003280839895in" height="3.302678258967629in"}
+{:refdef}
 
 Figure A-3. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\HVAC - Economizer\figures/media/image24.jpg){width="6.485555555555556in" height="3.511804461942257in"}
+{:refdef: style="text-align: center;"}
+![](media/airside_economizer_image24.jpg){width="6.485555555555556in" height="3.511804461942257in"}
+{:refdef}
 
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
