@@ -27,7 +27,7 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
 - [Advanced Rooftop Unit Control]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vav_rtu.md %})
-- Central Ground-Source Water-to-Water Heat Pump **
+- [Central Ground-Source Water-to-Water Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hydronic_gshp.md %})
 - Packaged Water-to-Air Geothermal Heat Pump **
 - Ground-Coupled Console Water-to-Air Heat Pump **
 - [Electric Kitchen Equipment]({{site.baseurl}}{% link docs/upgrade_measures/ppl_electric_kitchen_equipment.md %})
