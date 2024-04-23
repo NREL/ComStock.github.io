@@ -24,18 +24,16 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 ### Measure Documentation
 - Economizers **
 - Variable Refrigerant Flow with 25% Upsizing Allowance for Heating **
-- Heat Pump Rooftop Units with Standard Performance **
-- Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods **
+- [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
-- Advanced Rooftop Unit Control **
+- [Advanced Rooftop Unit Control]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vav_rtu.md %})
 - Central Ground-Source Water-to-Water Heat Pump **
 - Packaged Water-to-Air Geothermal Heat Pump **
 - Ground-Coupled Console Water-to-Air Heat Pump **
 - [Electric Kitchen Equipment]({{site.baseurl}}{% link docs/upgrade_measures/ppl_electric_kitchen_equipment.md %})
-- Thermostat Control for Load Shedding **
-- Thermostat Control for Load Shifting **
+- [Thermostat Control for Load Shedding]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shedding.md %})
+- [Thermostat Control for Load Shifting]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shifting.md %})
 - Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
-- Package 3 – LED Lighting + Standard Performance HP RTU or HP Boilers **
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
 
 ** *Measure documentation coming soon...*
