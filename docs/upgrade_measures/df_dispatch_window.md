@@ -34,13 +34,10 @@ The dispatch schedule generation method is not a standalone measure and is inten
 
 This documentation covers the "Dispatch Schedule Generation for Demand Flexibility Measures" methodology that is leveraged in End-Use Savings Shape demand flexibility measures.
 
-  **Title**           Dispatch Schedule Generation for Demand Flexibility Measures
-  ------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Method Definition   This method generates schedule input for various demand flexibility measures by creating schedule (i.e. 8760 hourly values for the whole year) that determines when to dispatch demand flexibility for certain objective (e.g. daily peak load reduction), based on different load prediction methods: perfect prediction, bin-sampling, fixed schedule, and outdoor air temperature (OAT)-based prediction. Depending on the load prediction, daily peak periods are determined as a time window with specified length in each day that include the predicted daily peak load and with a secondary rule such as maximizing energy saving potential.
-  Applicability       This method is applicable to be used in conjunction with other ComStock Demand Flexibility measures, e.g. "Thermostat Control for Load Shedding" and "Thermostat Control for Load Shifting." Refer to the documentation of those specific measures to understand where they are applied.
-  Release             2024 Release 1: 2024/comstock_amy2018_release_1/
-
-  {#section-1 .list-paragraph .NREL_Head_01_Numbered}
+| **Title**  | **Dispatch Schedule Generation for Demand Flexibility Measures**                 |
+| Measure Definition |  This method generates schedule input for various demand flexibility measures by creating schedule (i.e. 8760 hourly values for the whole year) that determines when to dispatch demand flexibility for certain objective (e.g. daily peak load reduction), based on different load prediction methods: perfect prediction, bin-sampling, fixed schedule, and outdoor air temperature (OAT)-based prediction. Depending on the load prediction, daily peak periods are determined as a time window with specified length in each day that include the predicted daily peak load and with a secondary rule such as maximizing energy saving potential. |
+| Applicability      | This method is applicable to be used in conjunction with other ComStock Demand Flexibility measures, e.g. "Thermostat Control for Load Shedding" and "Thermostat Control for Load Shifting." Refer to the documentation of those specific measures to understand where they are applied. |
+| Release            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |
 
 ### 1.1 Grid-Interactive Efficient Buildings With Demand Flexibility
 
