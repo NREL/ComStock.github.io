@@ -22,7 +22,7 @@ Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/b
 The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.zoomgov.com/webinar/register/WN_d7imyRpGR7C-n7x_Iz5kyA?utm_source=NREL+End-Use+Load+Profiles+for+the+U.S.+Building+Stock#/registration) to register.
 
 ### Measure Documentation
-- Economizers **
+- [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
 - [Variable Refrigerant Flow with 25% Upsizing Allowance for Heating]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vrf_doas_upsizing.md %})
 - [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
@@ -35,6 +35,9 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - [Thermostat Control for Load Shifting]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shifting.md %})
 - Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
+
+### Supplemental Documentation
+- [Dispatch Schedule Generation for Demand Flexibility Measures]({{site.baseurl}}{% link docs/upgrade_measures/df_dispatch_window.md %})
 
 ** *Measure documentation coming soon...*
 
