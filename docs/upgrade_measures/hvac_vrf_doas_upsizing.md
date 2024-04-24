@@ -7,6 +7,7 @@ nav_order: 99
 
 # Variable Refrigerant Flow With 25% Upsizing Allowance for Heating
 {: .fw-500 }
+
 Author: Janghyun Kim, Chris CaraDonna, and Andrew Parker
 
 # Executive Summary
