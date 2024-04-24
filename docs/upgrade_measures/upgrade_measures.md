@@ -36,6 +36,9 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
 
+### Supplemental Documentation
+- [Dispatch Schedule Generation for Demand Flexibility Measures]({{site.baseurl}}{% link docs/upgrade_measures/df_dispatch_window.md %})
+
 ** *Measure documentation coming soon...*
 
 ## 2023 Release 2 (September 2023): 
