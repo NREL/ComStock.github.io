@@ -34,12 +34,12 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 This documentation covers residential unitary heat pump water heater (HPWH) upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock data lake “[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)” or via the Data Viewer at comstock.nrel.gov.
 
-| **Measure Title**  | **Residential Unitary Heat Pump Water Heater**                                                                                                            |
+| **Measure Title**  | Residential Unitary Heat Pump Water Heater                                                                                                            |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Measure Definition | This measure replaces existing fuel-fired and electric water heaters with residential unitary heat pump water heaters where applicable.                   |
-| Applicability      | Small service water heating applications: no recirculation system, not replacing booster water heater, and water tank size equal or less than 80 gallons. |
-| Not Applicable     | Buildings with recirculation system. Not replacing booster water heater. Water tank size larger than 80 gallons.                                          |
-| Release            | EUSS 2023 Release 1                                                                                                                                       |
+| **Measure Definition** | This measure replaces existing fuel-fired and electric water heaters with residential unitary heat pump water heaters where applicable.                   |
+| **Applicability**      | Small service water heating applications: no recirculation system, not replacing booster water heater, and water tank size equal or less than 80 gallons. |
+| **Not Applicable**     | Buildings with recirculation system. Not replacing booster water heater. Water tank size larger than 80 gallons.                                          |
+| **Release**            | EUSS 2023 Release 1                                                                                                                                       |
 
 # 2.  Technology Summary
 

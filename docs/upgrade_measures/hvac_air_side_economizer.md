@@ -40,11 +40,11 @@ As shown in the results sections, the savings potential of the economizer upgrad
 
 This documentation covers the economizer upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov.](https://comstock.nrel.gov/datasets)
 
-| **Measure Title**  | **Economizer**                 |
-| Measure Definition | Adding economizer to air systems (e.g., VAVs and RTUs) where economizers are not utilized in the existing building stock. Economizer configuration is based on ASHRAE 90.1. A common economizer fault (outdoor air damper fully closed fault) is also applied with certain prevalence: less than 35% of random buildings with economizers get faulted and the fault remains for a month randomly chosen. |
-| Applicability      | Buildings including air systems with ventilation that do not have economizers. Applicable buildings cover 66% of total building stock floor area. |
-| Not Applicable     | Buildings that do have economizers or without ventilation systems. |
-| Release            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |           
+| **Measure Title**  | Economizer                 |
+| **Measure Definition** | Adding economizer to air systems (e.g., VAVs and RTUs) where economizers are not utilized in the existing building stock. Economizer configuration is based on ASHRAE 90.1. A common economizer fault (outdoor air damper fully closed fault) is also applied with certain prevalence: less than 35% of random buildings with economizers get faulted and the fault remains for a month randomly chosen. |
+| **Applicability**      | Buildings including air systems with ventilation that do not have economizers. Applicable buildings cover 66% of total building stock floor area. |
+| **Not Applicable**     | Buildings that do have economizers or without ventilation systems. |
+| **Release**            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |           
 
 ## 2. Technology Summary
 

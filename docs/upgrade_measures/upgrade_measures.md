@@ -23,7 +23,7 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 
 ### Measure Documentation
 - [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
-- Variable Refrigerant Flow with 25% Upsizing Allowance for Heating **
+- [Variable Refrigerant Flow with 25% Upsizing Allowance for Heating]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vrf_doas_upsizing.md %})
 - [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
 - [Advanced Rooftop Unit Control]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vav_rtu.md %})
