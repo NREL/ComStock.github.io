@@ -10,7 +10,7 @@ nav_order: 99
 Author: Janghyun Kim, Chris CaraDonna, and Andrew Parker
 
 
-## Executive Summary
+# Executive Summary
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past several years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
@@ -36,7 +36,9 @@ The economizer measure applies to buildings that cover 66% of the total building
 
 As shown in the results sections, the savings potential of the economizer upgrade at the stock level is relatively low compared to [other upgrades](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html) we have analyzed. Since the amount of savings depends not only on the weather but also on the cooling demand of the building, the outdoor air requirement, the heat gain in the return air stream, and the configuration of the economizer, the savings will also vary for many buildings with different configurations and conditions. Additionally, economizer requirements have long been included in energy codes in many climates, limiting the opportunity and extent of savings from buildings that are not eligible for this upgrade because they already have economizers. However, since the economizer can be a simple upgrade (to an existing infrastructure) with a relatively low investment cost, the overall impact including the return on investment (or simple payback period) should be derived with the cost information.
 
-## 1. Introduction
+# Acknowledgments
+
+# 1. Introduction
 
 This documentation covers the economizer upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)" or via the Data Viewer at [comstock.nrel.gov.](https://comstock.nrel.gov/datasets)
 
@@ -46,7 +48,7 @@ This documentation covers the economizer upgrade methodology and briefly discuss
 | **Not Applicable**     | Buildings that do have economizers or without ventilation systems. |
 | **Release**            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |           
 
-## 2. Technology Summary
+# 2. Technology Summary
 
 An air-side economizer (hereafter economizer) has the capability of introducing and controlling favorable (i.e., relatively cold and dry) outdoor air into the air-conditioning system to reduce the mechanical cooling energy used by the HVAC system when spaces require cooling. Figure 1 shows the components of an economizer. Typical controllers shown in the figure can implement one of multiple control schemes by leveraging different inputs with different types of sensors.
 
@@ -66,7 +68,7 @@ Most of the economizer control types leverage temperature and humidity measureme
 
 In summary, economizers leverage simple concepts (i.e., bring in outdoor air when favorable) with an impact on the system efficiency depending on weather, a building's outdoor air requirement, heat gain level in the return air stream, control algorithm, and reliability of the economizer.
 
-## 3. ComStock Baseline Approach
+# 3. ComStock Baseline Approach
 
 ComStock baseline building models include HVAC systems with or without economizers, and configurations (e.g., control type and high limit) of economizers vary depending on different building parameters (e.g., climate zone). These decisions related to economizer configurations are determined by the requirements of the energy code that was in force when the HVAC system was last updated.
 
@@ -90,9 +92,9 @@ Figure 3 shows the comparison of economizer coverage with respect to building fl
 Figure 3. Economizer floor area coverage between ComStock and CBECS (2018)
 {:refdef}
 
-## 4. Modeling Approach
+# 4. Modeling Approach
 
-### 4.1 Applicability
+## 4.1 Applicability
 
 The applicability criterion of the economizer upgrade is simple; economizers will be installed in buildings including air systems with ventilation (i.e., AHUs and RTUs) that do not have economizers. Figure 4 shows the coverage of baseline buildings in terms of economizer availability and control type and how they contribute toward total building stock floor area and electricity usage for cooling. The applicable buildings for the economizer upgrade cover 66% of the total building stock floor area; however, this floor area also includes a building's total floor area when there are multiple air systems and if any of those air systems does not include an economizer. Thus, the actual impact of the economizer upgrade on the floor area will be less than 66%. Also, the amount of savings will be determined by the weather, a building's outdoor air requirement, heat gain level in the return air stream, and configuration of the economizer.
 
@@ -104,7 +106,7 @@ The applicability criterion of the economizer upgrade is simple; economizers wil
 Figure 4. Upgrade applicability on building stock floor area and electricity usage for cooling
 {:refdef}
 
-### 4.2 Configuration of Economizers
+## 4.2 Configuration of Economizers
 
 Specifics of a newly added economizer through an upgrade are applied in the same way as in models that already have economizers. In other words, configurations (e.g., control type and limit setting) are guided by the requirements of the energy code that was in force when the HVAC system was last updated. Each version of energy code (i.e., ASHRAE 90.1 or Title 24) includes best practices for leveraging economizers (depending on HVAC system size) as well as configuring economizers (depending on the climate zone). For example, ASHRAE 90.1-2010 includes information on preferrable control types, prohibited control types, and high limits for fixed control types, as shown in Figure 5. While some details vary between versions, these suggestions largely reflect physical reasonings such as considering temperature as well as humidity (i.e., prohibiting dry-bulb controls) measurements when the building is in humid regions (e.g., 1a, 2a, 3a, or 4a). More details on ComStock's economizer implementations are described in the ComStock Reference Documentation \[3\].
 
@@ -116,7 +118,7 @@ Specifics of a newly added economizer through an upgrade are applied in the same
 Figure 5. Economizer configuration suggestions in ASHRAE 90.1-2010
 {:refdef}
 
-### 4.3 Greenhouse Gas Emissions
+## 4.3 Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the window replacement scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determines the corresponding emissions produced per kilowatt-hour. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the latter uses the eGrid data set \[4\], \[5\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emissions scenario, but other analysis suggests that the choice of grid emissions scenario can impact results \[6\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 1, which are from Table 7.1.2(1) of draft American National Standards Institute/Residential Energy Services Network/International Code Council 301 \[7\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fosssil fuel emissions.
 
@@ -126,7 +128,7 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 ![](media/airside_economizer_image6.png)
 {:refdef}
 
-### 4.4 Limitations and Concerns
+## 4.4 Limitations and Concerns
 
 In the current version of ComStock, two faults related to the economizers are implemented in the "baseline" simulations: incorrect changeover (high limit) temperature fault for fixed dry-bulb control and damper fully closed fault for any economizers. Assumptions (detailed in the ComStock Reference Documentation \[3\]) such as fault prevalence, fault incidence, fault intensity, etc., are made to reflect differences between different faults. While these two faults are reflected in the baseline simulations, we made a judgement to include damper fully closed fault in upgrade simulations as well. We are assuming that the incorrect changeover temperature fault that is mostly caused by poor commissioning is minimized (i.e., not included in upgrade simulations) by best practices conducted in the latest market. However, the fully damper closed fault that is initially and automatically triggered by malfunctioning or broken damper linkage is considered an inherent probabilistic issue even with the new economizer upgrade. This assumption can be updated as new information about economizer fault prevalence is found. The fault implementation in ComStock's baseline and upgrade scenarios is still in its early stages and economizer faults implementation was the first trial. This necessitated thorough consideration and refinement of the implementation approach, drawing from the existing pool of information. As we have verified a standardized approach for implementing faults in ComStock, we will have future opportunities to implement more faults if fault data (e.g., fault prevalence, fault incidence, fault intensity) is available for highly impactful faults.
 
@@ -168,7 +170,7 @@ Figure 8 shows another example of a restaurant in a strip mall that has another 
 Figure 8. Issue in zone exhaust fan operation in a strip mall with restaurant, along with economizers in ComStock
 {:refdef}
 
-## 5. Output Variables
+# 5. Output Variables
 
 Table 2 includes a list of output variables that are calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the economizer measure applied. These output variables can also be used for understanding the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available.
 
@@ -178,13 +180,13 @@ Table 2. Output Variables Calculated from the Measure Application
 ![](media/airside_economizer_image10.png)
 {:refdef}
 
-## 6. Results
+# 6. Results
 
 In this section, results are presented both at the stock level and for individual buildings through savings distributions. Stock-level results include the combined impact of all the analyzed buildings in ComStock, including buildings that are not applicable to this measure. Therefore, they do not necessarily represent the energy savings of a particular or average building. Stock-level results should not be interpreted as the savings that a building might realize by implementing the upgrade measure.
 
 Total site energy savings are also presented in this section. Total site energy savings can be a useful metric, especially for quality assurance/quality control, but this metric on its own can have limitations for drawing conclusions. Further context should be considered, as site energy savings alone do not necessarily translate proportionally to savings for a particular fuel type (e.g., gas or electricity), source energy savings, cost savings, or greenhouse gas savings.
 
-### 6.1 Single Building Example
+## 6.1 Single Building Example
 
 Figure 9 shows a simulation example of an economizer installed in a building that previously did not have an economizer. In this example, outdoor air temperature varies between 32°F/0°C and 95°F/35°C throughout the year. Annual mechanical cooling energy savings were 2.6% for this example model (Figure 9 (a)) by leveraging free cooling during the times when outdoor air temperatures were below 50°F/10°C, as shown in Figure 9 (b) and (c). To note, savings potential of the economizer implementation heavily depends on the local climate, cooling needs, building's outdoor air requirement, heat gain level in the return air stream, and configuration of the economizer. From Figure 9 (c), it is easy to notice the relatively small-time window within three days where savings occur. These small-time windows disappear even more when weather is not favorable, the building does not need cooling, or the building already requires a high ventilation rate.
 
@@ -198,7 +200,7 @@ Figure 9. Simulation example of economizer implementation
 
 It must be noted that other factors such as return on investment should also be considered to comprehensively assess the impact of this upgrade.
 
-### 6.2 Stock Energy Impacts
+## 6.2 Stock Energy Impacts
 
 Figure 10 and Figure 11 show the comparison of annual site energy consumption between the baseline and the upgrade scenario for the entire building stock and buildings that are only applicable to the upgrade, respectively. The economizer measure with fault (described in section 3.3) reflected in the stock models demonstrates 0.3% total site energy savings (14 trillion British thermal units \[TBtu\]) for the U.S. commercial building stock modeled in ComStock. The savings are primarily attributed to:
 
@@ -230,7 +232,7 @@ Figure 11. Comparison of annual site energy consumption between the ComStock bas
 
 Electricity savings for cooling comes from leveraging colder outdoor air when spaces need cooling, which is highlighted in detail in Figure 9. Economizer requirements have been in the energy code in many climates for a long time, thus the opportunity and magnitude of the savings are limited by buildings that are not applicable to this upgrade because they already have economizers. More detailed findings are described in the following sections.
 
-### 6.3 Stock Greenhouse Gas Emissions Impact
+## 6.3 Stock Greenhouse Gas Emissions Impact
 
 ComStock simulation results show greenhouse gas emissions avoided across all electricity grid scenarios and on-site combustion fuel types (Figure 11). Greenhouse gas emissions avoided from the electricity grid with the economizer upgrade are 0.2%--0.4% depending on three grid scenarios.
 
@@ -242,7 +244,7 @@ ComStock simulation results show greenhouse gas emissions avoided across all ele
 Figure 12. Greenhouse gas emissions comparison of the ComStock baseline and the upgrade scenario. Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid. MMT stands for million metric tons.
 {:refdef}
 
-### 6.4 Site Energy Savings Distributions
+## 6.4 Site Energy Savings Distributions
 
 This section discusses site energy consumption for quality assurance and quality control purposes. Note that site energy savings can be useful for these purposes, but other factors should be considered when drawing conclusions, as these do not necessarily translate proportionally to source/primary energy savings, greenhouse gas emissions avoided, or energy cost.
 
@@ -284,7 +286,7 @@ Figure 15. Percent site energy savings distribution for ComStock models with the
 
 -   Additionally, some of the data points showing extreme savings in percent savings figures are (1) buildings either in very hot or very cold climates, (2) where absolute heating or cooling demand is small, and (3) even small change (due to upgrade) in heating or cooling demand (e.g., MWh) resulting in large relative (e.g., percent) savings. The stock-level or aggregate impact is well-reflected in the site EUI savings figures.
 
-### 6.5 Other Interesting Findings Related to Upgrade
+## 6.5 Other Interesting Findings Related to Upgrade
 
 Figure 15 shows the impact of economizers on floor area, electricity used for cooling, and total site energy in both baseline and upgrade simulations. Below are highlights from the figure:
 
@@ -324,7 +326,7 @@ Figure 18. Median electricity savings for cooling across contiguous U.S. states
 
 As shown in previous results, the stock-level savings potential of the economizer upgrade is relatively small compared to [other upgrades](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html) we have analyzed. Because the amount of savings is determined not only by the weather but also a building's cooling requirement, outdoor air requirement, heat gain level in the return air stream, and configuration of the economizer, the savings will also vary across many buildings with varying configurations and conditions. Additionally, economizer requirements have been in the energy code in many climates for a long time, thus the opportunity and magnitude of the savings are limited by buildings that are not applicable to this upgrade because they already have economizers. Figure 17 illustrates the median savings percentage of electricity used for cooling, which varies between 1% and 12 % across different states in the contiguous United States.
 
-## References
+# References
 
 \[1\] J. Kim *et al.*, "Research challenges and directions in HVAC fault prevalence," *Science and Technology for the Built Environment*, vol. 27, no. 5, pp. 624--640, May 2021, doi: 10.1080/23744731.2021.1898243.
 

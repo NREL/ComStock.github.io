@@ -10,7 +10,7 @@ nav_order: 15
 
 Author: Marlena Praprost
 
-## Executive Summary
+# Executive Summary
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the
 past three years, the objective of this work is to produce national datasets that empower analysts working for federal, state, utility,
 city, and manufacturer stakeholders to answer a broad range of analysis questions.
@@ -59,7 +59,9 @@ in carbon dioxide equivalent (CO<sub>2e</sub>), added for the three grid
 electricity scenarios presented, as well as 12 MMT CO<sub>2e</sub> of greenhouse
 gas emissions avoided for on-site natural gas consumption.
 
-## 1. Introduction
+# Acknowledgments
+
+# 1. Introduction
 
 This documentation covers the Electric Cooking Equipment upgrade
 methodology and briefly discusses key results. Results can be accessed
@@ -74,7 +76,7 @@ page.
 | **Not Applicable**     | This measure is not applicable to models that do not have kitchen space types or models that already have fully electric kitchens. |
 | **Release**            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |
 
-## 2. Technology Summary
+# 2. Technology Summary
 
 Cooking equipment in commercial buildings can consume high amounts of
 energy and contribute substantial heat gain to spaces. The California
@@ -117,7 +119,7 @@ it to its electric counterpart in applicable kitchen space types. The
 change in power may impact internal gains, and therefore heating and
 cooling energy, in addition to the equipment end use.
 
-### 2.1 Literature Review
+## 2.1 Literature Review
 
 A literature review was performed to determine the rated input power and
 fractions of radiant, latent, and lost energy for gas and electric
@@ -125,7 +127,7 @@ models for each of the six types of cooking equipment. In addition, this
 section outlines the sources used to determine the prevalence of gas and
 electric equipment for each of the six appliances modeled.
 
-#### 2.1.1. Rated Input Power
+### 2.1.1. Rated Input Power
 The rated input power of a piece of equipment refers to the maximum
 power drawn from the appliance as specified by the manufacturer. This is
 different from the rated output, which is the maximum power delivered by
@@ -141,7 +143,7 @@ product specifications, so these were used as an additional check when
 available. The sections below walk through this process for each of the
 six types of cooking equipment.
 
-##### 2.1.1.1. Broilers
+#### 2.1.1.1. Broilers
 
 There are several types of commercial broilers, including underfired,
 overfired, and salamander. According to a U.S. Department of Energy
@@ -199,7 +201,7 @@ underfired broilers, all of which add credibility and consistency to the
 modeling approach. Therefore, the final rated input power values for gas
 and electric broilers are 96,000 and 36,900 Btu/h, respectively.
 
-##### 2.1.1.2. Fryers
+#### 2.1.1.2. Fryers
 
 There are several types of commercial fryers, namely floor-mounted (also
 called "open deep-fat"), countertop, and pressure fryers. Floor-mounted
@@ -261,7 +263,7 @@ that is 40% more efficient than its gas counterpart. This efficiency
 difference aligns closely with the ENERGY STAR products, further
 validating that our rated power assumptions are reasonable.
 
-##### 2.1.1.3. Griddles
+#### 2.1.1.3. Griddles
 
 The two main types of griddles are standard griddles (flat, one-sided
 plate) and double-sided griddles (similar to a panini press). Standard
@@ -317,7 +319,7 @@ power and idle power efficiency differences can be extrapolated. Without
 additional data to compare, we will leave our rated power assumptions as
 is.
 
-##### 2.1.1.4. Ovens
+#### 2.1.1.4. Ovens
 
 Ovens are one of the most versatile types of cooking appliances, and
 therefore one of the most widely used. There are many types of ovens
@@ -368,7 +370,7 @@ there is not a significant difference in the rated power of gas and
 electric ovens; therefore, we kept our assumptions as is to avoid
 overestimation of modeled savings.
 
-##### 2.1.1.5. Ranges
+#### 2.1.1.5. Ranges
 
 Ranges are a standard appliance in most commercial kitchens. Commercial
 ranges typically have six burners, as shown below. Most ranges also
@@ -431,7 +433,7 @@ match very closely to the products on the market. Therefore, the gas and
 electric range rated input power values used in the model are 145,000
 Btu/h and 71,700 Btu/h, respectively.
 
-##### 2.1.1.6. Steamers
+#### 2.1.1.6. Steamers
 
 The last type of cooking equipment modeled in ComStock is commercial
 steamers. There are two main types of steamers: atmospheric
@@ -491,7 +493,7 @@ assumptions are reasonable. Once again, we feel comfortable using the
 slightly more conservative efficiency assumption to avoid overestimating
 savings.
 
-#### 2.1.2. Gas and Electric Prevalence
+### 2.1.2. Gas and Electric Prevalence
 
 We assume that the baseline model already has some prevalence of
 electric cooking equipment. To determine the breakdown, we used
@@ -521,7 +523,7 @@ kitchen square footage. [Section 2](#comstock-baseline-approach)
 describes how this was done in more detail, and the ComStock Reference
 Documentation provides the full explanation of this methodology \[15\].
 
-#### 2.1.3. Fraction Latent, Radiant, and Lost
+### 2.1.3. Fraction Latent, Radiant, and Lost
 
 Gas and electric equipment release heat differently, which affects zone
 heating and cooling loads. This heat is divided into four fractions that
@@ -595,7 +597,7 @@ more total heat gain to the space in most cases. The fraction lost is
 the fraction of heat removed from the space, and therefore does not
 impact zone loads.
 
-## 3. ComStock Baseline Approach
+# 3. ComStock Baseline Approach
 
 This measure replaces existing gas-fired cooking equipment in kitchen
 space types with comparable electric equipment. The measure only applies
@@ -715,12 +717,12 @@ quantity calculations based on kitchen size.
 Figure 9. Example of gas equipment object from OpenStudio<sup>®</sup>
 {:refdef}
 
-## 4. Modeling Approach
+# 4. Modeling Approach
 
 This measure replaces gas commercial cooking equipment with electric
 equipment where applicable.
 
-### 4.1. Applicability
+## 4.1. Applicability
 
 This measure is applicable to models that contain kitchen space types.
 This includes the following building types:
@@ -746,7 +748,7 @@ measure will not be applicable to this small subset of buildings. The
 vast majority of kitchens have at least one type of gas-fired cooking
 equipment in the model.
 
-### 4.2. Methodology
+## 4.2. Methodology
 
 This measure replaces gas commercial cooking equipment with electric
 equipment where applicable. More specifically, the measure loops through
@@ -810,7 +812,7 @@ Equipment measure, therefore the miscellaneous electric kitchen
 equipment object will represent less than 10% of the kitchen's electric
 load in the final model.
 
-## 5. Output Variables
+# 5. Output Variables
 
 Table 17 includes a list of output variables that are calculated in
 ComStock. These variables are important in terms of understanding the
@@ -831,7 +833,7 @@ gas interior equipment are for the entire building. Energy consumption
 attributed to kitchen space types is not broken out in the published
 output variables.
 
-## 6. Results
+# 6. Results
 
 In this section, results are presented both at the stock level and for
 individual buildings through savings distributions. Stock-level results
@@ -855,7 +857,7 @@ increased consumption of another. Many factors should be considered when
 analyzing the impact of an energy efficiency or electrification
 strategy, depending on the use case.
 
-### 6.1. Single Building Example
+## 6.1. Single Building Example
 
 This section demonstrates the measure application on a 3,000-ft<sup>2</sup>
 full-service restaurant test model in Detroit, Michigan. The measure
@@ -885,7 +887,7 @@ Upgrade Was Applied
 ![](media/electric_kitchen_equipment_table_18.png)
 {:refdef}
 
-### 6.2. Stock Energy Impacts
+## 6.2. Stock Energy Impacts
 
 This measure was applicable to 37.5% of the ComStock floor area. This
 measure demonstrates 2.0% total site energy savings (86 TBtu) for the
@@ -944,7 +946,7 @@ cooking equipment. At a stock level, the total electricity consumption
 increased by 99 TBtu (3.4%), and natural gas consumption decreased by
 186 TBtu (15.4%).
 
-### 6.3. Stock Greenhouse Gas Emissions Impact
+## 6.3. Stock Greenhouse Gas Emissions Impact
 
 ComStock models three electricity grid scenarios to show potential
 avoided greenhouse gas emissions: Cambium Long-Run Marginal Emissions
@@ -973,7 +975,7 @@ Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year,
 Cambium LRMER Low RE Cost 15-Year, and eGRID. MMT stands for million
 metric tons.
 
-### 6.4. Site Energy Savings Distributions
+## 6.4. Site Energy Savings Distributions
 
 This section discusses site energy consumption for quality
 assurance/quality control purposes. Note that site energy savings can be
@@ -1049,7 +1051,7 @@ touched by the upgrade. Some buildings have very minimal changes due
 only to minor changes in ambient air temperature that affect the
 operation of these systems.
 
-### 6.5. Peak Impacts
+## 6.5. Peak Impacts
 
 Figure 13 shows the impact of the Electric Cooking Equipment upgrade on
 seasonal peak hours. The seasonal peak times had very little change from
@@ -1095,7 +1097,7 @@ addition of the new electric cooking loads. All remaining building types
 do not have kitchens and therefore have no change in peak loads from
 this measure.
 
-### 6.6. Building Type Impacts
+## 6.6. Building Type Impacts
 
 Figure 15 and Figure 16 show the impacts of the Electric Cooking
 Equipment upgrade on natural gas and electricity consumption across the
@@ -1126,7 +1128,7 @@ Figure 16. Annual stock electricity consumption by building type before
 and after the Electric Cooking Equipment upgrade was applied
 {:refdef}
 
-##  References
+#  References
 
 \[1\] \"California Commercial End-Use Survey,\" California Energy Commission, 2006.
 

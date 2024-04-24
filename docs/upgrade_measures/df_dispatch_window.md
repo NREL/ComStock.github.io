@@ -10,7 +10,7 @@ nav_order: 99
 
 Author: Jie Xiong and Janghyun Kim
 
-## Executive Summary
+# Executive Summary
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past several years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
@@ -30,7 +30,9 @@ Given the load prediction, daily peak periods are determined as a time window wi
 
 The dispatch schedule generation method is not a standalone measure and is intended to be combined with other demand flexibility measures that could leverage the peak schedule and apply demand controls on specific systems or devices for demand response, such as Thermostat Control for Load Shedding and Thermostat Control for Load Shifting listed on the ComStock [webpage](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html).
 
-## 1. Introduction
+# Acknowledgments
+
+# 1. Introduction
 
 This documentation covers the "Dispatch Schedule Generation for Demand Flexibility Measures" methodology that is leveraged in End-Use Savings Shape demand flexibility measures.
 
@@ -39,13 +41,13 @@ This documentation covers the "Dispatch Schedule Generation for Demand Flexibili
 | **Applicability**      | This method is applicable to be used in conjunction with other ComStock Demand Flexibility measures, e.g. "Thermostat Control for Load Shedding" and "Thermostat Control for Load Shifting." Refer to the documentation of those specific measures to understand where they are applied. |
 | **Release**            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |
 
-### 1.1 Grid-Interactive Efficient Buildings With Demand Flexibility
+## 1.1 Grid-Interactive Efficient Buildings With Demand Flexibility
 
 Electricity consumers across the residential, commercial, and industrial sectors are increasingly interested in opportunities to reduce their electricity bills and carbon footprint. Simultaneously, utilities, system operators, and state decision makers are aiming to reduce costs, more effectively utilize existing grid assets, maintain power system reliability, and reach carbon reduction targets. At the intersection of the customer and utility perspectives, buildings and their associated loads offer opportunities to align the interests of consumers, system operators, and policy decision makers. Interactivity between buildings and the broader electricity system expand these opportunities, and is enabled by advancements in building control technologies, data availability, advanced metering, new tariff designs, and improved analytics for energy management. Collectively, these smart technologies for energy management are often referred to as grid-interactive efficient buildings (GEBs). GEBs utilize high-efficiency components to reduce electricity demand and increase the flexibility of specific building loads, responding to real-time signals or advanced calls for demand response. By shedding and shifting building load, these GEBs can reduce electricity bills, the cost of operating the grid, and emissions, all with minimum impact on occupant comfort. The methods for achieving these GEB objectives are called energy efficiency and demand flexibility measures. Specifically, demand flexibility measures focus on adjusting building loads (shedding and shifting) across different time scales.
 
 There are many resources for GEB research and demand flexibility strategies, from state to national scales. The U.S. Department of Energy (DOE) *National Roadmap for Grid-Interactive Efficient Buildings* (2021) \[1\] and Langevin et. al (2021) \[2\] both introduce GEB opportunities at a national scale. DOE has also published a technical report series \[3\] highlighting the state of the art for specific GEB technologies. The General Services Administration (GSA) has taken early action to identify potential and implement GEBs in the federal building stock with a set of GSA reports \[4\] highlighting the opportunities, demonstration projects, and lessons learned, among which the case studies \[5\] are directed to policy makers and utilities aiming to incentivize GEB deployment. While federal decision makers oversee GEB and demand flexibility strategies at a high level, many studies have focused on single building operations or even individual system control strategies for demand flexibility \[6\], \[7\], \[8\], \[9\], \[10\].
 
-### 1.2 Importance of Load Prediction for Demand Flexibility
+## 1.2 Importance of Load Prediction for Demand Flexibility
 
 Based on the above resources, existing GEB demand flexibility measures targeting major building systems (e.g., HVAC system, lighting system) focus on load shed and shift strategies to flatten net system loads by reducing peak period load (e.g., through dimming the lights or a thermostat setbacks) and moving load off-peak (e.g., to the hours before and/or after the peak window).
 
@@ -73,13 +75,13 @@ Table 1. Typical Demand Response Program Types and Example Utility Programs \[16
 
 The latter two categories of demand response programs summarized above are load capacity related programs, and are usually more complicated. They require the customers (owners or managers of individual facility or building) to gain extensive knowledge of the building load profile and align the control with the predicted peak load (either in the system or building level depending on specific application) and the corresponding demand response program structure in order to dispatch demand at the proper time to maximize bill savings. With sufficient advance notice of demand response calls (e.g., received from advanced demand response programs via the OpenADR protocol \[21\]) and/or the ability to predict dispatch needs, buildings can use pre-determined logics or more sophisticated control algorithms such as model predictive control to provide advanced demand flexibility with minimal occupant impacts \[22\], \[23\]. Model predictive control has been deployed by several companies for load regulation in buildings, such as QCoefficient \[24\] and Enbala \[25\]. The QCoefficient's EMeister model predictive control is a supervisory controller that communicates with existing building automation systems, aiming at day-ahead load/bill prediction based on weather and pricing inputs to override controls for demand reduction, and it was implemented in several large commercial buildings/campuses with proven performance of reduced peak demand and energy savings. Enbala's Concerto software, on the other hand, serves as a management platform for large-scale aggregated distributed energy resources (e.g. buildings) to predict dispatchable demand capacity to the grid in real time and optimize the operations of a mixed-asset ecosystem for enrolled bidding capacity to the utility program (the enrolled/contracted/bidding capacity program type in Table 1).
 
-## 2. Demand Flexibility in ComStock
+# 2. Demand Flexibility in ComStock
 
 The current ComStock workflow does not include any demand flexibility in the baseline. This is likely sufficient for this study since demand response measures are not yet deployed at scale, so their impact at the stock level is likely minimal at this time. The existing baseline schedules (e.g., thermostat setpoint schedules) in ComStock are based on a building automation data from three industry-provided private data sources with over 3,700 buildings, described in detail in the "ComStock Documentation" report \[26\]. The output schedule from the dispatch schedule generation method described in this document will serve as the input for specific demand flexibility measures applied to certain systems, and the detailed baseline descriptions will be provided in the corresponding measure documents on the ComStock [webpage](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html)---Thermostat Control for Load Shedding and Thermostat Control for Load Shifting.
 
-## 3. Modeling Approach
+# 3. Modeling Approach
 
-### 3.1 Dispatch Schedule Generation
+## 3.1 Dispatch Schedule Generation
 
 The dispatch schedule generation method creates a schedule (i.e., 8760 hourly values for the whole year) with hourly indicators of when to dispatch demand flexibility for a certain objective (e.g., daily peak load reductions), with options using different load prediction methods: perfect prediction, bin-sampling, fixed schedule, and outdoor air temperature (OAT)-based prediction. High-level descriptions of each prediction method are as follows:
 
@@ -93,11 +95,11 @@ The dispatch schedule generation method creates a schedule (i.e., 8760 hourly va
 
 There are various methods that could be applied in order to understand building load, as complex as using digital twin modeling approaches or machine learning prediction models (data-driven gray-box or black-box models such as in \[27\], \[28\], \[29\]), or as straightforward as reading in baseline (for simulation) or historical (for actual) building load data and adjusting the data for prediction. In a dynamic dispatch scenario, the control system is expected to decide what data could be leveraged to determine optimized dispatch. The practical application of demand flexibility dispatch measures would require extensive input data and complex model structure (such as the neural network model developed in \[30\]) for load prediction. Detailed definitions and explanations are provided for the options selected/developed in the following sections.
 
-#### 3.1.1 Perfect Load Prediction Through Full Baseline Simulation
+### 3.1.1 Perfect Load Prediction Through Full Baseline Simulation
 
 The perfect prediction method performs a full baseline simulation to obtain the annual load profile as predicted load, representing the ideal scenario that the load profile could be---perfectly predicted without any uncertainty, assuming that the baseline simulation results are the truth. The daily peak load and timing (and other associated characteristics) can be obtained directly from the annual simulation results. Although such data might not be available in real-world scenarios, the perfect prediction option represents the best scenario of load prediction that could support discovering the maximum potential of applied demand flexibility measures, or contribute to quantifying the upper limit of achievable demand savings or peak reductions.
 
-#### 3.1.2 Load Prediction Through Bin-Sampling
+### 3.1.2 Load Prediction Through Bin-Sampling
 
 The objective of utilizing bin-sampling techniques in this measure is to generate predicted load profiles that carry sufficient insight to the timing, shape, and magnitude of the building's daily peak demand. This method bins 365 days in a year (e.g., Jan 1<sup>st</sup> = bin A, Jan 2<sup>nd</sup> = bin B, Jan 3<sup>rd</sup> = bin A, ..., Dec 31<sup>st</sup> = bin Q) using weather data based on the assumption that for an individual building with consistent schedules (lighting schedule, plug load schedule, occupancy schedule, etc.), similar weather conditions lead to similar load profiles. The binning criterion is based on weather parameters that have the most impact on the target load variations. Specifically, for cooling load prediction, this measure uses two variables for binning---daily maximum outdoor air temperature (OATmax), and hour of daily maximum outdoor air temperature (OATmaxhour). The daily maximum outdoor air temperature is selected to characterize the seasonal weather variations, and the time of the maximum outdoor air temperature is selected to characterize the daily weather variations and to capture the relationship between maximum temperature and hour of peak load. For heating load prediction, on the other hand, the daily minimum outdoor air temperature (OATmin) should be selected instead of OATmax, and correspondingly the hour of daily minimum outdoor air temperature (OATminhour) would take the place of OATmaxhour. The binning criteria could be flexible for different scenarios. In the example scenario, bins are determined to distribute number of days in bins as evenly or normally as possible to make bins mathematically representative while considering the practical applications; from prior knowledge, more discretization is needed for the noon to afternoon period where most cooling peaks take place, for cooling load prediction specifically.
 
@@ -131,7 +133,7 @@ The green load profiles represent daily simulation results throughout the year c
 
 This method is used as a proxy to characterize the mean/median performance of any applicable control systems providing demand flexibility, intended to represent actual predictions that could be made using historical measured data, with introduced uncertainty.
 
-#### 3.1.3 Determining Daily Peak Window
+### 3.1.3 Determining Daily Peak Window
 
 With the full year load data generated by the above two options and the user input of peak period length (default 4 hours to be aligned with the most common length of demand response events \[15\]), this measure determines daily peak windows by following two rules:
 
@@ -145,7 +147,7 @@ With the full year load data generated by the above two options and the user inp
 
     c.  Center the peak window on the time of the predicted daily peak demand.
 
-#### 3.1.4 Fixed Schedule Peak Window
+### 3.1.4 Fixed Schedule Peak Window
 
 The fixed schedule option represents the most used demand flexibility strategy currently (discussed in Section 1.2) and is implemented as a comparative reference. We integrated the existing GEB measure in the OpenStudio GEB measure gem \[31\] to generate a daily schedule of the peak window by specifying peak window start and end time for summer and winter. The assumed peak window specifications are summarized in Table 4, which are derived from assumed peak windows by Electricity Market Module regions from EIA documentation \[12\]. Although the fixed schedule method has been widely used as the default control strategy in existing demand flexibility research, it has evident drawbacks when applying for daily dispatch providing the natural conflict of "fixed" and "flexibility", which will be shown in Section 4.
 
@@ -155,11 +157,11 @@ Table 4. Assumed Fixed Peak Window by Climate Zones
 ![Table Description automatically generated](media/df_dispatch_window_image6.png)
 {:refdef}
 
-#### 3.1.5 Outdoor Air Temperature-Based Load Prediction
+### 3.1.5 Outdoor Air Temperature-Based Load Prediction
 
 The OAT-based prediction option uses the statistics of OAT (minimum and maximum) as the indicators of peak load, based on the assumption that daily maximum temperature will lead to daily peak cooling load in summer and daily minimum temperature will lead to daily peak heating load in winter, both with some time delay (corresponding to the response time of building loads to change in outdoor conditions). This is true for building loads that are most sensitive to OAT and have minimal disturbances from other factors such as internal load or other weather characteristics. This method takes the OAT profile as input to infer the daily cooling and heating peaks with specified delay time and creates the corresponding peak schedules.
 
-### 3.2 Limitations and Concerns
+## 3.2 Limitations and Concerns
 
 Below are limitations and concerns of utilizing this measure:
 
@@ -173,9 +175,9 @@ Below are limitations and concerns of utilizing this measure:
 
 -   The current approach described in this document is designed based on targeting two demand flexibility measures: load shed with thermostat setback and load shift with pre-cooling.
 
-## 4. Test Results
+# 4. Test Results
 
-### 4.1 Uncertainty in Peak Prediction and Impact on Load Shed Strategy
+## 4.1 Uncertainty in Peak Prediction and Impact on Load Shed Strategy
 
 Figure 3 shows load profiles from five consecutive days comparing the same single building model with the baseline scenario and with the load shedding measure applied with either the perfect prediction or bin-sampling method for load prediction. The perfect and bin-sampling methods show accordance in the first three days, but the bin-sampling method mis-predicts the time of peak load (much earlier than the actual peak in the baseline) and thus fails to shed peak load in the last two days. This is because the load profiles bin assignment by the bin-sampling method for the last two days are not representative of the true load profiles due to conditions that are not captured in the method (i.e., conditions other than outdoor temperature). The influence of these other conditions on load shape binning is generally trivial during summer and winter seasons when outdoor temperature characteristics are monotonous and their impact on building load dominates other weather factors such as solar radiation and cloud cover. However, the importance of other conditions increases during shoulder seasons when weather conditions are more random or fluctuating and are affected by multiple factors.
 
@@ -205,7 +207,7 @@ Figure 4. Load profile comparison for baseline and load shedding with the perfec
 Figure 5. Load profile comparison for baseline and load shedding with perfect prediction and OAT-based prediction approaches
 {:refdef}
 
-### 4.2 Computational Efficiency of the Bin-Sampling Method
+## 4.2 Computational Efficiency of the Bin-Sampling Method
 
 The bin-sampling method was proposed as a compromise between computational effort and prediction accuracy within the constraints of the ComStock workflow, based on the intuitive assumption that simulations on a small number of days (samples) would be computationally lighter compared to a full annual simulation, and thus should take less computational time for load prediction than the perfect load prediction method. However, the bin-sampling method underperformed in test implementation regarding computational time (much longer time consumed) when applied with the demand flexibility measure of load shedding in a ComStock run with 90 applicable building models (large offices with electric HVAC systems). The test run results are summarized in Table 5.
 
@@ -217,7 +219,7 @@ Table 5. Consumed Run Time With the Load Shedding Measure With Different Dispatc
 
 The reason for the unexpected extra time used by the bin-sampling method is the repeated pre-simulation steps for EnergyPlus/OpenStudio simulation (warm-up and sizing) for each sample daily simulation. This issue has not been resolved at the time of release and future work is needed to make the bin-sampling method more feasible in terms of computational time.
 
-### 4.3 Test Run Results Comparison
+## 4.3 Test Run Results Comparison
 
 A ComStock test run (with 10,000 building models and 90 applicable large offices) was performed to compare the effectiveness of the thermostat control for the load shedding measure applied with different dispatch schedule generation options: perfect load prediction, OAT-based prediction, and fixed schedules (the bin-sampling method is excluded in this test due to the computational issue). The test run includes 90 large office models that are applicable for applying the demand flexibility measure. Because the major objective of the demand flexibility measure in this analysis is to achieve peak load reductions (on a daily basis), we use the distribution of median daily peak load reduction percentages by month throughout the stock as the metric to illustrate and compare the performance (more explanation in the demand flexibility measure documentation Section 5.5). Figure 6 shows that the perfect prediction option outperforms the fixed schedule option and the OAT-based prediction option, which is consistent with the single building comparison results shown in Section 4.1. In addition, the fixed schedule option has the largest negative peak savings (Q1-Q3 boxes all located on the negative side), which indicates new higher peak loads are generated with the fixed schedule option for most of the applicable buildings for most of the time.
 
@@ -229,7 +231,7 @@ A ComStock test run (with 10,000 building models and 90 applicable large offices
 Figure 6. Distribution of median daily peak load reduction percentage by month compared to the baseline model for load shedding measure with perfect prediction, fixed schedule, and OAT-based prediction options
 {:refdef}
 
-## References
+# References
 
 \[1\] A. Satchwell *et al.*, "A National Roadmap for Grid-Interactive Efficient Buildings," None, 1784302, ark:/13030/qt78k303s5, May 2021. doi: 10.2172/1784302.
 
