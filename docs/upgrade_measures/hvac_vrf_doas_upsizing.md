@@ -47,7 +47,7 @@ Compared to the [VRF DOAS analysis with original sizing](https://www.nrel.gov/do
 
 This documentation covers the upgrade methodology for variable refrigerant flow (VRF) with 25% upsizing allowance for heating and briefly discusses key results. Results can be accessed on the ComStock data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
-| **Measure Title**  | **Electric Cooking Equipment**                 |
+| **Measure Title**  | **Variable Refrigerant Flow With 25% Upsizing Allowance for Heating**                 |
 | Measure Definition | Replace variable air volume (VAV) or rooftop unit (RTU) systems with VRF (HR) dedicated outdoor air system (DOAS) and allow up to 25% upsizing (or up to 125% of original size) from cooling design load applied to a heating-dominant building. |
 | Applicability      | Applicable to all spaces served by VAV and RTU systems that are not served by district heating or cooling. May apply to a portion of the building. The total number of indoor units per outdoor unit is also limited to 41. Applicable to 49% of total floor area of existing commercial building stock. |
 | Not Applicable     | Not applicable to spaces (kitchen or dining) where a VRF (HR) with DOAS may be less appropriate. Buildings that are too large (\>200,000 ft<sup>2</sup>) or have large exhaust air are excluded as well. |
