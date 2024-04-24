@@ -22,7 +22,7 @@ Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/b
 The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.zoomgov.com/webinar/register/WN_d7imyRpGR7C-n7x_Iz5kyA?utm_source=NREL+End-Use+Load+Profiles+for+the+U.S.+Building+Stock#/registration) to register.
 
 ### Measure Documentation
-- Economizers **
+- [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
 - Variable Refrigerant Flow with 25% Upsizing Allowance for Heating **
 - [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
