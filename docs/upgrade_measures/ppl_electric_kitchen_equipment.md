@@ -59,8 +59,6 @@ in carbon dioxide equivalent (CO<sub>2e</sub>), added for the three grid
 electricity scenarios presented, as well as 12 MMT CO<sub>2e</sub> of greenhouse
 gas emissions avoided for on-site natural gas consumption.
 
-# Acknowledgments
-
 # 1. Introduction
 
 This documentation covers the Electric Cooking Equipment upgrade
