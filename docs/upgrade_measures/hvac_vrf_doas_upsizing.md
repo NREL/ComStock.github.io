@@ -6,10 +6,10 @@ nav_order: 99
 ---
 
 # Variable Refrigerant Flow With 25% Upsizing Allowance for Heating
-
+{: .fw-500 }
 Author: Janghyun Kim, Chris CaraDonna, and Andrew Parker
 
-## Executive Summary
+# Executive Summary
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past several years, the objective of this work is to produce national datasets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
@@ -43,7 +43,10 @@ The VRF DOAS with 25% upsizing allowance upgrade demonstrates 13% total site ene
 
 Compared to the [VRF DOAS analysis with original sizing](https://www.nrel.gov/docs/fy24osti/86103.pdf) we performed previously, the 25% upsizing allowance did not perform noticeably better. While the upsized unit handled more heating load with heat pumps and resulted in less usage of backup electric resistance heating (compared to the original sizing scenario), the upsized units also suffered with slightly decreased rated coefficients of performance (COP) based on the regression fittings we extracted from the products as shown in Figure 12 of the previous report. We acknowledge that there can be a better design practice to avoid "lower COP for larger units" as described in Section 2.4, and future analysis can explore this aspect. To assess the impact of this upgrade more comprehensively, other factors such as return on investment and utility bill cost reflecting demand charges should also be considered.
 
-## 1. Introduction
+# Acknowledgments
+The authors would like to acknowledge the valuable guidance and input provided by Eric Bonnema, Michael Deru, Shanti Pless, Jeff Munk, and Marcus Bianchi at the National Renewable Energy Laboratory.
+
+# 1. Introduction
 
 This documentation covers the upgrade methodology for variable refrigerant flow (VRF) with 25% upsizing allowance for heating and briefly discusses key results. Results can be accessed on the ComStock data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
@@ -91,7 +94,7 @@ They can also be sized such that the available heat pump capacity at the design 
 
 For this study, we allow up to 25% upsizing (or 125% of the original size) from the design cooling load only for heating-dominant buildings. To provide high-level context on the 25% upsizing algorithm, if a thermal zone is cooling dominant, the indoor unit capacity of the VRF heat pump is sized based on the design cooling load. However, if the thermal zone is heating dominant, it is allowed for the 25% upsizing allowance. Once the 25% upsizing is allowed, if the 25% upsized capacity (or 125% from the original size) represented with the design condition exceeds the design heating load, the design heating load is used to calculate the rated capacity of the indoor unit. If the 25% upsized capacity represented with the design condition does not exceed the design heating load, the 25% upsized capacity represented with the rated condition is used for the capacity of the indoor unit, while the remaining heating load is handled with the supplemental/backup electric resistance coil. The outdoor unit capacity is calculated by summing all indoor unit capacities. More detailed description of the upsizing algorithm is presented in Section 3.2.2 and details on the DOAS and additional background on the technology can be found in the [Variable Refrigerant Flow with Heat Recovery and Dedicated Outdoor Air System](https://www.nrel.gov/docs/fy24osti/86103.pdf) measure from Commercial End-Use Savings Shapes 2023 Release 2.
 
-## 2. ComStock Baseline Approach
+# 2. ComStock Baseline Approach
 
 The state (e.g., type, efficiency, configuration) of the existing HVAC systems in ComStock is based on a combination of the year a building was built and how the equipment has been updated over time. Equipment performance and features are assumed to meet the energy code requirements at the time and location of installation. The ComStock workflow checks the necessary characteristics of each HVAC system to determine if a feature is required. Similarly, heating, cooling, and fan efficiencies are set based on the presiding code year. The baseline assumptions are important, as they will influence the estimations of savings from a certain upgrade.
 
@@ -109,9 +112,9 @@ As shown in Figure 3, VRF DOAS exist in a very small portion of the baseline mod
 
 One of the outcomes of this upgrade implementation is to determine reasonable buildings and HVAC systems that could be retrofitted with a VRF DOAS; therefore, understanding the distribution of potential HVAC systems is important. More details regarding the applicability criteria for the upgrade can be found in Section 2.1.
 
-## 3. Modeling Approach
+# 3. Modeling Approach
 
-### 3.1 Applicability
+## 3.1 Applicability
 
 In the 2021 Slipstream report \[8\], representatives from the major manufacturers (Daikin, Mitsubishi, LG, and Fujitsu) shared thoughts on favorable candidates for VRF retrofit projects based on their experiences: old buildings with tight spaces, buildings using a significant amount of electric heating, and buildings no larger than 200,000 ft<sup>2</sup> of floor area. For the larger buildings, because the VRF system is modular, the implementation cost increases linearly with increasing floor area. Because the unit cost (per ton) of traditional systems (including boilers and chillers) decreases with increasing floor area, the report mentions that it usually makes VRF systems less attractive for larger buildings in terms of economics. Additionally, if an existing building has a VAV system with features like ductwork, piping, and wiring already in place, it is often more economical to upgrade the existing system rather than switching to a VRF DOAS. Buildings that have high ventilation rates (either high outdoor air or high exhaust air rates) were also not considered good candidates by manufacturer representatives. If a building brings in a large amount of outdoor air (e.g., a hospital), more mechanical air-conditioning effort will be geared toward the DOAS. This means that the VRF---which has a higher coefficient of performance (COP)---will be used less, decreasing the return on investment.
 
@@ -133,11 +136,11 @@ Figure 4 shows the coverage of applicable buildings for this upgrade in terms of
 Figure 4. Coverage of applicable buildings for the upgrade
 {:refdef}
 
-### 3.2 Technology Specifics
+## 3.2 Technology Specifics
 
 This report is a slight modification to the [Variable Refrigerant Flow with Heat Recovery and Dedicated Outdoor Air System](https://www.nrel.gov/docs/fy24osti/86103.pdf) measure from Commercial End-Use Savings Shapes 2023 Release 2, allowing 25% upsizing (or 125% from the original size) for buildings in heating-dominant regions. Because it shares much of the same information described in the previous documentation, the following sections highlight major differences and some key information that are worth repeating for VRF systems. All details regarding the DOAS can be found in the previous documentation.
 
-#### 3.2.1 Clear Definitions of COP Metrics
+### 3.2.1 Clear Definitions of COP Metrics
 
 COP is a well-known metric within the HVAC industry; however, it can often have different definitions, and calculation methods can be different. We use and differentiate between the three COP metrics shown below throughout this document:
 
@@ -147,7 +150,7 @@ COP is a well-known metric within the HVAC industry; however, it can often have 
 
 -   **COP<sub>system,operating</sub>** is the overall system COP including not only the compressor and outdoor unit fan powers, but also electricity used for backup/supplemental heating when VRF heating capacity cannot meet the heating demand. Compressor power in this metric also includes electricity used for reverse cycling for defrosting operation and miscellaneous power such as crankcase and basin heater powers. The fan power used in indoor unit fans is not included in this metric, and operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP reflect actual/varying operating conditions.
 
-#### 3.2.2 Sizing
+### 3.2.2 Sizing
 
 The only change in this study from [previous documentation](https://www.nrel.gov/docs/fy24osti/86103.pdf) (other than fixes described in Section 2.2.3 that were resolved from the previous documentation) is the sizing algorithm for the VRF system: originally from cooling-design-load-based sizing to allowing up to 25% upsizing (or 125% from original sizing) from the cooling design load when the design heating load surpasses the design cooling load. Upsizing is intended to enable the VRF heat pump to address more of the heating load, minimizing the use of relatively less efficient electric resistance backup heat. The custom sizing algorithm applied in this study is depicted in Figure 5. To note, because the sizing algorithm in the EnergyPlus calculates the appropriate design airflow rate (based on design load conditions) for each indoor unit, the upsizing algorithm implemented in this study does not change the airflow unless it violates the cfm/ton bound that is warned from the EnergyPlus. This is a difference compared to a realistic upsizing scenario where, in reality, the upsizing unit will involve upsized airflow as well.
 
@@ -159,7 +162,7 @@ The only change in this study from [previous documentation](https://www.nrel.gov
 Figure 5. Narrative description of upsizing algorithm in measure implementation
 {:refdef}
 
-#### 3.2.3 Other Modeling Updates
+### 3.2.3 Other Modeling Updates
 
 There are several fixes we made that did not happen in the previous work. These are listed below, which are from simple mistakes to EnergyPlus<sup>®</sup> source code limitations:
 
@@ -167,7 +170,7 @@ There are several fixes we made that did not happen in the previous work. These 
 
 -   There are many output variables shown in Section 3 that are being reported after a ComStock run. While the design COP of a VRF heat pump at −22°F was initially implemented in the workflow to provide performance indicators of the cold climate heat pump, it was discovered that this output was never reported after the actual ComStock run. This output is fixed in this iteration.
 
-### 3.3 Greenhouse Gas Emissions
+## 3.3 Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the window replacement scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determines the corresponding emissions produced per kilowatt-hour. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy Cost 15-Year and LRMER Low Renewable Energy Cost 15-Year---use the Cambium dataset, and the third scenario uses the Emissions & Generation Resource Integrated Database (eGRID) dataset \[9, 10\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium datasets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emissions scenario, but other analysis suggests that the choice of grid emissions scenario can impact results \[12\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 2, which are from Table 7.1.2(1) of the draft Standard 301 from the American National Standards Institute/Residential Energy Services Network/International Code Council \[13\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
@@ -177,7 +180,7 @@ Table 2. On-Site Fossil Fuel Emissions Factors
 ![Text, table Description automatically generated with medium confidence](media/hvac_vrf_25pct_upsizing_image7.png)
 {:refdef}
 
-### 3.4 Limitations and Concerns
+## 3.4 Limitations and Concerns
 
 There are several limitations not captured in this analysis that could result in unrealistic representations of some buildings. Below are those limitations, which can be further improved in future analysis:
 
@@ -191,7 +194,7 @@ There are several limitations not captured in this analysis that could result in
 
 -   Based on a review from the reviewer before publishing the report, it has been revealed that, in some cases, zones that would benefit from the upsizing may be overlooked with the upsizing algorithm applied in this analysis. Just comparing design condition loads (based on the algorithm described in Figure 5) does not account for the change in cooling/heating capacity between design conditions and rated conditions. Thus, it is possible for a zone (or zones) in a building to have a lower design heating load than cooling load, but still require a larger rated capacity heat pump to meet the design heating load than the design cooling load. We suspect that the impact of this issue will not make a noticeable change in the results we are presenting but the issue will be reviewed and revised in the future analysis.
 
-## 4. Output Variables
+# 4. Output Variables
 
 Table 3 includes a list of output variables calculated in ComStock. These variables are important in terms of understanding the differences between buildings with and without the VRF (HR) with 25% upsizing allowance measure applied. These output variables can also be used to understand the economics of the upgrade (e.g., return on investment) if cost information (i.e., material, labor, and maintenance costs for technology implementation) is available.
 
@@ -235,7 +238,7 @@ Table 3. Output Variables Calculated from the Measure Application
 | vrf_heating_design_cop_40f | Design COP of VRF heating equipment at 40°F weighted by load |
 | vrf_temperature_type | Outdoor temperature type used for VRF heating energy input ratio performance curves, either dry bulb or wet bulb |
 
-## 5. Results
+# 5. Results
 
 This section presents results both at the stock level and for individual buildings through savings distributions. Stock-level results include the combined impact of all the analyzed buildings in ComStock, including buildings that are not applicable to this upgrade. Therefore, they do not necessarily represent the energy savings of a particular or average building. Stock-level results should not be interpreted as the savings that a building might realize by implementing the upgrade.
 
@@ -243,7 +246,7 @@ Total site energy savings are also presented in this section. Total site energy 
 
 Figures in this section, including distributions that highlight the entire stock model data points, are visualized to highlight most of the stock (i.e., mostly the interquartile range of the entire models), meaning the outliers (i.e., models with less impact on energy) might not have been included in the scales applied in figures.
 
-### 5.1 Single Building Upgrade Tests
+## 5.1 Single Building Upgrade Tests
 
 Table 4 shows the sizing comparison of a sample model with and without upsizing allowance. A weather file that represents Helena, Montana (ASHRAE climate zone 6B), is applied to this sample model to highlight upsizing implementation under a relatively colder region. As shown in the table, this sample building model includes nine indoor units where each indoor unit contains three types of coil models: backup electric resistance coil, cooling coil, and heating coil. Based on the upsizing algorithm shown in Figure 5, the upsizing is applied to eight indoor units where seven out of those eight units received the full 25% upsizing while one of them received 17% upsizing. The reason for the 17% upsizing instead of the full 25% is because 17% upsizing matches 100% with the design heating load (6,595 W), so additional capacity is not necessary. The only indoor unit (i.e., indoor unit 4 in Table 4) that did not receive the upsizing is because the indoor unit's design cooling load (14,787 W) is larger than the design heating load (10,261 W), meaning it is not a heating-dominant zone and upsizing for heating is not necessary. The original sizing based on the design cooling load violated the maximum allowable 450 cfm/ton; thus, the design capacities before the upsizing do not match with the reference design load. While the upsizing allowance was set to 25% initially, the actual upsizing resulted in an average 21.3% increase across all indoor units, as well as for the corresponding outdoor unit. As shown in the table, the size of the backup electric resistance coil matches the design heating load.
 
@@ -281,7 +284,7 @@ Table 5. Single Building Model Results: Annual Results Before and After Upsizing
 
 One more thing to note that is not reflected in this example result is that the oversized heat pump can run in lower part-load conditions compared to the originally sized equipment if operated on the same building. Because of leveraging variable speed compressors, this translates to more efficient operation (i.e., positive impact) in oversized VRF heat pumps. However, because the oversized heat pump also gets a lower rated COP (i.e., negative impact) compared to the originally sized heat pump, based on the regression fitting we use, the overall impact (i.e., operating COP) will vary depend on variety of buildings with different weather and load conditions. The stock level impact and piece-wise comparisons of electricity used for cooling (and other end uses) can be found in the following sections. It should be noted that other factors should also be considered (such as utility cost reflecting peak demand charges, greenhouse gas emissions, and return of investment) to comprehensively assess the impact of this upgrade.
 
-###  5.2 Stock Energy Impacts
+##  5.2 Stock Energy Impacts
 
 The VRF DOAS measure with 25% upsizing allowance that is applicable to 49% of the total building stock floor area demonstrates 13% total site energy savings (576 trillion British thermal units \[TBtu\]) for the U.S. commercial building stock modeled in ComStock, as shown in Figure 7 and Figure 8. The figure also shows the same plot with regular sized VRF as a comparison. The improvement from regular sizing to a 25% upsizing allowance is not noticeable in terms of overall site energy consumption. While more detailed breakdown findings can be found in Section 4.5, the small difference between regular and upsizing scenarios is the combined effect of (1) the positive impact of leveraging more heat pump heating and (2) the negative impact of decreased COP with upsized units (also described as a limitation in Section 2.4). The savings of the VRF DOAS with 25% upsizing allowance relative to the baseline are primarily attributed to:
 
@@ -319,7 +322,7 @@ Figure 8. Comparison of annual site energy consumption between the ComStock base
 
 In terms of site energy, major energy savings come from converting natural-gas-fired heating to electric heat pump heating, and cooling electricity savings are from the higher-efficiency (compared to the existing building stock) COP performance of the VRF system. Electric heating is reduced in some buildings by this upgrade from the baseline by swapping relatively less efficient electric resistance air-handling units with a higher-efficiency VRF DOAS. However, electricity heating is generally increased in some buildings by electrifying air-handling units that were previously natural gas. Removing fans from the central air system and replacing those with VRF indoor unit fans and DOAS fans saves energy by decoupling ventilation and space conditioning. Overall, electricity heating energy increases. Although not as significant as savings described above, 1.3 TBtu (17% decrease) of electric energy ("Heat Rejection, Electricity" in the figure) is saved by removing existing cooling towers, and 17.9 TBtu (437% increase) of electric energy ("Heat Recovery, Electricity" in the figure) is additionally used by adding more DOAS (increased power with increased static pressure) to the building stock.
 
-### 5.3 Stock Greenhouse Gas Emissions Impact
+## 5.3 Stock Greenhouse Gas Emissions Impact
 
 ComStock simulation results show greenhouse gas emissions avoided across all electricity grid scenarios and on-site combustion fuel types (Figure 9). Overall, the VRF (HR) with 25% upsizing allowance demonstrates between 33 million metric tons (14% reduction for LRMER Low Renewable Energy Cost 15 scenario) and 44 million metric tons (11% reduction for eGRID 2021 scenario) of greenhouse gas emissions avoided (from all fuel types) for the three grid electricity scenarios presented. This is due to reduced electricity consumption from the fans and cooling end use, but also includes the increase in electricity from electrifying gas heating systems. The emissions avoided from on-site combustion fuels (28%) are attributable to electrifying some of these combustion-based heating systems.
 
@@ -331,7 +334,7 @@ ComStock simulation results show greenhouse gas emissions avoided across all ele
 Figure 9. Greenhouse gas emissions comparison of the ComStock baseline and the VRF DOAS
 {:refdef}
 
-### 5.4 Site Energy Savings Distributions
+## 5.4 Site Energy Savings Distributions
 
 This section discusses site energy consumption for quality assurance/quality control purposes. Note that site energy savings can be useful for these purposes, but other factors should be considered when drawing conclusions, as these do not necessarily translate proportionally to source energy savings, greenhouse gas emissions avoided, or energy cost.
 
@@ -401,7 +404,7 @@ Figure 12 shows the comparison of the ComStock baseline and the two upgrade scen
 Figure 12. Comparison of the ComStock baseline and the upgrade scenario in terms of peak demand change
 {:refdef}
 
-### 5.5 More Detailed Findings
+## 5.5 More Detailed Findings
 
 Detailed findings in the [previous VRF DOAS analysis](https://www.nrel.gov/docs/fy24osti/86103.pdf) mostly show the same trends and provide similar insights compared to this 25% upsizing allowance analysis. As discussed previously, the major difference of the 25% upsizing allowance versus the regular sizing comes from (1) the amount of backup heating triggered by the VRF system (and the corresponding heat pump heating) and (2) rated and operating COPs affected by the upsizing.
 
@@ -453,7 +456,7 @@ Figure 17. Median annual operating heating COP (**COP<sub>system,operating</sub>
 
 Figure 16 and Figure 17 shows median annual operating COPs for cooling and heating, respectively, across the contiguous United States. COPs shown in these figures are based on the 25% upsizing allowance scenario and illustrate median performance expectations of VRF DOAS across different regions under different weather conditions.
 
-## References
+# References
 
 \[1\] ASHRAE, *2020 ASHRAE Handbook: HVAC Systems and Equipment*. Atlanta, GA, 2020.
 

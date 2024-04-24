@@ -43,14 +43,9 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction
 
-## Accessing Results
-
 This documentation covers the Improved Fan Scheduling and Outdoor Air Control upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
-## Measure Summary
-
 | **Measure Title**      | Improved Fan Scheduling and Outdoor Air Control                                                                                                                                                                                                                                                                    |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Measure Definition** | This measure shuts off outdoor air during extended periods of no occupancy (generally overnight), except when air-side economizing is activated, and aligns heating, ventilating, and air conditioning (HVAC) operating hours with building occupancy.                                                             |
 | **Applicability**      | This measure is applicable to all air handling unit (AHU)-based systems in ComStock that have ventilation provided during unoccupied periods. This measure  is applicable to about 58% of the floor area modeled in ComStock.                                                                                      |
 | **Not Applicable**     | This measure is not applicable to buildings modeled without air distribution systems, or AHU-based systems that already shut off ventilation during unoccupied periods. This measure is also not applicable to systems that operate 24/7 due to process requirements (such as patient-serving areas of hospitals). |
