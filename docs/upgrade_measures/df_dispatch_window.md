@@ -51,9 +51,13 @@ Based on the above resources, existing GEB demand flexibility measures targeting
 
 Utilities and grid operators are generally more concerned about aggregated grid electricity demand rather than the individual load profile of any particular building. However, understanding the shape of the building load and learning when the peak demand for the building happens is essential for providing demand flexibility and is beneficial to building owners/managers/operators from the perspective of the individual building. Targeting demand reduction of a specific building load may be infeasible on the grid/utility side, but it achieves demand flexibility and optimized demand dispatch, and thus maximizes energy cost savings for single buildings. However, most of the existing modeling studies of demand flexibility measures (as summarized in \[11\]) simplify demand flexibility timing by assuming a uniform window aligning with the most common or averaged peak price schedule of time-of-use (TOU) rates for specific regions (e.g., weekdays between 2pm and 4pm for one of the Energy Information Administration's \[EIA\] National Energy Modeling System Electricity Market Module regions \[12\]). Aligning the demand response control on building load favorably with a fixed schedule may lead to electricity energy and demand bill savings if the schedule agrees with the utility's TOU rate structure (e.g., reducing load for peak pricing periods), but it does not guarantee true peak demand reductions if the actual building load profile is not aligned with the fixed window of peak pricing, which is inferred from the system load shapes drawn from EIA Electricity Market Module outputs representing the "average" peak timing in the region. Figure 1 illustrates an example scenario where a thermostat setback strategy based on assumed fixed peak fails to align the control with the actual load variations to reduce peak load.
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image1.png){width="6.532760279965005in" height="1.9243853893263343in"}
+{:refdef: style="text-align: center;"}
+![](media/df_dispatch_window_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Example demand flexibility control with fixed peak schedule
+{:refdef}
 
 DF = demand flexibility
 
@@ -63,7 +67,9 @@ In addition, advanced demand response controls require more flexible demand disp
 
 Table 1. Typical Demand Response Program Types and Example Utility Programs \[16\], \[17\], \[18\], \[19\]
 
-![Text Description automatically generated with medium confidence](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image2.png){width="6.5in" height="5.065277777777778in"}
+{:refdef: style="text-align: center;"}
+![Text Description automatically generated with medium confidence](media/df_dispatch_window_image2.png)
+{:refdef}
 
 The latter two categories of demand response programs summarized above are load capacity related programs, and are usually more complicated. They require the customers (owners or managers of individual facility or building) to gain extensive knowledge of the building load profile and align the control with the predicted peak load (either in the system or building level depending on specific application) and the corresponding demand response program structure in order to dispatch demand at the proper time to maximize bill savings. With sufficient advance notice of demand response calls (e.g., received from advanced demand response programs via the OpenADR protocol \[21\]) and/or the ability to predict dispatch needs, buildings can use pre-determined logics or more sophisticated control algorithms such as model predictive control to provide advanced demand flexibility with minimal occupant impacts \[22\], \[23\]. Model predictive control has been deployed by several companies for load regulation in buildings, such as QCoefficient \[24\] and Enbala \[25\]. The QCoefficient's EMeister model predictive control is a supervisory controller that communicates with existing building automation systems, aiming at day-ahead load/bill prediction based on weather and pricing inputs to override controls for demand reduction, and it was implemented in several large commercial buildings/campuses with proven performance of reduced peak demand and energy savings. Enbala's Concerto software, on the other hand, serves as a management platform for large-scale aggregated distributed energy resources (e.g. buildings) to predict dispatchable demand capacity to the grid in real time and optimize the operations of a mixed-asset ecosystem for enrolled bidding capacity to the utility program (the enrolled/contracted/bidding capacity program type in Table 1).
 
@@ -99,19 +105,27 @@ The following table summarizes the chosen bins in detail for a specific example 
 
 Table 2. Example Bins and Number of Days in Bins
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image3.png){width="6.5in" height="2.0881944444444445in"}
+{:refdef: style="text-align: center;"}
+![Table Description automatically generated](media/df_dispatch_window_image3.png)
+{:refdef}
 
 Given appropriate binning results, the measure draws sample days from the bins. The samples are randomly selected, and the number of samples increases as the number of candidates in a bin increases to account for representativeness of drawn samples. The numbers of samples drawn from each bin depending on the bin size are summarized in the following table, showing the computational efficiency and potential number of bins.
 
 Table 3. Number of Samples Versus Number of Days in Bins
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image4.png){width="6.5in" height="1.6506944444444445in"}
+{:refdef: style="text-align: center;"}
+![Table Description automatically generated](media/df_dispatch_window_image4.png)
+{:refdef}
 
 After drawing samples, simulations are run on the sample days and the load profile is extracted (using hourly time intervals) from the simulation results as sample loads. If multiple single-day samples are drawn for a given bin, the sampled load profiles are averaged to generate the representative single-day load profile for the bin. Then the representative load profile will be replicated for all the days in the bin as their predicted load. A full year load prediction is thus constructed by populating representative daily load profiles for all days based on their bins. Figure 2 shows the daily load profiles (green) corresponding to the bins in Table 2, the drawn samples (red-dashed), and the representative load profiles (orange) derived from the samples for every bin.
 
-![Chart, line chart Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image5.png){width="6.5in" height="6.465277777777778in"}
+{:refdef: style="text-align: center;"}
+![Chart, line chart Description automatically generated](media/df_dispatch_window_image5.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Example daily load profiles (green) in bins, the samples drawn (red-dashed), and the representative load profiles (orange) derived from the samples
+{:refdef}
 
 The green load profiles represent daily simulation results throughout the year corresponding to the bin. Note that the green profiles are for illustration only, and only a few of them will be obtained (red-dashed) through simulation in the method. The red-dashed load profiles are randomly selected samples from the green profiles in each bin (the number of samples depends on the number of green profiles in the bin as described in Table 3). The orange profiles are the representative load profiles derived from averaging the selected samples (red-dashed) and will be the predictive load profiles representing the days (green) in the same bins, respectively. As can be seen in Figure 2, most of the representative load profiles (orange) can capture the daily load shape and peak with acceptable deviations (error of predicted peak time is less than 2 hours).
 
@@ -137,7 +151,9 @@ The fixed schedule option represents the most used demand flexibility strategy c
 
 Table 4. Assumed Fixed Peak Window by Climate Zones
 
-![Table Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image6.png){width="4.2100842082239724in" height="3.538911854768154in"}
+{:refdef: style="text-align: center;"}
+![Table Description automatically generated](media/df_dispatch_window_image6.png)
+{:refdef}
 
 #### 3.1.5 Outdoor Air Temperature-Based Load Prediction
 
@@ -163,19 +179,31 @@ Below are limitations and concerns of utilizing this measure:
 
 Figure 3 shows load profiles from five consecutive days comparing the same single building model with the baseline scenario and with the load shedding measure applied with either the perfect prediction or bin-sampling method for load prediction. The perfect and bin-sampling methods show accordance in the first three days, but the bin-sampling method mis-predicts the time of peak load (much earlier than the actual peak in the baseline) and thus fails to shed peak load in the last two days. This is because the load profiles bin assignment by the bin-sampling method for the last two days are not representative of the true load profiles due to conditions that are not captured in the method (i.e., conditions other than outdoor temperature). The influence of these other conditions on load shape binning is generally trivial during summer and winter seasons when outdoor temperature characteristics are monotonous and their impact on building load dominates other weather factors such as solar radiation and cloud cover. However, the importance of other conditions increases during shoulder seasons when weather conditions are more random or fluctuating and are affected by multiple factors.
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image7.png){width="5.333333333333333in" height="3.639922353455818in"}
+{:refdef: style="text-align: center;"}
+![](media/df_dispatch_window_image7.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. Load profile comparison for baseline and load shedding with the perfect prediction and bin-sampling options
+{:refdef}
 
 Figure 4 and Figure 5 show load profiles for five consecutive days comparing the load shedding measure applied with the fixed schedule and OAT-based prediction options, respectively. Neither option is capable of capturing the load peak for the days shown. The assumed peak window (6PM--10PM for the example model in climate zone 3A) in the fixed schedule option completely misses the actual peak period, which means the universal peak times derived for representative buildings are inconsistent with the actual building load profiles. The OAT-based option fails to predict the time of peak load except for the 4th day (9/27), indicating a high failure ratio for predicting peak time correctly, possibly due to non-negligible factors other than OAT affecting building load.
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image8.png){width="5.37251968503937in" height="3.6666666666666665in"}
+{:refdef: style="text-align: center;"}
+![](media/df_dispatch_window_image8.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Load profile comparison for baseline and load shedding with the perfect prediction and fixed schedule options
+{:refdef}
 
-![](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image9.png){width="5.458333333333333in" height="3.725232939632546in"}
+{:refdef: style="text-align: center;"}
+![](media/df_dispatch_window_image9.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5. Load profile comparison for baseline and load shedding with perfect prediction and OAT-based prediction approaches
+{:refdef}
 
 ### 4.2 Computational Efficiency of the Bin-Sampling Method
 
@@ -183,7 +211,9 @@ The bin-sampling method was proposed as a compromise between computational effor
 
 Table 5. Consumed Run Time With the Load Shedding Measure With Different Dispatch Schedule Generation Options
 
-![Graphical user interface, text, application Description automatically generated](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image10.png){width="6.5in" height="1.2222222222222223in"}
+{:refdef: style="text-align: center;"}
+![Graphical user interface, text, application Description automatically generated](media/df_dispatch_window_image10.png)
+{:refdef}
 
 The reason for the unexpected extra time used by the bin-sampling method is the repeated pre-simulation steps for EnergyPlus/OpenStudio simulation (warm-up and sizing) for each sample daily simulation. This issue has not been resolved at the time of release and future work is needed to make the bin-sampling method more feasible in terms of computational time.
 
@@ -191,11 +221,74 @@ The reason for the unexpected extra time used by the bin-sampling method is the 
 
 A ComStock test run (with 10,000 building models and 90 applicable large offices) was performed to compare the effectiveness of the thermostat control for the load shedding measure applied with different dispatch schedule generation options: perfect load prediction, OAT-based prediction, and fixed schedules (the bin-sampling method is excluded in this test due to the computational issue). The test run includes 90 large office models that are applicable for applying the demand flexibility measure. Because the major objective of the demand flexibility measure in this analysis is to achieve peak load reductions (on a daily basis), we use the distribution of median daily peak load reduction percentages by month throughout the stock as the metric to illustrate and compare the performance (more explanation in the demand flexibility measure documentation Section 5.5). Figure 6 shows that the perfect prediction option outperforms the fixed schedule option and the OAT-based prediction option, which is consistent with the single building comparison results shown in Section 4.1. In addition, the fixed schedule option has the largest negative peak savings (Q1-Q3 boxes all located on the negative side), which indicates new higher peak loads are generated with the fixed schedule option for most of the applicable buildings for most of the time.
 
-![Chart Description automatically generated with medium confidence](C:\Users\JKIM4\NREL\ComStock - Measures\Demand Flexibility\figures/media/image11.png){width="6.5in" height="6.485416666666667in"}
+{:refdef: style="text-align: center;"}
+![Chart Description automatically generated with medium confidence](media/df_dispatch_window_image11.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 6. Distribution of median daily peak load reduction percentage by month compared to the baseline model for load shedding measure with perfect prediction, fixed schedule, and OAT-based prediction options
+{:refdef}
 
-References  {#references .NREL_Head_01}
-----------
+## References
 
-\[1\] A. Satchwell *et al.*, "A National Roadmap for Grid-Interactive Efficient Buildings," None, 1784302, ark:/13030/qt78k303s5, May 2021. doi: 10.2172/1784302.\[2\] J. Langevin *et al.*, "US building energy efficiency and flexibility as an electric grid resource," *Joule*, vol. 5, no. 8, pp. 2102--2128, Aug. 2021, doi: 10.1016/j.joule.2021.06.002.\[3\] DOE, "GEB Technical Reports," Energy.gov. Accessed: Mar. 18, 2024. \[Online\]. Available: https://www.energy.gov/eere/buildings/geb-technical-reports\[4\] GSA, "Grid-Interactive Efficient Buildings - GSA Sustainable Facilities Tool." Accessed: Mar. 18, 2024. \[Online\]. Available: https://sftool.gov/learn/about/638/grid-interactive-efficient-buildings\[5\] GSA, "Grid-Interactive Efficient Building Case Studies In the Federal Portfolio," 2021.\[6\] D. Zhang, S. Li, M. Sun, and Z. O'Neill, "An Optimal and Learning-Based Demand Response and Home Energy Management System," *IEEE Trans. Smart Grid*, vol. 7, no. 4, pp. 1790--1801, Jul. 2016, doi: 10.1109/TSG.2016.2552169.\[7\] E. M. Burger and S. J. Moura, "Generation following with thermostatically controlled loads via alternating direction method of multipliers sharing algorithm," *Electric Power Systems Research*, vol. 146, pp. 141--160, May 2017, doi: 10.1016/j.epsr.2016.12.001.\[8\] M. Olama, T. Kuruganti, J. Nutaro, and J. Dong, "Coordination and Control of Building HVAC Systems to Provide Frequency Regulation to the Electric Grid," *Energies*, vol. 11, no. 7, p. 1852, Jul. 2018, doi: 10.3390/en11071852.\[9\] H. Wang, S. Wang, and K. Shan, "Experimental study on the dynamics, quality and impacts of using variable-speed pumps in buildings for frequency regulation of smart power grids," *Energy*, vol. 199, p. 117406, May 2020, doi: 10.1016/j.energy.2020.117406.\[10\] K. Wang, R. Yin, L. Yao, J. Yao, T. Yong, and N. Deforest, "A Two-Layer Framework for Quantifying Demand Response Flexibility at Bulk Supply Points," *IEEE Trans. Smart Grid*, vol. 9, no. 4, pp. 3616--3627, Jul. 2018, doi: 10.1109/TSG.2016.2636873.\[11\] J. McLaren, T. Bowen, and C. Harris, "Efficiency and Demand Flexibility in Large Office Buildings: The Potential for Cost Savings and CO~2~ Reductions from Lighting and Cooling Measures," NREL/TP\--7A40-83552, 1989231, MainId:84325, Jul. 2023. doi: 10.2172/1989231.\[12\] EIA, "Electricity Market Module of the National Energy Modeling System: Model Documentation 2022," 2022.\[13\] B. F. Gerke *et al.*, "The California Demand Response Potential Study, Phase 3: Final Report on the Shift Resource through 2030," 2020, doi: 10.20357/B7MS40.\[14\] B. F. Gerke *et al.*, "Overview of Phase 4 of the California Demand Response Potential Study".\[15\] A. T. F. for B. Decarbonization and K. Carbonnier, *Grid-interactive Buildings for Decarbonization: Design and Operation Resource Guide*. ASHRAE, 2023. \[Online\]. Available: https://books.google.com/books?id=Je0m0AEACAAJ\[16\] "Heating & Cooling \| Xcel Energy." Accessed: Mar. 16, 2024. \[Online\]. Available: https://co.my.xcelenergy.com/s/residential/heating-cooling\[17\] "Demand response (DR) programs \| PG&E." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs.html\[18\] "Demand Response Programs for Homes \| SCE." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/residential/demand-response\[19\] "Demand Response Programs for Business \| SCE." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/business/demand-response\[20\] "Peak Partner Rewards Program \| Xcel Energy." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.xcelenergy.com/staticfiles/xe-responsive/Programs%20and%20Rebates/Business/CO-Peak-Partner-Rewards-info-sheet.pdf\[21\] "OpenADR Specifications." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/business/demand-response\[22\] T. Borsche, F. Oldewurtel, and G. Andersson, "Scenario-based MPC for Energy Schedule Compliance with Demand Response," *IFAC Proceedings Volumes*, vol. 47, no. 3, pp. 10299--10304, 2014, doi: 10.3182/20140824-6-ZA-1003.01284.\[23\] T. T. Gorecki, L. Fabietti, F. A. Qureshi, and C. N. Jones, "Experimental demonstration of buildings providing frequency regulation services in the Swiss market," *Energy and Buildings*, vol. 144, pp. 229--240, Jun. 2017, doi: 10.1016/j.enbuild.2017.02.050.\[24\] "QCoefficient." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.buildingsasbatteries.com/\[25\] "Enbala." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.generacgs.com/\[26\] A. Parker *et al.*, "ComStock Reference Documentation (V.1)," NREL/TP\--5500-83819, 1967948, MainId:84592, Mar. 2023. doi: 10.2172/1967948.\[27\] S. C. Bengea, A. D. Kelman, F. Borrelli, R. Taylor, and S. Narayanan, "Implementation of model predictive control for an HVAC system in a mid-size commercial building," *HVAC&R Research*, vol. 20, no. 1, pp. 121--135, Jan. 2014, doi: 10.1080/10789669.2013.834781.\[28\] P. Li, D. Li, D. Vrabie, S. Bengea, and S. Mijanovic, "Experimental Demonstration of Model Predictive Control in a Medium-Sized Commercial Building," 2014.\[29\] S. T. Taylor, "Resetting setpoints using trim & respond logic," *Ashrae Journal*, vol. 57, no. 11, pp. 52--57, 2015.\[30\] T. Wei, Y. Wang, and Q. Zhu, "Deep Reinforcement Learning for Building HVAC Control," in *Proceedings of the 54th Annual Design Automation Conference 2017*, Austin TX USA: ACM, Jun. 2017, pp. 1--6. doi: 10.1145/3061639.3062224.\[31\] "LBNL-ETA/Openstudio-GEB-gem," GitHub. Accessed: Mar. 19, 2024. \[Online\]. Available: https://github.com/LBNL-ETA/Openstudio-GEB-gem
+\[1\] A. Satchwell *et al.*, "A National Roadmap for Grid-Interactive Efficient Buildings," None, 1784302, ark:/13030/qt78k303s5, May 2021. doi: 10.2172/1784302.
+
+\[2\] J. Langevin *et al.*, "US building energy efficiency and flexibility as an electric grid resource," *Joule*, vol. 5, no. 8, pp. 2102--2128, Aug. 2021, doi: 10.1016/j.joule.2021.06.002.
+
+\[3\] DOE, "GEB Technical Reports," Energy.gov. Accessed: Mar. 18, 2024. \[Online\]. Available: https://www.energy.gov/eere/buildings/geb-technical-reports
+
+\[4\] GSA, "Grid-Interactive Efficient Buildings - GSA Sustainable Facilities Tool." Accessed: Mar. 18, 2024. \[Online\]. Available: https://sftool.gov/learn/about/638/grid-interactive-efficient-buildings
+
+\[5\] GSA, "Grid-Interactive Efficient Building Case Studies In the Federal Portfolio," 2021.
+
+\[6\] D. Zhang, S. Li, M. Sun, and Z. O'Neill, "An Optimal and Learning-Based Demand Response and Home Energy Management System," *IEEE Trans. Smart Grid*, vol. 7, no. 4, pp. 1790--1801, Jul. 2016, doi: 10.1109/TSG.2016.2552169.
+
+\[7\] E. M. Burger and S. J. Moura, "Generation following with thermostatically controlled loads via alternating direction method of multipliers sharing algorithm," *Electric Power Systems Research*, vol. 146, pp. 141--160, May 2017, doi: 10.1016/j.epsr.2016.12.001.
+
+\[8\] M. Olama, T. Kuruganti, J. Nutaro, and J. Dong, "Coordination and Control of Building HVAC Systems to Provide Frequency Regulation to the Electric Grid," *Energies*, vol. 11, no. 7, p. 1852, Jul. 2018, doi: 10.3390/en11071852.
+
+\[9\] H. Wang, S. Wang, and K. Shan, "Experimental study on the dynamics, quality and impacts of using variable-speed pumps in buildings for frequency regulation of smart power grids," *Energy*, vol. 199, p. 117406, May 2020, doi: 10.1016/j.energy.2020.117406.
+
+\[10\] K. Wang, R. Yin, L. Yao, J. Yao, T. Yong, and N. Deforest, "A Two-Layer Framework for Quantifying Demand Response Flexibility at Bulk Supply Points," *IEEE Trans. Smart Grid*, vol. 9, no. 4, pp. 3616--3627, Jul. 2018, doi: 10.1109/TSG.2016.2636873.
+
+\[11\] J. McLaren, T. Bowen, and C. Harris, "Efficiency and Demand Flexibility in Large Office Buildings: The Potential for Cost Savings and CO~2~ Reductions from Lighting and Cooling Measures," NREL/TP\--7A40-83552, 1989231, MainId:84325, Jul. 2023. doi: 10.2172/1989231.
+
+\[12\] EIA, "Electricity Market Module of the National Energy Modeling System: Model Documentation 2022," 2022.
+
+\[13\] B. F. Gerke *et al.*, "The California Demand Response Potential Study, Phase 3: Final Report on the Shift Resource through 2030," 2020, doi: 10.20357/B7MS40.
+
+\[14\] B. F. Gerke *et al.*, "Overview of Phase 4 of the California Demand Response Potential Study".
+
+\[15\] A. T. F. for B. Decarbonization and K. Carbonnier, *Grid-interactive Buildings for Decarbonization: Design and Operation Resource Guide*. ASHRAE, 2023. \[Online\]. Available: https://books.google.com/books?id=Je0m0AEACAAJ
+
+\[16\] "Heating & Cooling \| Xcel Energy." Accessed: Mar. 16, 2024. \[Online\]. Available: https://co.my.xcelenergy.com/s/residential/heating-cooling
+
+\[17\] "Demand response (DR) programs \| PG&E." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs.html
+
+\[18\] "Demand Response Programs for Homes \| SCE." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/residential/demand-response
+
+\[19\] "Demand Response Programs for Business \| SCE." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/business/demand-response
+
+\[20\] "Peak Partner Rewards Program \| Xcel Energy." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.xcelenergy.com/staticfiles/xe-responsive/Programs%20and%20Rebates/Business/CO-Peak-Partner-Rewards-info-sheet.pdf
+
+\[21\] "OpenADR Specifications." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.sce.com/business/demand-response
+
+\[22\] T. Borsche, F. Oldewurtel, and G. Andersson, "Scenario-based MPC for Energy Schedule Compliance with Demand Response," *IFAC Proceedings Volumes*, vol. 47, no. 3, pp. 10299--10304, 2014, doi: 10.3182/20140824-6-ZA-1003.01284.
+
+\[23\] T. T. Gorecki, L. Fabietti, F. A. Qureshi, and C. N. Jones, "Experimental demonstration of buildings providing frequency regulation services in the Swiss market," *Energy and Buildings*, vol. 144, pp. 229--240, Jun. 2017, doi: 10.1016/j.enbuild.2017.02.050.
+
+\[24\] "QCoefficient." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.buildingsasbatteries.com/
+
+\[25\] "Enbala." Accessed: Mar. 16, 2024. \[Online\]. Available: https://www.generacgs.com/
+
+\[26\] A. Parker *et al.*, "ComStock Reference Documentation (V.1)," NREL/TP\--5500-83819, 1967948, MainId:84592, Mar. 2023. doi: 10.2172/1967948.
+
+\[27\] S. C. Bengea, A. D. Kelman, F. Borrelli, R. Taylor, and S. Narayanan, "Implementation of model predictive control for an HVAC system in a mid-size commercial building," *HVAC&R Research*, vol. 20, no. 1, pp. 121--135, Jan. 2014, doi: 10.1080/10789669.2013.834781.
+
+\[28\] P. Li, D. Li, D. Vrabie, S. Bengea, and S. Mijanovic, "Experimental Demonstration of Model Predictive Control in a Medium-Sized Commercial Building," 2014.
+
+\[29\] S. T. Taylor, "Resetting setpoints using trim & respond logic," *Ashrae Journal*, vol. 57, no. 11, pp. 52--57, 2015.
+
+\[30\] T. Wei, Y. Wang, and Q. Zhu, "Deep Reinforcement Learning for Building HVAC Control," in *Proceedings of the 54th Annual Design Automation Conference 2017*, Austin TX USA: ACM, Jun. 2017, pp. 1--6. doi: 10.1145/3061639.3062224.
+
+\[31\] "LBNL-ETA/Openstudio-GEB-gem," GitHub. Accessed: Mar. 19, 2024. \[Online\]. Available: https://github.com/LBNL-ETA/Openstudio-GEB-gem
