@@ -47,11 +47,11 @@ Compared to the [VRF DOAS analysis with original sizing](https://www.nrel.gov/do
 
 This documentation covers the upgrade methodology for variable refrigerant flow (VRF) with 25% upsizing allowance for heating and briefly discusses key results. Results can be accessed on the ComStock data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
-| **Measure Title**  | **Variable Refrigerant Flow With 25% Upsizing Allowance for Heating**                 |
-| Measure Definition | Replace variable air volume (VAV) or rooftop unit (RTU) systems with VRF (HR) dedicated outdoor air system (DOAS) and allow up to 25% upsizing (or up to 125% of original size) from cooling design load applied to a heating-dominant building. |
-| Applicability      | Applicable to all spaces served by VAV and RTU systems that are not served by district heating or cooling. May apply to a portion of the building. The total number of indoor units per outdoor unit is also limited to 41. Applicable to 49% of total floor area of existing commercial building stock. |
-| Not Applicable     | Not applicable to spaces (kitchen or dining) where a VRF (HR) with DOAS may be less appropriate. Buildings that are too large (\>200,000 ft<sup>2</sup>) or have large exhaust air are excluded as well. |
-| Release            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |
+| **Measure Title**  | Variable Refrigerant Flow With 25% Upsizing Allowance for Heating                 |
+| **Measure Definition** | Replace variable air volume (VAV) or rooftop unit (RTU) systems with VRF (HR) dedicated outdoor air system (DOAS) and allow up to 25% upsizing (or up to 125% of original size) from cooling design load applied to a heating-dominant building. |
+| **Applicability**      | Applicable to all spaces served by VAV and RTU systems that are not served by district heating or cooling. May apply to a portion of the building. The total number of indoor units per outdoor unit is also limited to 41. Applicable to 49% of total floor area of existing commercial building stock. |
+| **Not Applicable**     | Not applicable to spaces (kitchen or dining) where a VRF (HR) with DOAS may be less appropriate. Buildings that are too large (\>200,000 ft<sup>2</sup>) or have large exhaust air are excluded as well. |
+| **Release**            | 2024 Release 1: 2024/comstock_amy2018_release_1/   |
 
 The upgrade described in this document concerns replacing an existing heating, ventilating, and air-conditioning (HVAC) system. The upgraded system decouples ventilation from space conditioning, with ventilation handled by a DOAS and the remaining space conditioning handled by a VRF air-source heat pump system. An additional consideration in this study compared to the [previous work](https://www.nrel.gov/docs/fy24osti/86103.pdf) on VRF (HR) DOAS upgrade is the allowance of up to 25% upsizing (or 125% of the original size) from equipment sized to the design cooling load for heating-dominant buildings.
 
@@ -141,11 +141,11 @@ This report is a slight modification to the [Variable Refrigerant Flow with Heat
 
 COP is a well-known metric within the HVAC industry; however, it can often have different definitions, and calculation methods can be different. We use and differentiate between the three COP metrics shown below throughout this document:
 
--   **COP~comp&fan,design~** refers to a COP that only includes power consumed by the compressor and outdoor unit fan, which is useful for comparing against the manufacturer's performance map. The operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP are mostly fixed to the design conditions (e.g., indoor/outdoor air temperatures vary in manufacturer performance maps, while all other conditions are constant).
+-   **COP<sub>comp&fan,design</sub>** refers to a COP that only includes power consumed by the compressor and outdoor unit fan, which is useful for comparing against the manufacturer's performance map. The operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP are mostly fixed to the design conditions (e.g., indoor/outdoor air temperatures vary in manufacturer performance maps, while all other conditions are constant).
 
--   **COP~comp&fan,operating~** refers to a COP that only includes power consumed by the compressor and outdoor unit fan, which is useful for comparing against the manufacturer's performance map. The operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP reflect actual/varying operating conditions.
+-   **COP<sub>comp&fan,operating</sub>** refers to a COP that only includes power consumed by the compressor and outdoor unit fan, which is useful for comparing against the manufacturer's performance map. The operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP reflect actual/varying operating conditions.
 
--   **COP~system,operating~** is the overall system COP including not only the compressor and outdoor unit fan powers, but also electricity used for backup/supplemental heating when VRF heating capacity cannot meet the heating demand. Compressor power in this metric also includes electricity used for reverse cycling for defrosting operation and miscellaneous power such as crankcase and basin heater powers. The fan power used in indoor unit fans is not included in this metric, and operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP reflect actual/varying operating conditions.
+-   **COP<sub>system,operating</sub>** is the overall system COP including not only the compressor and outdoor unit fan powers, but also electricity used for backup/supplemental heating when VRF heating capacity cannot meet the heating demand. Compressor power in this metric also includes electricity used for reverse cycling for defrosting operation and miscellaneous power such as crankcase and basin heater powers. The fan power used in indoor unit fans is not included in this metric, and operating conditions (e.g., indoor/outdoor temperature, part-load ratio) for calculating this COP reflect actual/varying operating conditions.
 
 #### 3.2.2 Sizing
 
@@ -410,7 +410,7 @@ Detailed findings in the [previous VRF DOAS analysis](https://www.nrel.gov/docs/
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 13. Distribution of VRF annual average COP~comp&fan,operating~
+Figure 13. Distribution of VRF annual average COP<sub>comp&fan,operating</sub>
 {:refdef}
 
 Figure 13 shows annual average operating COP comparisons between two sizing scenarios. Because the upsizing is geared toward the colder region, the upsizing in those regions reduces the rated COP (i.e., bigger units tend to have lower-rated COP), resulting in decreased operating COPs. Also, installing larger units (to handle heating demand) also means lower part load ratios when handling cooling demand during cooling season and this will result in more cycling losses at mild conditions.
@@ -430,7 +430,7 @@ Figure 14 shows the comparison of supplemental (or backup) heating fraction betw
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 15. Distribution of annual average heating COP~system,operating~
+Figure 15. Distribution of annual average heating COP<sub>system,operating</sub>
 {:refdef}
 
 Figure 15 shows the overall/system (including backup heating energy) operating heating COP and how much shift (as a percent) happens from the COP based on compressor and outdoor unit fan power (i.e., how much COP we lose when including backup heating energy). As shown in the figure, most of the overall heating COP remains higher than 1 (i.e., better than electric resistance heating) even in the very cold regions. The impact of backup heating energy on the overall COP also shows less in the upsizing scenario compared to the regular sizing scenario in colder regions. The impact of upsizing is less in warmer regions.
@@ -440,7 +440,7 @@ Figure 15 shows the overall/system (including backup heating energy) operating h
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 16. Median annual operating cooling COP (**COP~system,operating~)**
+Figure 16. Median annual operating cooling COP (**COP<sub>system,operating</sub>)**
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -448,7 +448,7 @@ Figure 16. Median annual operating cooling COP (**COP~system,operating~)**
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-Figure 17. Median annual operating heating COP (**COP~system,operating~)**
+Figure 17. Median annual operating heating COP (**COP<sub>system,operating</sub>)**
 {:refdef}
 
 Figure 16 and Figure 17 shows median annual operating COPs for cooling and heating, respectively, across the contiguous United States. COPs shown in these figures are based on the 25% upsizing allowance scenario and illustrate median performance expectations of VRF DOAS across different regions under different weather conditions.
