@@ -43,11 +43,7 @@ The authors would like to acknowledge the valuable guidance and input provided b
 
 # 1. Introduction
 
-## Accessing Results
-
 This documentation covers "Thermostat Control for Load Shedding" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock]" or via the Data Viewer at [comstock.nrel.gov].
-
-## Measure Summary
 
 ![](media\shed_measure_summary.png)
 

@@ -36,10 +36,8 @@ The Advanced RTU Control measure demonstrates between 7 and 17 million metric to
 The authors would like to acknowledge the valuable guidance and input provided by the ComStock team.
 
 # 1. Introduction
-## Accessing Results
-This documentation covers "Advanced Rooftop Unit Control" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
-## Measure Summary
+This documentation covers "Advanced Rooftop Unit Control" upgrade methodology and briefly discusses key results. Results can be accessed on the ComStock™ data lake at "[end-use-load-profiles-for-us-building-stock](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F)" or via the Data Viewer at [comstock.nrel.gov](https://comstock.nrel.gov/).
 
 | **Measure Title**      | Advanced Rooftop Unit Control                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
