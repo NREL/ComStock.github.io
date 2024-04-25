@@ -91,9 +91,13 @@ Hydronic heating systems are often designed for a supply water temperature of 18
 
 Most water-to-water heat pumps can generate hot water at temperatures up to around 140°F--150°F (DOE, 2021). Existing HVAC systems designed for hotter water temperatures in heating may not be able to meet peak heating loads with water supply temperatures in this range, given the limitations of the existing coil capacity. Additionally, some types of hydronic HVAC systems, such as hot water baseboards, are generally not compatible with lower supply temperatures (due to their compact footprint) and are thus excluded from the scope of this measure (Steven Winter Associates, 2019). However, in the context of hydronic systems with air distribution, if load reduction measures have been implemented in the building or coils are somewhat oversized, it may be possible to meet the loads effectively with lower water temperatures, or to do so at all but peak conditions, without coil replacement (DOE, 2021).
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Fraction of ComStock weighted floor area for hydronic HVAC system types
+{:refdef}
 
 ## 3.2. Sizing, Performance, and System Configuration
 
@@ -101,7 +105,9 @@ Entering loop temperature on the source side is often the most important variabl
 
 Table 2. Rated Performance of a Selected Water-to-Water Heat Pump Model Available in the United States
 
+{:refdef: style="text-align: center;"}
 ![](media/hydronic_gshp_table2.png)
+{:refdef}
 
 Based on discussions with design practitioners who have experience in retrofits with ground heat exchangers, in buildings with hydronic HVAC systems, existing air-side ductwork is generally sufficient for a reduction in hydronic supply temperatures in heating, while hydronic pipes and coils are more likely to be the limiting factor.
 
@@ -123,9 +129,13 @@ Table 3. Chilled Water Supply Temperature Reset Implemented in This Measure
 
 In conjunction with the ground heat exchanger sizing measure, this measure gives users the ability to specify on what load (heating or cooling) and on what fraction of load (ranging from 20% to 100%), they wish to size the ground heat exchanger. If the ground heat exchanger is sized to less than 100% of the dominant load (heating or cooling), supplemental equipment will be used (a cooling tower, boiler, or both, depending on the need). A boiler will be electric and will be connected in parallel to the water-source heat pump supplying heating, and a cooling tower will be connected to the ground loop. This configuration is generally based on the recommendations of Kavanaugh and Rafferty (2014). The boiler is configured in parallel with the heat pumps, rather than in series, for consistency with a lower hydronic supply temperature, facilitating operation of the heat pumps alone in lower-load conditions. The placement of the boiler on the building loop, rather than on the ground loop, in the context of "sharing" heating load, permits the ground loop to operate at lower temperatures, reducing the penalty on the cooling heat pump during simultaneous heating and cooling.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image2.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Modeled hydronic loop configuration, with optional equipment shown in dashed-line boxes
+{:refdef}
 
 ### 3.2.1. Heat pump sizing
 
@@ -157,9 +167,13 @@ The required performance data were not available for water-to-water heat pumps i
 
 GHEDesigner is a Python package for designing ground heat exchangers used with ground-source heat pump systems \[13\]. The ground-source heat pump upgrade measures leverage GHEDesigner for sizing the vertical ground heat exchangers used in the ComStock models. GHEDesigner is called and run within the GSHP measures. Figure 3 shows the full ComStock GSHP measure workflow. First, the GSHP measure is applied[, ]{.ul} which replaces the existing system with one of the GSHP configurations. An initial sizing run determines the annual loads the ground heat exchanger needs to supply. The ground loads are exported to GHEDesigner in the form of a JavaScript Object Notation (JSON) file. GHEDesigner runs calculations to determine the g-function, which is used to size the ground heat exchanger in the model. A final simulation is run with the ground heat exchanger sized to the full building load. Each step is described in more detail below.  
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image3.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. ComStock GHEDesigner workflow
+{:refdef}
 
 First, the GSHP measure is applied. As part of the GSHP retrofit, a ground loop is added to the model where the ground heat exchanger will be installed. To properly size the ground heat exchanger, the GHEDesigner tool needs to know the building's hourly heating and cooling loads for the entire year. To achieve this, a temporary "dummy" ground heat exchanger is added to the ground loop in the form of a PlantComponent:TemperatureSource object.
 
@@ -171,9 +185,13 @@ One important reminder is that ComStock is a representative model of the U.S. co
 
 When the GHEDesigner tool receives the JSON file, it uses the properties and hourly loads to size the borefield and generate a g-function. Temperature response functions, known as g-functions, are a computationally efficient method for simulating ground heat exchangers, used with GSHP systems, either as part of a whole-building energy simulation or as part of a dedicated ground heat exchanger design tool \[14\]. GHEDesigner sends a JSON file back to the ComStock simulation containing the key parameters such as number of boreholes, borehole length and radius, ground properties, and g-function values. The ComStock measure then replaces the temporary "dummy" ground heat exchanger object with an actual vertical ground heat exchanger object. The measure parses the information from the JSON and inputs it into the GroundHeatExchanger:Vertical object. The annual simulation is then rerun with the new configuration. This second annual run generates the results that are used for analysis. Figure 4 shows an example illustration of the full workflow. 
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image4.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Example plant loop configuration showing location of ground loop and temperature source/vertical ground heat exchanger object
+{:refdef}
 
 ## 3.4. Limitations and Concerns
 
@@ -201,35 +219,67 @@ Total site energy savings are also presented in this section. Total site energy 
 
 This Central Hydronic Ground-Source Heat Pump measure was applied to a hospital building in the Portland, Oregon, area as an illustrative example. In the baseline, the building was conditioned by a fuel-oil fired boiler and an air-cooled chiller, with heating hot water and chilled water coils in central air handling units. Figure 5 and Figure 6 show the configuration of the ground loop, condenser loop, and intermediate condenser loops that connect the ground heat exchanger to the heat pumps and the heat pumps to the load.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image5.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image6.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5. Schematic of ground loop (top), and condenser loop (bottom) in modeled building
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image7.png)
-![](media\hydronic_gshp_image8.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
+![](media\hydronic_gshp_image8.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 6. Schematic diagram of intermediate heating loop (top) and main heating loop (bottom) in modeled building, with additional heating coils not shown
+{:refdef}
 
 The distribution of heat pump COPs across operating conditions is key to interpreting the significant energy savings from implementing the Central Hydronic GSHP measure in this building. Figure 7 (left) shows the distribution of COP during operation for a "base load" heating heat pump in the building. The comparatively poor COP in heating (\<3) is largely due to the relatively high (for supply by water-to-water heat pumps) heating hot water supply temperature considered (135°F), intended for maximal compatibility with existing hydronic building systems. Figure 7 (right) shows the distribution of cooling COPs for a "base load" cooling heat pump. This heat pump operates consistently at a COP of 5.17. This higher COP reflects the relatively lower "lift" of the heat pump in operating in cooling mode than in heating mode at these temperatures, given the temperatures of the source-side loop (operating at an average temperature of around 55°F). Both COPs are consistent with the performance data used to characterize the heat pump.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image9.png)
-![](media\hydronic_gshp_image10.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
+![](media\hydronic_gshp_image10.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 7. Distribution of COP for a heating heat pump (left) and cooling heat pump (right)
+{:refdef}
 
 Figure 8 (left) shows the distribution of COP for the air-cooled chiller serving the building in the baseline case, excluding condenser fan energy (consistent with the presentation of the heat pump COP without distribution pump energy). Note that the baseline chiller COP is generally less than 2. The plot at right in Figure 8 shows the annual distribution of boiler efficiency in the baseline case. The boiler efficiency is consistently 79%.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image11.png)
-![](media\hydronic_gshp_image12.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
+![](media\hydronic_gshp_image12.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 8. Distribution of baseline chiller COPs (left) and boiler efficiency (right) for the baseline case
+{:refdef}
 
 Figure 9 shows the disaggregation of site energy consumption by end use for this building for the base case and with the Central Hydronic GSHP measure applied. In this building, application of the measure results in 62% cooling energy savings, 100% fuel oil savings for space heating, and a 13% increase in pump energy use. The pump energy use increase is expected due to the increased pump head and load associated with the ground loop. The cooling energy savings results from the increase in COP associated with the cooling equipment. Elimination of fuel oil use for heating is expected, due to the full electrification of heating. The increase in electricity use for heating and for circulation pumps, while somewhat offset by cooling energy savings, results in a net increase of 9% in electricity use at the building level. Implementation of the measure results in a 40% reduction in site energy use overall in this building.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image13.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 9. Disaggregation of site energy consumption by end use for base case and with Central Hydronic GSHP measure applied
+{:refdef}
 
 ## 5.2. Stock Energy Impacts
 
@@ -241,9 +291,13 @@ The Central Hydronic GSHP measure demonstrates 5.3% total site energy savings (2
 
 -   **7.7%** stock **cooling** savings (51.7 TBtu).
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image14.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 10. Comparison of annual site energy consumption between the ComStock baseline and the Central Hydronic GSHP measure scenario across the building stock. Energy consumption is categorized both by fuel type and end use.
+{:refdef}
 
 The significant stock-level natural gas heating savings is expected because implementation of the Central Hydronic GSHP measure results in full electrification of space heating in buildings to which it is applicable. (This heating electrification includes the use of electric resistance coils in DOAS units.) Correspondingly, the significant increase in electric heating energy use is also expected. The magnitude (in energy units) of the natural gas space heating savings is much larger than the magnitude of the increase in electricity for space heating, due to the same space heating load being met more efficiently with a heat pump with a COP between 2 and 6, as opposed to a gas boiler or heating coil with an efficiency of around 80%.
 
@@ -253,9 +307,13 @@ A circulation pump energy penalty is expected due to the greater hydraulic head 
 
 Figure 11 shows the disaggregation of annual site energy consumption by end use between the baseline and Central Hydronic GSHP measure scenario for applicable buildings only. In applicable buildings, implementation of this measure resulted in 51% energy savings across HVAC end uses (heating, cooling, fans, and pumps) in aggregate. Studies quantifying the energy savings associated with water-to-water heat pumps tied to an "environmental" heat source (as opposed to an actively conditioned loop) compared with conventional hydronic systems (boilers and chillers) at the commercial building level are limited. Environmental heat sources and sinks (such as the ground, groundwater, or wastewater) share commonalities in their moderate temperatures, and obviating the need for additional primary equipment to condition the loop itself. Im and Liu (2015) performed an M&V evaluation of a graywater-coupled heat pump conditioning a museum and found a 64% site HVAC energy savings by comparing the actual system's energy performance to a modeled "conventional" hydronic system with a boiler and chiller minimally meeting ASHRAE 90.1 -- 2010 . In this analysis, a 48% site energy savings for HVAC was identified in applicable buildings through the implementation of groundwater heat pumps. Note that the baseline systems in this case included chillers and boilers of varying efficiencies as well as systems with combinations of hydronic and air-based distribution.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image15.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 11. Comparison of annual site energy consumption between the ComStock baseline and the Central Hydronic GSHP measure scenario for applicable buildings only. Energy consumption is categorized both by fuel type and end use.
+{:refdef}
 
 Im, Liu, and Henderson (2016) performed a measurement and verification analysis of a district ground-coupled water-to-water heat pump system implemented at a university campus. The university's system used heat recovery chillers to provide hot water and chilled water simultaneously. (Note that the system configuration represented in this analysis used separate heat pumps to provide heating and cooling.) The analysis found that the district ground-coupled system reduced site energy use for HVAC by almost 70% relative to the modeled performance of a system served by chillers and gas boilers, minimally compliant with 2010 American Society of Heating, Refrigeration and Air Conditioning Engineers (ASHRAE) Standard 90.1 \[16\]. While the systems considered by Im and Liu (2015) and Im, Liu, and Henderson(2016) differ somewhat from the one presented here, their analysis confirms that savings of a significant portion of the site energy use for HVAC can be expected by implementing a water-to-water ground-source heat pump system.
 
@@ -263,9 +321,13 @@ Im, Liu, and Henderson (2016) performed a measurement and verification analysis 
 
 Figure 12 shows a comparison of aggregate greenhouse gas emissions under several different scenarios reflecting different levels of carbon intensity of electricity. Under the three scenarios shown here, implementing this measure results in a reduction of carbon emissions of 4%--6% relative to the base case. Note that these scenarios are presented for illustrative purposes. Since this measure involves improved space conditioning efficiency and fuel switching, the carbon emissions effects are sensitive to the carbon intensity of electricity. On the stock level, this measure results in a slight net decrease in site electricity use, and a larger decrease in natural gas use.
 
-![](media\hydronic_gshp_image16.jpeg){width="6.5in" height="4.39375in"}
+{:refdef: style="text-align: center;"}
+![](media\hydronic_gshp_image16.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 12. Greenhouse gas (GHG) emissions comparison of the ComStock baseline and the Central Hydronic GSHP measure
+{:refdef}
 
 Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid. MMT stands for million metric tons.
 
@@ -279,17 +341,25 @@ In buildings with existing electric heating, electric heating energy savings is 
 
 Note that the small fluctuations in refrigeration and water heating energy use are due to small changes in zone conditions resulting from the implementation of this measure.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image17.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 13. Percent site energy savings distribution for ComStock models with the Central Hydronic GSHP measure applied by end use and fuel type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
 
 Figure 14 shows the distributions of site energy savings by baseline HVAC system type to which this measure was applicable. The chiller with gas boiler reheat-based systems had the highest (75th percentile) level of site energy savings from this measure. Systems with packaged fan-powered (PFP) boxes had lower ranges of savings, including with a 25th percentile savings level less than zero in the case of the VAV water-cooled chiller with PFP boxes. Note that VAV chiller with PFP boxes and VAV air-cooled chiller with PFP boxes systems have electric reheat coils. As part of this measure, these coils are replaced with hydronic coils, further increasing pump energy use. The partial use of electric heat in the baseline also reduces the potential for site energy savings through the implementation of the GSHP measure, as the electric coils are more efficient, on a site energy basis, than hydronic coils coupled to a gas-fired boiler, or gas-fired coils.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image18.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 14. Percent site energy savings distribution for ComStock models with the applied Hydronic GSHP measure by HVAC system type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the HVAC system type category.
 
@@ -297,9 +367,13 @@ As part of this measure, in buildings with existing hydronic heating systems, he
 
 Figure 15 shows the distribution of percent site energy savings by climate zone for buildings to which this measure was applicable. These results do not show a strong climate-zone-related dependency in the range of energy savings, though for some climate zones (1A, 7A, 7B), the sample sizes are quite small (fewer than 200 buildings). The considered central hydronic GSHP generally improved efficiency in both heating and cooling, at the expense of increased pump energy, which is generally small compared to the heating and cooling savings.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image19.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 15. Percent site energy savings distribution for ComStock models with the applied Hydronic GSHP measure by climate zone
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for the climate zone.
 
@@ -307,9 +381,13 @@ In this measure, the considered ground heat exchangers are sized to meet the ful
 
 Figure 16 shows distributions of site energy savings by building type for buildings to which this measure was applicable. Primary and secondary schools and stand-alone retail buildings had the highest ranges (25th to 75th percentile) of site energy savings, within the range of 40%--60%. Note that the proportional overall site energy savings from this measure in a particular building is also a function of the relative share of HVAC-related end uses of the overall building energy use. Improved energy savings from this measure would be expected in buildings with a higher degree of load diversity at a given point in time, for long periods of the year, given that the water-source heat pumps providing heating and cooling share a common condenser loop, and the extent to which their return temperatures moderate each other's effects on the condenser loop reduces the flow rate through the ground loop required to provide the net level of heat or heat rejection necessary. The degree of load balance throughout the year is a function both of climate and building type. Note the small sample sizes for individual building types, given the relatively small proportion of buildings to which this measure was applicable, and the 10,000-building sample size. This disaggregation can be explored in more detail when full results are available.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image20.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 16. Percent site energy savings distribution for ComStock models with the applied Hydronic GSHP measure by building type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for the building type.
 
@@ -317,17 +395,29 @@ The data points that appear above some of the distributions indicate outliers in
 
 Heating degree days (HDD) and cooling degree days (CDD) are a useful proxy for aggregate weather conditions throughout the year at a particular site. Figure 17 and Figure 18 show distributions of site energy savings binned by "HDD 50" (indexed to outdoor air temperature of 50°F) and "CDD 65" (indexed to outdoor air temperature of 65°F), respectively. These are intended as proxies for envelope- and outdoor-air-based heating and cooling demands in the buildings. Note the limited size of the bins, especially the highest bin for each. The heating degree day bin for fewer than 1,500 HDD 50 has lower 25% and 75% site energy savings proportions than the two higher bins of HDD 50 (greater than 1,500 HDD 50). In the case of cooling degree days, the 25% and 75% values of site energy savings decrease slightly with increasing bin size of CDD 65. While it is difficult to draw conclusions based on the limited sample size (reflecting the 10,000 building run) and lack of a highly definitive trend, this may suggest that more balanced weather-based heating and cooling loads contribute to higher potential site energy savings, as a notable subset of the sample has fewer than 1,500 CDD 65, or has both CDD 65 and HDD 50 between 1,500 and 3,000. Benefits from balanced loads would accrue in reduced pumping energy to maintain temperatures within a desired range on the main heat pump condenser loop (with both the heating and cooling heat pumps coupled to it) and would be reflected in more stable ground temperatures. Figure 19 shows a scatterplot of HDD 50 as a function of CDD 65 for the buildings in this sample to which this measure was applicable. This trend can be further explored when the full run output is available.
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image21.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 17. Percent site energy savings distribution by range of HDD 50°F (n=153, n=136, n=97, respectively)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image22.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 18. Percent site energy savings distribution by range of CDD 65°F (n=183, n=152, n=51, respectively)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image23.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 19. HDD 50°F as a function of CDD 65°F for buildings in this sample
+{:refdef}
 
 # 6. References
 
@@ -381,21 +471,37 @@ Figure 19. HDD 50°F as a function of CDD 65°F for buildings in this sample
 
 # A. Additional Figures
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image24.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image25.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-2. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image26.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-3. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image27.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
 # B. Heat Pump Performance Curves
 
@@ -413,7 +519,9 @@ Table B-1. Variables Used in Heat Pump Performance Curves
 
 Table C-1. Summary of GHEDesigner Input Assumptions
 
+{:refdef: style="text-align: center;"}
 ![](media/hydronic_gshp_tablec1.png)
+{:refdef}
 
 Table C-2. Average Undisturbed Ground Temperatures by IECC 2012 Climate Zone According to the Simplified Design Model and Site Locations \[20\]​.
 
@@ -437,8 +545,12 @@ Table C-2. Average Undisturbed Ground Temperatures by IECC 2012 Climate Zone Acc
 |     7B                        |     6.5                                                  |
 |     8AK                       |     2.3                                                  |
 
+{:refdef: style="text-align: center;"}
 ![](media\hydronic_gshp_image28.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure C-1. Soil Conductivity Distributions by Climate Zone (W/m-K)
+{:refdef}
 
 [^1]: Note that baseboard systems are not in the scope of systems retrofit by this measure due to their requirements for high-temperature hot water.

@@ -81,9 +81,13 @@ This measure is also not applied to dedicated outdoor air systems, as these syst
 
 Some buildings with ventilation scheduled off at night in their primary HVAC systems have dedicated systems serving other spaces (such as data centers) that have constant schedules applied to their minimum outdoor air levels. These secondary system schedules were changed to reflect building occupancy as part of this measure, but because the minimum outdoor air levels for these spaces were generally set to zero, this schedule change did not affect actual operations and produced only a minor (\<0.01%) change in site energy use.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Prevalence of HVAC system types to which this measure is applicable (note that chilled water is abbreviated "CHW" and heating hot water "HHW.")
+{:refdef}
 
 ## 4.2. Technology Specifics Such as Sizing, Performance, and Configuration
 
@@ -99,7 +103,9 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 
  Table 1. On-Site Fossil Fuel Emissions Factors 
 
+{:refdef: style="text-align: center;"}
 ![](media/onsite_fossil_fuels_efs_table.png)
+{:refdef}
 
 ## 4.4. Limitations and Concerns
 
@@ -134,15 +140,23 @@ The model was run with the Port Arthur, Texas, weather file. Measure tests were 
 
 Figure 2 shows outdoor air flow through the air handling unit for a representative period of about 1 week (corresponding to January 1--8) in the base case and after the measure was applied. After applying the measure, the AHU does not bring in outdoor air during unoccupied periods, as neither of the models have an economizer enabled (If an economizer were enabled, economizing during unoccupied periods to meet temperature setpoints would be permitted.). The results shown in Figure 2 confirm this effect.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image2.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Outdoor air mass flow rate for AHU with fan cycling with ventilation ( base case), and fan cycling without ventilation (after measure applied)
+{:refdef}
 
 Figure 3 shows a comparison of energy use in end uses affected by the measure (electricity for cooling and fans and natural gas heating), before and after implementation in the example warehouse building. Because the baseline model uses a "vent cycle" approach (the supply fans cycle to meet load during unoccupied hours), a reduction in fan operating hours is not expected through application of the measure. There was a reduction in heating and cooling energy use observed, as expected, through the reduction in load from tempering outdoor air. The reduction in fan energy use can also be attributed to this reduction in heating and cooling load.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image3.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. Comparison of key energy end uses before and after implementing Improved Fan Scheduling and Outdoor Air Control measure in example building
+{:refdef}
 
 ## 6.2. Stock Energy Impacts
 
@@ -156,15 +170,23 @@ The Improved Fan Scheduling and Outdoor Air Control measure demonstrates 3.5% to
 
 -   **2.7%** stock **cooling** savings (18.3 TBtu).
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image4.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Comparison of annual site energy consumption between the ComStock baseline and the Improved Fan Scheduling and Outdoor Air Control measure scenario across the building stock
+{:refdef}
 
 Energy consumption is categorized both by fuel type and end use.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image5.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5. Comparison of annual site energy consumption between the ComStock baseline and the Improved Fan Scheduling and Outdoor Air Control measure scenario in applicable buildings only
+{:refdef}
 
 Energy consumption is categorized both by fuel type and end use.
 
@@ -178,9 +200,13 @@ Some buildings with ventilation scheduled off at night in their primary HVAC sys
 
 Figure 6 shows a comparison of aggregate greenhouse gas emissions under several different scenarios reflecting different levels of carbon intensity of electricity. Note that these scenarios are presented for illustrative purposes. Under the three scenarios shown here, implementing this measure reduces the carbon emissions by 3%--4% relative to the base case. The emissions associated with electricity vary notably among these scenarios, due to the varying assumptions for carbon intensity of electricity. Natural gas heating energy savings account for 35% of the site energy savings from this measure at the full stock level, and thus the emissions reduction share associated with that portion is not dependent on carbon intensity of electricity, leading to a slightly higher proportionate emissions reduction under the scenarios assuming lower electric carbon intensity.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image6.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 6. Greenhouse gas emissions comparison of the ComStock baseline and the Improved Fan Scheduling and Outdoor Air Control measure
+{:refdef}
 
 Three electricity grid scenarios are presented: Cambium LRMER High Renewable Energy Cost 15-Year, Cambium LRMER Low Renewable Energy Cost 15-Year, and eGrid.
 
@@ -200,9 +226,13 @@ The high proportionate penalty in pump energy use generally occurred in building
 
 The minor changes in water systems- and refrigeration-related energy use are due to small differences in zone air conditions resulting from applying this measure. The minor variation in lighting energy use observed in a very small number of buildings is a minor unexpected result that is being investigated. These minor variations do not affect the aggregate results or the results of other end uses.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image7.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 7. Percentage site energy savings distribution for ComStock models with the Improved Fan Scheduling and Outdoor Air Control measure applied by end use and fuel type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for *n* indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
 
@@ -210,25 +240,37 @@ Figure 8 shows the distribution of overall site energy savings by HVAC system ty
 
 The fan energy penalty appears to occur in central VAV or packaged VAV systems, and primarily in those without economizers that previously had the "night fan cycle vent" control strategy. The elimination of the cooling from outdoor air brought in during unoccupied periods causes the fans to cycle more frequently and at higher flow rates to meet cooling loads in the zone overnight, which often occur in interior zones in large buildings. These buildings still generally had overall net site energy savings from implementing this measure, due to the reduction in load from outdoor air at other times. In the packaged single-zone heat pump (PSZ-HP) systems in this sample that have a site energy penalty resulting from this measure, the energy penalty tends to result from an increased electricity use for heating.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image8.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 8. Percentage site energy savings distribution for ComStock models with the applied Improved Fan Scheduling and Outdoor Air Control by HVAC system.
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for *n* indicates the number of ComStock models that were applicable for energy savings for the HVAC system type category.
 
 Figure 9 shows the distribution of site energy use intensity savings from the Unoccupied OA control measure by building type. The buildings with the highest proportional site energy savings generally had "night fan on vent" control in the baseline. This control scheme is expected, as it offers the greatest potential for fan, heating, and cooling energy savings through improved ventilation controls (Only 7 small hotels and 43 hospitals appeared in this sample, making it difficult to draw conclusions based on their savings distributions.). The net site energy penalty that is observed in some buildings generally occurred in buildings without economizers, and was due to increased cooling energy use. In buildings without economizers, ventilation during unoccupied periods can, in effect, provide the benefits of economizing at certain times.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image9.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 9. Percentage site energy use intensity savings distribution for ComStock models with the applied Improved Fan Scheduling and Outdoor Air Control by building type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for *n* indicates the number of ComStock models that were applicable for energy savings for the building type category.
 
 Figure 10 shows distributions of site energy savings by climate zone. The 75<sup>th</sup> percentile of site energy savings is generally less than 15% across all climate zones, with several exceptions. Note that Climate Zone 3C is located only in California, in which the Database of Energy Efficiency Resources (DEER)\--based modeling methods are applied, making it not directly comparable to other climate zones. (Climate Zone 3B also has a significant number of buildings located in California.) The DEER-based methods reflect California's Title 24 energy code, and entail a different set of assumptions than those applied in the rest of the ComStock models, included related to plug loads, equipment efficiency, and, significantly for this measure, outdoor air ventilation rates. The potential for energy savings from this measure is driven by ventilation rates, baseline control and scheduling conditions in a given building, as well as outdoor air conditions overnight, and energy savings accrue from improved fan scheduling as well as reduction in outdoor air loads, which is reflected in the generally consistent ranges of energy savings across other climate zones.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image10.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 10. Percentage site energy savings distribution for ComStock models with the applied Improved Fan Scheduling and Outdoor Air Control measure by climate zone
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for *n* indicates the number of ComStock models that were applicable for the climate zone.
 
@@ -238,10 +280,17 @@ As discussed previously, the baseline night cycle mode is a key factor influenci
 
 Note that this measure was applicable to some buildings with the "night fan cycle no vent" configuration, if they had constant schedules controlling HVAC systems. In all buildings, these schedules were modified to align with building occupancy schedules. The energy savings from this change can be highly variable as a function of overall site energy use, leading to the wide dispersal of outliers. Note that some buildings with "night fan cycle no vent" schedules governing their primary HVAC systems have dedicated systems serving other spaces (such as data centers) that have constant schedules applied to their minimum outdoor air levels. These schedules were changed to reflect building occupancy as part of this measure, but because the minimum outdoor air levels for these spaces were generally set to zero, this schedule change did not affect actual operations and produced only a minor (\<0.01%) change in site energy use. This explains some of the distribution concentrated at 0% for this group of buildings.
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image11.png)
-![](media\oa_control_image12.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
+![](media\oa_control_image12.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 11. Boxplot of site energy savings distributions by night cycle mode for those buildings with night cycle mode changed from default (without outliers at left and with outliers at right), with sample sizes: "night fan cycle no vent"=1678, "night fan cycle vent"=3876, and "night fan on vent"=2230
+{:refdef}
 
 *T*he remaining samples retained their original nighttime ventilation control.
 
@@ -249,10 +298,17 @@ Figure 11. Boxplot of site energy savings distributions by night cycle mode for 
 
 In about 3.4% of the buildings to which this measure was applicable, a natural gas heating penalty was observed, primarily due to a reduction in fan heat from improved scheduling that, in those buildings, outweighed energy heating energy savings from the reduction in outdoor air load during unoccupied hours. Figure 11 shows scatterplots of a subset of those buildings, with the natural gas space heating penalty plotted as a function of the fan energy savings. The red line in Figure 11 shows the maximum expected natural gas heating penalty as a function of fan energy use, given an assumption of all fan heat being transferred to the airstream (reflecting conditions in the ComStock models considered), and a natural gas heating efficiency of 80% (typical of natural gas heating coils in air handling units). In Figure 11, the natural gas penalty values generally lie above, and in many cases, significantly above, the red line, indicating that the penalty observed is less than the maximum value expected. This provides a "gut check" on the results (for clarity, the small number of buildings with a natural gas heating penalty and fan energy savings of greater than 60,000 kWh are not shown here).
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image13.png)
-![](media\oa_control_image14.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
+![](media\oa_control_image14.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 12. Natural gas heating energy savings (a negative value, reflecting an energy penalty) as a function of fan energy savings for a selection of buildings in which a natural gas heating penalty was observed
+{:refdef}
 
 The figure at left is a "zoomed-in" version of the figure at right for clarity. Points are colored by ASHRAE climate zone.
 
@@ -280,18 +336,34 @@ Vijayakumar, G. e. (2022). *ANSI/RESNET/ICC 301-2022 - Standard for the Calculat
 
 # A.  Additional Figures
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image15.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image16.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-2. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image17.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-3. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\oa_control_image18.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}

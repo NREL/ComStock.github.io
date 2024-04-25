@@ -97,9 +97,13 @@ This measure is applicable to buildings with electric HVAC systems (either elect
 
 Figure 1 shows the area percentage of large office buildings among all the commercial building types in ComStock and the floor area percentage of applicable buildings with electric HVAC systems (cooling only or both heating and cooling) for each building type. All large office buildings are applicable to this measure; 33.3% of large office floor area has both electric heating and cooling systems, and the remaining 66.7% of the floor area only has electric cooling. In terms of building counts, this applicability corresponds to 3158 large office building model samples which then extend to 19212 large office buildings (with weighting factors applied) for representing the counts in national level.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Prevalence of building types and applicability for each building type
+{:refdef}
 
 ## 4.2. Specifics of Thermostat Control for Load Shedding
 
@@ -111,9 +115,13 @@ By applying the method "Dispatch Schedule Generation" described in the "Suppleme
 
 There are few solutions to address the rebound (snapback) effect proposed or demonstrated in current studies, mainly because snapback takes place in the post-DR event period---usually hours after peak window, which is not taken into consideration in most existing research that focus on demand control in peak window only, even if the effect generates higher peak load out of the window. Michaels Energy \[34\] proposed a solution of integrating electric thermal storage to mitigate snapback that requires the installation (and coordinated control) of a new system, and not all buildings are suitable for currently commercialized thermal storage (e.g., a large office building would require electric thermal storage with extreme high capacitance). A few companies \[31\] have applied gradual step changes rather than immediate restoration of setpoints on thermostats and water heaters to smooth the rebound effect and demonstrate the effectiveness. We adopt the stepped setpoint change method as it does not introduce new equipment and because this measure already applies peak period setpoint adjustments. The measure applies a rebound period of 2 hours for thermostat setpoints to ramp back to the original values after the peak period. The setpoint values in the rebound period are generated through linear interpolation from the setpoint value in peak period to the nominal setpoint value. This gradual restoration of the setpoint reduces the potential of creating a new peak load with immediate restoration, which was observed in simulation tests applying thermostat adjustment for peak demand periods. Figure 2 shows an example where applying a gradual setpoint restoration period avoids creating a new peak demand event.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image2.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Example of applying rebound control (reset setpoint with ramp) after peak window
+{:refdef}
 
 ## 4.2.3. Greenhouse Gas Emissions
 
@@ -121,7 +129,10 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 
  Table 1. On-Site Fossil Fuel Emissions Factors 
 
+{:refdef: style="text-align: center;"}
 ![](media/onsite_fossil_fuels_efs_table.png)
+{:refdef}
+
 
 ## 4.2.4. Limitations and Concerns
 
@@ -249,23 +260,34 @@ The default and alternative sets of input parameters are summarized in Table 3. 
 
 Table 3. Default and Compared Options for Measure Parameters
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_table3.png)
+{:refdef}
+
 
 ### 6.1.1. Daily Peak Window Variation
 
 Figure 3 shows the load profiles for five consecutive days from several simulations corresponding to different buildings, weather locations, and scenarios (baseline or with default dispatch strategy) for comparison. Comparison between the baseline profile and the load shed events (appearing as valleys) in the default load shed profile illustrates the timing of the peak window each day. Figure 3 shows that peak windows are highly dependent on individual building characteristics and weather. Even identical buildings (Building 1) in slightly different climate zones (3A and 3B) result in different load profiles. Diversity in the stock models (e.g., location-based weather, internal heat gains, building operation hours, building envelope performance) results in different load profiles, and thus the peak windows each day for each building are also different.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image3.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. Daily load profile (baseline and load shed) comparison for two buildings with two climate zones
+{:refdef}
 
 ### 6.1.2. Rebound Effect
 
 Figure 4 shows the daily load profile comparison of the same building in the baseline scenario, applying the "default" parameter set, and applying the "no rebound control" parameter set. As can be seen from the different post-peak load profiles, load shed strategy without addressing rebound effect would almost always generate new peak load higher than original baseline peak for the illustrated summer days, and this trend is maintained throughout the year among different building models. This reveals the natural drawback of rebound effect in load shed control for responsive systems that have ordinary differential equation component(s) such as HVAC systems. Therefore, rebound control is necessary in load shed strategy for thermostat control, and is included in the default scenario.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image4.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Daily load profile comparison for rebound control
+{:refdef}
 
 ## 6.2. Demand Flexibility Performance
 
@@ -283,9 +305,13 @@ Figure 5 shows the distribution of median daily peak load reduction percentages 
 
 -   The no rebound control scenario shows accorded performance with the single building test result (Figure 4) where the rebound effect results in increased daily peak load for many months (April to October).
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image5.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5. Distribution of reduction percentage of median daily peak load compared to the baseline model by month for measure with default and comparative scenarios
+{:refdef}
 
 Based on the comparison, the performance of default setting of the measure is determined to be the overall best in terms of peak reduction potential and performance.
 
@@ -293,13 +319,21 @@ Based on the comparison, the performance of default setting of the measure is de
 
 Figure 6 and Figure 7 show the percentage distributions of median and maximum daily peak load reductions, respectively, by month for the default scenario compared to the baseline model.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image6.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 6. Distribution of the percentage of median daily peak load reduction by month compared to the baseline model for the default scenario
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image7.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 7. Distribution of the percentage of maximum daily peak load reduction by month compared to the baseline model for the default scenario
+{:refdef}
 
 Both distributions of the statistics share a similar trend that a daily peak load reduction is not guaranteed with the upgrade, but there is an overall positive monthly reduction. The non-negligible portion of the stock with negative peak reductions is mainly due to the uncertainty in rebound effects with fixed rebound control length (2 hours) for all applicable buildings; some rebound effects are too strong to mitigate in 2 hours or the peak window ends too early for rebound control to take effect. Therefore, rebound control could and should be tuned for specific building models (in future work), as the impact of rebound effects is highly dependent on building properties and weather conditions. The larger variances for median statistics in summer and winter are contributed due to a similar reason, where rebound effects are typically stronger in summer and winter when the highest and lowest temperatures occur.
 
@@ -316,17 +350,26 @@ Figure 8 shows the distribution of annual bill savings for the default scenario 
 3)  Applicable monthly or seasonal demand charge reduction.
 
 These savings underestimate the benefits from a measure targeting daily peak load reduction, as most rate structures consider peak demand charge on a monthly or seasonal basis, while demand response programs or rate structures including DR incentives that favor daily demand flexibility control are currently not able to be directly integrated into ComStock analysis.
-![](media\shed_image8.png)
 
+{:refdef: style="text-align: center;"}
+![](media\shed_image8.png)
+{:refdef}
+
+{:refdef: style="text-align: center;"}
 Figure 8. Distribution of annual bill savings compared to the baseline model for maximum, mean, and median bills, separated by buildings with electric and non-electric heating
+{:refdef}
 
 ## 6.3. Stock Energy Impacts
 
 The thermostat control for load shedding measure with perfect load prediction method that is applicable to large office buildings---9.72% of the total building stock floor area---demonstrates 0.046% total site energy savings (2 trillion British thermal units \[TBtu\]) for the U.S. commercial building stock modeled in ComStock, as shown in Figure 9.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image9.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 9. Comparison of annual site energy consumption between the ComStock baseline and the thermostat control for load shedding measure default scenario, for the whole stock (left) and applicable large offices only (right)
+{:refdef}
 
 The savings are primarily attributed to:
 
@@ -344,29 +387,49 @@ The savings are primarily attributed to:
 
 Figure 10 shows the annual stock level impact of the measure on greenhouse gas emissions and presents approximately 0% emission reductions for all the three grid electricity scenarios. This is as expected due to the small energy savings. Future analysis will pursue the objective of saving carbon emission that will result in more impact on carbon emission savings.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image10.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 10. Greenhouse gas emissions comparison of the ComStock baseline and the thermostat control for load shedding measure default scenario
+{:refdef}
 
 ## 6.5. Site Energy Savings Distributions
 
 Figure 11 through Figure 14 show the percent site energy and energy use intensity (EUI) savings distributions by end use and climate zones, respectively. Percent savings provide relative impact of the measure at the individual building level while site EUI savings provide absolute (or aggregated) scale of impact. Also, the data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image11.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 11. Percent site energy savings distribution for ComStock models with the thermostat control for load shedding upgrade by end use
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image12.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 12. Percent site EUI savings distribution for ComStock models with the thermostat control for load shedding upgrade by end use
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image13.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 13. Percent site energy savings distribution for ComStock models with the thermostat control for load shedding upgrade by ASHRAE climate zone
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image14.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 14. Percent site EUI savings distribution for ComStock models with the thermostat control for load shedding upgrade by ASHRAE climate zone
+{:refdef}
 
 Both figures show relatively larger energy impact compared to the EUI savings, indicating that the measure plays a more significant role in energy performance at the building level, but the savings are not significant once adjusted for building floor area. Highlights of savings presented in the figures include:
 
@@ -454,21 +517,37 @@ The measure is effective for various weather zones, indicating that the demand f
 
 # A.  Additional Figures
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image15.jpg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image16.jpg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-2. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image17.jpg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-3. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shed_image18.jpg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
   [End-Use Load Profiles]: https://www.nrel.gov/buildings/end-use-load-profiles.html
   [webpage]: https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html

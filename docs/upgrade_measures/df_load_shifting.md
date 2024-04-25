@@ -85,9 +85,13 @@ This measure is applicable to buildings with electric HVAC systems (either elect
 
 Figure 1 shows the area percentage of large office buildings among all the commercial building types in ComStock and the floor area percentage of applicable buildings with electric HVAC systems (cooling only or both heating and cooling) for each building type. All large office buildings are applicable to this measure; 33.3% of large office floor area has both electric heating and cooling systems and the remaining 66.7% of the floor area has only electric cooling. In terms of building counts, this applicability corresponds to 3158 large office building model samples which then extend to 19212 large office buildings (with weighting factors applied) for representing the counts in national level.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Prevalence of building types and applicability for each building type
+{:refdef}
 
 ## 4.2. Technology Specifics
 
@@ -105,7 +109,10 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 
  Table 1. On-Site Fossil Fuel Emissions Factors 
 
+{:refdef: style="text-align: center;"}
 ![](media/onsite_fossil_fuels_efs_table.png)
+{:refdef}
+
 
 ## 4.4. Limitations and Concerns
 
@@ -235,13 +242,20 @@ The default and alternative sets of input parameters are summarized in Table 3. 
 
 Table 3. Default and Compared Options for Measure Parameters
 
+{:refdef: style="text-align: center;"}
 ![](media/shift_table3.png)
+{:refdef}
+
 
 Figure 2 shows the load profiles for three consecutive days (8/7--8/9) from several simulations corresponding to different scenarios for comparison. Comparison between the baseline profile and the load shift events (appearing as peaks followed by valleys) in the default load shift profile illustrate the timing of the pre-peak period and the peak window each day. Figure 2 shows that even with the default parameter set, there is still a chance of generating a new higher peak load in the pre-cooling period (shown on 8/8), and this chance increases with the more aggressive pre-cooling scenario. The shorter pre-peak scenario could yield a higher chance of creating a new peak because the pre-cooling starts closer to the original peak, when the initial cooling load is higher, compared to the default scenario.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image2.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Daily load profile comparison for baseline and different scenarios
+{:refdef}
 
 ## 6.2. Demand Flexibility Performance
 
@@ -257,9 +271,13 @@ Figure 3 shows the distribution of median daily peak load reduction percentages 
 
 -   Shorter pre-peak increases the risk of new increased daily peak load.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image3.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. Distribution of reduction percentage of median daily peak load compared to the baseline model by month for measure with default and comparative scenarios
+{:refdef}
 
 Based on the comparison, the performance of default setting of the measure is determined to be the overall best in terms of peak reduction potential and performance robustness.
 
@@ -267,13 +285,21 @@ Based on the comparison, the performance of default setting of the measure is de
 
 Figure 4 and Figure 5 show the percentage distributions of median and maximum daily peak load reductions, respectively, by month for the default scenario compared to the baseline model.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image4.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Distribution of the percentage of median daily peak load reduction by month compared to the baseline model for the default scenario
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image5.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5. Distribution of the percentage of maximum daily peak load reduction by month compared to the baseline model for the default scenario
+{:refdef}
 
 Both distributions of the statistics share a similar trend that a daily peak load reduction is not guaranteed with the upgrade, but there is an overall positive monthly reduction especially for cooling seasons. The non-negligible portion of the stock with negative peak reductions is mainly due to the variability in peak load increases from pre-cooling. Building loads that are sensitive to setpoint change for pre-conditioning would require smaller setpoint adjustments and longer pre-conditioning lengths to avoid generating higher peak load in the pre-peak period than the original (unshifted) peak. Therefore, load shifting parameters need to be tuned for specific building models.
 
@@ -289,17 +315,25 @@ Figure 6 shows the distribution of annual bill savings for the default upgrade w
 
 These savings are compromised by the increased cost due to increased energy consumption and thus show overall close to zero savings. However, these savings underestimate the benefits from a measure targeting daily peak load reduction, as most rate structures consider peak demand charge on a monthly or seasonal basis, while demand response programs or rate structures including demand response incentives that favor daily demand flexibility control are currently not able to be directly integrated into ComStock analysis workflow.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image6.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 6. Distribution of annual bill savings compared to the baseline model for mean, and median bill, separated by buildings with electric and non-electric heating
+{:refdef}
 
 ## 6.3. Stock Energy Impacts
 
 The thermostat control for load shedding measure with perfect load prediction method that is applicable to large offices---9.72% of the total building stock floor area---demonstrates -0.023% total site energy savings (-1 trillion British thermal units \[TBtu\]) for the U.S. commercial building stock modeled in ComStock, as shown in Figure 7.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image7.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 7. Comparison of annual site energy consumption between the ComStock baseline and the thermostat control for load shedding measure default scenario, for the whole stock (left) and applicable large offices only (right)
+{:refdef}
 
 The savings are primarily attributed to:
 
@@ -315,21 +349,33 @@ The savings are primarily attributed to:
 
 Figure 8 shows the annual stock-level impact of the measure on greenhouse gas emissions and presents approximately 0% emission reductions for all the three grid electricity scenarios. This is as expected due to the small energy savings.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image8.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 8. Greenhouse gas emissions comparison of the ComStock baseline and the thermostat control for load shedding measure default scenario
+{:refdef}
 
 ## 6.5. Site Energy Savings Distributions
 
 Figure 9 and Figure 10 show the percent site energy and end-use intensity (EUI) savings distributions by end use and climate zones, respectively. Percent savings provide relative impact of the measure at the individual building level while site EUI savings provide absolute (or aggregated) scale of impact. Also, the data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image9.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 9. Percent site energy (left) and EUI (right) savings distribution for ComStock models with the thermostat control for load shedding upgrade by end use
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image10.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 10. Percent site energy (left) and EUI (right) savings distribution for ComStock models with the thermostat control for load shedding upgrade by ASHRAE climate zone
+{:refdef}
 
 Similar to the stock-level energy savings findings in Section 5.3, most of the savings are neutral or slightly negative for both energy and EUI. Highlights of savings presented in the figures include:
 
@@ -417,21 +463,37 @@ Similar to the stock-level energy savings findings in Section 5.3, most of the s
 
 # A.  Additional Figures
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image11.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image12.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-2. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image13.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-3. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\shift_image14.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
   [End-Use Load Profiles]: https://www.nrel.gov/buildings/end-use-load-profiles.html
   [end-use-load-profiles-for-us-building-stock]: https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2F
