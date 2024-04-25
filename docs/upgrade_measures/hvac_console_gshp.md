@@ -35,7 +35,7 @@ The Console GSHP upgrade demonstrates 1.0% total site energy savings (42 trillio
 
 -   **5.0%** stock **fan electricity** savings (26.1 TBtu).
 
-Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the Console GSHP measure. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the last uses the Emissions & Generation Resource Integrated Database (eGRID) data set ​ \[1\], \[2\]​. Across the three electricity grid scenarios presented, electricity emissions increased by up to 1.3% (2 MMT CO~2~e) (Figure 6). Natural gas emissions dropped by 3.7% (3 MMT CO~2~e), resulting in an overall greenhouse gas reduction across all fuel types of 0.4-0.6% (1-2 MMT CO~2~e) depending on the grid scenario.
+Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the Console GSHP measure. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the last uses the Emissions & Generation Resource Integrated Database (eGRID) data set ​ \[1\], \[2\]​. Across the three electricity grid scenarios presented, electricity emissions increased by up to 1.3% (2 MMT CO<sub>2</sub>e) (Figure 6). Natural gas emissions dropped by 3.7% (3 MMT CO<sub>2</sub>e), resulting in an overall greenhouse gas reduction across all fuel types of 0.4-0.6% (1-2 MMT CO<sub>2</sub>e) depending on the grid scenario.
 
 # Acknowledgments
 
@@ -161,7 +161,7 @@ A variable-speed circulation pump on the ground loop is controlled to a temperat
 
 If the user elects to model a DOAS to supply ventilation, several additional options for energy efficiency features are available: demand-controlled ventilation and energy recovery ventilation. These options are not generally available on console water-to-air heat pumps (due to their compact configuration) but could be implemented through a DOAS.
 
-DCV controls ventilation levels based on occupancy and is typically applied in spaces that have varying occupancy, such as conference rooms. DCV generally uses carbon dioxide (CO~2~) levels measured in a zone to control ventilation levels. A DOAS can be equipped to control supply fans based on CO~2~ sensors. Implementation of DCV based on occupancy levels is an option in this measure. Implementation of economizers will be included in this measure.
+DCV controls ventilation levels based on occupancy and is typically applied in spaces that have varying occupancy, such as conference rooms. DCV generally uses carbon dioxide (CO<sub>2</sub>) levels measured in a zone to control ventilation levels. A DOAS can be equipped to control supply fans based on CO<sub>2</sub> sensors. Implementation of DCV based on occupancy levels is an option in this measure. Implementation of economizers will be included in this measure.
 
 ## 4.4. GHEDesigner Workflow
 
@@ -267,9 +267,9 @@ The pump end use, while making up a small portion of the total stock energy, rea
 
 ## 6.3. Stock Greenhouse Gas Emissions Impact
 
-ComStock simulation results show greenhouse gas emissions avoided across all electricity grid scenarios for all on-site combustion fuel types (Figure 6). Across all fuels, greenhouse gas emissions avoided are 1 to 2 million tons of CO~2~ equivalent (0.4-0.5%), depending on the grid scenario chosen. Because this upgrade is only applicable to 11% of the stock floor area, stock-level emissions impacts are rather minimal. In addition, cooling and outdoor air were added to some buildings via the console GSHP upgrade, so energy savings potential can be muted by the inclusion of these feature upgrades. Electricity greenhouse gas emissions increased by 2 MMT (0.6% to 1.3%) across the three scenarios. Because this upgrade involves electrifying the space heating load in applicable buildings, an increase in electricity emissions is to be expected.
+ComStock simulation results show greenhouse gas emissions avoided across all electricity grid scenarios for all on-site combustion fuel types (Figure 6). Across all fuels, greenhouse gas emissions avoided are 1 to 2 million tons of CO<sub>2</sub> equivalent (0.4-0.5%), depending on the grid scenario chosen. Because this upgrade is only applicable to 11% of the stock floor area, stock-level emissions impacts are rather minimal. In addition, cooling and outdoor air were added to some buildings via the console GSHP upgrade, so energy savings potential can be muted by the inclusion of these feature upgrades. Electricity greenhouse gas emissions increased by 2 MMT (0.6% to 1.3%) across the three scenarios. Because this upgrade involves electrifying the space heating load in applicable buildings, an increase in electricity emissions is to be expected.
 
-Natural gas emissions avoided by this upgrade equate to 3 million tons of CO~2~, or 3.7%. This is driven by transitioning natural gas heating systems in applicable buildings. The natural gas results remain consistent across all three grid scenarios, as these scenarios exclusively pertain to modifications within the electricity grid without affecting natural gas outcomes.
+Natural gas emissions avoided by this upgrade equate to 3 million tons of CO<sub>2</sub>, or 3.7%. This is driven by transitioning natural gas heating systems in applicable buildings. The natural gas results remain consistent across all three grid scenarios, as these scenarios exclusively pertain to modifications within the electricity grid without affecting natural gas outcomes.
 
 {:refdef: style="text-align: center;"}
 ![](media\console_gshp_image8.jpeg)
