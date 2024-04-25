@@ -29,7 +29,7 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - [Advanced Rooftop Unit Control]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vav_rtu.md %})
 - [Central Ground-Source Water-to-Water Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hydronic_gshp.md %})
 - Packaged Water-to-Air Geothermal Heat Pump **
-- Ground-Coupled Console Water-to-Air Heat Pump **
+- [Ground-Coupled Console Water-to-Air Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_console_gshp.md %})
 - [Electric Kitchen Equipment]({{site.baseurl}}{% link docs/upgrade_measures/ppl_electric_kitchen_equipment.md %})
 - [Thermostat Control for Load Shedding]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shedding.md %})
 - [Thermostat Control for Load Shifting]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shifting.md %})
