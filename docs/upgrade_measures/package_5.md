@@ -568,7 +568,7 @@ Figure 4. Upgrade applicability on building stock cooling energy
 This measure will cycle through the outdoor air loops in a model and
 enable DCV for air loops serving applicable space types. This will set
 the DCV field in the mechanical ventilation controller to "Yes" from
-"No." As ComStock building models do not track CO~2~ levels, the models'
+"No." As ComStock building models do not track CO<sub>2</sub> levels, the models'
 occupancy schedules will be used to control the DCV.
 
 For the EnergyPlus DCV function to work properly, a space needs both a
@@ -634,7 +634,7 @@ constraints above, any model with a DOAS will not have DCV applied at
 this time. In addition, models with single-zone unitary systems (e.g.,
 PTAC, PTHP) will not have DCV applied because they are entirely reliant
 on occupants to manually control the ventilation air and are unable to
-be controlled using occupancy or CO~2~ sensors. Models with ERVs are not
+be controlled using occupancy or CO<sub>2</sub> sensors. Models with ERVs are not
 required by ASHRAE 90.1 to have DCV, but it will be added to models with
 ERV in this measure to represent optimal operating conditions.
 
