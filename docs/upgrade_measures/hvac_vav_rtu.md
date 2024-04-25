@@ -97,9 +97,13 @@ Healthcare patient spaces must provide a consistent level of ventilation at a pr
 
 This measure is also not intended to be applied to dedicated outdoor air units, as incorporating variable-speed fan control in such a unit would likely involve DCV, which is addressed as a separate option. Fan-coil units can, in some instances, be retrofitted for VAV operation, but are not considered in the scope of this measure due to the different conditions involved in assessing their suitability for retrofit.[^5]
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image1.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 1. Prevalence of HVAC system types in ComStock
+{:refdef}
 
 ## 4.2. Technology Specifics
 
@@ -109,9 +113,13 @@ A common control sequence for VAV retrofits in RTUs with only one stage each of 
 
 Packaged single-zone systems are modeled by ComStock using the AirLoopHVAC:UnitarySystem object in EnergyPlus. To implement a single-zone VAV approach, the existing Fan:OnOff object is replaced with a Fan:VariableSpeed, and the system control type is set to "SingleZoneVAV." (Note that this measure is approximating the performance of a fan with a two-speed control approach with a continuously variable fan.) Under the single-zone VAV control approach, EnergyPlus considers two potential airflow rates---"heating and cooling" and "no load" (which can be applied in periods of low loads, or when only ventilation airflow is required), and a range of supply air temperatures. If the load cannot be met at the "no load" airflow rate and acceptable range of supply air temperatures, the airflow is increased to the heating and cooling supply airflow rate. The existing AirTerminal:SingleDuct:NoReheat is replaced with a AirTerminal:SingleDuct:VAV:HeatAndCool:NoReheat, which allows for increased airflow in heating. The AirTerminal:SingleDuct:VAV:HeatAndCool:NoReheat also allows for maximum and minimum airflow rates to be set, which will be configured based on the operating parameters of the Catalyst ARC retrofit kit, with a minimum of 40% of the design airflow (or the airflow required for ventilation, whichever is higher), and a maximum of the full design airflow. (Note that this was selected to ensure adequate airflow under EnergyPlus' sizing routines. In installed equipment, the degree of over-sizing may be greater in many applications, reflected in the controls of the Catalyst and other ARC units setting the new maximum airflow at 90% of the design maximum.) This airflow pattern is illustrated schematically in Figure 2. Airflow requirements for ventilation are calculated per ANSI/ASHRAE Standard 62.1 based on occupancy and floor area of the zone served, as well as any exhaust requirements. The measure confirms that the airflow limitations for the DX cooling and heating coils are respected.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image2.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 2. Illustration of single-zone VAV airflow control scheme
+{:refdef}
 
 Image from Trane (2013)
 
@@ -133,7 +141,9 @@ Three electricity grid scenarios are presented to compare the emissions of the C
 
  Table 1. On-Site Fossil Fuel Emissions Factors 
 
+{:refdef: style="text-align: center;"}
 ![](media/onsite_fossil_fuels_efs_table.png)
+{:refdef}
 
 ## 4.4. Limitations and Concerns
 
@@ -147,7 +157,9 @@ Table 2 includes a list of output variables that are calculated in ComStock. The
 
 Table 2. Output Variables Calculated From the Measure Application
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_table2.png)
+{:refdef}
 
 # 6. Results
 
@@ -161,39 +173,67 @@ To demonstrate the functionality of the measure, the Advanced RTU Controls measu
 
 Illustrative results are presented for a zone with high fan power relative to the rest of the building, "Retail, Retail B---Story Ground." Figure 3 shows a comparison of the supply airflow rates for that zone for a roughly one-week period in July, for the "base" case and with the measure applied ("measure"). The zone level cooling load for the same period in the "measure" case is shown in the bottom plot in Figure 3. The upper figure shows how, in the measure case, fan speed modulates to meet the cooling load, while reducing to the "low-load" level during periods when loads are low. The implementation of this measure is not expected to change zone-level loads.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image3.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image4.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 3. Supply airflow rate for the base case and with the measure applied for the selected zone (top), and zone load for the measure case (bottom)
+{:refdef}
 
 Note that a negative load corresponds to cooling.
 
 Figure 4 shows the fan power of the corresponding packaged unit for the same period, in the base case and with the measure applied. In this case, and for many zones in the building, the fan operates for much of the year at the 40% of maximum airflow rate that is set as the minimum allowable airflow, consistent with typical ARC configurations. (Note that the minimum was imposed as the larger of 40% of maximum airflow, or the minimum ventilation requirement, so this minimum airflow may exceed 40% of maximum in some zones.) A theoretical purely cubic fan law would result in fan power of 8% of the base case, under these conditions, with the airflow around 40% of maximum. Fan curves in practice and as represented in EnergyPlus are not purely cubic, and in modeling this system, a fan power minimum of 30% was imposed, reflecting the typical minimum turndown for VFDs attached to non-inverter duty motors, representative of retrofits of older existing systems. Thus, when the fan is operating at low-load conditions, as it does for many hours of the year, it is operating at 30% of the maximum power. (VFD losses were not accounted for as part of this analysis. Some single zone VAV retrofits can be accomplished through the use of electronically commutated motors, which in certain circumstances, can operate more efficiently than a motor and VFD combination.) In both the base and measure cases, the occupied hours in which a zone setpoint was not met were similar, and low, indicating that the systems continue to meet loads effectively with this measure applied. Note that the constant-volume fan in the baseline (represented with a Fan:OnOff object), as modeled in EnergyPlus, can drop to a lower minimum power level, resulting in the lower minimum fan power for the baseline shown in the figure.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image5.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 4. Fan power for the base case and with the measure applied for the selected zone
+{:refdef}
 
 Figure 5 (a and b) confirms the economizer performance over a several-day period in October. The economizer is controlled based on differential enthalpy. As shown in Figure 5a, outdoor air enthalpy is less than return air enthalpy throughout the entire period. The system is generally operating at 100% outdoor air throughout this period, as shown in Figure 5b (top). Due to the limited cooling load (as shown in Figure 5b (bottom), the system is generally operating at its "low load" flow rate throughout this period. In this zone, and in several other zones in the building, 40% of the maximum airflow is higher than the ventilation requirement, and thus the effects of DCV are not evident, as they would result in airflow below the minimum set based on the characteristics of common ARC controls. This is illustrated in Figure 6, showing that the airflow never drops below 0.6 kg/s (40% of the maximum airflow) during occupied periods, even with varying levels of occupants during the occupied periods. Figure 7 shows the zone occupant count over that time period, for reference. (Note that a lower minimum airflow rate would allow for greater opportunities for DCV implementation in spaces such as this in which the ventilation airflow is less than 40% of the maximum.)
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image6.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5a. Outdoor air and return air enthalpy for the selected zone
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image7.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image8.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 5b. System total airflow and outdoor airflow (top), and zone cooling load (bottom)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image9.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 6. Outdoor airflow and overall fan airflow for selected zone, with measure applied
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image10.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 7. Zone occupant count for selected zone, with measure applied
+{:refdef}
 
 ## 6.2. Stock Energy Impacts
 
@@ -205,13 +245,21 @@ The Advanced RTU Controls measure demonstrates 4.2% total site energy savings (1
 
 -   **26%** stock **fan** savings (137.1 TBtu).
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image11.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 8. Comparison of annual site energy consumption between the ComStock baseline and the advanced RTU controls measure scenario. Energy consumption is categorized both by fuel type and end use.
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image12.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 9. Comparison of annual site energy consumption between the ComStock baseline and the Advanced RTU Controls measure scenario for applicable buildings only. Energy consumption is categorized both by fuel type and end use.
+{:refdef}
 
 Figure 9 shows a comparison of annual site energy consumption between the ComStock baseline and the Advanced RTU Controls measure scenario for only those buildings to which the measure was applicable, which provides a more direct basis for comparison to some past studies. The end use with the highest relative reduction is fan energy (53.3% savings among applicable buildings), which is generally consistent with the findings of other studies, including the evaluation by Energy Solutions in 2019, in terms of fan energy being a driver of energy savings, and the relative quantity of fan savings (Energy Solutions, 2019 ). (Note that the implementation of this measure also assumed that after the retrofit, systems operate with fan motors that meet the ASHRAE 90.1-2019 efficiency standard, reflecting the likelihood of motor replacement being necessary for older, non-inverter-driven motors for VFD compatibility.) The primary mechanism driving fan energy savings is the use of variable-speed fans. Energy Solutions found a range of 5%--50% RTU electricity savings (with RTU electricity including fan and cooling energy use), primarily attributable to fan energy, and a range of 1%--10% RTU gas savings (consisting of heating only). The evaluation by Wang et al. (2013) of the Catalyst found an average of 55% RTU energy savings (with RTU energy including heating, cooling, and fan energy), primarily driven by fan energy, and did not consider gas heating savings. The modeling analysis of Studer et al. (2013) found a range of 55%--72% fan energy savings in buildings without case refrigeration with retrofits to fully variable-speed fans. The fan energy savings identified here are consistent with fan operation at 30% power (the power minimum assumed in modeling, which governs over the power at the airflow minimum) for extended periods of time, as observed in time series results for individual buildings. This low fan power mode corresponds to the "No Load/Low Load" modeled for the single-zone RTUs.
 
@@ -223,9 +271,13 @@ Cooling energy savings (11.2% among applicable buildings) from this measure resu
 
 Figure 10 shows a comparison of aggregate greenhouse gas emissions under several different scenarios reflecting different carbon intensity of electricity. Under the three scenarios shown here, implementation of this measure results in a reduction of carbon emissions of 4% relative to the base case. The vast majority of the site energy savings from the Advanced RTU Controls measure (91% of the savings among applicable buildings) comes from electricity, and thus the associated reductions in carbon emissions will be sensitive to carbon intensity of the electricity supply, in a particular location or at a particular future time. Note that these scenarios are presented for illustrative purposes. In general, a reduction in carbon emissions lower than the reduction in overall site energy use (11.3%) is to be expected for this measure, since the majority of the energy savings result from electricity, which has a lower carbon intensity than natural gas in the scenarios presented here.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image13.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 10. Greenhouse gas emissions comparison of the ComStock baseline and the Advanced RTU Controls scenario
+{:refdef}
 
 Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.
 
@@ -249,25 +301,37 @@ In the case of electric and gas heating, buildings exhibiting large energy penal
 
 No increase in fan energy use is expected as a result of application of this measure. The outlier data points exhibiting a fan energy penalty had very low fan energy in the base case, and thus a small variation resulted in a large percentage change. The heat recovery penalty observed in a small subset of the sample may be due to increased operation (and reduced lockout) of the enthalpy wheel due to a reduction in fan heat.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image14.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 11. Percent site energy savings distribution for ComStock models with the Advanced RTU Controls measure applied by end use and fuel type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the fuel type category.
 
 It is also illustrative to consider the site energy savings distributions by HVAC system type, as shown in Figure 12. In Figure 12, the two system types with the largest representations in the sample, PSZ with gas coil and PSZ with electric coil, had similar ranges of site energy savings, with 50% of the samples having roughly 5%--15% site energy savings. Note that in systems with effectively higher heating efficiencies on a site energy basis (heat pumps, electric resistance, or district heating), the effects of a heating penalty from a reduction in fan heat will be more muted for site energy savings than in systems with gas-fired boilers or gas heating coils, which may partially explain the higher upper range of savings observed in the former group of system types. (Note that the PSZ-AC with district chilled water and an electric heating coil had only 12 incidences in the sample.)
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image15.jpg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 12. Percent site energy savings distribution for ComStock models with the applied Advanced RTU Control measure by HVAC system type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for energy savings for the HVAC system type category.
 
 It is also informative to view savings distributions disaggregated by building type. The variable volume fan component in the measure has the highest energy savings potential in zones with variable loads and high peak loads (which is often building-type driven). Figure 13 shows the distributions of relative site energy savings by building type. Both primary and secondary schools, especially in gym and cafeteria systems, can have high peak loads and highly variable loads, which can explain the comparatively high savings fraction for these buildings at the 75% percentile, around 18%.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image16.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 13. Percent site energy savings distribution for ComStock models with the applied Advanced RTU Control measure by building type
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for the building type.
 
@@ -275,9 +339,13 @@ Figure 14 shows the distribution of relative site energy savings by climate zone
 
 However, a comparison at the 10,000-sample size indicated that savings distributions by climate zone looked very similar for the measure options with VAV fans only, VAV fans and economizing, and VAV fans, economizing, and DCV. (These distributions are not shown here for concision.) Note that Climate Zone 3C is located only in California, in which the DEER-based modeling methods are applied, making it not directly comparable to other climate zones. A 25th percentile around 2.5% site energy savings and a 75th percentile around 12.5% site energy savings was common across many climate zones, and similar ranges also existed across building types, suggesting that on the whole, the variability in savings from this measure may be driven largely by building specific factors related to the ratio of average and peak thermal loads and load variability, and not climate zone or building type.
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image17.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 14. Percent site energy savings distribution for ComStock models with the applied Advanced RTU Control measure (with DCV and economizing) by climate zone
+{:refdef}
 
 The data points that appear above some of the distributions indicate outliers in the distribution, meaning they fall outside 1.5 times the interquartile range. The value for n indicates the number of ComStock models that were applicable for the climate zone.
 
@@ -285,9 +353,13 @@ The data points that appear above some of the distributions indicate outliers in
 
 In about 11.5% of the buildings to which this measure was applicable, a natural gas heating penalty was observed, indicating that a heating penalty from reduced fan power exceeded the magnitude of any heating energy savings from implementation of DCV, and reduced zone over-heating from modulation of fan speed. Figure 15 illustrates with a scatterplot the magnitude of the natural gas heating penalty as a function of fan energy savings for a subset of these buildings (the small number of buildings in this set with fan energy savings greater than 300,000 kWh were omitted here for clarity). (Natural gas savings is presented in kWh to allow a direct comparison between the quantities.) The red line in Figure 15 shows the maximum expected natural gas heating penalty as a function of fan energy use, given an assumption of all fan heat being transferred to the airstream (reflecting conditions in the ComStock models considered), and a natural gas heating efficiency of 80% (typical of natural gas heating coils in air handling units). In Figure 15, the natural gas penalty values generally lie above, and in many cases, significantly above, the red line, indicating that the penalty observed is less than the maximum value expected. This provides a "sanity check" on the results. In general, the degree of the heating penalty is a function of the distribution of zone heating hours over fan operating conditions at low speed (when the reduction in fan power will be applicable).
 
+{:refdef: style="text-align: center;"}
 ![](media\vav_rtu_image18.png)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure 15. Natural gas energy savings (negative, a penalty) as a function of fan energy savings for a selection of datapoints in which a natural gas heating energy penalty was observed. Points are colored by ASHRAE climate zone.
+{:refdef}
 
 # 7. References
 
@@ -345,21 +417,37 @@ Wang, W. K. (2013). *Advanced Rooftop Control (ARC) Retrofit: Field Test Results
 
 # A.  Additional Figures
 
+{:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media\vav_rtu_image19.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-1. Site annual natural gas consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media\vav_rtu_image20.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-2. Site annual natural gas consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media\vav_rtu_image21.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-3. Site annual electricity consumption of the ComStock baseline and the measure scenario by building type
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 ![Chart, bar chart Description automatically generated](media\vav_rtu_image22.jpeg)
+{:refdef}
 
+{:refdef: style="text-align: center;"}
 Figure A-4. Site annual electricity consumption of the ComStock baseline and the measure scenario by census division
+{:refdef}
 
 [^1]: Due to the fan and pump affinity laws, VFDs also result in significantly greater energy savings than other means of controlling fan (such as inlet vanes) or pump (throttling valves) flow.
 
