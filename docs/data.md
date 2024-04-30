@@ -15,6 +15,7 @@ Given the complexity of the ComStock software workflow, and the big-data skill s
 These datasets describe the timeseries energy consumption of the U.S. commercial building stock at the end-use level. For details on how it was created and validated, please see the project’s [final report](https://www.nrel.gov/buildings/end-use-load-profiles.html). See the [Data Access Platforms, Structure and Contents](#data-access-platforms-structure-and-contents) section for more details about the data.
 
 Each End Use Savings Shape dataset release is introduced with a webinar presentation. Access the webinar recordings and slides, below:
+- [2024 Release 1 Webinar Recording](https://www.youtube.com/watch?v=ffybn3Xzk0E)
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)

@@ -13,10 +13,6 @@ The commercial building sector stock model, or ComStock™, is a highly granular
 
 ComStock asks and answers two questions: **(1) How is energy used in the U.S. building stock?** and **(2) What are the impacts of energy saving technologies?** 
 
-The End Use Savings Shapes 2024 Release 1 dataset is now available! To access the data, visit our [Published Datasets]({{site.baseurl}}{% link docs/data.md %}) page. The official release webinar is April 25 at 1:00 PM EDT.
-
-[Register now!](https://nrel.zoomgov.com/webinar/register/WN_d7imyRpGR7C-n7x_Iz5kyA?utm_source=NREL+End-Use+Load+Profiles+for+the+U.S.+Building+Stock#/registration){: .btn .btn-uo .white-text}
-
 ## Quick Links
 [Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
 

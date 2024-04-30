@@ -16,10 +16,12 @@ The assumptions used for the measures represent one of multiple possible approac
 
 New datasets are released in 6-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release is introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Note that each new dataset release includes all existing measures from the previous releases.
 
-Join our mailing list (subscribe at bottom of [this page](https://www.nrel.gov/buildings/end-use-load-profiles.html)) to receive notifications on upcoming releases and for invitations to the live webinar presentations.
+[Join our mailing list](https://www.nrel.gov/buildings/end-use-load-profiles.html#contact) to receive notifications on upcoming releases and for invitations to the live webinar presentations.
 
-## 2024 Release 1 (March 2024):
-The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.zoomgov.com/webinar/register/WN_d7imyRpGR7C-n7x_Iz5kyA?utm_source=NREL+End-Use+Load+Profiles+for+the+U.S.+Building+Stock#/registration) to register.
+## 2024 Release 1 (March 2024)
+### Webinar Recording and Slides
+- [2024 Release 1 Webinar Recording](https://www.youtube.com/watch?v=ffybn3Xzk0E)
+- *2024 Release 1 Webinar Slides coming soon...*
 
 ### Measure Documentation
 - [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
@@ -30,18 +32,18 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - [Central Ground-Source Water-to-Water Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hydronic_gshp.md %})
 - [Packaged Water-to-Air Geothermal Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_gshp_packaged.md %})
 - [Ground-Coupled Console Water-to-Air Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_console_gshp.md %})
-- [Electric Kitchen Equipment]({{site.baseurl}}{% link docs/upgrade_measures/ppl_electric_kitchen_equipment.md %})
+- [Electric Kitchen Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)
 - [Thermostat Control for Load Shedding]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shedding.md %})
 - [Thermostat Control for Load Shifting]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shifting.md %})
 - Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
 
+** *Measure documentation coming soon...*
+
 ### Supplemental Documentation
 - [Dispatch Schedule Generation for Demand Flexibility Measures]({{site.baseurl}}{% link docs/upgrade_measures/df_dispatch_window.md %})
 
-** *Measure documentation coming soon...*
-
-## 2023 Release 2 (September 2023): 
+## 2023 Release 2 (September 2023)
 ### Webinar Recording and Slides
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 - [2023 Release 2 Webinar Slides](https://www.nrel.gov/docs/fy24osti/87746.pdf)
@@ -57,7 +59,7 @@ The 2024 Release 1 webinar is scheduled for April 25. Click [here](https://nrel.
 - [Package 3 - Wall and Roof Insulation, New Windows, LED Lighting, HP-RTU and ASHP-Boiler]({{site.baseurl}}{% link docs/upgrade_measures/package_3.md %})
 
 
-## 2023 Release 1 (March 2023): 
+## 2023 Release 1 (March 2023)
 ### Webinar Recording and Slides
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
