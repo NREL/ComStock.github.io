@@ -62,5 +62,7 @@ nav_order: 7
 </details>
 
 <details markdown="block" class="level1-collapse-section"><summary class="pub-header">Other Media</summary>
-  [NREL Building Stock Dashboards on Tableau Public](https://public.tableau.com/app/profile/nrel.buildingstock){: .pub-link}. Project dashboards using ComStock and ResStock data.
+  [NREL ComStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/comstock.nrel/vizzes){: .pub-link}. Project dashboards using ComStock data.
+
+  [NREL ResStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes){: .pub-link}. Project dashboards using ResStock data.
 </details>
