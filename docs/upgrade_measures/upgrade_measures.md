@@ -26,22 +26,20 @@ New datasets are released in 6-month increments and include new upgrade measures
 ### Measure Documentation
 - [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
 - [Variable Refrigerant Flow with 25% Upsizing Allowance for Heating]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vrf_doas_upsizing.md %})
-- [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods]({{site.baseurl}}{% link docs/upgrade_measures/hvac_oa_control.md %})
+- [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods](https://www.nrel.gov/docs/fy24osti/89120.pdf)
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
-- [Advanced Rooftop Unit Control]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vav_rtu.md %})
+- [Advanced Rooftop Unit Control](https://www.nrel.gov/docs/fy24osti/89117.pdf)
 - [Central Ground-Source Water-to-Water Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hydronic_gshp.md %})
 - [Packaged Water-to-Air Geothermal Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_gshp_packaged.md %})
 - [Ground-Coupled Console Water-to-Air Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_console_gshp.md %})
 - [Electric Kitchen Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)
-- [Thermostat Control for Load Shedding]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shedding.md %})
-- [Thermostat Control for Load Shifting]({{site.baseurl}}{% link docs/upgrade_measures/df_load_shifting.md %})
-- Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP **
+- [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)
+- [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)
+- [Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP]({{site.baseurl}}{% link docs/upgrade_measures/package_gshp.md %})
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
 
-** *Measure documentation coming soon...*
-
 ### Supplemental Documentation
-- [Dispatch Schedule Generation for Demand Flexibility Measures]({{site.baseurl}}{% link docs/upgrade_measures/df_dispatch_window.md %})
+- [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)
 
 ## 2023 Release 2 (September 2023)
 ### Webinar Recording and Slides
