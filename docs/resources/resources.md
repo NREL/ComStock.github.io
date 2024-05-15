@@ -48,6 +48,13 @@ These documents describe various aspects of ComStock, including the baseline and
 <summary><b>ComStock Reference Documentation</b></summary>
 This document serves as a guide to and resource for the methodology and assumptions behind ComStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
 
+[**ComStock Reference Documentation: Version 2**](../../../assets/files/comstock_reference_documentation_2024_1.pdf)
+
+**May 2024**
+
+Corresponding ComStock releases:
+- 2024/comstock_amy2018_release_1
+
 [**ComStock Reference Documentation: Version 1**](https://www.nrel.gov/docs/fy23osti/83819.pdf)
 
 **March 2023**
