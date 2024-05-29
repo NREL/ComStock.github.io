@@ -21,22 +21,22 @@ New datasets are released in 6-month increments and include new upgrade measures
 ## 2024 Release 1 (March 2024)
 ### Webinar Recording and Slides
 - [2024 Release 1 Webinar Recording](https://www.youtube.com/watch?v=ffybn3Xzk0E)
-- *2024 Release 1 Webinar Slides coming soon...*
+- [2024 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy24osti/89653.pdf)
 
 ### Measure Documentation
-- [Economizers]({{site.baseurl}}{% link docs/upgrade_measures/hvac_air_side_economizer.md %})
-- [Variable Refrigerant Flow with 25% Upsizing Allowance for Heating]({{site.baseurl}}{% link docs/upgrade_measures/hvac_vrf_doas_upsizing.md %})
+- [Economizers](https://www.nrel.gov/docs/fy24osti/86105.pdf)
+- [Variable Refrigerant Flow with 25% Upsizing Allowance for Heating](https://www.nrel.gov/docs/fy24osti/89040.pdf)
 - [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods](https://www.nrel.gov/docs/fy24osti/89120.pdf)
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
 - [Advanced Rooftop Unit Control](https://www.nrel.gov/docs/fy24osti/89117.pdf)
-- [Central Ground-Source Water-to-Water Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hydronic_gshp.md %})
+- [Central Ground-Source Water-to-Water Heat Pump](https://www.nrel.gov/docs/fy24osti/89239.pdf)
 - [Packaged Water-to-Air Geothermal Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_gshp_packaged.md %})
 - [Ground-Coupled Console Water-to-Air Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_console_gshp.md %})
 - [Electric Kitchen Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)
 - [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)
 - [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)
 - [Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP]({{site.baseurl}}{% link docs/upgrade_measures/package_gshp.md %})
-- [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery]({{site.baseurl}}{% link docs/upgrade_measures/package_5.md %})
+- [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery](https://www.nrel.gov/docs/fy24osti/89128.pdf)
 
 ### Supplemental Documentation
 - [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)
@@ -48,7 +48,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 
 ### Measure Documentation
 - [Heat Pump RTU with Original Fuel Backup]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hp_rtu_original_fuel_backup.md %})
-- [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler_gas_backup.md %})
+- [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup](https://www.nrel.gov/docs/fy24osti/87536.pdf)
 - [VRF Heat Recovery with DOAS](https://www.nrel.gov/docs/fy24osti/86103.pdf)
 - [Demand Control Ventilation](https://www.nrel.gov/docs/fy24osti/86897.pdf)
 - [Exhaust Air Heat/Energy Recovery](https://www.nrel.gov/docs/fy24osti/87542.pdf)
@@ -65,7 +65,7 @@ New datasets are released in 6-month increments and include new upgrade measures
 ### Measure Documentation
 - [Heat Pump RTU]({{site.baseurl}}{% link docs/upgrade_measures/hvac_hp_rtu.md %})
 - [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/upgrade_measures/hvac_doas_mshp.md %})
-- [Air-Source Heat Pump Boiler]({{site.baseurl}}{% link docs/upgrade_measures/hvac_ashp_boiler.md %})
+- [Air-Source Heat Pump Boiler](https://www.nrel.gov/docs/fy24osti/86199.pdf)
 - [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)
 - [Exterior Wall Insulation]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_wall_insulation.md %})
 - [Secondary Window System]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_secondary_window.md %})
