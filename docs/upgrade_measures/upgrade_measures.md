@@ -30,12 +30,12 @@ New datasets are released in 6-month increments and include new upgrade measures
 - [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)
 - [Advanced Rooftop Unit Control](https://www.nrel.gov/docs/fy24osti/89117.pdf)
 - [Central Ground-Source Water-to-Water Heat Pump](https://www.nrel.gov/docs/fy24osti/89239.pdf)
-- [Packaged Water-to-Air Geothermal Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_gshp_packaged.md %})
-- [Ground-Coupled Console Water-to-Air Heat Pump]({{site.baseurl}}{% link docs/upgrade_measures/hvac_console_gshp.md %})
+- [Packaged Water-to-Air Geothermal Heat Pump](https://www.nrel.gov/docs/fy24osti/89131.pdf)
+- [Ground-Coupled Console Water-to-Air Heat Pump](https://www.nrel.gov/docs/fy24osti/89132.pdf)
 - [Electric Kitchen Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)
 - [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)
 - [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)
-- [Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP]({{site.baseurl}}{% link docs/upgrade_measures/package_gshp.md %})
+- [Comprehensive Geothermal Heat Pump Package – Hydronic GHP, Packaged GHP, or Console GHP](https://www.nrel.gov/docs/fy24osti/89133.pdf)
 - [Package 5 – Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery](https://www.nrel.gov/docs/fy24osti/89128.pdf)
 
 ### Supplemental Documentation
