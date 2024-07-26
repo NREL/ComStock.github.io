@@ -7,9 +7,11 @@ nav_order: 6
 
 # Gas Consumption Underrepresented
 
-### ComStock’s annual gas consumption results are about 30% lower nationally as compared to the Commercial Building Energy Consumption Survey. 
+### ComStock’s annual gas consumption results are about 30% lower nationally as compared to the Commercial Building Energy Consumption Survey.
 
-ComStock™ has been calibrated and validated as part of the three-year End-Use Load Profiles (EULP) project. Beyond EULP, the ComStock tool is continuously improved as data and resources become available. Note, however, the EULP project focused on electricity calibration, and therefore did not attempt to calibrate natural gas. ComStock is known to underestimate natural gas consumption, and there are ongoing efforts to resolve this issue.
+_Note: This is only a limitation for dataset releases 2023.2 and earlier._
+
+ComStock™ has been calibrated and validated as part of the three-year End-Use Load Profiles (EULP) project. Beyond EULP, the ComStock tool is continuously improved as data and resources become available. Note, however, the EULP project focused on electricity calibration, and therefore did not attempt to calibrate natural gas. In dataset releases 2023.2 and earlier, ComStock is known to underestimate natural gas consumption.
 
 {:refdef: style="text-align: center;"}
 ![](../../../assets/images/ng_by_census_division.png)
@@ -18,7 +20,7 @@ ComStock™ has been calibrated and validated as part of the three-year End-Use 
 ## Recommendations
 Using the latest release of ComStock will ensure you have the best available data. Improvements to the baseline model are incorporated before each release. For the latest documentation on recent changes, please visit [ComStock’s public repository](https://github.com/NREL/ComStock) on GitHub. A summary change log can also be found in the release notes. 
 
-In the meantime, users could consider applying a correction factor to the gas consumption results. The recommended approach to this is:
+For ComStock dataset releases 2023.2 and earlier, users could consider applying a correction factor to the gas consumption results. The recommended approach to this is:
 - Sum the floor area and energy data for the region you care about.
 - Compare to known floor area and energy data.
     - Some users may have locally provided private data.
