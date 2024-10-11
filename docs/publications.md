@@ -12,6 +12,10 @@ nav_order: 7
 
   <details markdown="block" class="level2-collapse-section" open><summary class="pub-header">Reports and Papers</summary>
   
+  [Strategic Decarbonization Utilizing Building Stock Datasets (2024)](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722163107203_39ce898e-e298-43a9-ba7c-bf333e0f4ad5.pdf){: .pub-link}. Development and application of a load forecasting tool using publicly available building stock model datasets for an independent system operator (ISO). Using the tool, the ISO investigated the energy and demand impacts of heating electrification in their region.
+  
+  [Leveraging NREL’s ResStock & ComStock Dataset to Evaluate Building Stock Electrification (2024)](https://www.aceee.org/sites/default/files/proceedings/ssb24/pdfs/Leveraging%20NREL%E2%80%99s%20ResStock%20&%20ComStock%20Dataset%20to%20Evaluate%20Building%20Stock%20Electrification.pdf){: .pub-link}. Specific, real-world applications of ResStock and ComStock including California codes and standards cost-effectiveness analysis, New York City affordable housing electrification cost gap analysis, and California targeted electrification and gas decommissioning analysis.
+  
   [Commercial Building Stock Segmentation for Decarbonization Planning (2024)](https://www.nrel.gov/docs/fy24osti/88947.pdf){: .pub-link}. This document discusses the development of a segmentation approach for the U.S. commercial building stock that focuses on identifying similarities that align with common decarbonization strategies.
 
   [Understanding Commercial Buildings Segmentation Analysis (2023)](https://www.energycodes.gov/segmentation){: .pub-link}. This is a series of reports that provide commercial and multifamily building characteristic and energy data for 88 local geographies. For details about the geography selection methodology, see the [Building Stock Cluster Methodology Documentation](https://www.nrel.gov/docs/fy23osti/84648.pdf).
@@ -54,6 +58,8 @@ nav_order: 7
 
 <details markdown="block" class="level1-collapse-section">
   <summary class="pub-header">Related Work</summary>
+
+  [Compliance Journeys: Using a Stock-based Modeling Approach to Analyze Maryland’s Proposed Statewide Building Performance Standard](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722163103002_4e90844f-0616-4a4f-9c9d-75ab78571aba.pdf){: .pub-link}. Examination of the lifecycle cost optimal building performance standard compliance pathway through building energy models.
 
   [ISO New England 2023 Heating Electrification Study](https://www.iso-ne.com/static-assets/documents/2023/04/heatfx2023_final.pdf){: .pub-link}. Presentation about an electrification forecasting tool developed using ComStock and ResStock datasets.
 

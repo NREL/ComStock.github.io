@@ -37,8 +37,10 @@ These documents provide explanations focusing on the *how* and *why* of various 
 
 ### ComStock Limitations and Known Issues
 - [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})
+- [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
 - [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
 - [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})
+
 
 
 ## References
