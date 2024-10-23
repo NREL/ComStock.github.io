@@ -90,3 +90,14 @@ These documents provide reference documentation for the clustering methodology d
 **July 2023**
 
 </details>
+
+<details markdown="block" class="level1-collapse-section">
+<summary><b>Building Stock Segmentation</b></summary>
+This document discusses the development of a segmentation approach for the U.S. commercial building stock that focuses on identifying similarities that align with common decarbonization strategies. The resulting nine-segment approach primarily uses similarities in heating, ventilating, and air-conditioning systems, service water heating
+systems, and the presence of cooking equipment to separate buildings into categories. 
+
+[**Commercial Building Stock Segmentation for Decarbonization Planning**](https://www.nrel.gov/docs/fy24osti/88947.pdf)
+
+**May 2024**
+
+</details>

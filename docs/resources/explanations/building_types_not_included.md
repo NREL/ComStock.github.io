@@ -22,3 +22,13 @@ Figure 1. Overview of building types modeled and not modeled in ComStock, and co
 {:refdef}
 
 *Other includes other public order and safety, convenience store with gas station, other classroom education, vacant, fire station/police station, courthouse/probation office, vehicle dealership/showroom, other lodging, preschool/daycare, repair shop, post office/postal center, other food service, and other food sales.
+
+## Analysis Recommendations
+ComStock represents 62% of the U.S. commercial building floor area as reported by the CBECS dataset. As a result, analyses based on ComStock data will underrepresent the energy use of the U.S. commercial building stock.
+
+A gap model is being developed, which will represent the load profile of the remaining 38% of floor area. However, this gap model does not use physics-based building energy modeling and thus cannot estimate energy savings from upgrade measures. We do not recommend extrapolating measure energy savings from the ComStock dataset to the gap load profile. There are significant differences between buildings in ComStock and buildings in the gap model, and measure applicability and energy savings are different.
+
+If you publish an analysis using ComStock data, we recommend citing our reference documentation and clearly stating that the model represents 62% of U.S. commercial building floor area.
+
+<u>Suggested citation</u>: <br>
+Parker, Andrew, et al. 2023. ComStock Reference Documentation. Golden, CO: National Renewable Energy Laboratory. NREL/TP-5500-83819. [https://www.nrel.gov/docs/fy23osti/83819.pdf](https://www.nrel.gov/docs/fy23osti/83819.pdf) 
