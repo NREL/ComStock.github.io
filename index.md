@@ -18,7 +18,7 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 [Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references){: .btn .btn-uo .white-text} &mdash; Refer to the [Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references) for details about the methodology and assumptions behind ComStock.
 
-[Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages developed as part of the End Use Savings Shapes project, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
+[Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
 
 [Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
 
