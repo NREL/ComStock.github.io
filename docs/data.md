@@ -18,6 +18,8 @@ Each dataset release is introduced with a webinar presentation. Access the webin
 
 ComStock dataset releases are summarized in the following table with links for accessing the aggregate results.
 
+**<span style="color:red">Dataset Notice:</span>** ComStock Standard Dataset Release 2024 Release 2 uses an improved sampling method. The OEDI file structure has been modified starting with this release. For details about the new sampling method and file structure, please read the [New ComStock Sampling Method]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md%}) explanation.
+
 |      |  **ComStock Standard Dataset Release<br>2024 Release 2 - 2018 Weather**  |  **ComStock End Use Savings Shape 2024 Release 1 - 2018 Weather**  |**ComStock End Use Savings Shape 2023 Release 2 - 2018 Weather** |   **ComStock End Use Savings Shape 2023 Release 1 - 2018 Weather**   |   **ComStock End Use Load Profiles - 2018 Weather**   |   **ComStock End Use Load Profiles - Typical Weather**   |
 |   **OEDI Name**   | 2024/comstock_amy2018_release_2 | 2024/comstock_amy2018_release_1   |   2023/comstock_amy2018_release_2   |   2023/comstock_amy2018_release_1   |   2021/comstock_amy2018_release_1   |   2021/comstock_tmy3_release_1   |
 |---------|---------|---------|--------|--------|--------|--------|
