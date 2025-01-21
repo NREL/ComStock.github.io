@@ -37,6 +37,8 @@ nav_order: 7
 
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Presentations</summary>
 
+  [Standard Dataset Release 2024 Release 2 Dataset Release Presentation (2025)](https://www.nrel.gov/docs/fy25osti/92766.pdf){: .pub-link}. Standard dataset release  2024 Release 2 webinar slide deck.
+  
   [End-Use Savings Shapes: Commercial 2024 Release 1 Dataset Release Presentation (2024)](https://www.nrel.gov/docs/fy24osti/89653.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2024 Release 1 webinar slide deck.
   
   [End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Presentation (2023)](https://www.nrel.gov/docs/fy24osti/87746.pdf){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 2 webinar slide deck.
@@ -48,6 +50,8 @@ nav_order: 7
 
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Webinar Recordings</summary>
 
+  [Standard Dataset Release 2024 Release 2 Dataset Release Webinar (2025)](https://www.youtube.com/watch?v=QeeD6clu4zo){: .pub-link}. Presented by Chris CaraDonna from NREL, provides details on recent ComStock baseline model improvements, new upgrade measures, sample results, and data access tips. (January 2025)
+  
   [End-Use Savings Shapes: Commercial 2024 Release 1 Dataset Release Webinar (2024)](https://www.youtube.com/watch?v=ffybn3Xzk0E){: .pub-link}. Presented by Chris CaraDonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (April 2024)
   
   [End-Use Savings Shapes: Commercial 2023 Release 2 Dataset Release Webinar (2023)](https://www.youtube.com/watch?v=uA8bThraO_E){: .pub-link}. Presented by Chris CaraDonna from NREL, provides full details on End-Use Savings Shapes for commercial buildings, sample results, and data access tips. (October 2023)
