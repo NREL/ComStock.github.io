@@ -67,9 +67,11 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)
 
 ## Release Webinar Recordings and Slides
+- [2024 Release 2 Webinar Recording](https://www.youtube.com/watch?v=QeeD6clu4zo)
+- [2024 Release 2 Webinar Slides](https://www.nrel.gov/docs/fy25osti/92766.pdf)
 - [2024 Release 1 Webinar Recording](https://www.youtube.com/watch?v=ffybn3Xzk0E)
 - [2024 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy24osti/89653.pdf)
 - [2023 Release 2 Webinar Recording](https://www.youtube.com/watch?v=uA8bThraO_E)
 - [2023 Release 2 Webinar Slides](https://www.nrel.gov/docs/fy24osti/87746.pdf)
-- [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso&t=9s)
+- [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
