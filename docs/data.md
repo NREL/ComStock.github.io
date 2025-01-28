@@ -88,7 +88,8 @@ The ComStock release directory structure of the data lake is summarized in the t
 |citation.txt                       | Citation to use when referencing this work.|
 |data_dictionary.tsv                | Describes the column names found in the metadata and timeseries data files.|
 |enumeration_dictionary.tsv         | Expands the definitions of the enumerations used in the metadata files.|
-|upgrade_dictionary.tsv             | Expands the definitions of the upgrades. |
+|upgrades_lookup.json               | Lookup table with upgrade ID and upgrade name for the given dataset release. |
+|measure_name_crosswalk.csv         | Relates a universal "Measure ID" and the upgrade IDs and upgrade names across dataset releases.
 
 ### Dataset Naming Convention
 ComStock releases on OEDI and the data viewer use the following naming convention.
