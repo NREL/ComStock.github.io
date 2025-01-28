@@ -1,0 +1,40 @@
+﻿measure_id,measure_documentation_name,public_repo_measure_folder_name,2024_comstock_amy2018_release_2_upgrade_id,2024_comstock_amy2018_release_2_upgrade_name,2024_comstock_amy2018_release_1_upgrade_id,2024_comstock_amy2018_release_1_upgrade_name,2023_comstock_amy2018_release_2_upgrade_id,2023_comstock_amy2018_release_2_upgrade_name,2023_comstock_amy2018_release_1_upgrade_id,2023_comstock_amy2018_release_1_upgrade_name
+env_0001,Exterior Wall Insulation,upgrade_env_exterior_wall_insulation,29,Wall Insulation,23,Wall Insulation,11,Wall Insulation,6,Wall Insulation
+env_0002,Roof Insulation,upgrade_env_roof_insulation_aedg,30,Roof Insulation,24,Roof Insulation,12,Roof Insulation,7,Roof Insulation
+env_0003,Secondary Window System,upgrade_env_secondary_windows,31,Secondary Windows,25,Secondary Windows,13,Secondary Windows,8,Secondary Windows
+env_0004,Window Film,upgrade_env_window_film,32,Window Film,26,Window Film,14,Window Film,9,Window Film
+env_0005,Window Replacement,upgrade_env_new_aedg_windows,33,New Windows,27,New Windows,15,New Windows,10,New Windows
+hvac_0001,Air-Source Heat Pump Boiler,upgrade_hvac_replace_boiler_by_heat_pump,11,"HP Boiler, Electric Backup",8,"HP Boiler, Electric Backup",5,HP Boiler E Backup,3,Heat Pump Boiler
+hvac_0002,Air-Source Heat Pump Boiler and Natural Gas Boiler Backup,upgrade_hvac_replace_boiler_by_heat_pump,12,"HP Boiler, Gas Backup",9,"HP Boiler, Gas Backup",2,HP Boiler G Backup,,
+hvac_0003,DOAS with Mini Split Heat Pumps,upgrade_doas_hp_minisplits,10,DOAS HP Minisplits,7,DOAS HP Minisplits,4,DOAS HP Minisplits,2,DOAS HP Minisplits
+hvac_0004,Heat Pump RTU with Original Fuel Backup,upgrade_hvac_add_heat_pump_rtu,2,"Variable Speed HP RTU, Original Heating Fuel Backup",2,"Variable Speed HP RTU, Original Heating Fuel Backup",2,HP RTU G Backup,,
+hvac_0005,Heat Pump RTU,upgrade_hvac_add_heat_pump_rtu,1,"Variable Speed HP RTU, Electric Backup",1,"Variable Speed HP RTU, Electric Backup",1,HP RTU E Backup,1,HP-RTU
+hvac_0006,VRF Heat Recovery with DOAS,upgrade_hvac_vrf_hr_doas,8,VRF with DOAS,5,VRF with DOAS,3,VRF with DOAS,,
+hvac_0007,Demand Control Ventilation,upgrade_hvac_dcv,14,Demand Control Ventilation,11,Demand Control Ventilation,8,DCV,,
+hvac_0008,Exhaust Air Heat/Energy Recovery,upgrade_hvac_exhaust_air_energy_or_heat_recovery,15,Energy Recovery for AHUs,12,Energy Recovery for AHUs,9,Energy Recovery,,
+hvac_0009,Economizers,upgrade_hvac_economizer,13,Air Side Economizers for AHUs,10,Air Side Economizers for AHUs,,,,
+hvac_0010,Variable Refrigerant Flow With 25% Upsizing Allowance for Heating,upgrade_hvac_vrf_hr_doas,9,VRF with 25pct Upsizing Allowance,6,VRF with 25pct Upsizing Allowance,,,,
+hvac_0012,Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods ,upgrade_unoccupied_oa_controls,17,Unoccupied AHU Control,14,Unoccupied AHU Control,,,,
+hvac_0013,Heat Pump RTU with Exhaust Air Energy Recovery,upgrade_hvac_add_heat_pump_rtu,3,"Variable Speed HP RTU, Electric Backup, Energy Recovery",3,"Variable Speed HP RTU, Electric Backup, Energy Recovery",,,,
+hvac_0014,Advanced Rooftop Unit Control,upgrade_advanced_rtu_control,16,Advanced RTU Controls,13,Advanced RTU Controls,,,,
+hvac_0015,Central Ground-Source Water-to-Water Heat Pump,upgrade_hvac_hydronic_gshp,19,Hydronic Water-to-Water Geothermal Heat Pump,15,Hydronic Water-to-Water Geothermal Heat Pump,,,,
+hvac_0016,Packaged Water-to-Air Geothermal Heat Pump,upgrade_hvac_packaged_gshp,20,Packaged Water-to-Air Geothermal Heat Pump,16,Packaged Water-to-Air Geothermal Heat Pump,,,,
+hvac_0017,Ground-Coupled Console Water-to-Air Heat Pump,upgrade_hvac_console_gshp,21,Console Water-to-Air Geothermal Heat Pump,17,Console Water-to-Air Geothermal Heat Pump,,,,
+hvac_0018,Heat Pump Rooftop Units With Standard Performance,upgrade_hvac_add_heat_pump_rtu,4,"Standard Performance HP RTU, Electric Backup",,,,,,
+hvac_0019,Standard Performance Heat Pump Rooftop Unit with New Roof,upgrade_hvac_add_heat_pump_rtu,5,"Standard Performance HP RTU, Electric Backup + Roof Insulation",,,,,,
+hvac_0020,Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating,upgrade_hvac_add_heat_pump_rtu,6,"Standard Performance HP RTU, Electric Backup, 32F Minimum Compressor Lockout",,,,,,
+hvac_0021,"Cold Climate Heat Pump Rooftop Unit Challenge, 2027 Specification",upgrade_hvac_add_heat_pump_rtu,7,"Cold Climate Challenge HP RTU, Electric Backup",,,,,,
+hvac_0022,Ideal Thermal Air Loads,upgrade_hvac_enable_ideal_air_loads,18,Ideal Thermal Air Loads,,,,,,
+ltg_0001,LED Lighting,upgrade_light_led,27,LED Lighting,21,LED Lighting,10,LED Lighting,5,LED Lighting
+ppl_0001,Electric Cooking Equipment,upgrade_ppl_electric_kitchen_equipment,28,Electric Kitchen Equipment,22,Electric Kitchen Equipment,,,,
+dr_0001,Thermostat Control for Load Shed,upgrade_df_thermostat_control_load_shed,23,"Demand Flexibility, Thermostat Control, Load Shed for Daily Bldg Peak Reduction",19,"Demand Flexibility, Thermostat Control, Load Shed",,,,
+dr_0002,Thermostat Control for Load Shift,upgrade_df_thermostat_control_load_shift,24,"Demand Flexibility, Thermostat Control, Load Shift for Daily Bldg Peak Reduction",20,"Demand Flexibility, Thermostat Control, Load Shift",,,,
+dr_0003,Lighting Control for Load Shedding,upgrade_df_lighting_control,25,"Demand Flexibility, Lighting Control, Load Shed for Daily Bldg Peak Reduction",,,,,,
+dr_0004,Lighting Control for Emission Reduction,upgrade_df_lighting_control,26,"Demand Flexibility, Lighting Control, Load Shed for Daily GHG Emission Reduction",,,,,,
+pkg_0001,Package 1 - Wall and Roof Insulation and New Windows,upgrade_env_exterior_wall_insulation; upgrade_env_roof_insulation_aedg; upgrade_env_new_aedg_windows,34,"Package 1, Wall & Roof Insulation + New Windows",28,"Package 1, Wall & Roof Insulation + New Windows",16,Package 1,,
+pkg_0002,"Package 2 - LED Lighting, HP-RTU and ASHP-Boiler",upgrade_hvac_add_heat_pump_rtu; upgrade_hvac_replace_boiler_by_heat_pump; upgrade_light_led,35,"Package 2, LED Lighting + Variable Speed HP RTU or HP Boilers",29,"Package 2, LED Lighting + Variable Speed HP RTU or HP Boilers",17,Package 2,,
+pkg_0003,"Package 3 - LED Lighting, Standard Performance HP-RTU and ASHP-Boiler",upgrade_hvac_add_heat_pump_rtu; upgrade_hvac_replace_boiler_by_heat_pump; upgrade_light_led,36,"Package 3, Package 2 with Standard Performance HP RTU",,,,,,
+pkg_0004,"Package 3 - Wall and Roof Insulation, New Windows, LED Lighting and ASHP-Boiler",upgrade_env_exterior_wall_insulation; upgrade_env_roof_insulation_aedg; upgrade_env_new_aedg_windows; upgrade_hvac_add_heat_pump_rtu; upgrade_hvac_replace_boiler_by_heat_pump; upgrade_light_led,37,"Package 4, Package 1 + Package 2",31,"Package 4, Package 1 + Package 2",18,Package 3,,
+pkg_0005,Package 5 - HP-RTU + ASHP Boiler + Demand Control Ventilation + Heat/Energy Recovery + Economizers ,upgrade_hvac_add_heat_pump_rtu; upgrade_hvac_replace_boiler_by_heat_pump; upgrade_hvac_economizer; upgrade_hvac_dcv; upgrade_hvac_exhaust_air_energy_or_heat_recovery,38,"Package 5, Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery",32,"Package 5, Variable Speed HP RTU or HP Boilers + Economizer + DCV + Energy Recovery",,,,
+pkg_0006,"Comprehensive Geothermal Heat Pump Package, Hydronic GHP, Packaged GHP, or Console GHP",upgrade_hvac_hydronic_gshp; upgrade_hvac_console_gshp; upgrade_hvac_packaged_gshp,22,"Comprehensive Geothermal Heat Pump Package, Hydronic GHP, Packaged GHP, or Console GHP",18,"Comprehensive Geothermal Heat Pump Package, Hydronic GHP, Packaged GHP, or Console GHP",,,,
+pkg_0007,"Package 6 - Demand Flexibility, Lighting + Thermostat Control, Load Shed for Daily Bldg Peak Reduction",upgrade_df_thermostat_control_load_shed; upgrade_df_lighting_control,39,"Package 6 - Demand Flexibility, Lighting + Thermostat Control, Load Shed for Daily Bldg Peak Reduction",,,,,,

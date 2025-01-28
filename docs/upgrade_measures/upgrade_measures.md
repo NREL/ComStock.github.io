@@ -14,6 +14,8 @@ The measure documentation describes the modeling methodology, assumptions, relev
 
 New datasets are released in 3-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release and new measures are introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Though not presented on the release webinar, each new dataset release includes all existing measures from the previous releases.
 
+In ComStock datasets, the upgrades are assigned an "upgrade_id." This ID may change across dataset releases for a given upgrade. We make a **measure_name_crosswalk.csv** file available that relates the universal "Measure ID" in the table, below, and the upgrade_ids for each release. The **measure_name_crosswalk.csv** is available on OEDI, or you can download the latest file, [here][1].
+
 Release webinar recordings and slides can be found at the [bottom of the page](#release-webinar-recordings-and-slides).
 
 [Join our mailing list](https://www.nrel.gov/buildings/end-use-load-profiles.html#contact) to receive notifications on upcoming releases and for invitations to the live webinar presentations.
@@ -75,3 +77,5 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 - [2023 Release 2 Webinar Slides](https://www.nrel.gov/docs/fy24osti/87746.pdf)
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
+
+[1]:../../../assets/files/measure_name_crosswalk_2024_2.csv
