@@ -78,4 +78,4 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 - [2023 Release 1 Webinar Recording](https://www.youtube.com/watch?v=7BHQfk6kvso)
 - [2023 Release 1 Webinar Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf)
 
-[3]:../../../assets/files/measure_name_crosswalk_2024_2.csv
+[3]:../../assets/files/measure_name_crosswalk_2024_2.csv
