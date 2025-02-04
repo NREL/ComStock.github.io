@@ -46,7 +46,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0018  | Heat Pump Rooftop Units With Standard Performance**                                            | 2024 Release 2 |
 | hvac_0019  | Standard Performance Heat Pump Rooftop Unit with New Roof**                                            | 2024 Release 2 |
 | hvac_0020  | Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating**                                            | 2024 Release 2 |
-| hvac_0021  | Cold Climate Heat Pump Rooftop Unit Challenge, 2027 Specification**                                            | 2024 Release 2 |
+| hvac_0021  | Heat Pump Rooftop Units Compliant With the Commercial Building Heat Pump Technology Challenge Specification**                            | 2024 Release 2 |
 | hvac_0022  | Ideal Thermal Air Loads**                                            | 2024 Release 2 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                             | 2023 Release 1 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                               | 2024 Release 1 |
