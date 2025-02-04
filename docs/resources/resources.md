@@ -31,7 +31,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Building Type Crosswalks]({{  site.baseurl  }}{% link docs/resources/explanations/building_type_crosswalks.md %})
 - [Considerations for ComStock Calibration, Validation, and Uncertainty]({{  site.baseurl  }}{% link docs/resources/explanations/comstock_calibration.md %})
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
-- [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})
+- [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})<span class="label label-blue">NEW</span>
 - [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
 - [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
@@ -41,7 +41,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
 - [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
 - [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})
-- [Utility Bill and Emissions Known Issue]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})
+- [Utility Bill and Emissions Known Issue]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})<span class="label label-blue">NEW</span>
 
 
 
