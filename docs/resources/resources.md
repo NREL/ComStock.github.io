@@ -33,7 +33,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
 - [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})<span class="label label-blue">NEW</span>
 - [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
-- [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
+- [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})<span class="label label-green">UPDATE</span>
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
 
 ### ComStock Limitations and Known Issues
