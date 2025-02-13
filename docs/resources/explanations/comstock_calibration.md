@@ -34,7 +34,7 @@ This section describes example scenarios for using the discussed resources to de
 <u>Possible Decision Pathway:</u> The [EULP Final Report](https://www.nrel.gov/docs/fy22osti/80889.pdf) compares the load profiles of ComStock small offices (and all other building types) versus regional AMI data sources. Pages 215 and 216 show the normalized and non-normalized comparisons, respectively (Figure 1).
 
 {:refdef: style="text-align: center;"}
-![](../../../assets/images/load_profiles_calibration.svg)
+[![](../../../assets/images/load_profiles_calibration.svg)](../../../assets/images/load_profiles_calibration.svg)
 {:refdef}
 
 {:refdef: style="text-align: center;"}
@@ -60,7 +60,7 @@ In this example, neither Chicago nor any other major Midwest city is represented
 <u>Possible Decision Pathway:</u> Page 264 of the EULP Final Report compares electric EUI distributions for quick-service restaurants among ComStock, AMI data, and CBECS. Samples counts for AMI and CBECS are shown on the right (Figure 2). 
 
 {:refdef: style="text-align: center;"}
-![](../../../assets/images/qsr_eui_box_plots.svg)
+[![](../../../assets/images/qsr_eui_box_plots.svg)](../../../assets/images/qsr_eui_box_plots.svg)
 {:refdef}
 
 {:refdef: style="text-align: center;"}
