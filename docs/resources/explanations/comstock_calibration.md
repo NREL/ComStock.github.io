@@ -81,7 +81,7 @@ Note, however, that several of the assumptions and comparisons made in ComStock�
 <u>Conclusion:</u> According to the ComStock Reference Documentation, the ComStock lighting model is fairly robust and compares reasonably well to other available data sources. Therefore, a user could find ComStock to be appropriate for many use cases regarding LED lighting potential in commercial buildings. However, there are limitations in the detail of the lighting model that should also be considered for specific use cases.
 
 ### Scenario 5: HVAC System Type
-<u>Description:</u> A user wants to understand which HVAC system types should be prioritized for decarbonization. To do this, they want to understand which HVAC systems are most prevalent in commercial buildings.
+<u>Description:</u> A user wants to understand which HVAC system types should be prioritized for retrofit. To do this, they want to understand which HVAC systems are most prevalent in commercial buildings.
 
 <u>Possible Decision Pathway:</u> Section 4.8 in the ComStock Documentation discusses the methodology and data sources behind the HVAC model in ComStock. Because the user is interested in HVAC system prevalence, they would look to sections 4.8.1 and 4.8.2 for understanding the heating fuel type and HVAC system type methodologies in ComStock. These sections explain that ComStock primarily leverages CBECS for determining the prevalence of various HVAC system types in commercial buildings. Heating fuel type is dependent on building type and census division, but also leverages county-level data from NREL’s ResStock™ tool to inform county-level differences. HVAC system type prevalence is dependent on heating fuel type, building type, and census division.
 
