@@ -76,22 +76,22 @@ OEDI is an energy information portal, and is developed and maintained by the Nat
 
 The ComStock release directory structure of the data lake is summarized in the table, below. For more detailed information about the contents of the ComStock OEDI data lake, visit the [README](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/README.md).
 
-#### OEDI Directory Structure and Contents
+#### OEDI Directory Structure and Contents[^1]
 
-| **Name**                          | **Contents**|
-|-----------------------------------|--------|
-|building_energy_models             | Building energy models, in [OpenStudio](https://www.openstudio.net/) format, that were run to create the dataset.|
-|geographic_information             | Information on various geographies used in the dataset provided for convenience. Includes map files showing the shapes of the geographies (states, PUMAs) used for partitioning and a lookup table mapping between census tracts and various other geographies. |
-|metadata                           | Building characteristics (age, area, HVAC system type, etc.) for each of the building energy models run to create the timeseries data and annual energy results. Descriptions of the characteristics are included in `data_dictionary.tsv`, `enumeration_dictionary.tsv`, and `upgrade_dictionary.tsv`.|
-|timeseries_aggregates              | Aggregate end-use load profiles by building type and geography that can be opened and analyzed in Excel, python, or other common data analysis tools.|
-|timeseries_aggregates_metadata     | Building characteristics for `timeseries_aggregates` building energy models. Follows the same format at `metadata`.|
-|timeseries_individual_buildings    | The raw individual building timeseries data.  **This is a large number of individual files!**|
-|weather                            | Key weather data used as an input to run the building energy models to create the dataset.|
-|citation.txt                       | Citation to use when referencing this work.|
-|data_dictionary.tsv                | Describes the column names found in the metadata and timeseries data files.|
-|enumeration_dictionary.tsv         | Expands the definitions of the enumerations used in the metadata files.|
-|upgrades_lookup.json               | Lookup table with upgrade ID and upgrade name for the given dataset release. |
-|measure_name_crosswalk.csv         | Relates a universal "Measure ID" and the upgrade IDs and upgrade names across dataset releases.
+| **Name**                              | **Contents**|
+|---------------------------------------|-------------|
+|building_energy_models                 | Building energy models, in [OpenStudio](https://www.openstudio.net/) format, that were run to create the dataset.|
+|geographic_information                 | Information on various geographies used in the dataset provided for convenience. Includes map files showing the shapes of the geographies (states, PUMAs) used for partitioning and a lookup table mapping between census tracts and various other geographies. |
+|metadata_and_annual_results            | Building characteristics (age, area, HVAC system type, etc.) and annual results for each building energy models.|
+|metadata_and_annual_results_aggregates | Building characteristics (age, area, HVAC system type, etc.) and annual results aggregated to a specific geography (e.g, state, county, PUMA).
+|timeseries_aggregates                  | Aggregate end-use load profiles by building type and geography that can be opened and analyzed in Excel, python, or other common data analysis tools.|
+|timeseries_aggregates_metadata         | Building characteristics for `timeseries_aggregates` building energy models. Follows the same format at `metadata`.|
+|timeseries_individual_buildings        | The raw individual building timeseries data.  **This is a large number of individual files!**|
+|weather                                | Key weather data used as an input to run the building energy models to create the dataset.|
+|data_dictionary.tsv                    | Describes the column names found in the metadata and timeseries data files.|
+|enumeration_dictionary.tsv             | Expands the definitions of the enumerations used in the metadata files.|
+|upgrades_lookup.json                   | Lookup table with upgrade ID and upgrade name for the given dataset release. |
+|measure_name_crosswalk.csv             | Relates a universal "Measure ID" and the upgrade IDs and upgrade names across dataset releases.|
 
 ### Dataset Naming Convention
 ComStock releases on OEDI and the data viewer use the following naming convention.
@@ -126,3 +126,5 @@ The third level of “out.” is where you’ll find the end uses.
 Finally, units are denoted by a “..” with the unit following.
 
 ![](../assets/images/field_naming_convention.png)
+
+[^1]: OEDI file structure for 2024 Release 2 and continuing forward

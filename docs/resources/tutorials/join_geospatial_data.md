@@ -93,8 +93,7 @@ analyses. Cambium Grid Regions are 20 regions covering the contiguous
 U.S. and allow ComStock to include granular projected emissions in the
 dataset. Census PUMA and Tract, as mentioned above, are the most
 granular geographic resolution in the ComStock dataset and allow for
-joining of common external datasets, such as those required to perform
-energy justice and equity analyses.
+joining of common external datasets.
 
 Table 1. Geospatial fields in the ComStock dataset
 
