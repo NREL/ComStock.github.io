@@ -18,36 +18,36 @@ nav_order: 7
 
   [Shourya Bose et al. (2024)](https://arxiv.org/pdf/2411.14421?){: .pub-link}. Forecasting models developed using open-source foundation modeling. The model was trained and tested using ComStock load profiles.
   
-  [Andrew Parker et al. (2024)](https://doi.org/10.2172/2352708){: .pub-link}. This document discusses the development of a segmentation approach for the U.S. commercial building stock that focuses on identifying similarities that align with common retrofit strategies.
+  [Andrew Parker et al. (2024)](https://doi.org/10.2172/2352708){: .pub-link}. This document discusses the development of a segmentation approach for the U.S. commercial building stock that focuses on identifying similarities that align with common retrofit strategies.<br>DOI: 10.2172/2352708
 
   [Lauren Adams et al. (2023)](https://www.energycodes.gov/segmentation){: .pub-link}. This is a series of reports that provide commercial and multifamily building characteristic and energy data for 88 local geographies. For details about the geography selection methodology, see the [Building Stock Cluster Methodology Documentation](https://www.nrel.gov/docs/fy23osti/84648.pdf).
 
   [Chris CaraDonna et al. (2023)](https://www.hpc2023.org/wp-content/uploads/gravity_forms/3-7075ba8a16c5f78b321724d090fb2a34/2023/05/1143_HPC2023_Full_Paper_CaraDonna_v03.pdf){: .pub-link}. Exploration of the effects of transitioning all installed, existing RTUs to high performance heat pump RTUs for the U.S. commercial building stock.
 
-  [Andrew Parker et al. (2023)](https://doi.org/10.2172/1967948){: .pub-link}. ComStock reference documentation, providing the methodology and assumptions behind ComStock.
+  [Andrew Parker et al. (2023)](https://doi.org/10.2172/1967948){: .pub-link}. ComStock reference documentation, providing the methodology and assumptions behind ComStock. <br>DOI: 10.2172/1967948
 
-  [Harry Bergmann et al. (2023)](https://doi.org/10.2172/1984212){: .pub-link}. Clustering of counties together represents a similarity of building characteristics and climate zone.
+  [Harry Bergmann et al. (2023)](https://doi.org/10.2172/1984212){: .pub-link}. Clustering of counties together represents a similarity of building characteristics and climate zone.<br>DOI: 10.2172/1984212
 
-  [Janet Reyna et al. (2022)](https://doi.org/10.2172/1877069){: .pub-link}. A national typology for U.S. buildings to help identify technology requirements and engineering solutions for retrofits.
+  [Janet Reyna et al. (2022)](https://doi.org/10.2172/1877069){: .pub-link}. A national typology for U.S. buildings to help identify technology requirements and engineering solutions for retrofits.<br>DOI: 10.2172/1877069
 
   [Eric Wilson et al. (2022)](https://www.nrel.gov/docs/fy22osti/82689.pdf){: .pub-link}. Executive summary of the End Use Load Profile Technical Report.
 
-  [Eric Wilson et al. (2022)](https://doi.org/10.2172/1854582){: .pub-link}. Documents the EULP dataset, including detailed description of model improvements made for calibration, along with an explanation of validation and uncertainty of results.
+  [Eric Wilson et al. (2022)](https://doi.org/10.2172/1854582){: .pub-link}. Documents the EULP dataset, including detailed description of model improvements made for calibration, along with an explanation of validation and uncertainty of results.<br>DOI: 10.2172/1854582
 
-  [Jaquelin Cochran et al. (2021)](https://doi.org/10.2172/1774871){: .pub-link}. The Los Angeles 100% Renewable Energy Study.
+  [Jaquelin Cochran et al. (2021)](https://doi.org/10.2172/1774871){: .pub-link}. The Los Angeles 100% Renewable Energy Study.<br>DOI: 10.2172/1774871
   </details>
 
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Presentations</summary>
 
   [Chris CaraDonna et al. (2025)](https://www.nrel.gov/docs/fy25osti/92766.pdf){: .pub-link}. Standard dataset release 2024 Release 2 webinar slide deck.
   
-  [Chris CaraDonna et al. (2024)](https://doi.org/10.2172/2342004){: .pub-link}. End-Use Savings Shapes Commercial 2024 Release 1 webinar slide deck.
+  [Chris CaraDonna et al. (2024)](https://doi.org/10.2172/2342004){: .pub-link}. End-Use Savings Shapes Commercial 2024 Release 1 webinar slide deck.<br>DOI: 10.2172/2342004
   
-  [Chris CaraDonna et al. (2023)](https://doi.org/10.2172/2228664){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 2 webinar slide deck.
+  [Chris CaraDonna et al. (2023)](https://doi.org/10.2172/2228664){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 2 webinar slide deck.<br>DOI: 10.2172/2228664
 
-  [Chris CaraDonna et al. (2023)](https://doi.org/10.2172/1991505){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.
+  [Chris CaraDonna et al. (2023)](https://doi.org/10.2172/1991505){: .pub-link}. End-Use Savings Shapes Commercial 2023 Release 1 webinar slide deck.<br>DOI: 10.2172/1991505
 
-  [Lauren Adams et al. (2023)](https://doi.org/10.2172/1999776){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.
+  [Lauren Adams et al. (2023)](https://doi.org/10.2172/1999776){: .pub-link}. Introduction presentation to ComStock, including high-level methodology, example use cases and how to access the data.<br>DOI: 10.2172/1999776
   </details>
 
   <details markdown="block" class="level2-collapse-section"><summary class="pub-header">Webinar Recordings</summary>
@@ -73,7 +73,7 @@ nav_order: 7
 
   [Kaiyu Sun et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}. Report detailing prototype district models.
 
-  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}. Example applications and considerations for utilities.
+  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}.Example applications and considerations for utilities.<br>DOI: 10.2172/1906716
 
   [Elaina Present et al. (2022)](https://www.nrel.gov/docs/fy24osti/86682.pdf){: .pub-link}. Explores available emissions factors and the impact of factor selection.
 
