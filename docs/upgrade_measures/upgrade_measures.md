@@ -63,7 +63,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | pkg_0006   | [Comprehensive Geothermal Heat Pump Package, Hydronic GHP, Packaged GHP, or Console GHP](https://www.nrel.gov/docs/fy24osti/89133.pdf)   | 2024 Release 1 |
 | pkg_0007   | Package 6 - Demand Flexibility, Lighting + Thermostat Control, Load Shed for Daily Bldg Peak Reduction**   | 2024 Release 2 |
 
-*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected February 2025
+*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected soon
 
 ## Supplemental Documentation
 [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)
