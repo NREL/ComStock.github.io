@@ -83,9 +83,8 @@ The ComStock release directory structure of the data lake is summarized in the t
 |building_energy_models                 | Building energy models, in [OpenStudio](https://www.openstudio.net/) format, that were run to create the dataset.|
 |geographic_information                 | Information on various geographies used in the dataset provided for convenience. Includes map files showing the shapes of the geographies (states, PUMAs) used for partitioning and a lookup table mapping between census tracts and various other geographies. |
 |metadata_and_annual_results            | Building characteristics (age, area, HVAC system type, etc.) and annual results for each building energy models.|
-|metadata_and_annual_results_aggregates | Building characteristics (age, area, HVAC system type, etc.) and annual results aggregated to a specific geography (e.g, state, county, PUMA).
+|metadata_and_annual_results_aggregates | Building characteristics (age, area, HVAC system type, etc.) and annual results aggregated to a specific geography (e.g, state, county, PUMA).|
 |timeseries_aggregates                  | Aggregate end-use load profiles by building type and geography that can be opened and analyzed in Excel, python, or other common data analysis tools.|
-|timeseries_aggregates_metadata         | Building characteristics for `timeseries_aggregates` building energy models. Follows the same format at `metadata`.|
 |timeseries_individual_buildings        | The raw individual building timeseries data.  **This is a large number of individual files!**|
 |weather                                | Key weather data used as an input to run the building energy models to create the dataset.|
 |data_dictionary.tsv                    | Describes the column names found in the metadata and timeseries data files.|
@@ -119,9 +118,9 @@ ComStock releases on OEDI and the data viewer use the following naming conventio
 
 The field naming convention is fairly simple. At the highest level there is – “in.” for inputs, “out.” for outputs, “calc.” for calculated fields, then a handful of columns that provide simulation information.
 
-For the "out." prefix there is a second level that includes – fuel type, emissions, model parameter and statistic fields, and site energy. The "in." prefix does not have a second level.
+For the "out." prefix there is a second level that includes – fuel type, emissions, utility bills, model parameter and statistic fields, and total site energy. The "in." prefix does not have a second level.
 
-The third level of “out.” is where you’ll find the end uses.
+The third level of “out.” is where you’ll find the energy consumption for the end uses.
 
 Finally, units are denoted by a “..” with the unit following.
 
