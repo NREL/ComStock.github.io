@@ -3,6 +3,7 @@ layout: default
 title: Package 1 - Wall and Roof Insulation, and New Windows
 parent: Upgrade Measures
 nav_order: 14
+published: false
 ---
 
 # Window Replacement + Exterior Wall Insulation + Roof Insulation
