@@ -3,6 +3,7 @@ layout: default
 title: Thermostat Control for Load Shifting in Large Offices
 parent: Upgrade Measures
 nav_order: 17
+published: false
 ---
 
 # Thermostat Control for Load Shifting in Large Offices

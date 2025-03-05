@@ -3,6 +3,7 @@ layout: default
 title: Ground-Coupled Console Water-to-Air Heat Pump 
 parent: Upgrade Measures
 nav_order: 19
+published: false
 ---
 
 # Ground-Coupled Console Water-to-Air Heat Pump 

@@ -3,6 +3,7 @@ layout: default
 title: Thermostat Control for Load Shedding in Large Offices
 parent: Upgrade Measures
 nav_order: 16
+published: false
 ---
 
 # Thermostat Control for Load Shedding in Large Offices
