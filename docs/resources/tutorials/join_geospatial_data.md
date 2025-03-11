@@ -7,6 +7,8 @@ nav_order: 1
 
 # Tutorial: Joining Data from an External Dataset to ComStock using Geospatial Fields
 
+**_This tutorial uses the ComStock 2023 Release 1 dataset. Some dataset attributes, like column names, may have changed in later releases. Most notably, the [ComStock sampling method was updated]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md %}) to improve geographic resolution beginning with 2024 Release 2._**
+
 ## Introduction
 
 The publicly available ComStock dataset provides users with a means to

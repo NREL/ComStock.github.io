@@ -8,6 +8,8 @@ nav_order: 1
 
 # How-to: Understand the annual energy use by building type for a city.
 
+**_This how-to guide uses the ComStock 2023 Release 1 dataset. Some dataset attributes, like column names, may have changed in later releases. Most notably, the [ComStock sampling method was updated]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md %}) to improve geographic resolution beginning with 2024 Release 2._**
+
 This guide will walk you through how to prepare city-level ComStock data for analysis using the following example statement:
 
 **I want to understand the annual energy use by building type for the city of Richmond, CA.**

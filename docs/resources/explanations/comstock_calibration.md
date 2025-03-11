@@ -17,7 +17,7 @@ There are two primary resources to help understand the calibration state and rel
 - Load profile comparisons to AMI data sources, normalized and raw, per region and building type (p. 210–292)
 - Comparisons of annual energy use intensity (EUI) distributions to CBECS and AMI by region and building type (p. 210–292).
 
-2. [ComStock Documentation](https://www.nrel.gov/docs/fy23osti/83819.pdf) provides the methods, assumptions, and data sources used in ComStock.
+2. [ComStock Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references) provides the methods, assumptions, and data sources used in ComStock.
 - Describes assumptions and data sources for each model feature (e.g., How are HVAC system types assigned to models? How are lighting types determined? How are data centers accounted for in offices?)
 - Describes model outputs
 - General reference guide for users.

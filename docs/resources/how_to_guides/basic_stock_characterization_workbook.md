@@ -8,6 +8,8 @@ nav_order: 2
 
 # How-to: Perform a basic commercial building stock segmentation analysis in Excel.
 
+**_This example workbook was developed using the ComStock 2023 Release 1 dataset. Some dataset attributes, like column names, may have changed in later releases._**
+
 This guide will introduce a basic stock segmentation workbook using the following example statement:
 
 **I want to understand what buildings of what sort exist in Colorado and how they use energy.**
