@@ -7,9 +7,11 @@ nav_order: 1
 
 # Tutorial: Perform an analysis by blending ComStock and local data
 
+**_This tutorial uses the ComStock 2023 Release 1 dataset. Some dataset attributes, like column names, may have changed in later releases._**
+
 ## Introduction
 
-When performing a commercial stock energy analysis, the incorporation of the ComStock data sets and local data sources can greatly enhance the accuracy and relevance of results. However, despite its extensive coverage, ComStock's dataset operates at a statistical level that might not fully capture the fine-grained details that local data can offer. Energy use in commercial buildings is highly dependent on numerous factors that can significantly vary from one location to another. While ComStock accounts for many factors, such as building codes and regional variations in weather, the accuracy of building square footage estimates in ComStock decreases with geographic resolution. (We hope to have updates on this in the near future!)
+When performing a commercial stock energy analysis, the incorporation of the ComStock data sets and local data sources can greatly enhance the accuracy and relevance of results. However, despite its extensive coverage, ComStock's dataset operates at a statistical level that might not fully capture the fine-grained details that local data can offer. Energy use in commercial buildings is highly dependent on numerous factors that can significantly vary from one location to another. While ComStock accounts for many factors, such as building codes and regional variations in weather, the accuracy of building square footage estimates in ComStock decreases with geographic resolution. This has largely been addressed by the [new ComStock sampling method]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md %}) implemented in 2024 Release 2.
 
 Local data sources come into play here, bringing a higher level of resolution to our understanding of energy usage. They provide more detailed, location-specific information that can supplement and true-up ComStock's commercial building energy consumption at a more granular level. This depth of understanding can lead to the development of highly targeted, effective energy conservation measures and strategies, specifically tailored to local conditions and needs. This results in a more robust, precise, and locally attuned picture of commercial building energy usage.
 
@@ -47,7 +49,7 @@ Note: Text in **bold** refers to a column in your excel sheet. In the case of th
 
     d.  This analysis can also be performed with a mapping to all 16 ComStock building types, however they are more difficult to use as it can be difficult to differentiate primary and secondary schools, types of retail stores and offices, etc.
 
-    e.  Example mappings between two different data sources and ComStock's building types can be found in Table 1 on page 16 of the [ComStock documentation](https://www.nrel.gov/docs/fy23osti/83819.pdf).
+    e.  Example mappings between two different data sources and ComStock's building types can be found in Table 1 on page 16 of the [ComStock documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references).
 
 6.  Filter the data to remove all building types from the local data source that do not have a match in ComStock.
 
@@ -79,7 +81,7 @@ Note that the process described here uses counties as the base geographic unit. 
 
 For help regarding interpreting **in.nhgis_county_gisjoin** and **in.nhgis_puma_gisjoin** please refer to our guide on interpreting geographic extent specifications.
 
-1.  Download the ComStock annual results file from OEDI S3 bucket-- the link for the Baseline End Use Savings Shape 2023 Release 1 is here. The national file is 1.5gb. It's recommend to use the state .csv files if your selected geography is only in one state. New datasets are released every 6 months. Please check for our latest datasets on the [ComStock Documentation Website](https://nrel.github.io/ComStock.github.io/docs/data/published_datasets.html).
+1.  Download the ComStock annual results file from OEDI S3 bucket-- the link for the Baseline End Use Savings Shape 2023 Release 1 is here. The national file is 1.5gb. It's recommend to use the state .csv files if your selected geography is only in one state. New datasets are released every 6 months. Please check for our latest datasets on the [ComStock Documentation Website]({{site.baseurl}}{% link docs/data.md %}).
 
 2.  Filter using the **in.nhgis_county_gisjoin** or **in.county_name** columns to the county (or counties) containing the region defined in the local data source.
 
