@@ -4,25 +4,14 @@ body {
     margin: 20px;
 }
 
-input {
+textarea {
+    width: 80%;
     font-size: 16px;
-    margin: 5px;
-    padding: 5px;
 }
 
-button {
-    font-size: 16px;
+pre {
+    background-color: #f4f4f4;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-h2 {
-    color: #333;
+    border-radius: 5px;
+    white-space: pre-wrap;
 }
