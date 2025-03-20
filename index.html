@@ -9,16 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Python-Powered Calculator</h1>
-
-    <label for="num1">Enter Number 1:</label>
-    <input type="number" id="num1" value="5">
-    
-    <label for="num2">Enter Number 2:</label>
-    <input type="number" id="num2" value="3">
-    
-    <button onclick="calculate()">Add Numbers</button>
-
-    <h2>Result: <span id="output">---</span></h2>
+    <h1>Run Python in Browser with Pyodide</h1>
+    <textarea id="python-code" rows="5" cols="50">print("Hello, Pyodide!")</textarea>
+    <br>
+    <button onclick="runPython()">Run Python</button>
+    <pre id="output"></pre>
 </body>
 </html>
