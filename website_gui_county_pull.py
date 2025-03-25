@@ -94,6 +94,44 @@ def validate_email(email):
     email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     return re.match(email_pattern, email)
 
+# Handle user info submission
+def submit_user_info(_):
+    global ui_displayed
+    with dataset_output:
+        clear_output(wait=True)
+
+        # Validate Required Fields
+        missing_fields = []
+        if not first_name.value.strip():
+            missing_fields.append("First Name")
+        if not last_name.value.strip():
+            missing_fields.append("Last Name")
+        if not email.value.strip() or not validate_email(email.value):
+            missing_fields.append("Valid Email")
+        if not use_case.value.strip():
+            missing_fields.append("Use Case")
+
+        if missing_fields:
+            print(f"Please fill out the following fields: {', '.join(missing_fields)}")
+            return
+
+        if ui_displayed:
+            print("Dataset selection UI is already displayed.")
+            return
+
+        print("User Information Submitted. Access Dataset Selection Below.")
+        ui_displayed = True  
+
+        # Attach observer only once
+        if not hasattr(update_county_dropdown, "observer_attached"):
+            state_dropdown.observe(update_county_dropdown, names='value')
+            update_county_dropdown.observer_attached = True  
+
+        dataset_selection_ui.children = [
+            state_dropdown, county_dropdown, upgrade_selector, column_selector, load_button
+        ]
+        display(dataset_selection_ui)
+
 def update_county_dropdown(*args):
     """Update the county dropdown options when the state is selected."""
     state = state_dropdown.value
@@ -142,16 +180,16 @@ def download_and_merge_parquet(_):
         }
         user_data_list.append(query_entry)
 
-        # Store user data in S3
-        df = pd.DataFrame(user_data_list)
-        local_file = "/tmp/user_queries.csv"
-        df.to_csv(local_file, index=False)
+        # # Store user data in S3
+        # df = pd.DataFrame(user_data_list)
+        # local_file = "/tmp/user_queries.csv"
+        # df.to_csv(local_file, index=False)
 
-        try:
-            s3_client.upload_file(local_file, BUCKET_NAME, S3_FILE_NAME)
-            print(f"Query data stored in S3: {BUCKET_NAME}/{S3_FILE_NAME}")
-        except Exception as e:
-            print(f"Failed to upload query data to S3: {e}")
+        # try:
+        #     s3_client.upload_file(local_file, BUCKET_NAME, S3_FILE_NAME)
+        #     print(f"Query data stored in S3: {BUCKET_NAME}/{S3_FILE_NAME}")
+        # except Exception as e:
+        #     print(f"Failed to upload query data to S3: {e}")
 
         # Dataset download logic
         print(f"Fetching dataset for {state} and {cleaned_counties}...")
