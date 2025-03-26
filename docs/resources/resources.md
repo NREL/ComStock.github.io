@@ -20,6 +20,7 @@ This section provides lessons for understanding certain capabilities and functio
 ## How-to Guides
 This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
 
+- [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})<span class="label label-blue">NEW</span>
 - [Understand the annual energy use by building type for a city]({{  site.baseurl  }}{% link docs/resources/how_to_guides/puma_level_analysis.md %})
 - [Access the ComStock datasets programmatically - Example scripts]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})
 - [Perform a basic commercial building stock segmentation analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/basic_stock_characterization_workbook.md %})
@@ -52,27 +53,11 @@ These documents describe various aspects of ComStock, including the baseline and
 <summary><b>ComStock Reference Documentation</b></summary>
 This document serves as a guide to and resource for the methodology and assumptions behind ComStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
 
-[**ComStock Reference Documentation: Version 3**]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2024_2.pdf %})
-
-**February 2025**
-
-Corresponding ComStock releases:
-- 2024/comstock_amy2018_release_2
-
-[**ComStock Reference Documentation: Version 2**]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2024_1.pdf %})
-
-**May 2024**
-
-Corresponding ComStock releases:
-- 2024/comstock_amy2018_release_1
-
-[**ComStock Reference Documentation: Version 1**](https://www.nrel.gov/docs/fy23osti/83819.pdf)
-
-**March 2023**
-
-Corresponding ComStock releases:
-- 2023/comstock_amy2018_release_1
-- 2023/comstock_amy2018_release_2
+| Reference Documentation Version               | Release Date | Corresponding ComStock Dataset Release(s)                            |
+|-----------------------------------------------|--------------|----------------------------------------------------------------------|
+| [ComStock Reference Documentation: Version 3]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2024_2.pdf %}) | Feb. 2025      | 2024/comstock_amy2018_release_2                                      |
+| [ComStock Reference Documentation: Version 2]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2024_1.pdf %}) | May 2024       | 2024/comstock_amy2018_release_1                                      |
+| [ComStock Reference Documentation: Version 1](https://www.nrel.gov/docs/fy23osti/83819.pdf) | March 2023     | 2023/comstock_amy2018_release_1<br>2023/comstock_amy2018_release_2   |
 
 </details>
 
