@@ -20,6 +20,7 @@ This section provides lessons for understanding certain capabilities and functio
 ## How-to Guides
 This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
 
+- [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})
 - [Understand the annual energy use by building type for a city]({{  site.baseurl  }}{% link docs/resources/how_to_guides/puma_level_analysis.md %})
 - [Access the ComStock datasets programmatically - Example scripts]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})
 - [Perform a basic commercial building stock segmentation analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/basic_stock_characterization_workbook.md %})
