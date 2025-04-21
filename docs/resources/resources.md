@@ -21,7 +21,7 @@ This section provides lessons for understanding certain capabilities and functio
 This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
 
 - [Understand the annual energy use by building type for a city]({{  site.baseurl  }}{% link docs/resources/how_to_guides/puma_level_analysis.md %})
-- [Access the ComStock datasets programmatically - Example scripts]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})
+- [Access the ComStock datasets programmatically - Example scripts]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})<span class="label label-green">UPDATE</span>
 - [Perform a basic commercial building stock segmentation analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/basic_stock_characterization_workbook.md %})
 
 ## Explanations
