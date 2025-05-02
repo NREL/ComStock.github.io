@@ -10,7 +10,11 @@ aux_links:
   "ComStock on GitHub":
     - "https://github.com/NREL/ComStock"
 aux_links_new_tab: true
-footer_content: "ComStock, Copyright (c) 2019-2025, Alliance for Sustainable Energy, LLC, and other contributors. All rights reserved."
+footer_content: >
+  The National Renewable Energy Laboratory is a national laboratory of the
+  <a href="https://www.energy.gov">U.S. Department of Energy</a>,
+  <a href="https://www.energy.gov/eere/office-energy-efficiency-and-renewable-energy?nrg_redirect=467275">Office of Energy Efficiency and Renewable Energy</a>,
+  operated under Contract No. DE-AC36-08GO28308
 color_scheme: general
 callouts:
   warning:
