@@ -10,4 +10,4 @@ _site/
 vendor/
 
 .DS_Store
-
+/.idea/
