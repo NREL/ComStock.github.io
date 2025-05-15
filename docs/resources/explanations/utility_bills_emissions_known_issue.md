@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Utility Bills and Emissions in ComStock 2024.2
+title: Utility Bills and Emissions in ComStock 2024 Release 2
 parent: Resources
 nav_order: 9
 ---
 
-# Issue Report: Utility Bills and Emissions in ComStock 2024.2
+# Issue Report: Utility Bills and Emissions in ComStock 2024 Release 2
 
 ## Summary of Issue
 In ComStock’s new sampling method (effective starting with 2024 Release 2), a single energy model may be used multiple times to represent similar buildings across distinct but comparable geographies (e.g., census tracts) (see a description of the new sampling method [here]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})). Utility bills and emissions due to electricity are based on the utility and grid region where the original model was sampled. When a model is reallocated to a different location, the utility and grid region of the original model may no longer reflect those of the new location, resulting in incorrect utility bill and emissions values for the reallocated models. Natural gas, fuel oil, and propane utility bills are calculated using state-level data and may also be affected by this issue.

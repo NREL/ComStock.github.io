@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Example Scripts
-parent: How-to Guides
+title: Access the ComStock Datasets Programmatically
 parent: Resources
-nav_order: 3
 ---
 
 # How-to: Access the ComStock datasets programmatically
-These example scripts demonstrate how users can access the ComStock datasets programmatically and provide a jumping off point for analysis.
+These example queries and scripts demonstrate how users can access the ComStock datasets programmatically and provide a jumping off point for analysis.
 
 More content will be posted as it becomes available.
+
+## AWS Athena and SQL Queries
+- [Example AWS Athena Queries]({{  site.baseurl  }}{% link docs/resources/how_to_guides/aws_athena_queries.md %}). AWS Athena queries that pull data from a ComStock dataset release to address four example prompts.
 
 ## Python
 ### Jupyter Notebook
