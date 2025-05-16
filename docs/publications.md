@@ -73,7 +73,7 @@ nav_order: 7
 
   [Kaiyu Sun et al. (2023)](https://doi.org/10.26868/25222708.2023.1431){: .pub-link}. Report detailing prototype district models.<br>DOI: 10.26868/25222708.2023.1431
 
-  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}.Example applications and considerations for utilities.<br>DOI: 10.2172/1906716
+  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}. Example applications and considerations for utilities.<br>DOI: 10.2172/1906716
 
   [Elaina Present et al. (2022)](https://www.nrel.gov/docs/fy24osti/86682.pdf){: .pub-link}. Explores available emissions factors and the impact of factor selection.
 
