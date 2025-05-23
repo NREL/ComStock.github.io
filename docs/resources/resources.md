@@ -18,7 +18,7 @@ This section provides lessons for understanding certain capabilities and functio
 - [Perform an analysis by blending ComStock and local data]({{  site.baseurl  }}{% link docs/resources/tutorials/local_segmentation_study.md %})
 
 ## How-to Guides
-This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
+This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question.
 
 - [Access the ComStock datasets programmatically]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})<span class="label label-green">UPDATE</span>
 - [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})<span class="label label-blue">NEW</span>
@@ -46,6 +46,14 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
 - [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})<span class="label label-blue">NEW</span>
 - [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})<span class="label label-blue">NEW</span>
+
+
+## Download and Merge Parquet Data
+<div id="parquet-merge"></div>
+
+{% assign bundle = site.static_files | where_exp:"f","f.name contains 'parquet-merge-'" | first %}
+
+<script src="{{ bundle.path | relative_url }}"></script>
 
 
 ## References
