@@ -14,7 +14,7 @@ This section provides tutorials, how-to guides explanations and reference materi
 ## Tutorials
 This section provides lessons for understanding certain capabilities and functions of ComStock, as well as for learning a specific analysis skill.
 
-- [Joining Data from an External Dataset to ComStock using Geospatial Fields]({{  site.baseurl  }}{% link docs/resources/tutorials/join_geospatial_data.md %})
+- [Joining data from an external dataset to ComStock using geospatial fields]({{  site.baseurl  }}{% link docs/resources/tutorials/join_geospatial_data.md %})
 - [Perform an analysis by blending ComStock and local data]({{  site.baseurl  }}{% link docs/resources/tutorials/local_segmentation_study.md %})
 
 ## How-to Guides
@@ -34,13 +34,13 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
 - [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})<span class="label label-blue">NEW</span>
 - [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
-- [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})<span class="label label-green">UPDATE</span>
+- [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
 
 ### ComStock Limitations
 - [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})
-- [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %}) 
-- [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})
+- [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
+- [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})<span class="label label-green">UPDATE</span>
 
 ### Known Issues
 - [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
