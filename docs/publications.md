@@ -71,9 +71,9 @@ nav_order: 7
 
   [ISO New England (2023)](https://www.iso-ne.com/static-assets/documents/2023/04/heatfx2023_final.pdf){: .pub-link}. Presentation about a forecasting tool developed using ComStock and ResStock datasets.
 
-  [Kaiyu Sun et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}. Report detailing prototype district models.
+  [Kaiyu Sun et al. (2023)](https://doi.org/10.26868/25222708.2023.1431){: .pub-link}. Report detailing prototype district models.<br>DOI: 10.26868/25222708.2023.1431
 
-  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}.Example applications and considerations for utilities.<br>DOI: 10.2172/1906716
+  [Margaret Pigman et al. (2023)](https://doi.org/10.2172/1906716){: .pub-link}. Example applications and considerations for utilities.<br>DOI: 10.2172/1906716
 
   [Elaina Present et al. (2022)](https://www.nrel.gov/docs/fy24osti/86682.pdf){: .pub-link}. Explores available emissions factors and the impact of factor selection.
 
