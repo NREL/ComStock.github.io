@@ -21,7 +21,7 @@ This section provides lessons for understanding certain capabilities and functio
 This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
 
 - [Access the ComStock datasets programmatically]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})<span class="label label-green">UPDATE</span>
-- [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})<span class="label label-blue">NEW</span>
+- [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})
 - [Perform a basic commercial building stock segmentation analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/basic_stock_characterization_workbook.md %})
 - [Perform a commercial building stock characterization and upgrades impact analysis in Excel]({{  site.baseurl  }}{% link docs/resources/how_to_guides/impact_workbook.md %})<span class="label label-blue">NEW</span>
 - [Understand the annual energy use by building type for a city]({{  site.baseurl  }}{% link docs/resources/how_to_guides/puma_level_analysis.md %})
@@ -45,9 +45,20 @@ These documents provide explanations focusing on the *how* and *why* of various 
 
 ### Known Issues
 - [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
-- [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})<span class="label label-blue">NEW</span>
-- [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})<span class="label label-blue">NEW</span>
+- [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})
+- [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})
 
+## Training Videos<span class="label label-blue">NEW</span>
+Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NREL’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
+-   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
+-   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=4&t=2s)
+
+## Tableau Dashboards<span class="label label-blue">NEW</span>
+The [ComStock Tableau Public page](https://public.tableau.com/app/profile/comstock.nrel/vizzes) offers interactive visualizations derived from the public ComStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ComStock Tableau Public page as they become available.
+
+-   [ComStock Building Characteristics Dashboard](https://public.tableau.com/app/profile/comstock.nrel/viz/ComStockBuildingCharacteristicsDashboard/Introduction)
+
+For ResStock Tableau dashboards, please visit the [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes).
 
 ## References
 These documents describe various aspects of ComStock, including the baseline and upgrade model documentation, as well as geographic clustering methodology.
