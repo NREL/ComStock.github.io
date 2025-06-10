@@ -44,7 +44,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})<span class="label label-green">UPDATE</span>
 
 ### Known Issues
-- [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
+- [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})<span class="label label-green">UPDATE</span>
 - [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})
 - [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})
 
