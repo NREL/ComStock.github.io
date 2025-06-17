@@ -22,6 +22,8 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 [Resources]({{site.baseurl}}{% link docs/resources/resources.md %}){: .btn .btn-uo .white-text} &mdash; Tutorials and How-to guides designed to assist using the data for common use cases, as well as Explanations and Reference materials are available on the [Resources page]({{  site.baseurl  }}{% link docs/resources/resources.md %}).
 
+[Frequently Asked Questions]({{site.baseurl}}{% link docs/faq.md %}){: .btn .btn-uo .white-text} &mdash; Answers to common questions are available on the [FAQ page]({{  site.baseurl  }}{% link docs/faq.md %}).
+
 For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf).
 
 For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
