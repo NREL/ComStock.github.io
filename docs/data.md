@@ -18,12 +18,15 @@ Each dataset release is introduced with a webinar presentation. Access the webin
 
 ComStock dataset releases are summarized in the following table with links for accessing the aggregate results.
 
-<span class="label label-red">DATASET NOTICE</span>ComStock Standard Dataset Release 2024 Release 2 uses an improved sampling method. The OEDI file structure has been modified starting with this release. For details about the new sampling method and file structure, please read the [New ComStock Sampling Method]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md%}) explanation.
+<span class="label label-red">DATASET NOTICES</span>
+- ComStock 2024 Release 2 uses an improved sampling method. The OEDI file structure has been modified starting with this release. For details about the new sampling method and file structure, please read the [New ComStock Sampling Method]({{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md%}) explanation.
+- The utility bills and emissions are incorrectly calculated in ComStock 2024 Release 2. Please see the [known issue documentation]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %}) for additional information.
+- There are minor discrepancies between files in the "metadata_and_annual_results_aggregates" directory on OEDI in ComStock 2024 Release 2. Please see the [known issue documentation]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %}) for additional information.
 
-|      |  **ComStock Standard Dataset Release<br>2024 Release 2 - 2018 Weather**  |  **ComStock End Use Savings Shape 2024 Release 1 - 2018 Weather**  |**ComStock End Use Savings Shape 2023 Release 2 - 2018 Weather** |   **ComStock End Use Savings Shape 2023 Release 1 - 2018 Weather**   |   **ComStock End Use Load Profiles - 2018 Weather**   |   **ComStock End Use Load Profiles - Typical Weather**   |
+|      |  **<span style="color:red">ComStock Standard Dataset Release<br>2024 Release 2 - 2018 Weather</span>**  |  **ComStock End Use Savings Shape 2024 Release 1 - 2018 Weather**  |**ComStock End Use Savings Shape 2023 Release 2 - 2018 Weather** |   **ComStock End Use Savings Shape 2023 Release 1 - 2018 Weather**   |   **ComStock End Use Load Profiles - 2018 Weather**   |   **ComStock End Use Load Profiles - Typical Weather**   |
 |   **OEDI Name**   | 2024/comstock_amy2018_release_2 | 2024/comstock_amy2018_release_1   |   2023/comstock_amy2018_release_2   |   2023/comstock_amy2018_release_1   |   2021/comstock_amy2018_release_1   |   2021/comstock_tmy3_release_1   |
 |---------|---------|---------|--------|--------|--------|--------|
-|	**Data Viewer**	| *Data viewer links expected Jan. 2025* | [by_state]( https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r1_2024_by_state_vu),<br>[by_puma_northeast](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_r1_2024_by_puma_northeast_vu),<br>[by_puma_midwest](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_r1_2024_by_puma_midwest_vu),<br>[by_puma_south](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_r1_2024_by_puma_south_vu),<br>[by_puma_west](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_r1_2024_by_puma_west_vu)	| [by_state]( https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2023_by_state_vu)|	[by_state](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r1_2023_by_state_vu) |	[by_state](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_state_vu),<br>[by_puma_northeast](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_puma_northeast_vu),<br>[by_puma_midwest](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_puma_midwest_vu),<br>[by_puma_south](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_puma_south_vu),<br>[by_puma_west](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_puma_west_vu)	|	[by_state](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_state_vu),<br>[by_puma_northeast](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_puma_northeast_vu),<br>[by_puma_midwest](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_puma_midwest_vu),<br>[by_puma_south](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_puma_south_vu),<br>[by_puma_west](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_puma_west_vu)	|
+|	**Data Viewer**	| [by_state](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2024_ts_by_state_vu),<br>[by_puma_northeast](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2024_ts_by_state_vu_northeast),<br>[by_puma_midwest](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2024_ts_by_state_vu_midwest),<br>[by_puma_south](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2024_ts_by_state_vu_south),<br>[by_puma_west](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2024_ts_by_state_vu_west) | [by_state]( https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r1_2024_by_state_vu),<br>Unavailable: by_puma_northeast,<br>Unavailable: by_puma_midwest,<br>Unavailable: by_puma_south,<br>Unavailable: by_puma_west	| [by_state]( https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r2_2023_by_state_vu)|	[by_state](https://comstock.nrel.gov/dataviewer/?datasetName=vizstock_comstock_amy2018_r1_2023_by_state_vu) |	[by_state](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_amy2018_release_1_by_state_vu),<br>Unavailable: by_puma_northeast,<br>Unavailable: by_puma_midwest,<br>Unavailable: by_puma_south,<br>Unavailable: by_puma_west	|	[by_state](https://comstock.nrel.gov/dataviewer?datasetName=vizstock_comstock_tmy3_release_1_by_state_vu),<br>Unavailable: by_puma_northeast,<br>Unavailable: by_puma_midwest,<br>Unavailable: by_puma_south,<br>Unavailable: by_puma_west |
 |	**OEDI Data Lake**	| [OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2024%2Fcomstock_amy2018_release_2%2F) | [OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2024%2Fcomstock_amy2018_release_1%2F) |	[OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2Fcomstock_amy2018_release_2%2F)	|	[OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2023%2Fcomstock_amy2018_release_1%2F)	|	[OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fcomstock_amy2018_release_1%2F)	|	[OEDI Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fcomstock_tmy3_release_1%2F)	|
 |	**Publication Date**	| Dec. 2024  | March 2024  |   Sept. 2023 |   March 2023  |	Oct. 2021	|	Oct. 2021	|
 |	**Release #**	| 2024_2  | 2024_1	|2023_2  |	2023_1	|	2021_1	|	2021_1	|
@@ -74,22 +77,21 @@ OEDI is an energy information portal, and is developed and maintained by the Nat
 
 The ComStock release directory structure of the data lake is summarized in the table, below. For more detailed information about the contents of the ComStock OEDI data lake, visit the [README](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/README.md).
 
-#### OEDI Directory Structure and Contents
+#### OEDI Directory Structure and Contents[^1]
 
-| **Name**                          | **Contents**|
-|-----------------------------------|--------|
-|building_energy_models             | Building energy models, in [OpenStudio](https://www.openstudio.net/) format, that were run to create the dataset.|
-|geographic_information             | Information on various geographies used in the dataset provided for convenience. Includes map files showing the shapes of the geographies (states, PUMAs) used for partitioning and a lookup table mapping between census tracts and various other geographies. |
-|metadata                           | Building characteristics (age, area, HVAC system type, etc.) for each of the building energy models run to create the timeseries data and annual energy results. Descriptions of the characteristics are included in `data_dictionary.tsv`, `enumeration_dictionary.tsv`, and `upgrade_dictionary.tsv`.|
-|timeseries_aggregates              | Aggregate end-use load profiles by building type and geography that can be opened and analyzed in Excel, python, or other common data analysis tools.|
-|timeseries_aggregates_metadata     | Building characteristics for `timeseries_aggregates` building energy models. Follows the same format at `metadata`.|
-|timeseries_individual_buildings    | The raw individual building timeseries data.  **This is a large number of individual files!**|
-|weather                            | Key weather data used as an input to run the building energy models to create the dataset.|
-|citation.txt                       | Citation to use when referencing this work.|
-|data_dictionary.tsv                | Describes the column names found in the metadata and timeseries data files.|
-|enumeration_dictionary.tsv         | Expands the definitions of the enumerations used in the metadata files.|
-|upgrades_lookup.json               | Lookup table with upgrade ID and upgrade name for the given dataset release. |
-|measure_name_crosswalk.csv         | Relates a universal "Measure ID" and the upgrade IDs and upgrade names across dataset releases.
+| **Name**                              | **Contents**|
+|---------------------------------------|-------------|
+|building_energy_models                 | Building energy models, in [OpenStudio](https://www.openstudio.net/) format, that were run to create the dataset.|
+|geographic_information                 | Information on various geographies used in the dataset provided for convenience. Includes map files showing the shapes of the geographies (states, PUMAs) used for partitioning and a lookup table mapping between census tracts and various other geographies. |
+|metadata_and_annual_results            | Building characteristics (age, area, HVAC system type, etc.) and annual results for each building energy models.|
+|metadata_and_annual_results_aggregates | Building characteristics (age, area, HVAC system type, etc.) and annual results aggregated to a specific geography (e.g, state, county, PUMA).|
+|timeseries_aggregates                  | Aggregate end-use load profiles by building type and geography that can be opened and analyzed in Excel, python, or other common data analysis tools.|
+|timeseries_individual_buildings        | The raw individual building timeseries data.  **This is a large number of individual files!**|
+|weather                                | Key weather data used as an input to run the building energy models to create the dataset.|
+|data_dictionary.tsv                    | Describes the column names found in the metadata and timeseries data files.|
+|enumeration_dictionary.tsv             | Expands the definitions of the enumerations used in the metadata files.|
+|upgrades_lookup.json                   | Lookup table with upgrade ID and upgrade name for the given dataset release. |
+|measure_name_crosswalk.csv             | Relates a universal "Measure ID" and the upgrade IDs and upgrade names across dataset releases.|
 
 ### Dataset Naming Convention
 ComStock releases on OEDI and the data viewer use the following naming convention.
@@ -117,10 +119,12 @@ ComStock releases on OEDI and the data viewer use the following naming conventio
 
 The field naming convention is fairly simple. At the highest level there is – “in.” for inputs, “out.” for outputs, “calc.” for calculated fields, then a handful of columns that provide simulation information.
 
-For the "out." prefix there is a second level that includes – fuel type, emissions, model parameter and statistic fields, and site energy. The "in." prefix does not have a second level.
+For the "out." prefix there is a second level that includes – fuel type, emissions, utility bills, model parameter and statistic fields, and total site energy. The "in." prefix does not have a second level.
 
-The third level of “out.” is where you’ll find the end uses.
+The third level of “out.” is where you’ll find the energy consumption for the end uses.
 
 Finally, units are denoted by a “..” with the unit following.
 
 ![](../assets/images/field_naming_convention.png)
+
+[^1]: OEDI file structure for 2024 Release 2 and continuing forward

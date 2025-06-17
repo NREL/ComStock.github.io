@@ -12,7 +12,7 @@ See the table, below, for a complete list of available upgrade measures and pack
 
 The measure documentation describes the modeling methodology, assumptions, relevant ComStock baseline features, and observations from results. The assumptions used for the measures represent one of multiple possible approaches for a technology. They are intended to be reasonable but not necessarily optimal. Assumptions can be modified as our understanding of the technologies improves. The ComStock model is continuously updated with new information, methods, and improved quality assurance/quality control procedures.
 
-New datasets are released in 3-month increments and include new upgrade measures as well as updates to the ComStock baseline model. Each dataset release and new measures are introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Though not presented on the release webinar, each new dataset release includes all existing measures from the previous releases.
+New datasets include new upgrade measures as well as updates to the ComStock baseline model. Some dataset releases and new measures are introduced with a webinar presentation. The webinars provide an overview of the ComStock process, high-level national observations for each new upgrade measure, and guidance for accessing various features of the dataset. Though not presented on the release webinar, each new dataset release includes all existing measures from the previous releases.
 
 In ComStock datasets, the upgrades are assigned an "upgrade_id." This ID may change across dataset releases for a given upgrade. We make a **measure_name_crosswalk.csv** file available that relates the universal "Measure ID" in the table, below, and the upgrade_ids for each release. The **measure_name_crosswalk.csv** is available on the OEDI Data Lake, or you can download the latest file, [here][1].
 
@@ -48,7 +48,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0018  | Heat Pump Rooftop Units With Standard Performance**                                            | 2024 Release 2 |
 | hvac_0019  | Standard Performance Heat Pump Rooftop Unit with New Roof**                                            | 2024 Release 2 |
 | hvac_0020  | Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating**                                            | 2024 Release 2 |
-| hvac_0021  | Cold Climate Heat Pump Rooftop Unit Challenge, 2027 Specification**                                            | 2024 Release 2 |
+| hvac_0021  | Heat Pump Rooftop Units Compliant With the Commercial Building Heat Pump Technology Challenge Specification**                            | 2024 Release 2 |
 | hvac_0022  | Ideal Thermal Air Loads**                                            | 2024 Release 2 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                             | 2023 Release 1 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                               | 2024 Release 1 |
@@ -63,7 +63,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | pkg_0006   | [Comprehensive Geothermal Heat Pump Package, Hydronic GHP, Packaged GHP, or Console GHP](https://www.nrel.gov/docs/fy24osti/89133.pdf)   | 2024 Release 1 |
 | pkg_0007   | Package 6 - Demand Flexibility, Lighting + Thermostat Control, Load Shed for Daily Bldg Peak Reduction**   | 2024 Release 2 |
 
-*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected February 2025
+*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected soon
 
 ## Supplemental Documentation
 [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)

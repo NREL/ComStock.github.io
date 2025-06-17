@@ -3,6 +3,7 @@ layout: default
 title: Electric Kitchen Equipment
 parent: Upgrade Measures
 nav_order: 15
+published: false
 ---
 
 # Electric Kitchen Equipment

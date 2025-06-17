@@ -17,7 +17,7 @@ There are two primary resources to help understand the calibration state and rel
 - Load profile comparisons to AMI data sources, normalized and raw, per region and building type (p. 210–292)
 - Comparisons of annual energy use intensity (EUI) distributions to CBECS and AMI by region and building type (p. 210–292).
 
-2. [ComStock Documentation](https://www.nrel.gov/docs/fy23osti/83819.pdf) provides the methods, assumptions, and data sources used in ComStock.
+2. [ComStock Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references) provides the methods, assumptions, and data sources used in ComStock.
 - Describes assumptions and data sources for each model feature (e.g., How are HVAC system types assigned to models? How are lighting types determined? How are data centers accounted for in offices?)
 - Describes model outputs
 - General reference guide for users.
@@ -81,7 +81,7 @@ Note, however, that several of the assumptions and comparisons made in ComStock�
 <u>Conclusion:</u> According to the ComStock Reference Documentation, the ComStock lighting model is fairly robust and compares reasonably well to other available data sources. Therefore, a user could find ComStock to be appropriate for many use cases regarding LED lighting potential in commercial buildings. However, there are limitations in the detail of the lighting model that should also be considered for specific use cases.
 
 ### Scenario 5: HVAC System Type
-<u>Description:</u> A user wants to understand which HVAC system types should be prioritized for decarbonization. To do this, they want to understand which HVAC systems are most prevalent in commercial buildings.
+<u>Description:</u> A user wants to understand which HVAC system types should be prioritized for retrofit. To do this, they want to understand which HVAC systems are most prevalent in commercial buildings.
 
 <u>Possible Decision Pathway:</u> Section 4.8 in the ComStock Documentation discusses the methodology and data sources behind the HVAC model in ComStock. Because the user is interested in HVAC system prevalence, they would look to sections 4.8.1 and 4.8.2 for understanding the heating fuel type and HVAC system type methodologies in ComStock. These sections explain that ComStock primarily leverages CBECS for determining the prevalence of various HVAC system types in commercial buildings. Heating fuel type is dependent on building type and census division, but also leverages county-level data from NREL’s ResStock™ tool to inform county-level differences. HVAC system type prevalence is dependent on heating fuel type, building type, and census division.
 

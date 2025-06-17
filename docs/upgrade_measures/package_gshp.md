@@ -2,6 +2,7 @@
 layout: default
 title: Ground-source Heat Pump Package
 parent: Upgrade Measures
+published: false
 ---
 
 # Comprehensive Ground Source Heat Pump Package: Central Water-to-Water GSHP + Packaged Water-to-Air GSHP + Console Water-to-Air GSHP

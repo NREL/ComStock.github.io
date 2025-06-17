@@ -23,7 +23,7 @@ hvac_0017,Ground-Coupled Console Water-to-Air Heat Pump,upgrade_hvac_console_gsh
 hvac_0018,Heat Pump Rooftop Units With Standard Performance,upgrade_hvac_add_heat_pump_rtu,4,"Standard Performance HP RTU, Electric Backup",,,,,,
 hvac_0019,Standard Performance Heat Pump Rooftop Unit with New Roof,upgrade_hvac_add_heat_pump_rtu,5,"Standard Performance HP RTU, Electric Backup + Roof Insulation",,,,,,
 hvac_0020,Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating,upgrade_hvac_add_heat_pump_rtu,6,"Standard Performance HP RTU, Electric Backup, 32F Minimum Compressor Lockout",,,,,,
-hvac_0021,"Cold Climate Heat Pump Rooftop Unit Challenge, 2027 Specification",upgrade_hvac_add_heat_pump_rtu,7,"Cold Climate Challenge HP RTU, Electric Backup",,,,,,
+hvac_0021,Heat Pump Rooftop Units Compliant With the Commercial Building Heat Pump Technology Challenge Specification,upgrade_hvac_add_heat_pump_rtu,7,"Cold Climate Challenge HP RTU, Electric Backup",,,,,,
 hvac_0022,Ideal Thermal Air Loads,upgrade_hvac_enable_ideal_air_loads,18,Ideal Thermal Air Loads,,,,,,
 ltg_0001,LED Lighting,upgrade_light_led,27,LED Lighting,21,LED Lighting,10,LED Lighting,5,LED Lighting
 ppl_0001,Electric Cooking Equipment,upgrade_ppl_electric_kitchen_equipment,28,Electric Kitchen Equipment,22,Electric Kitchen Equipment,,,,
