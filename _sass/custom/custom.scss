@@ -133,3 +133,116 @@ p.warning-title, blockquote.warning-title {
   font-weight: bold;
   font-size: 20px;
 }
+
+// add accordion functionality
+
+.accordion {
+  overflow-anchor: none;
+}
+
+.accordion > .card {
+  overflow: hidden;
+}
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.accordion > .card:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion > .card > .card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+ul.jk_accordion {position: relative; margin: 1.4rem 0!important; border-bottom: 1px solid rgba(0,0,0,0.25); padding-bottom: 0;}
+ul.jk_accordion li.acc {list-style: none; margin-left: 0;background-color:#e8e8ea;color:#000; margin-bottom: 0.75rem;}
+ul.jk_accordion li.acc input {display: none;}
+ul.jk_accordion li.acc label {font-weight: bold; display: block; cursor: pointer; padding: 0.75rem 2.4rem 0.75rem 1rem; margin: 0;}
+ul.jk_accordion li.acc div.show {display: none; padding-bottom: 1.2rem;}
+ul.jk_accordion li.acc input:checked + label {font-weight: bold;}
+ul.jk_accordion li.acc input:checked + label + div.show {display: block;}
+ul.jk_accordion li.acc label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
+ul.jk_accordion li.acc input:checked + label::before {transform: rotate(-45deg);}
+.main-content ul.jk_accordion > li.acc::before {
+  content: none;
+}
+
+.show {
+  background-color: white;
+  color: #5C5962;
+  padding: 20px 10px;
+}
+
+// end add accordion functionality
+
+// add image zoom functionality
+// Variables
+$zoom-scale: 1.5;
+$transition-speed: 0.3s;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$z-index-zoomed: 100;
+
+// Mixins
+@mixin zoom-shadow {
+  box-shadow: 0 4px 8px $shadow-color;
+}
+
+@mixin transition-transform {
+  transition: all $transition-speed ease;
+}
+
+// Image zoom styles
+.zoomable {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  @include transition-transform;
+  
+  // Zoomed state
+  &.zoomed {
+    transform: scale($zoom-scale);
+    z-index: $z-index-zoomed;
+    @include zoom-shadow;
+    
+    // Optional: you can add different styles for various screen sizes
+    @media screen and (max-width: 768px) {
+      transform: scale($zoom-scale * 0.8); // Slightly smaller zoom on mobile
+    }
+    
+    @media screen and (max-width: 480px) {
+      transform: scale($zoom-scale * 0.6); // Even smaller on very small screens
+    }
+  }
+  
+  // Optional: Add hover state styles
+  &:hover:not(.zoomed) {
+    transform: scale(1.1);
+  }
+  
+  // Optional: Add focus styles for accessibility
+  &:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+}
+
+// Optional: Container styles if you want to control the image context
+.zoomable-container {
+  position: relative;
+  overflow: visible;
+  
+  .zoomable {
+    // Additional context-specific styles can go here
+    &.zoomed {
+      // Specific positioning or behavior when inside container
+    }
+  }
+}
+
+// end image zoom functionality
