@@ -124,7 +124,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion9" type="checkbox" /><label for="accordion9">What do the codes used to describe "county_id" and other geographic fields mean?</label>
     <div class="show">
-      <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see "<a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">this explanation for ComStock</a>, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanation for ResStock.</a></p>
+      <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">this explanation for ComStock</a>, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanation for ResStock.</a></p>
       <p>In most ComStock and ResStock datasets, county name is available in addition to the GISJOIN county code. For both tools, the column in the metadata_and_annual_results files on OEDI is called "in.county_name."
       </p>
     </div>
@@ -164,11 +164,11 @@ Expand the sections below for answers to frequently asked questions. If you have
         import pandas as pd
         import os
         folder_path = 'C:/Users/username/Documents/EUSS/Results’
-        file_name = ‘813-2’
+        file_name = '813-2'
         suffix = '.parquet'
         file = pd.read_parquet(os.path.join(folder_path, file_name+suffix))
         new_suffix = '.csv'
-        file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
+        file.to_csv(os.path.join(folder_path, file_name+new_suffix), index=False)
         </code></pre>
       </p>
     </div>
@@ -185,6 +185,15 @@ Expand the sections below for answers to frequently asked questions. If you have
 ## Data Viewer
 <ul class="jk_accordion">
 
+  <li class="acc"><input id="accordion41" type="checkbox" /><label for="accordion41">What is the Data Viewer?</label>
+    <div class="show">
+      <p>The Data Viewer is a web-based visualization platform that allows users to easily filter, aggregate, view, and download ComStock end-use energy data in a web browser.</p>
+      <p>Links to Data Viewer visualizations for each dataset release are on the <a href="{{site.baseurl}}{% link docs/data.md %}">Data page</a>.</p>
+      <p>For Data Viewer trainings, visit the <a href="https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS">NREL’s Building Stock Analysis YouTube channel</a>.</p>
+    </div>
+  </li>
+
+  
   <li class="acc"><input id="accordion26" type="checkbox" /><label for="accordion26">In the Data Viewer, what does "sum" or "average" mean?</label>
     <div class="show">
       <p>The "sum" aggregation is the total energy consumption for all buildings that meet the filter criteria across all the occurrences of the given time step within the selected month(s). For example, in a day timeseries range for a specific state for the month of July, the 7-7:15 AM hour time step shows the sum of all energy consumption statewide between 7-7:15 AM in July, from buildings that meet the filter criteria. The "sum" view has fewer uses than the "average" view. The "average" aggregation is the total energy consumption for all buildings that meet the filter criteria, averaged across all the occurrences of the given time step within the selected month(s).</p>
@@ -200,13 +209,13 @@ Expand the sections below for answers to frequently asked questions. If you have
     </div>
   </li>
 
-    <li class="acc"><input id="accordion31" type="checkbox" /><label for="accordion31">Why is the time series data sometimes slow to load after I click the update button?</label>
+  <li class="acc"><input id="accordion40" type="checkbox" /><label for="accordion40">Why is the time series data sometimes slow to load after I click the update button?</label>
     <div class="show">
       <p>We query data in real time to produce the time series graphs you see on the webpage, and this can involve scanning terabytes (TB) of data. Running a baseline-only query for California, Texas, New York, or Illinois takes around a minute, while running a query for a state like Colorado or Massachusetts takes about 10-20 seconds. However, if the graphs have previously been generated we have the data cached and can typically load the data in a few seconds. That's why the load time varies.</p>
     </div>
   </li>
 
-  <li class="acc"><input id="accordion32" type="checkbox" /><label for="accordion32">Why can’t I click on “Explore Timeseries”?</label>
+  <li class="acc"><input id="accordion42" type="checkbox" /><label for="accordion42">Why can’t I click on “Explore Timeseries”?</label>
     <div class="show">
       <p>The “Explore Timeseries” option is available once a specific geography (e.g. state or PUMA region) is selected.</p>
     </div>
@@ -235,7 +244,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion35" type="checkbox" /><label for="accordion35">How can I see the building characteristics associated with an aggregate load profile from the data viewer?</label>
     <div class="show">
       <p>The building characteristics are available on the Open Energy Data Initiative (OEDI) data lake. Visit the <a href="{{site.baseurl}}{% link docs/data.md %}">Data page</a> for links to the OEDI pages for each dataset. In the "metadata_and_annual_results_aggregate" directory on OEDI, navigate to the national file: metadata_and_annual_results_aggregates > national > full > csv > baseline_agg.csv.gz. Download the file, unzip it and open in Microsoft Excel. Use the filters applied on the Data Viewer to filter the spreadsheet.</p>
-      <p>Note that the national file is an “aggregate,” meaning that the data in the file is consolidated by merging duplicate building models within a geography (in this case state), so each building ID appears only once with a combined weight. Columns that cannot be meaningfully aggregated from the tract level—such as Cambium grid region and CEJST designation—are excluded from the resulting low-resolution, “aggregate” files. For more information about the updated OEDI file structure as a result of the new sampling method, please see the "<a href="{{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md %}">New ComStock Sampling Method explanation</a>".</p>
+      <p>Note that the national file is an “aggregate,” meaning that the data in the file is consolidated by merging duplicate building models within a geography (in this case state), so each building ID appears only once with a combined weight. Columns that cannot be meaningfully aggregated from the tract level—such as Cambium grid region and CEJST designation—are excluded from the resulting low-resolution, “aggregate” files. For more information about the updated OEDI file structure as a result of the new sampling method, please see the "<a href="{{site.baseurl}}{% link docs/resources/explanations/new_sampling_method.md %}">New ComStock Sampling Method</a>" explanation.</p>
     </div>
   </li>
 
@@ -254,7 +263,7 @@ Expand the sections below for answers to frequently asked questions. If you have
     <div class="show">
       <p>Our general guidance is to <b>NOT</b> combine measure results. There are interactions between most upgrade measures that affect the amount of savings and make results of multiple measures together misleading.</p>
       <p>For an explanation and examples on this topic, see the linked <a href="{{site.baseurl}}{% link docs/resources/explanations/combining_measure_results.md %}">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Individual_Measures_Not_Combined.html">ResStock</a> resources.</p>
-      <p>If you have questions about combining specific measures, please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a></p>
+      <p>If you have questions about combining specific measures, please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a>.</p>
     </div>
   </li>
 
@@ -299,7 +308,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion11" type="checkbox" /><label for="accordion11">Are there water heater upgrade measures available?</label>
     <div class="show">
       <p>We have not published a service water heating measure due to current water draw profiles in our baseline models. The energy consumed by heat pump water heaters (HPWHs), especially, is sensitive to how quickly the water in the tank is consumed. More specifically, how to design and size a HPWH system greatly relies on realistic water draw profiles to correctly capture when the heat pump heating and, especially, backup heating elements are triggered.</p>
-      <p>If you are aware of water draw profile Fdata, please let email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a>! We are in search of 15-min to hourly water draw profiles for commercial buildings of various types and square footage.</p>
+      <p>If you are aware of water draw profile data, please let email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a>! We are in search of 15-min to hourly water draw profiles for commercial buildings of various types and square footage.</p>
     </div>
   </li>
 
