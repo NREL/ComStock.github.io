@@ -45,11 +45,11 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0015  | [Central Ground-Source Water-to-Water Heat Pump](https://www.nrel.gov/docs/fy24osti/89239.pdf)                                           | 2024 Release 1 |
 | hvac_0016  | [Packaged Water-to-Air Geothermal Heat Pump](https://www.nrel.gov/docs/fy24osti/89131.pdf)                                               | 2024 Release 1 |
 | hvac_0017  | [Ground-Coupled Console Water-to-Air Heat Pump](https://www.nrel.gov/docs/fy24osti/89132.pdf)                                            | 2024 Release 1 |
-| hvac_0018  | Heat Pump Rooftop Units With Standard Performance**                                            | 2024 Release 2 |
-| hvac_0019  | Standard Performance Heat Pump Rooftop Unit with New Roof**                                            | 2024 Release 2 |
+| hvac_0018  | [Heat Pump Rooftop Units With Standard Performance](https://www.nrel.gov/docs/fy25osti/89042.pdf)                                        | 2024 Release 2 |
+| hvac_0019  | [Standard Performance Heat Pump Rooftop Unit with New Roof](https://www.nrel.gov/docs/fy25osti/92618.pdf)                               | 2024 Release 2 |
 | hvac_0020  | Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating**                                            | 2024 Release 2 |
 | hvac_0021  | Heat Pump Rooftop Units Compliant With the Commercial Building Heat Pump Technology Challenge Specification**                            | 2024 Release 2 |
-| hvac_0022  | Ideal Thermal Air Loads**                                            | 2024 Release 2 |
+| hvac_0022  | [Ideal Thermal Air Loads](https://www.nrel.gov/docs/fy25osti/92546.pdf)                                                                 | 2024 Release 2 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                             | 2023 Release 1 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                               | 2024 Release 1 |
 | dr_0001    | [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)                                                     | 2024 Release 1 |
