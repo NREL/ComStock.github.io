@@ -63,7 +63,7 @@ The dataset has been formatted to be accessible in four main ways to meet the ne
 
 Aggregate ComStock datasets can be accessed via the [Open Energy Data Initiative (OEDI) Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F) and the [ComStock data viewer](https://comstock.nrel.gov/). ComStock datasets are published with actual weather data (AMY). In the initial public dataset release (2021_1), there are two versions published: one with AMY weather, and another with typical weather data (TMY3). Note that the TMY3 15-minute energy data should not be used for larger geographies because weather events are not regionally aligned.
 
-For information on how to query the full ComStock dataset, please refer to this [documentation](https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Query_ComStock_Athena.md).
+For information on how to query the full ComStock dataset, please refer to this [documentation](https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Query_ComStock_Athena.md). Please note that the documentation was published nearly five years ago and has not been maintained. While it still contains helpful guidance for querying ComStock results on Athena, it does not reflect the current list of column names or modeled upgrades. For the most up-to-date information, refer to the `data_dictionary.tsv` for available columns and the `upgrades_lookup.json` for upgrade IDs associated with a specific dataset release—both available on OEDI.
 
 Please note, there are separate public datasets available for residential and commercial building stocks. 
 
