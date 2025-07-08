@@ -24,9 +24,11 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 [Frequently Asked Questions]({{site.baseurl}}{% link docs/faq.md %}){: .btn .btn-uo .white-text} &mdash; Answers to common questions are available on the [FAQ page]({{  site.baseurl  }}{% link docs/faq.md %}).
 
-For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf).
+[Introductory Slide Deck](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .btn .btn-uo .white-text} &mdash; For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf).
 
-For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
+[One-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf){: .btn .btn-uo .white-text} &mdash; For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
+
+[Join Our Mailing List](https://www.nrel.gov/buildings/end-use-load-profiles#contact){: .btn .btn-uo .white-text}
 
 ## What Does ComStock Do?
 
