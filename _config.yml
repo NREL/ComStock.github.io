@@ -1,6 +1,5 @@
 title: ComStock
 description: ComStock Documentation
-# theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 url: https://github.com/NREL/ComStock.github.io
 logo: "/assets/images/ComStock_color_hort-transparent.png"
@@ -30,9 +29,10 @@ callouts:
   othermedia:
     color: grey-dk
     opacity: 0.1
+plugins:
+  - jekyll-remote-theme
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 ga_tracking: G-D7EWHC7BS0
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
