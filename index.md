@@ -13,6 +13,10 @@ The commercial building sector stock model, or ComStock™, is a highly granular
 
 ComStock asks and answers two questions: **(1) How is energy used in the U.S. building stock?** and **(2) What are the impacts of energy saving technologies?** 
 
+{:refdef: style="text-align: center;"}
+[Join Our Mailing List](https://www.nrel.gov/buildings/end-use-load-profiles#contact){: .btn .btn-blue .white-text}
+{:refdef}
+
 ## Quick Links
 [Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
 
@@ -27,8 +31,6 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 [Introductory Slide Deck](https://www.nrel.gov/docs/fy23osti/86634.pdf){: .btn .btn-uo .white-text} &mdash; For an in-depth overview of ComStock, please review our [annotated introductory slide deck](https://www.nrel.gov/docs/fy23osti/86634.pdf).
 
 [One-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf){: .btn .btn-uo .white-text} &mdash; For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
-
-[Join Our Mailing List](https://www.nrel.gov/buildings/end-use-load-profiles#contact){: .btn .btn-uo .white-text}
 
 ## What Does ComStock Do?
 

@@ -9,7 +9,7 @@ has_toc: false
 # Resources
 {: .fw-500 }
 
-This section provides tutorials, how-to guides explanations and reference material designed to aid users in answering questions about the ComStock dataset.
+This section provides tutorials, how-to guides, explanations and reference material designed to aid users in answering questions about the ComStock dataset.
 
 ## Tutorials
 This section provides lessons for understanding certain capabilities and functions of ComStock, as well as for learning a specific analysis skill.
