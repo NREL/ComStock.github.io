@@ -29,6 +29,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | env_0003   | [Secondary Window System]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_secondary_window.md %})                                  | 2023 Release 1 |
 | env_0004   | [Window Film]({{site.baseurl}}{% link docs/upgrade_measures/env_window_film.md %})                                                       | 2023 Release 1 |
 | env_0005   | [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %})                                     | 2023 Release 1 |
+| env_0006   | Upgrade Envelope to Latest Code**                                     | 2025 Release 2 |
 | hvac_0001  | [Air-Source Heat Pump Boiler](https://www.nrel.gov/docs/fy24osti/86199.pdf)                                                              | 2023 Release 1 |
 | hvac_0002  | [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup](https://www.nrel.gov/docs/fy24osti/87536.pdf)                                | 2023 Release 2 |
 | hvac_0003  | [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/upgrade_measures/hvac_doas_mshp.md %})                                    | 2023 Release 1 |
@@ -39,6 +40,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0008  | [Exhaust Air Heat/Energy Recovery](https://www.nrel.gov/docs/fy24osti/87542.pdf)                                                         | 2023 Release 2 |
 | hvac_0009  | [Economizers](https://www.nrel.gov/docs/fy24osti/86105.pdf)                                                                              | 2024 Release 1 |
 | hvac_0010  | [Variable Refrigerant Flow With 25% Upsizing Allowance for Heating](https://www.nrel.gov/docs/fy24osti/89040.pdf)                        | 2024 Release 1 |
+| hvac_0011  | Standard Performance Heat Pump Rooftop Unit with New Windows**                                | 2025 Release 1 |
 | hvac_0012  | [Improved Fan Scheduling and Control of Outdoor Air During Unoccupied Periods](https://www.nrel.gov/docs/fy24osti/89120.pdf)             | 2024 Release 1 |
 | hvac_0013  | [Heat Pump RTU with Exhaust Air Energy Recovery](https://www.nrel.gov/docs/fy24osti/89481.pdf)                                           | 2024 Release 1 |
 | hvac_0014  | [Advanced Rooftop Unit Control](https://www.nrel.gov/docs/fy24osti/89117.pdf)                                                            | 2024 Release 1 |
@@ -56,8 +58,10 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0026  | Condensing Gas Boilers**                                                     | 2025 Release 1 |
 | hvac_0027  | Electric Resistance Boilers**                                                     | 2025 Release 1 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                             | 2023 Release 1 |
+| ltg_0002   | Lighting Controls**                                                                             | 2025 Release 2 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                               | 2024 Release 1 |
 | gen_0001   | Photovoltaics With 40% Rooftop Coverage**                | 2025 Release 1 |
+| gen_0002   | Photovoltaics With 40% Rooftop Coverage and Battery Storage**                | 2025 Release 2 |
 | dr_0001    | [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)                                                     | 2024 Release 1 |
 | dr_0002    | [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)                                                     | 2024 Release 1 |
 | dr_0003    | Lighting Control for Load Shedding**                                                     | 2024 Release 2 |
@@ -79,6 +83,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | pkg_0009   | Demand Flexibility, Lighting + Thermostat Control, Load Shed for Daily Bldg Peak Reduction**   | 2024 Release 2 |
 | pkg_0010   | Geothermal Heat Pumps + High -Efficiency Envelope Package**   | 2025 Release 1 |
 | pkg_0011   | Geothermal Heat Pumps + High -Efficiency Envelope + LED Lighting Package**   | 2025 Release 1 |
+| pkg_0012   | Photovoltaics With 40% Rooftop Coverage with New Roof**   | 2025 Release 2 |
 
 *Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected soon
 
