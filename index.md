@@ -32,6 +32,14 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 
 [One-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf){: .btn .btn-uo .white-text} &mdash; For a high-level overview of the tool, see our [one-pager](https://www.nrel.gov/docs/fy24osti/88168.pdf).
 
+## Who Uses ComStock?
+Learn who is using the data and how with the in-depth [user summary snapshot]({{  site.baseurl  }}{% link assets/files/NREL-Bldgs-BuildStock_infographic-FY25.pdf %}). A shorter version of this information is seen below.
+
+{:refdef: style="text-align: center;"}
+![](assets/images/BuildStock_Engagement_Highlight_Slide_1.png){:width="700"}
+{:refdef}
+
+
 ## What Does ComStock Do?
 
 The ComStock data sets identify where energy is being consumed geographically, in what building types and end uses, and at what times of day. Simultaneously, it identifies the impact of efficiency measures: how much energy do efficiency measures save; where, or in what use cases do measures save energy; when, or at what time of day do savings occur; and which building stock segments have the biggest savings potential.
