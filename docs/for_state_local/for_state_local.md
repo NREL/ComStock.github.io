@@ -9,10 +9,10 @@ has_toc: false
 # For State and Local Government Users
 {: .fw-500 }
 
-_words intro..._
+This page is designed to support state and local government users in applying ComStock to their energy and planning efforts. Here, you’ll find analysis products developed by the ComStock team that highlight insights at regional and local scales. You’ll also find user guides and resources to help you conduct your own analyses, so you can tailor ComStock data to the unique needs of your community.
 
-## Example ComStock Analyses for State and Local Government Users
-wordage...
+## ComStock Analysis Products
+Explore analysis products from the ComStock team that provide regional and local insights. These also provide examples demonstrating how the data can be used to support decision-making.
 
 ### Building Segmentation Analysis 
 The U.S. Department of Energy has developed a series of reports that provide commercial and multifamily building characteristic and energy data for 88 local geographies, with the intention of helping policymakers at the city, county and state levels better understand commercial and multifamily building energy use. [Learn more]({{site.baseurl}}{% link docs/for_state_local/segmentation.md%}).
