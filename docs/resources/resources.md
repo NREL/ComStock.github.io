@@ -18,7 +18,7 @@ This section provides lessons for understanding certain capabilities and functio
 - [Perform an analysis by blending ComStock and local data]({{  site.baseurl  }}{% link docs/resources/tutorials/local_segmentation_study.md %})
 
 ## How-to Guides
-This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question. 
+This section provides a collection of step-by-step guides for using the ComStock dataset to answer a given question.
 
 - [Access the ComStock datasets programmatically]({{  site.baseurl  }}{% link docs/resources/how_to_guides/example_scripts.md %})<span class="label label-green">UPDATE</span>
 - [Filter the building characteristics dashboard for a county]({{  site.baseurl  }}{% link docs/resources/how_to_guides/characteristics_dashboard.md %})
@@ -59,6 +59,14 @@ The [ComStock Tableau Public page](https://public.tableau.com/app/profile/comsto
 -   [ComStock Building Characteristics Dashboard](https://public.tableau.com/app/profile/comstock.nrel/viz/ComStockBuildingCharacteristicsDashboard/Introduction)
 
 For ResStock Tableau dashboards, please visit the [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes).
+
+## Download and Merge Parquet Data
+<div id="parquet-merge"></div>
+
+{% assign bundle = site.static_files | where_exp:"f","f.name contains 'parquet-merge-'" | first %}
+
+<script src="{{ bundle.path | relative_url }}"></script>
+
 
 ## References
 These documents describe various aspects of ComStock, including the baseline and upgrade model documentation, as well as geographic clustering methodology.
