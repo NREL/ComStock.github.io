@@ -47,4 +47,4 @@ The geographic clusters are formed on a county basis and depend on building type
 - Topic 2 California reports were not published due to a [known issue]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %}) in the dataset. This issue is in progress of being resolved and does not affect multifamily buildings. 
 
 
-[1]:../../../assets/files/building_segmentation_analysis_report_links.csv
+[1]:../../assets/files/building_segmentation_analysis_report_links.csv
