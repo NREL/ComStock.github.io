@@ -36,7 +36,7 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 Learn who is using the data and how with the in-depth [user summary snapshot]({{  site.baseurl  }}{% link assets/files/NREL-Bldgs-BuildStock_infographic-FY25.pdf %}). A shorter version of this information is seen below.
 
 {:refdef: style="text-align: center;"}
-![](assets/images/BuildStock_Engagement_Highlight_Slide_1.png){:width="700"}
+![](assets/images/BuildStock_Engagement_Highlight_Slide_1.svg){:width="700"}
 {:refdef}
 
 
