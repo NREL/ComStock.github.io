@@ -11,7 +11,8 @@ nav_order: 7
   <summary class="pub-header">NREL Reports, Papers, Presentations, and Webinar Recordings</summary>
 
   <details markdown="block" class="level2-collapse-section" open><summary class="pub-header">Reports and Papers</summary>
-  
+  [Andrew Speake and Andrew Parker (2024)](https://docs.nrel.gov/docs/fy25osti/90443.pdf){: .pub-link}. Presents a new framework that leverages building stock energy modeling to identify building models that align with the load shapes and housing attributes of buildings with AMI data.<br>DOI: 10.2172/2481056
+
   [Griffith Keating et al. (2024)](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722163107203_39ce898e-e298-43a9-ba7c-bf333e0f4ad5.pdf){: .pub-link}. Development and application of a load forecasting tool using publicly available building stock model datasets for an independent system operator (ISO). Using the tool, the ISO investigated the energy and demand impacts of heating electrification in their region.
   
   [Jared Landsman et al. (2024)](https://www.aceee.org/sites/default/files/proceedings/ssb24/pdfs/Leveraging%20NREL%E2%80%99s%20ResStock%20&%20ComStock%20Dataset%20to%20Evaluate%20Building%20Stock%20Electrification.pdf){: .pub-link}. Specific, real-world applications of ResStock and ComStock including California codes and standards cost-effectiveness analysis, New York City affordable housing retrofit cost gap analysis, and California targeted retrofit analysis.
