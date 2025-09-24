@@ -110,3 +110,7 @@ systems, and the presence of cooking equipment to separate buildings into catego
 **May 2024**
 
 </details>
+
+## User Engagement Material
+
+- [BuildStock Listening Session]({{  site.baseurl  }}{% link assets/files/20250924_BuildStock Listening Session.pdf %})
