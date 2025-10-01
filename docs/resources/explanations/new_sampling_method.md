@@ -8,7 +8,7 @@ nav_order: 8
 # New ComStock Sampling Method
 ComStock™ uses statistical sampling methods to generate building energy models that represent the U.S. commercial building stock.
 
-Beginning with Standard Dataset Release (SDR) 2024 Release 2, ComStock datasets use an improved sampling methodology. The update delivers several improvements that enhance ComStock’s usability and expand its applicability. One key advancement is higher spatial granularity, which allows for more accurate representation of smaller geographies, such as cities and towns. This improvement enables users to conduct more detailed analyses at the city or community level, supporting use cases like localized energy planning and building stock assessments.
+Beginning with Standard Dataset Release (SDR) 2024 Release 2, ComStock datasets use an improved sampling methodology. The update delivers several improvements that enhance ComStock’s usability and expand its applicability. One key advancement is higher spatial granularity, which allows for more accurate representation of smaller geographies, such as cities and towns. This improvement enables users to conduct more detailed analyses at the city level, supporting use cases like localized energy planning and building stock assessments.
 
 These updates also streamline analyses by reducing the need to manually reweight samples for smaller geographic regions. This change reduces user workload while improving the reliability of results. Additionally, the dataset now includes better representation of rural areas, addressing a gap in previous dataset releases and ensuring more comprehensive insights across diverse geographies.
 
