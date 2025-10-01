@@ -9,7 +9,7 @@ has_toc: false
 # For State and Local Government Users
 {: .fw-500 }
 
-This page is designed to support state and local government users in applying ComStock to their energy and planning efforts. Here, you’ll find analysis products developed by the ComStock team that highlight insights at regional and local scales. You’ll also find user guides and resources to help you conduct your own analyses, so you can tailor ComStock data to the unique needs of your community.
+This page is designed to support state and local government users in applying ComStock to their energy and planning efforts. Here, you’ll find analysis products developed by the ComStock team that highlight insights at regional and local scales. You’ll also find user guides and resources to help you conduct your own analyses, so you can tailor ComStock data to the unique needs of your local building stock.
 
 ## ComStock Analysis Products
 Explore analysis products from the ComStock team that provide regional and local insights. These also provide examples demonstrating how the data can be used to support decision-making.
