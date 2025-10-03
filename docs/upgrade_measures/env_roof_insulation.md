@@ -28,7 +28,7 @@ The roof insulation measure demonstrates 3% (112 TBtu) aggregate site energy sav
 -   3% (21 TBtu) electricity cooling site energy savings
 -   1% (5 TBtu) electricity fan site energy savings.
 
-ComStock simulation results also suggest greenhouse gas emissions savings for the roof insulation scenario of between 2.2% (10 MMT; *Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year*) and 2.4% (9 MMT; *LRMER Low RE Cost 15*-*Year*) combined for all fuel types based on the electricity grid scenario chosen. This analysis presents greenhouse gas emissions results for three of many available grid emissions data sources but does not attempt to provide any preference on which grid scenario is most appropriate for any given use case.
+<!ComStock simulation results also suggest greenhouse gas emissions savings for the roof insulation scenario of between 2.2% (10 MMT; *Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year*) and 2.4% (9 MMT; *LRMER Low RE Cost 15*-*Year*) combined for all fuel types based on the electricity grid scenario chosen. This analysis presents greenhouse gas emissions results for three of many available grid emissions data sources but does not attempt to provide any preference on which grid scenario is most appropriate for any given use case.>
 
 # 1.  Roof Insulation
 ## 1.1.  Accessing Results
@@ -159,8 +159,7 @@ Functionally, this measure increases the insulation value of roof surfaces such 
 
 The roof insulation measure is applicable to all roof surfaces with R-values below the target AEDG R-values (Table 5). For ComStock, only roofs that follow the ComStock 90.1-2013 energy code during the last roof replacement (or installation) have R-values that meet or exceed the AEDG suggestions, which is a very small portion of the commercial building stock modeled in ComStock (Figure 2). Therefore, this measure is widely applicable, covering over 99% of the ComStock floor area.
 
-<!
-## 4.2.  Greenhouse Gas Emissions
+<! ## 4.2.  Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the roof insulation scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kilowatt-hour. Two scenarios—*Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year* and *LRMER Low RE Cost 15-Year*—use the Cambium data set, and the last uses the eGrid data set [4], [5]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emissions scenario, but other analysis suggests the choice of grid emission scenario can impact results [6]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 7, which are from Table 7.1.2(1) of draft ANSI/RESNET/ICCC 301 [7]. For comparing total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
@@ -169,8 +168,7 @@ Table 7. On-Site Fossil Fuel Emissions Factors
 | **Natural gas**  | 147.3 lb/mmbtu (228.0 kg/MWh)  |
 |------------------|--------------------------------|
 | **Propane**      | 177.8 lb/mmbtu (182.3 kg/MWh)  |
-| **Fuel oil**     | 195.9 lb/mmbtu (303.2 kg/MWh)  | 
->
+| **Fuel oil**     | 195.9 lb/mmbtu (303.2 kg/MWh)  |>
 
 ## 4.2.  Limitations and Concerns
 
