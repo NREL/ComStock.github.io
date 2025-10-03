@@ -13,9 +13,9 @@ Authors: Lauren Adams and Chris CaraDonna
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy’s ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
-The goal of this work is to develop energy efficiency, electrification, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. “Measures” refers to energy efficiency variables that can be applied to buildings during modeling.
+The goal of this work is to develop energy efficiency and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. “Measures” refers to energy efficiency variables that can be applied to buildings during modeling.
 
-An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency, electrification, or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
+An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
 
 ComStock is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations to estimate the annual subhourly energy consumption of the commercial building stock across the United States. The baseline model intends to represent the U.S. commercial building stock as it existed in 2018. The methodology and results of the baseline model are discussed in the final technical report of the [End-Use Load Profiles](https://www.nrel.gov/buildings/end-use-load-profiles.html) project.
 
@@ -28,7 +28,7 @@ The roof insulation measure demonstrates 3% (112 TBtu) aggregate site energy sav
 -   3% (21 TBtu) electricity cooling site energy savings
 -   1% (5 TBtu) electricity fan site energy savings.
 
-ComStock simulation results also suggest greenhouse gas emissions savings for the roof insulation scenario of between 2.2% (10 MMT; *Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year*) and 2.4% (9 MMT; *LRMER Low RE Cost 15*-*Year*) combined for all fuel types based on the electricity grid scenario chosen. This analysis presents greenhouse gas emissions results for three of many available grid emissions data sources but does not attempt to provide any preference on which grid scenario is most appropriate for any given use case.
+<!--ComStock simulation results also suggest greenhouse gas emissions savings for the roof insulation scenario of between 2.2% (10 MMT; *Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year*) and 2.4% (9 MMT; *LRMER Low RE Cost 15*-*Year*) combined for all fuel types based on the electricity grid scenario chosen. This analysis presents greenhouse gas emissions results for three of many available grid emissions data sources but does not attempt to provide any preference on which grid scenario is most appropriate for any given use case.-->
 
 # 1.  Roof Insulation
 ## 1.1.  Accessing Results
@@ -159,7 +159,7 @@ Functionally, this measure increases the insulation value of roof surfaces such 
 
 The roof insulation measure is applicable to all roof surfaces with R-values below the target AEDG R-values (Table 5). For ComStock, only roofs that follow the ComStock 90.1-2013 energy code during the last roof replacement (or installation) have R-values that meet or exceed the AEDG suggestions, which is a very small portion of the commercial building stock modeled in ComStock (Figure 2). Therefore, this measure is widely applicable, covering over 99% of the ComStock floor area.
 
-## 4.2.  Greenhouse Gas Emissions
+<!-- ## 4.2.  Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the roof insulation scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kilowatt-hour. Two scenarios—*Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year* and *LRMER Low RE Cost 15-Year*—use the Cambium data set, and the last uses the eGrid data set [4], [5]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emissions scenario, but other analysis suggests the choice of grid emission scenario can impact results [6]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 7, which are from Table 7.1.2(1) of draft ANSI/RESNET/ICCC 301 [7]. For comparing total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
@@ -168,9 +168,9 @@ Table 7. On-Site Fossil Fuel Emissions Factors
 | **Natural gas**  | 147.3 lb/mmbtu (228.0 kg/MWh)  |
 |------------------|--------------------------------|
 | **Propane**      | 177.8 lb/mmbtu (182.3 kg/MWh)  |
-| **Fuel oil**     | 195.9 lb/mmbtu (303.2 kg/MWh)  |
+| **Fuel oil**     | 195.9 lb/mmbtu (303.2 kg/MWh)  |-->
 
-## 4.3.  Limitations and Concerns
+## 4.2.  Limitations and Concerns
 
 The are no notable concerns with this measure.
 
@@ -191,7 +191,7 @@ Table 8. Output Variables Calculated From the Measure Application
 
 Results are presented in this section both at the stock level and for individual buildings through savings distributions. Stock-level results include the combined aggregate impact of all the analyzed buildings in ComStock, including buildings that are not applicable to the roof insulation measure, and therefore do not represent the energy savings of a particular building. Stock-level results should not be interpreted as the savings that a building might realize by implementing the roof insulation strategy.
 
-Furthermore, total site energy savings are presented and can be a useful metric, but this metric on its own can have limitations for drawing conclusions. Further context should be considered because site energy savings alone do not necessarily translate proportionally to savings for a particular fuel type (e.g., gas or electricity), source energy savings, cost savings, or greenhouse gas savings. This is especially important when a measure impacts multiple fuel types or causes decreased consumption in one fuel type and increased consumption for another. Many factors should be considered when analyzing the impact of an energy efficiency or electrification strategy, depending on the use case.
+Furthermore, total site energy savings are presented and can be a useful metric, but this metric on its own can have limitations for drawing conclusions. Further context should be considered because site energy savings alone do not necessarily translate proportionally to savings for a particular fuel type (e.g., gas or electricity), source energy savings, or cost savings. This is especially important when a measure impacts multiple fuel types or causes decreased consumption in one fuel type and increased consumption for another. Many factors should be considered when analyzing the impact of an energy efficiency strategy, depending on the use case.
 
 ## 6.1.  Energy Impacts
 
@@ -202,7 +202,7 @@ The roof insulation measure demonstrates 3% (112 TBtu) aggregate site energy sav
 -   3% (21 TBtu) electricity cooling site energy savings
 -   1% (5 TBtu) electricity fan site energy savings.
 
-The heating savings are due to higher roof R-values decreasing the heating load on the building. Gas and electricity heating show similar percent site energy savings, but the natural gas heating savings are approximately double the electricity savings due to the relatively higher prevalence of natural gas heating energy in the U.S. commercial building stock. Note, however, that site energy savings between electricity and natural gas may not correspond proportionally to energy cost savings, source energy savings, or greenhouse gas emissions. Electricity savings are also realized due to decreased envelope cooling loads. However, the savings are relatively less for cooling than for heating. This is due in part to much of a building’s cooling load occurring from heat generated within the building, which increased roof insulation would not necessarily help. Furthermore, the temperature difference between the indoor thermostat setpoint and the most extreme outdoor temperatures will often be much higher for heating than for cooling, which may also increase the effectiveness of insulation measure for heating versus cooling. Fans also show some electricity savings, which is primarily attributed to overall decreased heating and cooling loads, which can reduce the amount of time HVAC fans need to cycle on to maintain zone thermostat setpoints (for HVAC systems that include cycling fan operation).
+The heating savings are due to higher roof R-values decreasing the heating load on the building. Gas and electricity heating show similar percent site energy savings, but the natural gas heating savings are approximately double the electricity savings due to the relatively higher prevalence of natural gas heating energy in the U.S. commercial building stock. Note, however, that site energy savings between electricity and natural gas may not correspond proportionally to energy cost savings, or source energy savings. Electricity savings are also realized due to decreased envelope cooling loads. However, the savings are relatively less for cooling than for heating. This is due in part to much of a building’s cooling load occurring from heat generated within the building, which increased roof insulation would not necessarily help. Furthermore, the temperature difference between the indoor thermostat setpoint and the most extreme outdoor temperatures will often be much higher for heating than for cooling, which may also increase the effectiveness of insulation measure for heating versus cooling. Fans also show some electricity savings, which is primarily attributed to overall decreased heating and cooling loads, which can reduce the amount of time HVAC fans need to cycle on to maintain zone thermostat setpoints (for HVAC systems that include cycling fan operation).
 
 {:refdef: style="text-align: center;"}
 ![](media/295d1c520e99cde1143fc6ce7c188410.jpeg){:width="600"}
@@ -236,7 +236,7 @@ Table 9. Summary of Roof Insulation Measure for Comstock Baseline
 
 ![](media/8d9229694413bdc8f5321a544038f684.png){:width="600"}
 
-## 6.2.  Stock Greenhouse Gas Emissions Impact
+<!--## 6.2.  Stock Greenhouse Gas Emissions Impact
 
 ComStock simulation results suggest greenhouse gas emissions savings for the roof insulation scenario of between 2.2% (10 MMT; *LRMER High RE Cost 15*) and 2.4% (9 MMT; *LRMER Low RE Cost 15*) across all fuel types based on the electricity grid scenario chosen. The emissions savings for the various fuel types are attributed to reductions in heating and cooling loads from increased roof insulation, as previously discussed. The *LRMER High RE Cost 15* scenario shows the highest total greenhouse gas emissions savings of a combined 10 MMT. This is because this scenario assumes higher costs for renewable energy, and therefore lower prevalence of it, which can cause higher grid emissions factors (the emission associated with a kilowatt-hour of electricity) for electricity. However, the lowest total greenhouse gas emissions would occur using the *LRMER Low RE Cost 15* scenario because it assumes the highest penetration of grid renewable energy, and therefore has the lowest greenhouse gas emissions factors. Note that this analysis presents just three of many available electricity grid greenhouse gas emissions scenarios, but provides no analysis as to which electricity scenario is most appropriate for any particular use case.
 
@@ -248,9 +248,9 @@ ComStock simulation results suggest greenhouse gas emissions savings for the roo
 Figure 8. Greenhouse gas emissions comparison of the ComStock baseline and the roof insulation scenario
 {:refdef}
 
-Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.
+Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.-->
 
-## 6.3.  Site Energy Savings Distributions
+## 6.2.  Site Energy Savings Distributions
 
 ComStock building models demonstrate 2%–5% total site energy savings for the 25th and 75th percentiles of the savings distributions with the applied roof insulation measure compared to the ComStock baseline (representing the existing building stock; Figure 6). The site energy percent savings for the various fuel types modeled in ComStock are also shown in Figure 6, with the on-site combustion fuels showing the highest median and mean savings. This aligns with previously discussed findings that show heating as having the highest percent savings of all end uses. Heating savings are also captured in the electricity end use, but heating makes up a relatively smaller portion of total electricity energy than it does for total gas energy (Figure 4), which mitigates the impact on a percent savings calculation. The electricity savings distribution also captures the previously discussed cooling and fan energy savings.
 
@@ -288,9 +288,11 @@ The dots appearing above some distributions indicate the location of data points
 
 [4] “Cambium \| Energy Analysis \| NREL.” [Online]. Available: [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). [Accessed: 02-Sep-2022].
 
+<!--
 [5] “Emissions & Generation Resource Integrated Database (eGRID) \| US EPA.” [Online]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). [Accessed: 02-Sep-2022].
 
 [6] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022.
+-->
 
 [7] G. Vijayakumar *et al.*, “ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index,” Oceanside, CA, 2022.
 
