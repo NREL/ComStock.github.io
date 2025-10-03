@@ -13,9 +13,9 @@ Authors: Chris CaraDonna and Andrew Parker
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
-The goal of this work is to develop energy efficiency, electrification, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
+The goal of this work is to develop energy efficiency and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
 
-An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency, electrification, or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
+An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
 
 ComStock is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations to estimate the annual subhourly energy consumption of the commercial building stock across the United States. The baseline model intends to represent the U.S. commercial building stock as it existed in 2018. The methodology and results of the baseline model are discussed in the final technical report of the [End-Use Load Profiles](https://www.nrel.gov/buildings/end-use-load-profiles.html)
 project.
@@ -36,9 +36,9 @@ TBtu) for the U.S. commercial building stock modeled in ComStock (Figure
 -   6% (39 TBtu) electricity cooling site energy savings
 
 -   8.7% (52 kBtu) fan electricity site energy savings.
-
+<!--
 Furthermore, the DOAS MSHP measure shows combined greenhouse gas emissions avoided (across fuel sources) for the DOAS MSHP scenario of between 3.5% (16 MMT; Long-Run Marginal Emissions Rate High Renewable Energy Cost 15) and 3.6% (14 MMT; eGRID), depending on the grid scenario chosen.
-
+-->
 # Acknowledgments
 
 The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless and the ComStock team, particularly Andrew Parker and Edwin Lee.
@@ -238,7 +238,7 @@ Figure 8. DOAS temperature set point recommendations form ASHRAE DOAS Design Gui
 {:refdef}
 
 A sensible effectiveness of 82% is applied to the HRVs, mirroring the recommendations by NEEA and other studies on the topic \[1\]. Because these systems use an aluminum exchanger with no moisture transfer, 0% latent effectiveness is used. A sensible effectiveness of 78% is applied to ERVs, which is slightly lower than that of the HRVs because the moisture-transferring membrane in ERVs can be less effective at transferring heat than the aluminum construction of HRVs. A latent effectiveness of 65% is used for the ERVs, which is the middle of the typical range suggested by the ASHRAE HVAC Handbook \[7\].
-
+<!--
 ## 4.3  Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the window replacement scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kWh. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the last uses the eGrid data set \[11\], \[12\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emission scenario, but other analysis suggests that the choice of grid emission scenario can impact results \[13\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 4, which are from Table 7.1.2(1) of draft American National Standards Institute (ANSI)/Residential Energy Services Network (RESNET)/International Code Council (ICC) 301 \[14\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
@@ -251,8 +251,8 @@ Table 3. On-Site Fossil Fuel Emissions Factors 
 | **Natural gas** | 147.3 lb/MMbtu (228.0 kg/MWh)  |
 | **Propane** | 177.8 lb/MMbtu (182.3 kg/MWh)  |
 | **Fuel oil** | 195.9 lb/MMbtu (303.2 kg/MWh) |
-
-## 4.4  Limitations and Concerns
+-->
+## 4.3  Limitations and Concerns
 
 Limited data exists for comprehensive performance maps for heat pump systems. The performance maps used in this study were derived from lab testing data, but generally exceed the performance of other available data points from NEEP's cold climate heat pump list \[8\], even for premium units. Part of this can be explained simply by comparing different units. Additionally. the EnergyPlus® COP data compares compress-only COP values that do not include supply fans. Overestimating the performance of the MSHPs can show savings beyond what is reasonable for available units. Expanding the body of data for MSHP performance maps, especially higher-efficiency variable speed systems, can enhance this type of modeling work and increase confidence in the modeled results. Performance maps can be very influential to heat pump modeling results.
 
@@ -302,7 +302,7 @@ Table 4. Output Variables Calculated From the Measure Application
 
 In this section, results are presented both at the stock level and for individual buildings through savings distributions. Stock-level results include the combined impact of all the analyzed buildings in ComStock, including buildings that are not applicable to this measure. Therefore do not represent the energy savings of a particular building. Stock-level results should not be interpreted as the savings that a building might realize by implementing the DOAS MSHP measure.
 
-Total site energy savings are also presented in this section. Total site energy savings can be a useful metric, especially for quality assurance/quality control (QAQC), but this metric on its own can have limitations for drawing conclusions. Further context should be considered, as site energy savings alone do not necessarily translate proportionally to savings for a particular fuel type (e.g., gas or electricity), source energy savings, cost savings, or greenhouse gas savings. This is especially important when a measure impacts multiple fuel types or causes decreased consumption of one fuel type and increased consumption of another. Many factors should be considered when analyzing the impact of an energy efficiency or electrification strategy, depending on the use case.
+Total site energy savings are also presented in this section. Total site energy savings can be a useful metric, especially for quality assurance/quality control (QAQC), but this metric on its own can have limitations for drawing conclusions. Further context should be considered, as site energy savings alone do not necessarily translate proportionally to savings for a particular fuel type (e.g., gas or electricity), source energy savings, or cost savings. This is especially important when a measure impacts multiple fuel types or causes decreased consumption of one fuel type and increased consumption of another. Many factors should be considered when analyzing the impact of an energy efficiency or electrification strategy, depending on the use case.
 
 ## 6.1 Single Building Example
 
@@ -373,7 +373,7 @@ The site gas heating savings are attributed to switching applicable gas-heated s
 The site cooling electricity also shows savings. The cause of this is fourfold: (1) The MSHPs have very high SEER ratings (over 30), and will generally exceed the cooling efficiency of the replaced baseline RTUs. (2) The DX system in the DOAS uses energy code efficiencies from ASHRAE-90.1, which will also generally outperform the baseline RTU DX efficiencies. (3) The ERV or HRV in the DOAS reduces cooling loads for the incoming ventilation air, whereas the baseline RTUs only have ERVs or HRVs if they were required by the code year during the last HVAC replacement. (4) The MSHPs have variable speed fans, and generally lower fan power, which reduces the waste heat in the airstream off the fan motor potentially causing a small reduction in cooling consumption.
 
 Lastly, the heat recovery end use shows an increase in energy consumption. This is due to the energy required for the enthalpy wheel in ERV systems. By adding more ERV systems, the aggregate energy consumption for this end use increases. However, heat recovery energy consumption is relatively small, both at the individual building level and the stock level.
-
+<!--
 ## 6.3  Stock Greenhouse Gas Emissions Impact
 
 ComStock simulation results suggest that the combined greenhouse gas emissions avoided (across fuel sources) for the DOAS MSHP scenario are between 3.5% (16 MMT; LRMER High RE Cost 15) and 3.6% (14 MMT; eGRID), depending on the grid scenario chosen. Emissions reported are for equivalent CO<sub>2</sub>. The savings are due to the previously discussed energy savings impacts. Emissions avoided from on-site fossil fuel consumption are primarily due to switching existing gas RTUs in the ComStock baseline to electric heated units. Electricity emissions avoided are due to fan energy savings, cooling savings, ventilation load reduction savings from the ERV, and switching less efficient electric resistance RTUs to higher-efficiency DOAS MSHP systems. The LRMER High RE Cost 15 scenario shows the highest total greenhouse gas emissions savings: a combined (across fuel types) 15 MMT. This is because this scenario assumes higher costs for RE, and therefore lower prevalence of it, which can cause higher grid emissions factors (the emissions associated with a kWh of electricity) for electricity. However, the lowest total greenhouse gas emissions occur with the "LRMER Low RE Cost 15" scenario, as it assumes the highest penetration of grid renewable energy, and therefore has the lowest greenhouse gas emissions factors. Note that this analysis presents just three of many available electricity grid greenhouse gas emissions scenarios but provides no analysis of which electricity scenario is most appropriate for any particular use case.
@@ -385,11 +385,11 @@ ComStock simulation results suggest that the combined greenhouse gas emissions a
 {:refdef: style="text-align: center;"}
 Figure 11. Greenhouse gas emissions comparison of the ComStock baseline and the window replacement scenario. Three electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.
 {:refdef}
-
+-->
 
 # 7.  Site Energy Savings Distributions
 
-This section discusses site energy consumption for QAQC purposes. Note that site energy savings can be useful for QAQC purposes, but other factors should be considered when drawing conclusions, as these do not necessarily translate proportionally to source energy savings, greenhouse gas emissions avoided, or energy cost.
+This section discusses site energy consumption for QAQC purposes. Note that site energy savings can be useful for QAQC purposes, but other factors should be considered when drawing conclusions, as these do not necessarily translate proportionally to source energy savings or energy cost.
 
 Figure 12 shows the percent savings distributions of the baseline ComStock models versus the MSHP models by end use and fuel type for applicable models. Minimal differences are observed for water systems and refrigeration, which see small changes in the baseline due only to minor changes in ambient air temperature that affect the operation of these systems. Most of the savings for the "Other Fuel Heating" and "Natural Gas Heating" categories are at 100%, simply due to replacing the combustion fuel-based system in the baseline with an all-electric heat pump system in the proposed run. The values that show savings less than 100% are models that have some fraction of the baseline combustion fuel RTU deemed not applicable. This is either due to the unit being in a kitchen or a partially conditioned space where traditional RTU sizing does not apply. A very small number of outliers show negative natural gas heating savings; one such model is based in Hawaii with very small heating loads (\<0.5 kbtu/ft\^2/year) and represents atypical heating operation with very small impact. It should be noted that percent savings calculations are based on the baseline value, so a small change in heating energy for a model with very small heating energy to begin with may show a high percent savings.
 
@@ -446,11 +446,13 @@ Maximizing HVAC Efficiency, Flexibility, and Resiliency with High Efficiency Ded
 \[11\] "Cambium \| Energy Analysis \| NREL." \[Online\]. Available:
 [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html). \[Accessed: 02-Sep-2022\].
 
+<!--
 \[12\] "Emissions & Generation Resource Integrated Database (eGRID) \|
 US EPA." \[Online\]. Available: [https://www.epa.gov/egrid](https://www.epa.gov/egrid). \[Accessed:
 02-Sep-2022\].
 
 \[13\] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection," 2022.
+-->
 
 \[14\] G. Vijayakumar *et al.*, "ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index," Oceanside, CA, 2022.
 
