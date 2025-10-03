@@ -13,13 +13,13 @@ Authors: Andrew Parker and Amy LeBar
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
-The goal of this work is to develop energy efficiency, electrification, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
+The goal of this work is to develop energy efficiency and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
 
-An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency, electrification, or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
+An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
 
 ComStock is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations to estimate the annual subhourly energy consumption of the commercial building stock across the United States. The baseline model intends to represent the U.S. commercial building stock as it existed in 2018. The methodology and results of the baseline model are discussed in the final technical report of the [End-Use Load Profiles](https://www.nrel.gov/buildings/end-use-load-profiles.html) project.
 
-This documentation focuses on a single end-use savings shape measure---secondary window systems. This measure adds secondary windows to the inside of existing windows, decreasing the U-value, solar heat gain coefficient (SHGC), and visual light transmittance (VLT) by a specified amount. The measure is applicable to all windows in the ComStock baseline that are not triple pane, as these are already very high-performing windows. Altogether, the measure is applicable to over \>99% of the ComStock floor area, representing over 350 million m<sup>2</sup> of window area replaced. Results show \~1% aggregate stock site energy savings (60 TBtu), primarily from heating, cooling, and fan end uses. Results also show greenhouse gas emission savings between 3 MMT and 4 MMT, depending on the electricity grid emission scenario considered.
+This documentation focuses on a single end-use savings shape measure---secondary window systems. This measure adds secondary windows to the inside of existing windows, decreasing the U-value, solar heat gain coefficient (SHGC), and visual light transmittance (VLT) by a specified amount. The measure is applicable to all windows in the ComStock baseline that are not triple pane, as these are already very high-performing windows. Altogether, the measure is applicable to over \>99% of the ComStock floor area, representing over 350 million m<sup>2</sup> of window area replaced. Results show \~1% aggregate stock site energy savings (60 TBtu), primarily from heating, cooling, and fan end uses. <!-- Results also show greenhouse gas emission savings between 3 MMT and 4 MMT, depending on the electricity grid emission scenario considered.-->
 
 # Acknowledgments
 
@@ -257,6 +257,7 @@ Installing secondary windows demonstrates 1% (60 TBtu) annual stock energy savin
 Figure 5. Comparison of annual site energy consumption between the ComStock baseline and the window replacement scenario. Energy consumption is categorized by both fuel type and end use.
 {:refdef}
 
+<!--
 ## 7.4  Stock Greenhouse Gas Emissions Impact
 
 Annual greenhouse gas emissions savings are realized at the stock level for all three electricity grid scenarios and all on-site fossil fuel combustion types (Figure 6). When combined with the fossil fuel emissions, all three grid scenarios show stock emissions savings of approximately 1.2%. Grid scenarios show similar total percent emissions savings due to electricity consumption (1.0% to 1.1%), but the scenarios with higher emissions in the ComStock baseline show higher total emissions savings because there are more emissions associated with each electricity kWh (3 MMT to 4 MMT).
@@ -269,8 +270,8 @@ Annual greenhouse gas emissions savings are realized at the stock level for all 
 Figure 6. Comparison of greenhouse gas emissions for the ComStock baseline and the secondary window scenario. Three 
 electricity grid scenarios are presented: Cambium Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.
 {:refdef}
-
-## 7.5  Energy Savings Distributions
+-->
+## 7.4  Energy Savings Distributions
 
 Figure 7 shows the distribution of annual energy percent savings for the ComStock baseline compared to the window 
 replacement scenario. The majority of the distributions show site energy savings between roughly 2% and 5% for the 25<sup>th</sup> and 75<sup>th</sup> percentiles (as indicated by the boxplots), respectively. The distributions extend fairly wide, but much of this range is covered by outliers outside of the standard 1.5 times the interquartile range calculation. Outliers are indicated by dots above the distribution, and they represent a relatively small portion of models. Some models in the distributions show negative energy savings for a given fuel type. This is expected to some degree with this type of window strategy, as reducing the SHGC can increase heating load.
