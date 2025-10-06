@@ -106,8 +106,7 @@ Table 3*.* Target Properties for Window Replacements from AEDG for medium/large 
 ![](./media/4952c392-33b5-4a4c-a78b-84224e9a21e1.png)
 {:refdef}
 
-<!--
-## 4.3  Greenhouse Gas Emissions
+<!-- ## 4.3  Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the window replacement scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kWh. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the last uses the eGrid data set \[3\], \[4\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emission scenario, but other analysis suggests that the choice of grid emission scenario can impact results \[5\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 4, which are from Table 7.1.2(1) of draft American National Standards Institute (ANSI)/Residential Energy Services Network (RESNET)/International Code Council (ICC) 301 \[6\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
@@ -116,8 +115,7 @@ Table 4. On-Site Fossil Fuel Emissions Factors
 |---|---|
 | **Natural gas** | 147.3 lb/MMbtu (228.0 kg/MWh) |
 | **Propane** | 177.8 lb/MMbtu (182.3 kg/MWh) |
-| **Fuel oil** | 195.9 lb/MMbtu (303.2 kg/MWh) |
--->
+| **Fuel oil** | 195.9 lb/MMbtu (303.2 kg/MWh) | -->
 
 ## 4.3  Limitations and Concerns
 
@@ -218,11 +216,11 @@ Figure 5*.* Percent savings distribution of ComStock models by end use and fuel 
 \[2\] ASHRAE. 2014. *Advanced Energy Design Guide for Small to Medium Office Buildings 50%*.
 
 \[3\] NREL. "Cambium." Accessed September 2, 2022. <https://www.nrel.gov/analysis/cambium.html>.
-<!--
-\[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. <https://www.epa.gov/egrid>.
 
-\[5\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection.". <https://aceee2022.conferencespot.org/event-data/pdf/catalyst_activity_32485/catalyst_activity_paper_20220810190542996_ca9a88a9_04f7_48dc_88c1_2ba530e44474>
--->
+<!-- \[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. <https://www.epa.gov/egrid>.
+
+\[5\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection.". <https://aceee2022.conferencespot.org/event-data/pdf/catalyst_activity_32485/catalyst_activity_paper_20220810190542996_ca9a88a9_04f7_48dc_88c1_2ba530e44474> -->
+
 \[6\] Vijayakumar, G. et al. 2022. "ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index." Oceanside, CA.
 
 ##  Appendix A

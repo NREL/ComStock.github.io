@@ -340,9 +340,9 @@ Figure 20. ComStock full national results: aggregated GHG emissions
 [3] “Advanced Energy Design Guides (AEDG).” [https://www.ashrae.org/technical-resources/aedgs](https://www.ashrae.org/technical-resources/aedgs) (accessed Jan. 22, 2019).
 
 [4] “Cambium.” [https://www.nrel.gov/analysis/cambium.html](https://www.nrel.gov/analysis/cambium.html) (accessed Mar. 17, 2023).
-<!--
-[5] O. US EPA, “Emissions & Generation Resource Integrated Database (eGRID),” Jul. 27, 2020. [https://www.epa.gov/egrid](https://www.epa.gov/egrid) (accessed Mar. 17, 2023).
 
-[6] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022.
--->
+<!-- [5] O. US EPA, “Emissions & Generation Resource Integrated Database (eGRID),” Jul. 27, 2020. [https://www.epa.gov/egrid](https://www.epa.gov/egrid) (accessed Mar. 17, 2023).
+
+[6] E. Present, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz, “Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection,” 2022. -->
+
 [7] G. Vijayakumar *et al.*, “ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index,” Oceanside, CA, 2022.
