@@ -13,13 +13,13 @@ Authors: Chris CaraDonna and Andrew Parker
 
 Building on the successfully completed effort to calibrate and validate the U.S. Department of Energy's ResStock™ and ComStock™ models over the past three years, the objective of this work is to produce national data sets that empower analysts working for federal, state, utility, city, and manufacturer stakeholders to answer a broad range of analysis questions.
 
-The goal of this work is to develop energy efficiency, electrification, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
+The goal of this work is to develop energy efficiency, and demand flexibility end-use load shapes (electricity, gas, propane, or fuel oil) that cover a majority of the high-impact, market-ready (or nearly market-ready) measures. "Measures" refers to energy efficiency variables that can be applied to buildings during modeling.
 
-An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency, electrification, or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
+An *end-use savings shape* is the difference in energy consumption between a baseline building and a building with an energy efficiency or demand flexibility measure applied. It results in a timeseries profile that is broken down by end use and fuel (electricity or on-site gas, propane, or fuel oil use) at each timestep.
 
 ComStock is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations to estimate the annual subhourly energy consumption of the commercial building stock across the United States. The baseline model intends to represent the U.S. commercial building stock as it existed in 2018. The methodology and results of the baseline model are discussed in the final technical report of the [End-Use Load Profiles](https://www.nrel.gov/buildings/end-use-load-profiles.html) project.
 
-This documentation focuses on a single end-use savings shape measure---window replacement. This measure replaces windows in the baseline building stock with windows that have properties aligning with ASHRAE's *Advanced Energy Design Guide* (AEDG). The measure is applicable to all windows in the ComStock baseline that are not triple pane, as these are already very high-performing widows. Altogether, the measure is applicable to over \>99% of the ComStock floor area, representing over 350 million m<sup>2</sup> of window area replaced. Results show \~2% aggregate stock site energy savings (89 TBtu), primarily from heating, cooling, and fan end uses. Results also show greenhouse gas emission savings between 6 MMT and 8 MMT, depending on the electricity grid emission scenario considered.
+This documentation focuses on a single end-use savings shape measure---window replacement. This measure replaces windows in the baseline building stock with windows that have properties aligning with ASHRAE's *Advanced Energy Design Guide* (AEDG). The measure is applicable to all windows in the ComStock baseline that are not triple pane, as these are already very high-performing widows. Altogether, the measure is applicable to over \>99% of the ComStock floor area, representing over 350 million m<sup>2</sup> of window area replaced. Results show \~2% aggregate stock site energy savings (89 TBtu), primarily from heating, cooling, and fan end uses. <!-- Results also show greenhouse gas emission savings between 6 MMT and 8 MMT, depending on the electricity grid emission scenario considered. -->
 
 # 1.  Introduction
 
@@ -106,7 +106,7 @@ Table 3*.* Target Properties for Window Replacements from AEDG for medium/large 
 ![](./media/4952c392-33b5-4a4c-a78b-84224e9a21e1.png)
 {:refdef}
 
-## 4.3  Greenhouse Gas Emissions
+<!-- ## 4.3  Greenhouse Gas Emissions
 
 Three electricity grid scenarios are presented to compare the emissions of the ComStock baseline and the window replacement scenario. The choice of grid scenario will impact the grid emissions factors used in the simulation, which determine the corresponding emissions produced per kWh. Two scenarios---Long-Run Marginal Emissions Rate (LRMER) High Renewable Energy (RE) Cost 15-Year and LRMER Low RE Cost 15-Year---use the Cambium data set, and the last uses the eGrid data set \[3\], \[4\]. All three scenarios vary the emissions factors geospatially to reflect the variation in grid resources used to produce electricity across the United States. The Cambium data sets also vary emissions factors seasonally and by time of day. This study does not imply a preference for any particular grid emission scenario, but other analysis suggests that the choice of grid emission scenario can impact results \[5\]. Emissions due to on-site combustion of fossil fuels use the emissions factors shown in Table 4, which are from Table 7.1.2(1) of draft American National Standards Institute (ANSI)/Residential Energy Services Network (RESNET)/International Code Council (ICC) 301 \[6\]. To compare total emissions due to both on-site fossil fuel consumption and grid electricity generation, the emissions from a single electricity grid scenario should be combined with all three on-site fossil fuel emissions.
 
@@ -115,10 +115,9 @@ Table 4. On-Site Fossil Fuel Emissions Factors
 |---|---|
 | **Natural gas** | 147.3 lb/MMbtu (228.0 kg/MWh) |
 | **Propane** | 177.8 lb/MMbtu (182.3 kg/MWh) |
-| **Fuel oil** | 195.9 lb/MMbtu (303.2 kg/MWh) |
+| **Fuel oil** | 195.9 lb/MMbtu (303.2 kg/MWh) | -->
 
-
-## 4.4  Limitations and Concerns
+## 4.3  Limitations and Concerns
 
 Window assembly U-value is often a function of the ratio of frame area to glass area. ComStock currently uses the simple glazing object, which accepts a constant U-value input regardless of window size and therefore does not capture U-value differences with window size. Furthermore, ComStock does not differentiate between punched windows, curtainwall, storefront, etc., which can have different performance characteristics. Neither of these limitations are expected to impact stock-level analysis in a substantial way.
 
@@ -173,6 +172,7 @@ Table 6. Stock Assessment of the Intended Target Window U-Values vs. the Actual 
 | 7B | 0.28 | 0.28 | 0.79 | −0.51 | 3% |
 | 8 | 0.25 | 0.25 | 0.78 | −0.53 | 6% |
 
+<!--
 ## 6.2  Stock Greenhouse Gas Emissions Impact
 
 Annual greenhouse gas emissions savings are realized at the stock level for all three electricity grid scenarios and all on-site fossil fuel combustion types (Figure 3). When combined with the fossil fuel emissions, all three grid scenarios show stock emissions savings of approximately 1.9%. Grid scenarios show similar total percent emissions savings due to electricity consumption (1.9% to 2.0%), but the scenarios with higher emissions in the ComStock baseline show higher total emissions savings because there are more emissions associated with each electricity kWh (5 MMT to 7 MMT).
@@ -184,8 +184,8 @@ Annual greenhouse gas emissions savings are realized at the stock level for all 
 {:refdef: style="text-align: center;"}
 Figure 3*.* Comparison of greenhouse gas emissions for the ComStock baseline and the window replacement scenario. Three electricity grid scenarios are presented: Cambium LRMER High RE Cost 15-Year, Cambium LRMER Low RE Cost 15-Year, and eGrid.
 {:refdef}
-
-## 6.3  Energy Savings Distributions
+-->
+## 6.2  Energy Savings Distributions
 
 Figure 4 shows the distribution of annual energy percent savings for the ComStock baseline compared to the window replacement scenario. The majority of the distributions show site energy savings between roughly 2% and 8% for the 25<sup>th</sup> and 75<sup>th</sup> percentiles (as indicated by the boxplots), respectively. The distributions extend fairly wide, but much of this range is covered by outliers outside of the standard 1.5 times the interquartile range calculation. Outliers are indicated by dots above the distribution, and they represent a relatively small portion of models. Some models in the distributions show negative energy savings for a given fuel type. This is expected to some degree with this type of window strategy, as reducing the SHGC can increase heating load.
 
@@ -217,9 +217,9 @@ Figure 5*.* Percent savings distribution of ComStock models by end use and fuel 
 
 \[3\] NREL. "Cambium." Accessed September 2, 2022. <https://www.nrel.gov/analysis/cambium.html>.
 
-\[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. <https://www.epa.gov/egrid>.
+<!-- \[4\] U.S. EPA. "Emissions & Generation Resource Integrated Database (eGRID)." Accessed September 2, 2022. <https://www.epa.gov/egrid>.
 
-\[5\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection.". <https://aceee2022.conferencespot.org/event-data/pdf/catalyst_activity_32485/catalyst_activity_paper_20220810190542996_ca9a88a9_04f7_48dc_88c1_2ba530e44474>
+\[5\] Present, Elaina, Pieter Gagnon, Eric J.H. Wilson, Noel Merket, Philip R. White, and Scott Horowitz. 2022. "Choosing the Best Carbon Factor for the Job: Exploring Available Carbon Emissions Factors and the Impact of Factor Selection.". <https://aceee2022.conferencespot.org/event-data/pdf/catalyst_activity_32485/catalyst_activity_paper_20220810190542996_ca9a88a9_04f7_48dc_88c1_2ba530e44474> -->
 
 \[6\] Vijayakumar, G. et al. 2022. "ANSI/RESNET/ICC 301-2022 - Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index." Oceanside, CA.
 
