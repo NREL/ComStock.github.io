@@ -29,7 +29,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion16" type="checkbox" /><label for="accordion16">What year does the baseline stock represent?</label>
     <div class="show">
       <p>The ComStock and ResStock datasets represent, as closely as possible, the 2018 U.S. commercial and residential building stock characteristics. The energy consumption results depend on the weather data used in the simulations. When modeled with AMY2018 weather, the datasets represent energy use for the year 2018. When TMY3 weather is used, they represent typical or average energy consumption under typical climate conditions.</p>
-      <p>Emissions and utility bills in the ComStock and ResStock datasets use input data from a several years, depending on the dataset release. See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> or <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock reference documentation</a> for more details.</p>
+      <p>Emissions and utility bills in the ComStock and ResStock datasets use input data from a several years, depending on the dataset release. See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> or <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock reference documentation</a> for more details.</p>
     </div>
   </li>
 
@@ -41,10 +41,10 @@ Expand the sections below for answers to frequently asked questions. If you have
     </div>
   </li>
 
-  <li class="acc"><input id="accordion5" type="checkbox" /><label for="accordion5">Which dataset release should I use?</label>
+  <li class="acc"><input id="accordion5" type="checkbox" /><label for="accordion5">Which dataset release should I use? And can I compare upgrades from different dataset releases?</label>
     <div class="show">
       <p>ComStock publishes datasets on a regular basis, and we recommend using the latest release. See the <a href="{{site.baseurl}}{% link docs/data.md %}">Data page</a> for a list of available datasets and access links.</p>
-      <p>New datasets include any improvements made to the baseline model, as well as new upgrade measures and all measures from previous releases. Information about upgrade measures included in dataset releases can be found on the <a href="{{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}">Upgrade Measures page</a>. Baseline model improvements are captured in the release change log on our <a href="https://github.com/NREL/ComStock">public GitHub repository</a>. Note that we re-sample our input characteristic distributions for every release and as a result, the building IDs between releases will not match.</p>
+      <p>It is not necessary to compare upgrades across ComStock dataset releases because all datasets include both new upgrade measures and all measures from previous releases, as well as any improvements made to the baseline model.  Information about upgrade measures included in dataset releases can be found on the <a href="{{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}">Upgrade Measures page</a>. Baseline model improvements are captured in the release change log on our <a href="https://github.com/NREL/ComStock">public GitHub repository</a>. Note that we re-sample our input characteristic distributions for every release and as a result, the building IDs between releases will not match.</p>
     </div>
   </li>
 
@@ -117,7 +117,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion39" type="checkbox" /><label for="accordion39">Are there load profiles available for the 16 California Climate Zones?</label>
     <div class="show">
-      <p>ComStock includes commercial buildings in California. However, as of ComStock 2024 Release 2, California climate zones are not available as a characteristic in ComStock public datasets. This characteristic will be made available in an upcoming dataset release.</p>
+      <p>ComStock includes commercial buildings in California, and the datasets provide California Energy Commission (CEC) climate zones in the field “in.cec_climate_zone” in the metadata_and_annual_results and metadata_and_annual_results_aggregates files on the OEDI data lake.</p>
       <p>There are a few known issues with California models in ComStock. Please see the "<a href="{{site.baseurl}}{% link docs/resources/explanations/california_known_issues.md %}">California Models Known Issues</a>" explanation for more information.</p>
     </div>
   </li>
@@ -153,6 +153,13 @@ Expand the sections below for answers to frequently asked questions. If you have
     <div class="show">
       <p>Currently, there is no API. However, we have posted a <a href="https://www.youtube.com/watch?v=qSR1MFpSiro&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=4">tutorial example</a> showing how to load the datasets into cloud services such as Amazon Web Services (AWS) so the data can be queried by analytic tools like Athena.</p>
       <p>Example notebooks and SQL queries are also available on the "<a href="{{site.baseurl}}{% link docs/resources/how_to_guides/example_scripts.md %}">Access ComStock datasets programmatically</a>" page, and more will be added as we develop them. The queries and example notebooks are a good starting point for accessing ResStock programmatically, too.</p>
+    </div>
+  </li>
+
+  <li class="acc"><input id="accordion43" type="checkbox" /><label for="accordion43">How do I access the timeseries data for a specific building model?</label>
+    <div class="show">
+      <p>To download a few results by IDs, you can use a manual approach. First use the metadata_and_annual_results to find the IDs you want to access. Then, note the download URL for any easy-to-access ID and edit it to reflect the ID you want.</p>
+      <p> For example, right clicking on the first ID under ResStock dataset 2022.1.1, AMY 2018, upgrade 02, and choosing “copy link” provides this URL: <a href="https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2022/resstock_amy2018_release_1.1/timeseries_individual_buildings/by_state/upgrade=2/state=WA/100025-2.parquet">https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2022/resstock_amy2018_release_1.1/timeseries_individual_buildings/by_state/upgrade=2/state=WA/100025-2.parquet</a>. To access ID 813 instead of 100025, change the “100025-2” to “813-2” in the URL, and paste it into a web browser. That will download the data for ID 813.</p>
     </div>
   </li>
 
@@ -238,6 +245,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion34" type="checkbox" /><label for="accordion34">How can I filter the data based on building characteristics?</label>
     <div class="show">
       <p>The "+ Filter" button enables users to filter the data by characteristics, such as vintage, floor area, and building type. This feature also enables aggregations of locations, including by PUMA and county.</p>
+      <p>See our <a href="https://www.youtube.com/watch?v=1hzT7MGsAC8&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=14">YouTube training video</a> on the Data Viewer, around 3:50, to learn how to add multiple filters.</p>
     </div>
   </li>
 
@@ -278,14 +286,6 @@ Expand the sections below for answers to frequently asked questions. If you have
     </div>
   </li>
 
-  <li class="acc"><input id="accordion36" type="checkbox" /><label for="accordion36">What emissions scenarios are modeled?</label>
-    <div class="show">
-      <p>ComStock calculates the greenhouse gas emissions from the building stock and savings from measures using both historical and projected emissions data. Historical electricity emissions use the CO<sub>2</sub>-equivalent total output emission rate from EPA’s Emissions and Generation Resource Integrated Database (eGRID). Projected electricity emissions use data from NREL’s Cambium dataset. Projected emissions consider both the average emissions rate (AER) and the long-run marginal emission rate (LRMER).</p>
-      <p>Natural gas, propane, and fuel oil emissions use the emission factors defined in ANSI/RESNET/ICCC 301-2022 Addendum B-2022 Standard for the Calculation and Labeling of the Energy Performance of Dwelling and Sleeping Units using an Energy Rating Index.</p>
-      <p>Emissions input data are updated as they become available and do not always match the ComStock dataset release simulation year (typically 2018). Please see the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for more detail and specifics about which emissions input data years were used for a given dataset release.</p>
-    </div>
-  </li>
-
   <li class="acc"><input id="accordion38" type="checkbox" /><label for="accordion38">Are costs modeled?</label>
     <div class="show">
       <p>As of the 2024 Release 1, ComStock includes utility cost data using current electricity rates from the Utility Rate Database (URDB), matched by utility ID, demand, and usage. Annual utility bills are reported as the min, max, mean, and median of all applicable rates for each model. Natural gas, propane, and fuel oil prices are based on volumetric pricing due to limited rate data, using EIA price and heat content data. See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for details.</p>
@@ -295,7 +295,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion13" type="checkbox" /><label for="accordion13">Does ComStock model rooftop solar PV?</label>
     <div class="show">
-      <p>ComStock does not currently model rooftop solar PV, though this capability is coming soon. We recommend using <a href="https://pvwatts.nrel.gov/">PVWatts</a> or <a href="https://reopt.nrel.gov/tool">REopt</a> to evaluate commercial solar PV opportunities.</p>
+      <p>ComStock does not currently model rooftop solar PV in the baseline. However, starting with ComStock 2025 Release 1, upgrade measures are available that model rooftop solar PV additions to buildings. See the <a href="{{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}"> Upgrade Measures</a> page for more information.</p>
     </div>
   </li>
 
@@ -323,6 +323,22 @@ Expand the sections below for answers to frequently asked questions. If you have
       <p>To date, ComStock public dataset releases include AMY2018 and TMY3 weather years, neither of which are leap years.</p>
       <p>If ComStock were to simulate a leap year, the workflow would be as follows. The default simulation setting is a one-year, 8,760-hour simulation, starting on January 1 and ending on December 31. If the calendar year of simulation is a leap year, the end of the simulation period will be input as December 30 instead of December 31 to ensure 8,760 hours of simulation results. In years with February 29, December 31 will not be included in the simulation.</p>
       <p>For more detail, please see the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a>.</p>
+    </div>
+  </li>
+
+  <li class="acc"><input id="accordion44" type="checkbox" /><label for="accordion44">How are multifamily common areas modeled?</label>
+    <div class="show">
+      <p>The residential housing units in multifamily buildings are modeled in ResStock and are not in ComStock.  All energy consumption specific to the housing unit is included in the modeled results, such as lighting, appliances, window air conditioners, and HVAC and water heaters that serve a single housing unit.</p>
+      <p>HVAC and water heating that serves multiple housing units are also included, with energy consumption allocated to the unit served and with adjustment factors applied to account for the energy consumption differences of shared equipment. These adjustment factors are set by OpenStudio-HPXML and from ANSI/RESNET 301.</p>
+      <p>Electric vehicle charging energy consumption from common areas is also included in ResStock results, allocated directly to the unit that is associated with each electric vehicle.</p>
+      <p>All other energy that provides services to common areas in multifamily buildings is not included in either ResStock or ComStock. Examples of this would include common area lighting, common laundry facilities, pools, and hot tubs, and elevators.</p>
+    </div>
+  </li>
+
+  <li class="acc"><input id="accordion45" type="checkbox" /><label for="accordion45">How are wall cavity R-values determined?</label>
+    <div class="show">
+      <p>In ComStock models, wall R-values are based on building energy code requirements by climate zone and construction type (mass, metal building, steel-framed, wood-framed) and account for both interior and exterior air films.</p>
+      <p>See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for more information.</p>
     </div>
   </li>
 
