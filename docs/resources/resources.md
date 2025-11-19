@@ -69,6 +69,7 @@ This document serves as a guide and resource for the methodology and assumptions
 
 | Reference Documentation Version               | Release Date | Corresponding ComStock Dataset Release(s)                            |
 |-----------------------------------------------|--------------|----------------------------------------------------------------------|
+| [ComStock Reference Documentation: 2025 Release 3]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2025_3.pdf %}) | Nov. 2025  | 2025/comstock_amy2018_release_3
 | [ComStock Reference Documentation: 2025 Release 2]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2025_2.pdf %}) | August 2025  | 2025/comstock_amy2018_release_2
 | [ComStock Reference Documentation: 2025 Release 1]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2025_1.pdf %}) | June 2025    | 2025/comstock_amy2018_release_1 
 | [ComStock Reference Documentation: 2024 Release 2]({{  site.baseurl  }}{% link assets/files/comstock_reference_documentation_2024_2.pdf %}) | Feb. 2025    | 2024/xomstock_amy2018_release_2
