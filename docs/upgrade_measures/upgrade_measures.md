@@ -101,4 +101,4 @@ Note: Webinars are not held for every ComStock dataset release.
 | 2023 Release 1  | [Recording](https://www.youtube.com/watch?v=7BHQfk6kvso) | [Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf) |
 
 
-[1]:../../assets/files/measure_name_crosswalk_2025_1.csv
+[1]:../../assets/files/measure_name_crosswalk_2025_2.csv
