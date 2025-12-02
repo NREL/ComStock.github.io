@@ -22,7 +22,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion7" type="checkbox" /><label for="accordion7">What building types does ComStock model?</label>
     <div class="show">
-      <p>ComStock models 14 commercial building types. Compared to the Commercial Building Energy Consumption Survey (CBECS) estimation, ComStock datasets account for 64% of the energy use and 62% of the floor area of commercial buildings in the United States. The ComStock development team is actively working on adding more building types to the model. See the explanation titled "<a href="{{site.baseurl}}{% link docs/resources/explanations/building_types_not_included.md %}">Building Types Not Included in ComStock</a>" for more detail.</p>
+      <p>ComStock models 15 commercial building types. Compared to the Commercial Building Energy Consumption Survey (CBECS) 2018 estimation, ComStock datasets account for 63% of both the energy use and floor area of commercial buildings in the United States. The ComStock development team is actively working on adding more building types to the model. See the explanation titled "<a href="{{site.baseurl}}{% link docs/resources/explanations/building_types_not_included.md %}">Building Types Not Included in ComStock</a>" for more detail.</p>
     </div>
   </li>
 
@@ -320,8 +320,8 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion37" type="checkbox" /><label for="accordion37">How are leap years modeled?</label>
     <div class="show">
-      <p>To date, ComStock public dataset releases include AMY2018 and TMY3 weather years, neither of which are leap years.</p>
-      <p>If ComStock were to simulate a leap year, the workflow would be as follows. The default simulation setting is a one-year, 8,760-hour simulation, starting on January 1 and ending on December 31. If the calendar year of simulation is a leap year, the end of the simulation period will be input as December 30 instead of December 31 to ensure 8,760 hours of simulation results. In years with February 29, December 31 will not be included in the simulation.</p>
+      <p>ComStock public dataset releases include AMY2012 weather, which is a leap year, and AMY2018 and TMY3 weather years, neither of which are leap years.</p>
+      <p>The default simulation runs for one year, covering 8,760 hours from January 1 to December 31. For ComStock dataset releases using AMY2012 weather, the simulation period is adjusted to maintain exactly 8,760 hours: it starts on January 1, includes February 29, and ends on December 30 instead of December 31.</p>
       <p>For more detail, please see the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a>.</p>
     </div>
   </li>
@@ -339,6 +339,14 @@ Expand the sections below for answers to frequently asked questions. If you have
     <div class="show">
       <p>In ComStock models, wall R-values are based on building energy code requirements by climate zone and construction type (mass, metal building, steel-framed, wood-framed) and account for both interior and exterior air films.</p>
       <p>See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for more information.</p>
+    </div>
+  </li>
+
+  <li class="acc"><input id="accordion46" type="checkbox" /><label for="accordion46">What year of U.S. Census geography (e.g., counties, PUMAs) do ComStock and ResStock use?</label>
+    <div class="show">
+      <p>ComStock and ResStock datasets reflect the 2010 National Historical GIS (NHGIS) GISJOIN standard codes for counties, PUMAs, and Census Tracts. Some model input data sources use 2020 Census geographies, and these are translated to 2010 before being integrated into the ComStock and ResStock workflows. However, 2020 geographic codes are not currently available in the ComStock and ResStock datasets.</p>
+      <p>For more information about geographic fields and codes used in the models, please refer to the <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">ResStock</a> user resources.
+      </p>
     </div>
   </li>
 
