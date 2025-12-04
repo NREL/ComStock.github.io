@@ -31,7 +31,7 @@ This measure is applicable for 33% of the U.S. commercial building stock modeled
 
 # Acknowledgments
 
-The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless, Eric Bonnema and the NREL ComStock team, particularly Andrew Parker and Christopher CaraDonna. The author would also like to thank Bart Ransom from Colmac for providing heat pump performance data.
+The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless, Eric Bonnema and the NLR ComStock team, particularly Andrew Parker and Christopher CaraDonna. The author would also like to thank Bart Ransom from Colmac for providing heat pump performance data.
 
 # 1. Introduction
 
@@ -56,7 +56,7 @@ Figure 1. ASHP boiler operation
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-All figures by NREL unless otherwise noted.
+All figures by NLR unless otherwise noted.
 {:refdef}
 
 # 3. ComStock Baseline Approach
