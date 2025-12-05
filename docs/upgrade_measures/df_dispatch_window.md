@@ -32,7 +32,7 @@ Given the load prediction, daily peak periods are determined as a time window wi
 The dispatch schedule generation method is not a standalone measure and is intended to be combined with other demand flexibility measures that could leverage the peak schedule and apply demand controls on specific systems or devices for demand response, such as Thermostat Control for Load Shedding and Thermostat Control for Load Shifting listed on the ComStock [webpage](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html).
 
 # Acknowledgments
-The authors would like to acknowledge the valuable guidance and input provided by Matt Leach and Chioke Harris at the National Renewable Energy Laboratory. 
+The authors would like to acknowledge the valuable guidance and input provided by Matt Leach and Chioke Harris at the National Laboratory of the Rockies. 
 
 # 1. Introduction
 

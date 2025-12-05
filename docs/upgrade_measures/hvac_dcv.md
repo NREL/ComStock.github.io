@@ -175,7 +175,7 @@ Figure 1. Air system outdoor air rate (right, orange) and zone occupancy (left, 
 {:refdef}
 
 {:refdef: style="text-align: center;"}
-All report figures by the National Renewable Energy Laboratory.
+All report figures by the National Laboratory of the Rockies.
 {:refdef}
 
 ## 6.2. Applicability

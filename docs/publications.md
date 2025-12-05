@@ -8,7 +8,7 @@ nav_order: 7
 {: .fw-500 }
 
 <details markdown="block" class="level1-collapse-section" open>
-  <summary class="pub-header">NREL Reports, Papers, Presentations, and Webinar Recordings</summary>
+  <summary class="pub-header">NLR Reports, Papers, Presentations, and Webinar Recordings</summary>
 
   <details markdown="block" class="level2-collapse-section" open><summary class="pub-header">Reports and Papers</summary>
   [Andrew Speake and Andrew Parker (2024)](https://docs.nrel.gov/docs/fy25osti/90443.pdf){: .pub-link}. Presents a new framework that leverages building stock energy modeling to identify building models that align with the load shapes and housing attributes of buildings with AMI data.<br>DOI: 10.2172/2481056
@@ -66,7 +66,7 @@ nav_order: 7
 <details markdown="block" class="level1-collapse-section">
   <summary class="pub-header">Related Work</summary>
 
-  [NREL](https://resstock.nrel.gov/page/publications){: .pub-link}. Publications to date using the ResStock analysis.
+  [NLR](https://resstock.nrel.gov/page/publications){: .pub-link}. Publications to date using the ResStock analysis.
 
   [David Pudleiner et al. (2024)](https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722163103002_4e90844f-0616-4a4f-9c9d-75ab78571aba.pdf){: .pub-link}. Examination of the lifecycle cost optimal building performance standard compliance pathway through building energy models.
 
@@ -82,7 +82,7 @@ nav_order: 7
 </details>
 
 <details markdown="block" class="level1-collapse-section"><summary class="pub-header">Other Media</summary>
-  [NREL ComStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/comstock.nrel/vizzes){: .pub-link}. Project dashboards using ComStock data.
+  [NLR ComStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/comstock.nrel/vizzes){: .pub-link}. Project dashboards using ComStock data.
 
-  [NREL ResStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes){: .pub-link}. Project dashboards using ResStock data.
+  [NLR ResStock Dashboards on Tableau Public](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes){: .pub-link}. Project dashboards using ResStock data.
 </details>

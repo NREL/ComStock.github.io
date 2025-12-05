@@ -46,7 +46,7 @@ The VRF DOAS with 25% upsizing allowance upgrade demonstrates 13% total site ene
 Compared to the [VRF DOAS analysis with original sizing](https://www.nrel.gov/docs/fy24osti/86103.pdf) we performed previously, the 25% upsizing allowance did not perform noticeably better. While the upsized unit handled more heating load with heat pumps and resulted in less usage of backup electric resistance heating (compared to the original sizing scenario), the upsized units also suffered with slightly decreased rated coefficients of performance (COP) based on the regression fittings we extracted from the products as shown in Figure 12 of the previous report. We acknowledge that there can be a better design practice to avoid "lower COP for larger units" as described in Section 2.4, and future analysis can explore this aspect. To assess the impact of this upgrade more comprehensively, other factors such as return on investment and utility bill cost reflecting demand charges should also be considered.
 
 # Acknowledgments
-The authors would like to acknowledge the valuable guidance and input provided by Eric Bonnema, Michael Deru, Shanti Pless, Jeff Munk, and Marcus Bianchi at the National Renewable Energy Laboratory.
+The authors would like to acknowledge the valuable guidance and input provided by Eric Bonnema, Michael Deru, Shanti Pless, Jeff Munk, and Marcus Bianchi at the National Laboratory of the Rockies.
 
 # 1. Introduction
 

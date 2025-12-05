@@ -73,7 +73,7 @@ The ComStock data viewer exists to quickly filter, slice, combine, visualize, an
 ![](../assets/images/data_viewer_screenshot.PNG)
 
 ### Open Energy Data Initiative (OEDI) Data Lake
-OEDI is an energy information portal, and is developed and maintained by the National Renewable Energy Laboratory with funding and support from the U.S. Department of Energy and a network of International Partners & Sponsors. The OEDI data lake contains comprehensive aggregate data for ComStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries. 
+OEDI is an energy information portal, and is developed and maintained by the National Laboratory of the Rockies with funding and support from the U.S. Department of Energy and a network of International Partners & Sponsors. The OEDI data lake contains comprehensive aggregate data for ComStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries. 
 
 The ComStock release directory structure of the data lake is summarized in the table, below. For more detailed information about the contents of the ComStock OEDI data lake, visit the [README](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/README.md).
 

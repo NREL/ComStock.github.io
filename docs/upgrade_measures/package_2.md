@@ -41,7 +41,7 @@ The Interior Lighting and Heat Pump package demonstrates between -1.9 and 10.7 m
 
 # Acknowledgments
 
-The authors would like to acknowledge the authors of the original measures in the Interior Lighting and Heat Pump package, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you to the reviewers of this package, Matt Dahlhausen and Shanti Pless (National Renewable Energy Laboratory). 
+The authors would like to acknowledge the authors of the original measures in the Interior Lighting and Heat Pump package, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you to the reviewers of this package, Matt Dahlhausen and Shanti Pless (National Laboratory of the Rockies). 
 
 # 1. Introduction
 

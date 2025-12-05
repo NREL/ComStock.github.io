@@ -38,7 +38,7 @@ The High-Efficiency Envelope upgrade package is applicable to 100% of the total 
 The High-Efficiency Envelope package demonstrates between 7.9 and 16.9 million metric tons (CO<sub>2</sub>e) of greenhouse gas emissions avoided for the three grid electricity scenarios presented, as well as 9.8 million metric tons of greenhouse gas emissions avoided for on-site natural gas consumption.
 
 # Acknowledgments
-The authors would like to acknowledge the authors of the original measures in the Interior High-Efficiency Envelope package: Lauren Adams, Chris CaraDonna, Amy LeBar, and Andrew Parker. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless (National Renewable Energy Laboratory).
+The authors would like to acknowledge the authors of the original measures in the Interior High-Efficiency Envelope package: Lauren Adams, Chris CaraDonna, Amy LeBar, and Andrew Parker. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless (National Laboratory of the Rockies).
 
 # 1. Introduction
 

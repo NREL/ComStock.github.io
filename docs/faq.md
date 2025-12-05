@@ -138,7 +138,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion22" type="checkbox" /><label for="accordion22">Are weather data files available in EPW format?</label>
     <div class="show">
-      <p>Weather data used for the modeling have been provided in .csv format for regression modeling, forecasting, or other analyses. The TMY3 weather files in EnergyPlus input format (EPW) can be downloaded from the <a href="https://data.nrel.gov/submissions/156">NREL Data Catalog</a>, with filenames that correspond to county IDs in the ResStock and ComStock metadata. EPW format weather files for 2018 or other actual meteorological years (AMY) have not been publicly released. These files can be purchased from private sector vendors. See <a href="https://energyplus.net/weather/simulation">here</a> for a list of providers.
+      <p>Weather data used for the modeling have been provided in .csv format for regression modeling, forecasting, or other analyses. The TMY3 weather files in EnergyPlus input format (EPW) can be downloaded from the <a href="https://data.nrel.gov/submissions/156">NLR Data Catalog</a>, with filenames that correspond to county IDs in the ResStock and ComStock metadata. EPW format weather files for 2018 or other actual meteorological years (AMY) have not been publicly released. These files can be purchased from private sector vendors. See <a href="https://energyplus.net/weather/simulation">here</a> for a list of providers.
       </p>
     </div>
   </li>
@@ -196,7 +196,7 @@ Expand the sections below for answers to frequently asked questions. If you have
     <div class="show">
       <p>The Data Viewer is a web-based visualization platform that allows users to easily filter, aggregate, view, and download ComStock end-use energy data in a web browser.</p>
       <p>Links to Data Viewer visualizations for each dataset release are on the <a href="{{site.baseurl}}{% link docs/data.md %}">Data page</a>.</p>
-      <p>For Data Viewer trainings, visit the <a href="https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS">NREL’s Building Stock Analysis YouTube channel</a>.</p>
+      <p>For Data Viewer trainings, visit the <a href="https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS">NLR’s Building Stock Analysis YouTube channel</a>.</p>
     </div>
   </li>
 
