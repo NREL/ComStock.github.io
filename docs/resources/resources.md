@@ -33,30 +33,32 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Building Type Crosswalks]({{  site.baseurl  }}{% link docs/resources/explanations/building_type_crosswalks.md %})
 - [Considerations for ComStock Calibration, Validation, and Uncertainty]({{  site.baseurl  }}{% link docs/resources/explanations/comstock_calibration.md %})
 - [Geographic Fields and Codes]({{  site.baseurl  }}{% link docs/resources/explanations/reference_geographic_codes.md %})
-- [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})<span class="label label-blue">NEW</span>
+- [New ComStock Sampling Method]({{  site.baseurl  }}{% link docs/resources/explanations/new_sampling_method.md %})
 - [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
 - [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
 
 ### ComStock Limitations
-- [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})
+- [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})<span class="label label-green">UPDATE</span>
 - [Gas Consumption Underrepresented]({{  site.baseurl  }}{% link docs/resources/explanations/gas_consumption_underrepresented.md %})
-- [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})<span class="label label-green">UPDATE</span>
+- [Sample Size Considerations]({{  site.baseurl  }}{% link docs/resources/explanations/sample_size_considerations.md %})
 
 ### Known Issues
-- [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})<span class="label label-green">UPDATE</span>
+- [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
 - [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})
 - [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})
 
-## Training Videos<span class="label label-blue">NEW</span>
+## Training Videos
 Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NLR’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
 -   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
 -   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=4&t=2s)
 
-## Tableau Dashboards<span class="label label-blue">NEW</span>
+## Tableau Dashboards
 The [ComStock Tableau Public page](https://public.tableau.com/app/profile/comstock.nrel/vizzes) offers interactive visualizations derived from the public ComStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ComStock Tableau Public page as they become available.
 
 -   [ComStock Building Characteristics Dashboard](https://public.tableau.com/app/profile/comstock.nrel/viz/ComStockBuildingCharacteristicsDashboard/Introduction)
+-   [Evaluating Geothermal Performance for the U.S. Building Stock](https://public.tableau.com/app/profile/comstock.nrel/viz/EvaluatingGeothermalPerformancefortheU_S_BuildingStock/Home)
+-   [Building Stock Segmentation for Retrofit Planning](https://public.tableau.com/app/profile/comstock.nrel/viz/BuildingStockSegmentationforRetrofitPlanning/USMap)
 
 For ResStock Tableau dashboards, please visit the [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes).
 
