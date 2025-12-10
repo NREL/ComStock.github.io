@@ -11,6 +11,15 @@ has_toc: false
 
 This section provides tutorials, how-to guides, explanations and reference material designed to aid users in answering questions about the ComStock dataset.
 
+[Tutorials](#tutorials){: .btn .btn-uo .white-text}
+[How-to Guides](#how-to-guides){: .btn .btn-uo .white-text}
+[General Explanations](#general){: .btn .btn-uo .white-text}
+[ComStock Limitations](#comstock-limitations){: .btn .btn-uo .white-text}
+[Known Issues](#known-issues){: .btn .btn-uo .white-text}
+[Training Videos](#training-videos){: .btn .btn-uo .white-text}
+[Tableau Dashboards](#tableau-dashboards){: .btn .btn-uo .white-text}
+[Reference Documenation](#references){: .btn .btn-uo .white-text}
+
 ## Tutorials
 This section provides lessons for understanding certain capabilities and functions of ComStock, as well as for learning a specific analysis skill.
 
@@ -47,6 +56,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [California Models Known Issues]({{    site.baseurl   }}{% link docs/resources/explanations/california_known_issues.md %})
 - [Utility Bill and Emissions in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/utility_bills_emissions_known_issue.md %})
 - [Metadata and Annual Results Aggregate File Discrepancy in 2024 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/aggregate_file_discrepancy_known_issue.md %})
+- [Geothermal Heat Pump and Demand Flexibility Package Naming in 2025 Release 2]({{  site.baseurl  }}{% link docs/resources/explanations/2025_release_2_packages_known_issue.md %})<span class="label label-blue">NEW</span>
 
 ## Training Videos
 Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NLR’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
