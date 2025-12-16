@@ -19,6 +19,7 @@ Each dataset release is introduced with a webinar presentation. Access the webin
 ComStock dataset releases are summarized in the following table with links for accessing the aggregate results.
 
 **<span style="color:red">DATASET NOTICES</span>**
+- In ComStock 2025 Release 3, service water heating was not modeled in any California buildings. See the [known issue documentation]({{  site.baseurl  }}{% link docs/resources/explanations/2025_release_3_ca_swh_known_issue.md %}) for more information.
 - Two packages in ComStock 2025 Release 2 were mislabeled. For more information, please see the [known issue documentation]({{  site.baseurl  }}{% link docs/resources/explanations/2025_release_2_packages_known_issue.md %}).
 - All weather files for the state of Hawaii appear incorrect in ComStock 2025 Release 2 - 2012 Weather. We do not recommend using this release for analysis in Hawaii. See the [known issue documentation]({{  site.baseurl  }}{% link docs/resources/explanations/2025_release_2_hi_known_issue.md %}) for more information.
 
