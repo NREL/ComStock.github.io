@@ -68,9 +68,9 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | gen_0002   | Photovoltaics With 40% Rooftop Coverage and Battery Storage**                                                                            | 2025 Release 2 |
 | dr_0001    | [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)                                                     | 2024 Release 1 |
 | dr_0002    | [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)                                                     | 2024 Release 1 |
-| dr_0003    | Lighting Control for Load Shedding**                                                                                                     | 2024 Release 2 |
+| dr_0003    | [Lighting Control for Load Shedding](https://www.nrel.gov/docs/fy26osti/92502.pdf)                                                       | 2024 Release 2 |
 | dr_0004    | Lighting Control for Emission Reduction**                                                                                                | 2024 Release 2 |
-| dr_0005 / dr_0006    | Thermostat and Lighting Control for Load Shedding**                                                                            | 2025 Release 1 |
+| dr_0005 / dr_0006    | [Thermostat and Lighting Control for Load Shedding](https://www.nrel.gov/docs/fy26osti/92504.pdf)                              | 2025 Release 1 |
 | dr_0007    | Low Priority Device Switching During Peak Hours**                                                                                        | 2025 Release 1 |
 | dr_0008    | Dim Lighting During Peak Hours**                                                                                                         | 2025 Release 1 |
 | dr_0009    | Electric HVAC Temperature Setpoint Adjustment During Peak Hours**                                                                        | 2025 Release 1 |
