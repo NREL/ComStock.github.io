@@ -13,7 +13,7 @@ This section provides tutorials, how-to guides, explanations and reference mater
 
 [Tutorials](#tutorials){: .btn .btn-uo .white-text}
 [How-to Guides](#how-to-guides){: .btn .btn-uo .white-text}
-[General Explanations](#general){: .btn .btn-uo .white-text}
+[Explanations](#general){: .btn .btn-uo .white-text}
 [ComStock Limitations](#comstock-limitations){: .btn .btn-uo .white-text}
 [Known Issues](#known-issues){: .btn .btn-uo .white-text}
 [Training Videos](#training-videos){: .btn .btn-uo .white-text}
@@ -46,6 +46,7 @@ These documents provide explanations focusing on the *how* and *why* of various 
 - [Sampling and Weighting in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/sampling_and_weighting.md %})
 - [Using ComStock to Analyze Cost]({{  site.baseurl  }}{% link docs/resources/explanations/costing_analysis.md %})
 - [Why Individual ComStock Measure Results Should Not Be Combined]({{  site.baseurl  }}{% link docs/resources/explanations/combining_measure_results.md %})
+- [Commercial Building Load Components Data and Analysis]({{  site.baseurl  }}{% link docs/resources/explanations/component_loads.md %})<span class="label label-blue">NEW</span>
 
 ### ComStock Limitations
 - [Building Types Not Included in ComStock]({{  site.baseurl  }}{% link docs/resources/explanations/building_types_not_included.md %})<span class="label label-green">UPDATE</span>
