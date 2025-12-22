@@ -16,7 +16,7 @@ Thermal load is influenced by various factors, or "load components," that work t
 ## Load Components Study
 Researchers at the National Laboratory of the Rockies (NLR) conducted a detailed analysis to better understand the load components driving heating and cooling needs across U.S. commercial buildings using the ComStock model. This study builds on earlier research from the 1990s (Huang and Franconi 1999) but makes improvements by incorporating greater variation in building types, heating and cooling systems, locations, and construction years, as well as updating the data to reflect buildings as they were around 2018. The results also offer a more detailed look at heating and cooling patterns on an hourly basis.
 
-This research is important because understanding what contributes to heating and cooling energy use in buildings helps identify the best opportunities to improve energy efficiency and reduce overall energy consumption. The U.S. Department of Energy uses this type of data to guide decisions on technology investments and policies for making buildings more efficient. It also plays a key role in national energy studies, like those conducted by the Energy Information Administration (e.g., Commercial Building Energy Consumption Survey [CEBCS]), to determine end use energy breakdowns. By updating outdated data and filling gaps in existing studies, this work provides a clearer picture of how commercial buildings use energy.
+This research is important because understanding what contributes to heating and cooling energy use in buildings helps identify the best opportunities to improve energy efficiency and reduce overall energy consumption. The U.S. Department of Energy uses this type of data to guide decisions on technology investments and policies for making buildings more efficient. It also plays a key role in national energy studies, like those conducted by the Energy Information Administration (e.g., Commercial Building Energy Consumption Survey [CBECS]), to determine end use energy breakdowns. By updating outdated data and filling gaps in existing studies, this work provides a clearer picture of how commercial buildings use energy.
 
 ## Load Components Study Results
 Figure 1 shows a comparison between total commercial building load components from ComStock and the previous 1990s load components study (Huang and Franconi 1999). Lighting technology is a notable difference: The 1990s study primarily features older T12 fluorescent lighting, whereas ComStock incorporates technologies like LEDs, T5s, and T8s. Another key variation lies in cooling gains, with the 1990s study attributing more to solar gain through windows compared to other building envelope components.
@@ -24,6 +24,7 @@ For more results from this study and discussion, refer to the published technica
 
 {:refdef: style="text-align: center;"}
 ![](../../../assets/images/component_loads.svg)
+
 Figure 1. Total Commercial Load Components Comparison between ComStock and (Huang and Franconi 1999).
 {:refdef}
 
