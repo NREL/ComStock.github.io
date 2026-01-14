@@ -28,7 +28,7 @@ Although the scope of HPWH application is limited to only commercial buildings s
 
 # Acknowledgments
 
-The authors would like to acknowledge the valuable guidance and input provided by Jeff Maguire and Bethany Sparn at NREL.
+The authors would like to acknowledge the valuable guidance and input provided by Jeff Maguire and Bethany Sparn at NLR.
 
 # 1.  Introduction
 

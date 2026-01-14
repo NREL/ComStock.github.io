@@ -38,7 +38,7 @@ Future work can include adding heat/energy recovery solutions specifically for k
 
 # Acknowledgments 
 
-The authors would like to acknowledge the valuable guidance and input provided by the ComStock team, Matthew Dahlhausen, and Shanti Pless (National Renewable Energy Laboratory). 
+The authors would like to acknowledge the valuable guidance and input provided by the ComStock team, Matthew Dahlhausen, and Shanti Pless (National Laboratory of the Rockies). 
 
 # 1. Introduction 
 
@@ -79,7 +79,7 @@ The value of heat/energy recovery systems can be limited by configurations that 
 
 Some building types, such as food service buildings, may be less suitable for adding energy/heat recovery retrofits because most of the building exhaust tends to occur through bathroom and kitchen exhaust hoods. A PNNL technical document for reducing energy usage in quick-service restaurants recommends using runaround energy recovery coil to utilize the large amount of heat available in kitchen exhaust air \[12\]. However, the study does not discuss the practicality of such a measure given the quality of kitchen exhaust. The ASHRAE HVAC Handbook describes kitchen cooking hoods as being a source of odors, causing potential plugging and corrosion of heat exchangers \[13\]. The prevalence of fouling of heat exchanger surfaces from smoke and grease in kitchens requires regular maintenance \[13\]. The ASHRAE HVAC Handbook therefore advises energy/heat recovery only in light-duty cooking applications with minimal grease production \[13\]. However, an assessment from Frontier Energy and Fischer-Nickel suggests that energy recovery can be applied to kitchens, although this setup may require additional measure for maintaining grease filters and addressing heat exchanger fouling \[14\].
 
-Another study done by NREL noted that it is unclear whether there is sufficient exhaust air for a heat/energy recovery strategy in grocery stores, considering the large amounts of cooking/bathroom exhaust and the high infiltration from entrance doors being open much of the day \[15\]. Some of this could be extrapolated to retail building types that also have large entrance doors open for much of the day.
+Another study done by NLR noted that it is unclear whether there is sufficient exhaust air for a heat/energy recovery strategy in grocery stores, considering the large amounts of cooking/bathroom exhaust and the high infiltration from entrance doors being open much of the day \[15\]. Some of this could be extrapolated to retail building types that also have large entrance doors open for much of the day.
 
 {:refdef: style="text-align: center;"}
 ![Chart, line chart Description automatically generated](media/hvac_hrv_erv_image3.png){:width="700"}

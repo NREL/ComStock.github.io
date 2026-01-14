@@ -38,7 +38,7 @@ The economizer measure applies to buildings that cover 66% of the total building
 As shown in the results sections, the savings potential of the economizer upgrade at the stock level is relatively low compared to [other upgrades](https://nrel.github.io/ComStock.github.io/docs/upgrade_measures/upgrade_measures.html) we have analyzed. Since the amount of savings depends not only on the weather but also on the cooling demand of the building, the outdoor air requirement, the heat gain in the return air stream, and the configuration of the economizer, the savings will also vary for many buildings with different configurations and conditions. Additionally, economizer requirements have long been included in energy codes in many climates, limiting the opportunity and extent of savings from buildings that are not eligible for this upgrade because they already have economizers. However, since the economizer can be a simple upgrade (to an existing infrastructure) with a relatively low investment cost, the overall impact including the return on investment (or simple payback period) should be derived with the cost information.
 
 # Acknowledgments
-The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless, Eric Bonnema, Eric Ringold, and Marcus Bianchi at the National Renewable Energy Laboratory.
+The authors would like to acknowledge the valuable guidance and input provided by Shanti Pless, Eric Bonnema, Eric Ringold, and Marcus Bianchi at the National Laboratory of the Rockies.
 
 # 1. Introduction
 

@@ -40,7 +40,7 @@ The objective of the measure is to provide demand flexibility by shaving load pe
 In addition, providing the potential of switching to other objectives for the dispatch schedule, future work includes extending the scope of this measure to applying for carbon emission reduction, for more comprehensive analysis (refer to the "Supplemental Documentation: Dispatch Schedule Generation for Demand Flexibility Measures" for more details).
 
 # Acknowledgments
-The authors would like to acknowledge the valuable guidance and input provided by Matt Leach and Chioke Harris at the National Renewable Energy Laboratory.
+The authors would like to acknowledge the valuable guidance and input provided by Matt Leach and Chioke Harris at the National Laboratory of the Rockies.
 
 # 1. Introduction
 

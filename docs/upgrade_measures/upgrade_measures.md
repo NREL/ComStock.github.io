@@ -57,6 +57,10 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0025  | [Laboratory-Informed Modeling of Standard Performance Heat Pump Rooftop Units](https://docs.nrel.gov/docs/fy25osti/95119.pdf)            | 2025 Release 1 |
 | hvac_0026  | [Condensing Gas Boilers](https://docs.nrel.gov/docs/fy25osti/95014.pdf)                                                                  | 2025 Release 1 |
 | hvac_0027  | [Electric Resistance Boilers](https://docs.nrel.gov/docs/fy25osti/95015.pdf)                                                             | 2025 Release 1 |
+| hvac_0028  | High-Efficiency Rooftop Unit**                                                                                                           | 2025 Release 3 |
+| hvac_0029  | Variable Speed Pumps**                                                                                                                   | 2025 Release 3 |
+| hvac_0030  | Thermostat Setbacks During Unoccupied Periods**                                                                                          | 2025 Release 3 |
+| hvac_0031  | Fan Static Pressure Reset for Multizone VAV Systems**                                                                                    | 2025 Release 3 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                             | 2023 Release 1 |
 | ltg_0002   | Lighting Controls**                                                                                                                      | 2025 Release 2 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                               | 2024 Release 1 |
@@ -64,9 +68,9 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | gen_0002   | Photovoltaics With 40% Rooftop Coverage and Battery Storage**                                                                            | 2025 Release 2 |
 | dr_0001    | [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)                                                     | 2024 Release 1 |
 | dr_0002    | [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)                                                     | 2024 Release 1 |
-| dr_0003    | Lighting Control for Load Shedding**                                                                                                     | 2024 Release 2 |
+| dr_0003    | [Lighting Control for Load Shedding](https://www.nrel.gov/docs/fy26osti/92502.pdf)                                                       | 2024 Release 2 |
 | dr_0004    | Lighting Control for Emission Reduction**                                                                                                | 2024 Release 2 |
-| dr_0005 / dr_0006    | Thermostat and Lighting Control for Load Shedding**                                                                            | 2025 Release 1 |
+| dr_0005 / dr_0006    | [Thermostat and Lighting Control for Load Shedding](https://www.nrel.gov/docs/fy26osti/92504.pdf)                              | 2025 Release 1 |
 | dr_0007    | Low Priority Device Switching During Peak Hours**                                                                                        | 2025 Release 1 |
 | dr_0008    | Dim Lighting During Peak Hours**                                                                                                         | 2025 Release 1 |
 | dr_0009    | Electric HVAC Temperature Setpoint Adjustment During Peak Hours**                                                                        | 2025 Release 1 |
@@ -101,4 +105,4 @@ Note: Webinars are not held for every ComStock dataset release.
 | 2023 Release 1  | [Recording](https://www.youtube.com/watch?v=7BHQfk6kvso) | [Slides](https://www.nrel.gov/docs/fy23osti/85853.pdf) |
 
 
-[1]:../../assets/files/measure_name_crosswalk_2025_2.csv
+[1]:../../assets/files/measure_name_crosswalk_2025_3.csv

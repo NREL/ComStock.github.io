@@ -38,7 +38,7 @@ The HP-RTU measure demonstrates between 3.5 and 14.3 million metric tons (MMT) C
 
 # Acknowledgments 
 
-The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, and Shanti Pless (National Renewable Energy Laboratory), as well as LONG Building Technologies. 
+The authors would like to acknowledge the valuable guidance and input provided by Ryan Meyer, Jon Winkler, and Shanti Pless (National Laboratory of the Rockies), as well as LONG Building Technologies. 
 
 # 1. Introduction 
 

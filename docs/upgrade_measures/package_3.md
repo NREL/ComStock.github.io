@@ -40,7 +40,7 @@ The HP-RTU measure demonstrates between 10 and 33 million metric tons (MMT CO<su
 
 ## Acknowledgments
 
-The authors would like to acknowledge the authors of the original measures in the High Efficiency Envelope, Interior Lighting and Heat Pump package, Lauren Adams, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless (National Renewable Energy Laboratory).
+The authors would like to acknowledge the authors of the original measures in the High Efficiency Envelope, Interior Lighting and Heat Pump package, Lauren Adams, Chris CaraDonna, Amy LeBar, Ryan Meyer, Andrew Parker, and Korbaga Woldekidan. Thank you also to the reviewers of this package, Eric Ringold and Shanti Pless (National Laboratory of the Rockies).
 
 # 1. Introduction
 
