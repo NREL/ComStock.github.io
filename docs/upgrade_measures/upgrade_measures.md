@@ -29,7 +29,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | env_0003   | [Secondary Window System]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_secondary_window.md %})                                      | 2023 Release 1 |
 | env_0004   | [Window Film]({{site.baseurl}}{% link docs/upgrade_measures/env_window_film.md %})                                                           | 2023 Release 1 |
 | env_0005   | [Window Replacement]({{site.baseurl}}{% link docs/upgrade_measures/env_ext_window_replacement.md %})                                         | 2023 Release 1 |
-| env_0006   | Upgrade Envelope to Latest Code**                                                                                                            | 2025 Release 2 |
+| env_0006   | [Upgrade Envelope to Latest Code][2]<sup>++</sup>                                                                                            | 2025 Release 2 |
 | hvac_0001  | [Air-Source Heat Pump Boiler](https://www.nrel.gov/docs/fy24osti/86199.pdf)                                                                  | 2023 Release 1 |
 | hvac_0002  | [Air-Source Heat Pump Boiler and Natural Gas Boiler Backup](https://www.nrel.gov/docs/fy24osti/87536.pdf)                                    | 2023 Release 2 |
 | hvac_0003  | [DOAS with Mini Split Heat Pumps]({{site.baseurl}}{% link docs/upgrade_measures/hvac_doas_mshp.md %})                                        | 2023 Release 1 |
@@ -57,12 +57,12 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0025  | [Laboratory-Informed Modeling of Standard Performance Heat Pump Rooftop Units](https://docs.nrel.gov/docs/fy25osti/95119.pdf)                | 2025 Release 1 |
 | hvac_0026  | [Condensing Gas Boilers](https://docs.nrel.gov/docs/fy25osti/95014.pdf)                                                                      | 2025 Release 1 |
 | hvac_0027  | [Electric Resistance Boilers](https://docs.nrel.gov/docs/fy25osti/95015.pdf)                                                                 | 2025 Release 1 |
-| hvac_0028  | High-Efficiency Rooftop Unit**                                                                                                               | 2025 Release 3 |
-| hvac_0029  | Variable Speed Pumps**                                                                                                                       | 2025 Release 3 |
-| hvac_0030  | Thermostat Setbacks During Unoccupied Periods**                                                                                              | 2025 Release 3 |
-| hvac_0031  | Fan Static Pressure Reset for Multizone VAV Systems**                                                                                        | 2025 Release 3 |
+| hvac_0028  | [High-Efficiency Rooftop Unit][3]<sup>++</sup>                                                                                               | 2025 Release 3 |
+| hvac_0029  | [Variable Speed Pumps][4]<sup>++</sup>                                                                                                       | 2025 Release 3 |
+| hvac_0030  | [Thermostat Setbacks During Unoccupied Periods][5]<sup>++</sup>                                                                              | 2025 Release 3 |
+| hvac_0031  | [Fan Static Pressure Reset for Multizone VAV Systems][6]<sup>++</sup>                                                                        | 2025 Release 3 |
 | ltg_0001   | [LED Lighting](https://www.nrel.gov/docs/fy24osti/86100.pdf)                                                                                 | 2023 Release 1 |
-| ltg_0002   | Lighting Controls**                                                                                                                          | 2025 Release 2 |
+| ltg_0002   | [Lighting Controls][7]<sup>++</sup>                                                                                                          | 2025 Release 2 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                                   | 2024 Release 1 |
 | gen_0001   | [Photovoltaics With 40% Rooftop Coverage](https://docs.nrel.gov/docs/fy25osti/95004.pdf)                                                     | 2025 Release 1 |
 | gen_0002   | Photovoltaics With 40% Rooftop Coverage and Battery Storage**                                                                                | 2025 Release 2 |
@@ -89,7 +89,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | pkg_0011   | [Geothermal Heat Pumps + High-Efficiency Envelope + LED Lighting Package](https://docs.nrel.gov/docs/fy25osti/95009.pdf)                     | 2025 Release 1 |
 | pkg_0012   | Photovoltaics With 40% Rooftop Coverage with New Roof**                                                                                      | 2025 Release 2 |
 
-*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected soon
+*Measures are included in the initial dataset release and all subsequent releases<br>**Measure documentation expected soon<br><sup>++</sup>Pre-publication version is available, publication expected soon
 
 ## Supplemental Documentation
 [Dispatch Schedule Generation for Demand Flexibility Measures](https://www.nrel.gov/docs/fy24osti/89343.pdf)
@@ -106,3 +106,9 @@ Note: Webinars are not held for every ComStock dataset release.
 
 
 [1]:../../assets/files/measure_name_crosswalk_2025_3.csv
+[2]:../../assets/files/ComStock Measure Doc_Upgrade Envelope to Code.pdf
+[3]:../../assets/files/ComStock Measure Doc_High Efficiency RTU.pdf
+[4]:../../assets/files/ComStock Measure Doc_Variable Speed Pumps.pdf
+[5]:../../assets/files/ComStock Measure Doc_Thermostat Setbacks During Unoccupied Periods.pdf
+[6]:../../assets/files/ComStock Measure Doc_Fan Static Pressure Reset for Multizone VAV Systems.pdf
+[7]:../../assets/files/ComStock Measure Doc_Lighting Controls.pdf
