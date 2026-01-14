@@ -49,7 +49,7 @@ Note: Text in **bold** refers to a column in your excel sheet. In the case of th
 
     d.  This analysis can also be performed with a mapping to all 16 ComStock building types, however they are more difficult to use as it can be difficult to differentiate primary and secondary schools, types of retail stores and offices, etc.
 
-    e.  Example mappings between two different data sources and ComStock's building types can be found in Table 1 on page 16 of the [ComStock documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references).
+    e.  Example mappings between two different data sources and ComStock's building types can be found in Table 1 on page 16 of the [ComStock documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references).
 
 6.  Filter the data to remove all building types from the local data source that do not have a match in ComStock.
 
