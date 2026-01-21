@@ -49,7 +49,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | hvac_0017  | [Ground-Coupled Console Water-to-Air Heat Pump](https://www.nrel.gov/docs/fy24osti/89132.pdf)                                                | 2024 Release 1 |
 | hvac_0018  | [Heat Pump Rooftop Units With Standard Performance](https://www.nrel.gov/docs/fy25osti/89042.pdf)                                            | 2024 Release 2 |
 | hvac_0019  | [Standard Performance Heat Pump Rooftop Unit with New Roof](https://www.nrel.gov/docs/fy25osti/92618.pdf)                                    | 2024 Release 2 |
-| hvac_0020  | Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating**                                                             | 2024 Release 2 |
+| hvac_0020  | [Heat Pump Rooftop Units With Higher Compressor Lockout Temperature for Heating][8]<sup>++</sup>                                             | 2024 Release 2 |
 | hvac_0021  | Heat Pump Rooftop Units Compliant With the Commercial Building Heat Pump Technology Challenge Specification**                                | 2024 Release 2 |
 | hvac_0022  | [Ideal Thermal Air Loads](https://www.nrel.gov/docs/fy25osti/92546.pdf)                                                                      | 2024 Release 2 |
 | hvac_0023  | [Reduced Thermostat Setbacks for Heat Pumps](https://docs.nrel.gov/docs/fy25osti/95002.pdf)                                                  | 2025 Release 1 |
@@ -112,3 +112,4 @@ Note: Webinars are not held for every ComStock dataset release.
 [5]:../../assets/files/ComStock Measure Doc_Thermostat Setbacks During Unoccupied Periods.pdf
 [6]:../../assets/files/ComStock Measure Doc_Fan Static Pressure Reset for Multizone VAV Systems.pdf
 [7]:../../assets/files/ComStock Measure Doc_Lighting Controls.pdf
+[8]:../../assets/files/ComStock Measure Doc_HP RTU Higher Compressor Lockout.pdf
