@@ -18,7 +18,7 @@ Impacts ComStock 2024 Release 2 only. We are actively working to address this is
 ## Details
 ComStock’s new sampling method (effective starting with 2024 Release 2) involves the reuse of a single energy model to represent similar buildings across distinct but comparable geographies (e.g., census tracts). This approach improves the dataset's granularity but the existing utility bill and emissions calculation workflow and structure of the results files lead to potential inaccuracies in utility bill and emissions calculations. These inaccuracies arise because utility rates and emissions factors are calculated based on the location of the original energy model's sampling. When a model is reallocated to a different location, the utility and grid region of the original model may no longer reflect those of the new location. Users should exercise caution when analyzing certain fields in the dataset, described below, as they may contain incorrect or misleading values. The ComStock team is working to address this issue in future dataset releases.
 
-For more details about how utility bills and emissions are calculated in ComStock, see the [reference documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references).
+For more details about how utility bills and emissions are calculated in ComStock, see the [reference documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references).
 
 ### Utility Bill Fields
 The following fields related to utility bills are directly impacted by the reallocation of energy models to new locations. Since utility rates vary significantly by geography, these fields may not accurately represent the characteristics of the reallocated location:

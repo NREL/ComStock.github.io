@@ -8,7 +8,7 @@ nav_order: 1
 
 # How-to: Filter the Building Characteristics Dashboard to View Data for a County
 
-The following provides instructions for accessing modeled building characteristic distributions for Richmond, Virgina, via the public “ComStock Building Characteristics Dashboard.” For information about ComStock modeling methodology and assumptions, see the [ComStock reference documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references).
+The following provides instructions for accessing modeled building characteristic distributions for Richmond, Virgina, via the public “ComStock Building Characteristics Dashboard.” For information about ComStock modeling methodology and assumptions, see the [ComStock reference documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references).
 
 ## Instructions
 1. Visit the [ComStock Building Characteristics Dashboard](https://public.tableau.com/app/profile/comstock.nrel/viz/ComStockBuildingCharacteristicsDashboard/Introduction) on the [ComStock Tableau public](https://public.tableau.com/app/profile/comstock.nrel/vizzes) page.

@@ -29,7 +29,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion16" type="checkbox" /><label for="accordion16">What year does the baseline stock represent?</label>
     <div class="show">
       <p>The ComStock and ResStock datasets represent, as closely as possible, the 2018 U.S. commercial and residential building stock characteristics. The energy consumption results depend on the weather data used in the simulations. When modeled with AMY2018 weather, the datasets represent energy use for the year 2018. When TMY3 weather is used, they represent typical or average energy consumption under typical climate conditions.</p>
-      <p>Emissions and utility bills in the ComStock and ResStock datasets use input data from a several years, depending on the dataset release. See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> or <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock reference documentation</a> for more details.</p>
+      <p>Emissions and utility bills in the ComStock and ResStock datasets use input data from a several years, depending on the dataset release. See the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}#references">ComStock reference documentation</a> or <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock reference documentation</a> for more details.</p>
     </div>
   </li>
 
@@ -66,7 +66,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion30" type="checkbox" /><label for="accordion30">How should I cite the datasets?</label>
     <div class="show">
-      <p>ComStock and ResStock can be cited according to the suggestions <a href="{{site.baseurl}}{% link docs/citation.md %}">here for ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/citation_data_attribution.html"> here for ResStock</a>.</p>
+      <p>ComStock and ResStock can be cited according to the suggestions <a href="{{site.baseurl}}{% link docs/citation.md %}">here for ComStock</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/citation_data_attribution.html"> here for ResStock</a>.</p>
     </div>
   </li>
 
@@ -76,14 +76,14 @@ Expand the sections below for answers to frequently asked questions. If you have
 <ul class="jk_accordion">
   <li class="acc"><input id="accordion2" type="checkbox" /><label for="accordion2">How do I access the dataset?</label>
     <div class="show">
-      <p>There are several access platforms available to access ComStock and ResStock datasets. See the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">ResStock Data page</a> for more detail about dataset access and links to the public datasets.</p>
+      <p>There are several access platforms available to access ComStock and ResStock datasets. See the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/data.html">ResStock Data page</a> for more detail about dataset access and links to the public datasets.</p>
     </div>
   </li>
 
   <li class="acc"><input id="accordion17" type="checkbox" /><label for="accordion17">Are descriptions available for the end-use categories and fields available for filtering?</label>
     <div class="show">
       <p>Descriptions of each of the building characteristics and the end-use categories can be found in the “data_dictionary.tsv” file. Descriptions of the values used in those filters can be found in the “enumeration_dictionary.tsv”. Both files can be downloaded from the OEDI Data Lake and are unique to each dataset release. Use the correct data dictionary for the relevant dataset. They can be opened with Excel or a text editor.</p>
-      <p>Links to the OEDI Data Lake for each dataset release can be found on the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">ResStock Data page</a>.</p>
+      <p>Links to the OEDI Data Lake for each dataset release can be found on the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/data.html">ResStock Data page</a>.</p>
     </div>
   </li>
 
@@ -124,7 +124,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion9" type="checkbox" /><label for="accordion9">What do the codes used to describe "county_id" and other geographic fields mean?</label>
     <div class="show">
-      <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">this explanation for ComStock</a>, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanation for ResStock.</a></p>
+      <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">this explanation for ComStock</a>, and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanation for ResStock.</a></p>
       <p>In most ComStock and ResStock datasets, county name is available in addition to the GISJOIN county code. For both tools, the column in the metadata_and_annual_results files on OEDI is called "in.county_name."
       </p>
     </div>
@@ -183,7 +183,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion23" type="checkbox" /><label for="accordion23">I am trying to match buildings between releases. Why do the building IDs not match between them?</label>
     <div class="show">
-      <p>The building IDs and exact building characteristics between releases will not match because we re-sample our input characteristic distributions for every release. However, you can filter the building models using building characteristics to identify similar samples between releases. For instance, using building type, size, location, and wall construction type to identify similar models. The fields with the prefix “in.” show the available model inputs that you can use to do the comparison. You can see a complete list and description of available fields in the “data_dictionary.tsv” file on the OEDI Data Lake. Links to the datasets on OEDI are in the "Published Datasets" section of the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">ResStock data page</a>.</p>
+      <p>The building IDs and exact building characteristics between releases will not match because we re-sample our input characteristic distributions for every release. However, you can filter the building models using building characteristics to identify similar samples between releases. For instance, using building type, size, location, and wall construction type to identify similar models. The fields with the prefix “in.” show the available model inputs that you can use to do the comparison. You can see a complete list and description of available fields in the “data_dictionary.tsv” file on the OEDI Data Lake. Links to the datasets on OEDI are in the "Published Datasets" section of the <a href="{{site.baseurl}}{% link docs/data.md %}">ComStock Data page</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/data.html">ResStock data page</a>.</p>
     </div>
   </li>
   
@@ -262,7 +262,7 @@ Expand the sections below for answers to frequently asked questions. If you have
 <ul class="jk_accordion">
   <li class="acc"><input id="accordion10" type="checkbox" /><label for="accordion10">Can I run ComStock or ResStock myself?</label>
     <div class="show">
-      <p>The code required to run ComStock and ResStock is available on the <a href="https://github.com/NREL/ComStock">ComStock</a> and <a href="https://github.com/NREL/ResStock">ResStock</a> public GitHub repositories. Other related code repositories are provided on the "For Developers" page for <a href="{{site.baseurl}}{% link docs/for_developers/for_developers.md %}">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/developers.html">ResStock.</a></p>
+      <p>The code required to run ComStock and ResStock is available on the <a href="https://github.com/NREL/ComStock">ComStock</a> and <a href="https://github.com/NREL/ResStock">ResStock</a> public GitHub repositories. Other related code repositories are provided on the "For Developers" page for <a href="{{site.baseurl}}{% link docs/for_developers/for_developers.md %}">ComStock</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/developers.html">ResStock.</a></p>
       <p>While these resources are available, ComStock and ResStock are complex modeling tools and there is no documentation for running the model other than what exists in the codebase, and we are not able to support running the models at this time. We generally do not recommend running the model unless you have a deep understanding of the methodology and objectives. Please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for improvements or specific needs.</p>
     </div>
   </li>
@@ -270,7 +270,7 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion15" type="checkbox" /><label for="accordion15">I am interested in an upgrade measure combination that is not currently available as an upgrade package in the public datasets. Can I combine results from the individual measures?</label>
     <div class="show">
       <p>Our general guidance is to <b>NOT</b> combine measure results. There are interactions between most upgrade measures that affect the amount of savings and make results of multiple measures together misleading.</p>
-      <p>For an explanation and examples on this topic, see the linked <a href="{{site.baseurl}}{% link docs/resources/explanations/combining_measure_results.md %}">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Individual_Measures_Not_Combined.html">ResStock</a> resources.</p>
+      <p>For an explanation and examples on this topic, see the linked <a href="{{site.baseurl}}{% link docs/resources/explanations/combining_measure_results.md %}">ComStock</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/resources/explanations/Individual_Measures_Not_Combined.html">ResStock</a> resources.</p>
       <p>If you have questions about combining specific measures, please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a>.</p>
     </div>
   </li>
@@ -282,13 +282,13 @@ Expand the sections below for answers to frequently asked questions. If you have
 
   <li class="acc"><input id="accordion3" type="checkbox" /><label for="accordion3">Where can I find information about ComStock modeling methodology and assumptions?</label>
     <div class="show">
-      <p>ComStock reference documentation is available in the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">References section</a> of the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}">Resources page</a>. We publish an updated version with every dataset release that includes changes to the ComStock model.</p>
+      <p>ComStock reference documentation is available in the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}#references">References section</a> of the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}">Resources page</a>. We publish an updated version with every dataset release that includes changes to the ComStock model.</p>
     </div>
   </li>
 
   <li class="acc"><input id="accordion38" type="checkbox" /><label for="accordion38">Are costs modeled?</label>
     <div class="show">
-      <p>As of the 2024 Release 1, ComStock includes utility cost data using current electricity rates from the Utility Rate Database (URDB), matched by utility ID, demand, and usage. Annual utility bills are reported as the min, max, mean, and median of all applicable rates for each model. Natural gas, propane, and fuel oil prices are based on volumetric pricing due to limited rate data, using EIA price and heat content data. See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for details.</p>
+      <p>As of the 2024 Release 1, ComStock includes utility cost data using current electricity rates from the Utility Rate Database (URDB), matched by utility ID, demand, and usage. Annual utility bills are reported as the min, max, mean, and median of all applicable rates for each model. Natural gas, propane, and fuel oil prices are based on volumetric pricing due to limited rate data, using EIA price and heat content data. See the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}#references">ComStock reference documentation</a> for details.</p>
       <p>ComStock does not calculate first costs (i.e., upgrade or measure costs). However, many ComStock output variables can be used to estimate first cost. See the explanation titled "<a href="{{site.baseurl}}{% link docs/resources/explanations/costing_analysis.md %}">Using ComStock to Analyze Cost</a>" for more detail about cost assessments, including a discussion of output variables that can be used to estimate first costs.</p>
     </div>
   </li>
@@ -322,7 +322,7 @@ Expand the sections below for answers to frequently asked questions. If you have
     <div class="show">
       <p>ComStock public dataset releases include AMY2012 weather, which is a leap year, and AMY2018 and TMY3 weather years, neither of which are leap years.</p>
       <p>The default simulation runs for one year, covering 8,760 hours from January 1 to December 31. For ComStock dataset releases using AMY2012 weather, the simulation period is adjusted to maintain exactly 8,760 hours: it starts on January 1, includes February 29, and ends on December 30 instead of December 31.</p>
-      <p>For more detail, please see the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a>.</p>
+      <p>For more detail, please see the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}#references">ComStock reference documentation</a>.</p>
     </div>
   </li>
 
@@ -338,14 +338,14 @@ Expand the sections below for answers to frequently asked questions. If you have
   <li class="acc"><input id="accordion45" type="checkbox" /><label for="accordion45">How are wall cavity R-values determined?</label>
     <div class="show">
       <p>In ComStock models, wall R-values are based on building energy code requirements by climate zone and construction type (mass, metal building, steel-framed, wood-framed) and account for both interior and exterior air films.</p>
-      <p>See the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references">ComStock reference documentation</a> for more information.</p>
+      <p>See the <a href="{{site.baseurl}}{% link docs/resources/resources.md %}#references">ComStock reference documentation</a> for more information.</p>
     </div>
   </li>
 
   <li class="acc"><input id="accordion46" type="checkbox" /><label for="accordion46">What year of U.S. Census geography (e.g., counties, PUMAs) do ComStock and ResStock use?</label>
     <div class="show">
       <p>ComStock and ResStock datasets reflect the 2010 National Historical GIS (NHGIS) GISJOIN standard codes for counties, PUMAs, and Census Tracts. Some model input data sources use 2020 Census geographies, and these are translated to 2010 before being integrated into the ComStock and ResStock workflows. However, 2020 geographic codes are not currently available in the ComStock and ResStock datasets.</p>
-      <p>For more information about geographic fields and codes used in the models, please refer to the <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">ResStock</a> user resources.
+      <p>For more information about geographic fields and codes used in the models, please refer to the <a href="{{site.baseurl}}{% link docs/resources/explanations/reference_geographic_codes.md %}">ComStock</a> and <a href="https://natlabrockies.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">ResStock</a> user resources.
       </p>
     </div>
   </li>

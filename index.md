@@ -20,7 +20,7 @@ ComStock asks and answers two questions: **(1) How is energy used in the U.S. bu
 ## Quick Links
 [Access the Dataset]({{site.baseurl}}{% link docs/data.md %}){: .btn .btn-uo .white-text} &mdash; Visit the [Data page]({{site.baseurl}}{% link docs/data.md %}) for access to the published datasets and details about the various ways to access them.
 
-[Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references){: .btn .btn-uo .white-text} &mdash; Refer to the [Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references) for details about the methodology and assumptions behind ComStock.
+[Reference Documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references){: .btn .btn-uo .white-text} &mdash; Refer to the [Reference Documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references) for details about the methodology and assumptions behind ComStock.
 
 [Upgrade Measures]({{site.baseurl}}{% link docs/upgrade_measures/upgrade_measures.md %}){: .btn .btn-uo .white-text} &mdash; For details about upgrade measures and packages, including modeling methodology, assumptions, relevant ComStock baseline features, and observations from results, visit the [Upgrade Measures page]({{  site.baseurl  }}{% link docs/upgrade_measures/upgrade_measures.md %}).
 
