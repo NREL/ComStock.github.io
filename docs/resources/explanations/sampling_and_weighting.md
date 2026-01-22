@@ -7,7 +7,7 @@ nav_order: 8
 
 # Sampling and Weighting in ComStock
 
-Within ComStock, U.S. commercial building characteristics are sampled such that each building energy model (BEM) represents not a real individual building at a specific address, but instead, a small representative portion of the overall stock. In this explanation, we overview how these building samples are generated, what the weights of each sample represent, and how weights can be used to customize results. This explanation condenses information from the more detailed technical explanation found in the [ComStock Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references).
+Within ComStock, U.S. commercial building characteristics are sampled such that each building energy model (BEM) represents not a real individual building at a specific address, but instead, a small representative portion of the overall stock. In this explanation, we overview how these building samples are generated, what the weights of each sample represent, and how weights can be used to customize results. This explanation condenses information from the more detailed technical explanation found in the [ComStock Reference Documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references).
 
 ## Summary of Sampling and Weighting Approach
 
