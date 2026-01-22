@@ -13,7 +13,7 @@ Compared to the Commercial Building Energy Consumption Survey (CBECS) 2018 estim
 
 Figure 1 below shows the building types not represented in the ComStock model, on a CBECS Principal Building Activity Plus basis, and their relative contribution to commercial building energy use in the United States. As can be seen in the figure, mixed-use offices represent the largest un-modeled building classification by energy use, followed by recreation, other, religious worship, and nursing homes/assisted living buildings. 
 
-The U.S. Department of Energy prototype building type is used to represent a significant amount of the U.S. building stock, but it is also not used in many cases due to concerns regarding its accurate representation of specific building subtypes. Please see the Building Type Assignments section in the [ComStock Reference Documentation](https://nrel.github.io/ComStock.github.io/docs/resources/resources.html#references) for further discussion on each building type. It includes what buildings each type does and does not represent, as understood by ComStock's developers.
+The U.S. Department of Energy prototype building type is used to represent a significant amount of the U.S. building stock, but it is also not used in many cases due to concerns regarding its accurate representation of specific building subtypes. Please see the Building Type Assignments section in the [ComStock Reference Documentation]({{site.baseurl}}{% link docs/resources/resources.md %}#references) for further discussion on each building type. It includes what buildings each type does and does not represent, as understood by ComStock's developers.
 
 {:refdef: style="text-align: center;"}
 ![](../../../assets/images/btypes_not_in_comstock.svg)
