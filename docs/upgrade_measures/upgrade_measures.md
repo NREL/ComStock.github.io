@@ -65,7 +65,7 @@ Release webinar recordings and slides can be found at the [bottom of the page](#
 | ltg_0002   | [Lighting Controls][7]<sup>++</sup>                                                                                                          | 2025 Release 2 |
 | ppl_0001   | [Electric Cooking Equipment](https://www.nrel.gov/docs/fy24osti/89130.pdf)                                                                   | 2024 Release 1 |
 | gen_0001   | [Photovoltaics With 40% Rooftop Coverage](https://docs.nrel.gov/docs/fy25osti/95004.pdf)                                                     | 2025 Release 1 |
-| gen_0002   | Photovoltaics With 40% Rooftop Coverage and Battery Storage**                                                                                | 2025 Release 2 |
+| gen_0002   | [Photovoltaics With 40% Rooftop Coverage and Battery Storage][9]<sup>++</sup>                                                                | 2025 Release 2 |
 | dr_0001    | [Thermostat Control for Load Shedding](https://www.nrel.gov/docs/fy24osti/89340.pdf)                                                         | 2024 Release 1 |
 | dr_0002    | [Thermostat Control for Load Shifting](https://www.nrel.gov/docs/fy24osti/89341.pdf)                                                         | 2024 Release 1 |
 | dr_0003    | [Lighting Control for Load Shedding](https://www.nrel.gov/docs/fy26osti/92502.pdf)                                                           | 2024 Release 2 |
@@ -113,3 +113,4 @@ Note: Webinars are not held for every ComStock dataset release.
 [6]:../../assets/files/ComStock Measure Doc_Fan Static Pressure Reset for Multizone VAV Systems.pdf
 [7]:../../assets/files/ComStock Measure Doc_Lighting Controls.pdf
 [8]:../../assets/files/ComStock Measure Doc_HP RTU Higher Compressor Lockout.pdf
+[9]:../../assets/files/ComStock Measure Doc_PV with Battery Storage.pdf
